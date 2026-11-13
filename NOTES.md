@@ -34,4 +34,4 @@
 - `videos/extra/top10-worst-people-stickman.mp4`: غير مخصص لقناة.
 - Kling (klingai.com) مجاني محدود لتوليد 3D.
 - `videos/extra/hamoudi-mama-gta-part2.mp4`: جزء 2 كارتون 2D (ماما تلعب وتاخذ 6 نجوم). كود: `studio/hamoudi-2d/` (animation-studio starter gully-cricket).
-- `videos/long/top10-iraqi-food-ukiyoe.mp4`: فيديو طويل أطيب 10 أكلات عراقية بستايل أوكيو-إيه (3:15). كود: `studio/top10-ukiyoe/`. نسخة الألعاب قيد الرندر.
+- `videos/long/top10-iraqi-food-ukiyoe.mp4`: فيديو طويل أطيب 10 أكلات عراقية بستايل أوكيو-إيه (3:15). كود: `studio/top10-ukiyoe/`. ونسخة الألعاب: `videos/long/top10-iraqi-games-ukiyoe.mp4` (2:30)، كود `studio/top10-ukiyoe/games/`.
