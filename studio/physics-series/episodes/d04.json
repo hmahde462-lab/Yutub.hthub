@@ -1,0 +1,49 @@
+{
+ "id": "d04",
+ "template": "duel.html",
+ "title": "حرب القنابل",
+ "partLabel": "قتال 4",
+ "hook": "قنابل ومناشير... احذر!",
+ "endSub": "منو نجا من القنابل؟ اكتبه",
+ "bg": [
+  "#2a0a0a",
+  "#0c0202"
+ ],
+ "floor": "#3a1414",
+ "ring": "#ff3d5a",
+ "fighters": [
+  {
+   "name": "طرطور",
+   "color": "#ff8a3a"
+  },
+  {
+   "name": "بقبوق",
+   "color": "#4f9dff"
+  },
+  {
+   "name": "فلفول",
+   "color": "#3fd17a"
+  },
+  {
+   "name": "كشكوش",
+   "color": "#e070ff"
+  }
+ ],
+ "sim": {
+  "seed": 25,
+  "dmgScale": 1.8,
+  "maxTime": 40,
+  "spawnEvery": 1.7,
+  "sides": 8,
+  "rot": 0.39269908169872414,
+  "R": 440,
+  "pool": [
+   "bomb",
+   "bomb",
+   "saw",
+   "saw",
+   "heal",
+   "shield"
+  ]
+ }
+}

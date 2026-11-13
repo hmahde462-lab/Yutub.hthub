@@ -1,0 +1,30 @@
+{
+ "id": "ep14",
+ "partLabel": "الجزء 14",
+ "title": "الحيطان تقطع! 🧱",
+ "hook": "ولا سلاح... كل ضربة بالحايط = كرتين",
+ "milestone": 100,
+ "milestoneText": "تجاوزنا 100! 🔥",
+ "endSub": "الجاي: سيفين بعكس بعض ⚔️⚔️",
+ "bg": [
+  "#1a1a1a",
+  "#080808"
+ ],
+ "ringColor": "#ff3d5a",
+ "sim": {
+  "r0": 110,
+  "rMin": 8,
+  "wallSplit": true,
+  "container": {
+   "sides": 5,
+   "R": 440,
+   "rot": -1.5707963267948966,
+   "spin": 0.5
+  },
+  "cutters": [],
+  "g": 900,
+  "maxTime": 30
+ },
+ "template": "arena.html",
+ "counterLabel": "كرة"
+}

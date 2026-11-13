@@ -1,0 +1,36 @@
+{
+ "id": "c02",
+ "partLabel": "تقطيع 2",
+ "title": "المنشار الدوّار 🪚",
+ "hook": "منشار يلف داخل مسدس... توقع الرقم!",
+ "milestone": 50,
+ "milestoneText": "تجاوزنا 50! 🔥",
+ "endSub": "السلاح الجاي: ليزر 🔴",
+ "bg": [
+  "#2a1a0e",
+  "#120a04"
+ ],
+ "sim": {
+  "r0": 110,
+  "rMin": 8,
+  "container": {
+   "sides": 6,
+   "R": 440,
+   "rot": 0,
+   "spin": 0
+  },
+  "cutters": [
+   {
+    "kind": "saw",
+    "orbit": 295,
+    "rad": 68,
+    "spin": 2.8,
+    "selfSpin": 18
+   }
+  ],
+  "g": 700,
+  "maxTime": 24.5
+ },
+ "template": "arena.html",
+ "counterLabel": "كرة"
+}

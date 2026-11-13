@@ -1,0 +1,36 @@
+{
+ "id": "c03",
+ "partLabel": "تقطيع 3",
+ "title": "الليزر ضد الكرة 🔴",
+ "hook": "ليزر داخل مثلث يدور... منو يصمد؟",
+ "milestone": 50,
+ "milestoneText": "تجاوزنا 50! 🔥",
+ "endSub": "السلاح الجاي: نجمة نينجا ⭐",
+ "bg": [
+  "#0e1a2a",
+  "#04080f"
+ ],
+ "laserClip": true,
+ "sim": {
+  "cy": 990,
+  "r0": 105,
+  "rMin": 10,
+  "container": {
+   "sides": 3,
+   "R": 500,
+   "rot": -1.5707963267948966,
+   "spin": 0.27110883423451915
+  },
+  "cutters": [
+   {
+    "kind": "laser",
+    "len": 500,
+    "spin": 0.6
+   }
+  ],
+  "g": 1100,
+  "maxTime": 30
+ },
+ "template": "arena.html",
+ "counterLabel": "كرة"
+}

@@ -1,0 +1,231 @@
+<!doctype html><html lang="ar" dir="rtl"><head><meta charset="utf-8">
+<link rel="stylesheet" href="fonts/fonts.css">
+<style>html,body{margin:0;background:#000}#stage{position:relative;width:1080px;height:1920px;overflow:hidden}canvas{position:absolute;inset:0}</style></head><body>
+<div id="stage"><canvas id="cv" width="1080" height="1920"></canvas></div>
+<script src="chars.js"></script>
+<script>
+const CFG = {"id":"ice_merchant_60","fps":30,"sceneStarts":[0,10,20,30,40,50],"end":60,"captions":[{"t0":0.4,"t1":3.711,"ar":"في عز الشتاء… حفر سليم حفرة عميقة في الصحراء","en":"In the dead of winter… Saleem dug a deep pit in the desert"},{"t0":3.711,"t1":5.767,"ar":"ودفن فيها الثلج… ثم ابتسم وقال:","en":"buried ice in it… then smiled and said:"},{"t0":5.767,"t1":9.85,"ar":"في الصيف، سأبيع هذا بالذهب!","en":"\"In summer, I'll sell this for gold!\""},{"t0":10.4,"t1":13.789,"ar":"ضحك تجار السوق حتى مالت عمائمهم","en":"The traders laughed so hard their turbans tilted"},{"t0":13.789,"t1":15.556,"ar":"يا سليم! الثلج يذوب في كفك خلال دقيقة","en":"\"Saleem! Ice melts in your palm in a minute…\""},{"t0":15.556,"t1":19.85,"ar":"فكيف يعيش شهورًا في الرمل؟","en":"\"…how will it last months in the sand?\""},{"t0":20.4,"t1":23.056,"ar":"لم يرد سليم بكلمة… غطى الثلج بالقش","en":"Saleem said nothing… he covered the ice with straw"},{"t0":23.056,"t1":24.344,"ar":"وبنى فوقه قبة سميكة من الطين","en":"built a thick mud dome over it"},{"t0":24.344,"t1":29.85,"ar":"وبرجًا عاليًا يشبه المدخنة… والناس تضحك","en":"and a tall chimney-like tower… while people laughed"},{"t0":30.4,"t1":31.944,"ar":"ثم جاء الصيف… حر يذيب الحجر","en":"Then summer came… heat that melts stone"},{"t0":31.944,"t1":33.822,"ar":"جفت الآبار… وصاح الوالي في قصره:","en":"The wells ran dry… and the governor cried out:"},{"t0":33.822,"t1":39.85,"ar":"من يأتني بشربة باردة، أعطه ما يشاء من الذهب!","en":"\"Whoever brings me a cold drink gets all the gold he wants!\""},{"t0":40.4,"t1":44.078,"ar":"فتح سليم باب القبة… فخرج بخار أبيض بارد!","en":"Saleem opened the dome… and cold white mist poured out!"},{"t0":44.078,"t1":45.689,"ar":"كان الثلج ما يزال صلبًا لامعًا","en":"The ice was still solid and shining"},{"t0":45.689,"t1":49.85,"ar":"سكت السوق… وامتلأت يدا سليم بالذهب","en":"The market fell silent… and Saleem's hands filled with gold"},{"t0":50.4,"t1":54.7,"ar":"السر؟ القش والطين السميك يمنعان حرارة الشمس","en":"The secret? Straw and thick mud block the sun's heat"},{"t0":54.7,"t1":56.833,"ar":"والبرج يسحب الهواء الساخن… فيبقى البرد تحت الأرض","en":"The tower pulls hot air out… so the cold stays underground"},{"t0":56.833,"t1":59.85,"ar":"ومن ضحك أولًا… دفع آخرًا!","en":"Whoever laughed first… paid last!"}]};               // {fps, sceneStarts:[...], end, captions:[{t0,t1,ar,en}]}
+const FPS = CFG.fps, W = 1080, H = 1920;
+const g = document.getElementById('cv').getContext('2d');
+const S = CHARS, events = [];
+const fired = new Set(); const fire = (k, t) => { if (!fired.has(k)) { fired.add(k); events.push({ t: +t.toFixed(3), kind: k.split('#')[0] }); } };
+function cam(fx, fy, z) { g.setTransform(z, 0, 0, z, W / 2 - fx * z, 900 - fy * z); }
+const talkAt = (t, on) => on ? clamp(.35 + .65 * Math.abs(Math.sin(t * 13) * Math.sin(t * 7.3 + 1))) : 0;
+const R = rng(42); const SPARK = Array.from({ length: 70 }, () => [R() * 1400 - 160, 1100 + R() * 700, R() * TAU]);
+
+// ---------------- scenes (u = seconds into scene, D = scene length) ----------------
+function scene1(u, D, t) { // winter dawn, burying ice
+  const z = lerp(1.7, 1.0, ease(seg(u, 2.6, 5.8))), fx = lerp(470, 540, ease(seg(u, 2.6, 5.8))), fy = lerp(1150, 980, ease(seg(u, 2.6, 5.8)));
+  g.setTransform(1, 0, 0, 1, 0, 0); sky(g, [[0, '#7fb6ea'], [.6, '#cfe6fb'], [1, '#f6e7d8']]);
+  cam(fx, fy, z);
+  sun(g, 860, 760, 60, '#ffe2b8', 'rgba(255,200,150,.6)');
+  dunes(g, 1000, ['#cbbd9e', '#d8cab0', '#e4d8c2']);
+  palm(g, 120, 1010, 260, .6, .8); palm(g, 980, 1000, 230, -.5, .7);
+  // frost sparkles
+  for (const [x, y, ph] of SPARK) { const a = .5 + .5 * Math.sin(t * 5 + ph); g.fillStyle = `rgba(255,255,255,${a})`; g.beginPath(); g.arc(x, y, 3 + 2 * a, 0, TAU); g.fill(); }
+  // pit
+  g.fillStyle = '#3b2a1a'; g.beginPath(); g.ellipse(430, 1185, 150, 42, 0, 0, TAU); g.fill(); g.strokeStyle = INK; g.lineWidth = 5; g.stroke();
+  g.fillStyle = '#1c130b'; g.beginPath(); g.ellipse(430, 1192, 120, 28, 0, 0, TAU); g.fill();
+  iceBlock(g, 380, 1195, 60, 26); iceBlock(g, 470, 1198, 60, 26);
+  // shovel
+  g.strokeStyle = '#6b4423'; g.lineWidth = 9; g.beginPath(); g.moveTo(250, 1150); g.lineTo(290, 1010); g.stroke(); g.fillStyle = '#8c8c8c'; g.beginPath(); g.ellipse(246, 1162, 18, 26, -.3, 0, TAU); g.fill(); g.stroke();
+  // cart
+  g.fillStyle = '#9b6a3a'; g.strokeStyle = INK; g.lineWidth = 5; g.beginPath(); g.roundRect(700, 1060, 230, 90, 8); g.fill(); g.stroke();
+  for (const wx of [740, 890]) { g.fillStyle = '#5a3a1e'; g.beginPath(); g.arc(wx, 1160, 34, 0, TAU); g.fill(); g.stroke(); }
+  iceBlock(g, 760, 1040, 80, 46); iceBlock(g, 850, 1040, 80, 46); iceBlock(g, 805, 996, 80, 46);
+  // the block being dropped
+  const drop = seg(u, .7, 1.7);
+  if (drop < 1) { const bx = 560 - 120 * drop, by = 1000 + 190 * drop * drop; iceBlock(g, bx, by, 74, 42, .3); }
+  else { fire('thud', t); if (u < 2.6) for (let i = 0; i < 12; i++) { const a = i / 12 * TAU, r = 40 + (u - 1.7) * 120; g.fillStyle = `rgba(220,245,255,${1 - (u - 1.7) / .9})`; g.beginPath(); g.arc(430 + Math.cos(a) * r, 1180 + Math.sin(a) * r * .35, 6, 0, TAU); g.fill(); } }
+  const talking = u > 6.3 && u < 9.6;
+  const p = drawChar(g, S.saleem, { x: 600, y: 1235, look: u > 6 ? .25 : -.6, armL: u < 1.7 ? lerp(2.6, .3, seg(u, 1.3, 1.9)) : .2, armR: u < 1.7 ? lerp(2.6, .3, seg(u, 1.3, 1.9)) : (u > 6.8 ? lerp(.2, 1.9, seg(u, 6.8, 7.2)) : .2),
+    eyes: 'dot', brows: u > 6.5 ? 'oneUp' : 'calm', mouth: u > 5.5 ? 'smile' : 'line', talk: talkAt(t, talking) });
+  // frosty breath
+  for (let k = 0; k < 3; k++) { const ph = ((u * .8 + k / 3) % 1); g.fillStyle = `rgba(255,255,255,${.6 * (1 - ph)})`; g.beginPath(); g.arc(640 + ph * 40, 1035 - ph * 70, 8 + ph * 16, 0, TAU); g.fill(); }
+  if (u > 0.05) fire('wind', t);
+}
+function souk(gx) { // background market
+  g.fillStyle = '#c98d55'; g.fillRect(-600, 400, 2300, 900); g.strokeStyle = 'rgba(0,0,0,.25)'; g.lineWidth = 3;
+  for (let y = 420; y < 1300; y += 40) { g.beginPath(); g.moveTo(-600, y); g.lineTo(1700, y); g.stroke(); }
+  for (const ax of [-250, 120, 540, 960, 1330]) { g.fillStyle = '#5a3418'; g.beginPath(); g.moveTo(ax - 90, 1100); g.lineTo(ax - 90, 860); g.arc(ax, 860, 90, Math.PI, TAU); g.lineTo(ax + 90, 1100); g.fill(); g.strokeStyle = INK; g.lineWidth = 5; g.stroke(); }
+  const cols = ['#e8322b', '#f2c230', '#2f6fd1', '#ffffff'];
+  for (let i = -6; i < 16; i++) { g.fillStyle = cols[(i + 20) % 4]; g.beginPath(); g.moveTo(i * 120 - 200, 620); g.lineTo(i * 120 - 80, 620); g.lineTo(i * 120 - 140, 720); g.closePath(); g.fill(); g.strokeStyle = INK; g.lineWidth = 3; g.stroke(); }
+  g.fillStyle = '#7a4a22'; g.fillRect(-600, 1100, 2300, 40);
+  const spice = ['#e07a2f', '#c0392b', '#f1c40f', '#6d4c41'];
+  for (let i = 0; i < 9; i++) { const x = -350 + i * 230; g.fillStyle = '#d8b98a'; g.strokeStyle = INK; g.lineWidth = 4; g.beginPath(); g.roundRect(x, 1060, 90, 80, 14); g.fill(); g.stroke(); g.fillStyle = spice[i % 4]; g.beginPath(); g.ellipse(x + 45, 1062, 40, 14, 0, 0, TAU); g.fill(); g.stroke(); }
+  g.fillStyle = '#e2c89a'; g.fillRect(-600, 1140, 2300, 800);
+}
+function scene2(u, D, t) { // the market laughs
+  let fx = 540, fy = 980, z = 1.0;
+  if (u > 3) { const k = ease(seg(u, 3, 4.2)); fx = lerp(540, 700, k); fy = lerp(980, 1000, k); z = lerp(1, 1.4, k); }
+  if (u > 7) { const k = ease(seg(u, 7, 8)); fx = lerp(700, 560, k); z = lerp(1.4, 1.12, k); }
+  g.setTransform(1, 0, 0, 1, 0, 0); g.fillStyle = '#f6d9a8'; g.fillRect(0, 0, W, H); cam(fx, fy, z); souk();
+  for (let i = 0; i < 7; i++) { const x = -40 + i * 175, k = i * 1.3; drawChar(g, extraSpec(i), Object.assign(laughPose(x, 1175, t, k, .78), {})); }
+  if (u > .2) fire('laugh', t);
+  drawChar(g, S.saleem, { x: 320, y: 1290, cross: true, brows: u > 7 ? 'oneUp' : 'calm', mouth: 'line', look: .3 });
+  const mocking = u > 3.4 && u < 7.4, laughing = u > 7;
+  const p = drawChar(g, S.abu, { x: 720, y: 1290, armR: mocking ? 1.6 : .3, armL: laughing ? 1.25 : .4, eyes: laughing ? 'squint' : 'dot', brows: 'up', mouth: laughing ? 'laugh' : 'smile',
+    talk: talkAt(t, mocking), bob: laughing ? Math.abs(Math.sin(t * 10)) * 12 : 0, capTilt: laughing ? -.35 * ease(seg(u, 7.4, 7.8)) : 0, lean: laughing ? Math.sin(t * 5) * .05 : 0 });
+  if (mocking && p.hands) { const [hx, hy] = p.hands[1]; iceBlock(g, hx + 14, hy - 14, 34, 24); const ph = (u * 2) % 1; g.fillStyle = '#7fd3ff'; g.beginPath(); g.ellipse(hx + 14, hy + 6 + ph * 90, 5, 8, 0, 0, TAU); g.fill(); }
+  if (u > 7.4) fire('boing', t);
+}
+function scene3(u, D, t) { // building the ice house
+  const z = lerp(1.25, 1.0, ease(seg(u, 0, 8))), fx = lerp(520, 560, seg(u, 0, 8)), fy = lerp(1080, 960, ease(seg(u, 0, 8)));
+  const day = seg(u, 0, 9);
+  g.setTransform(1, 0, 0, 1, 0, 0); sky(g, [[0, '#8cc4f2'], [1, '#f3e3c8']]); cam(fx, fy, z);
+  sun(g, lerp(-80, 1160, day), 700 - Math.sin(day * Math.PI) * 300, 55, '#fff1b8', 'rgba(255,230,160,.6)');
+  dunes(g, 1020, ['#cdb990', '#dac7a1', '#e6d6b6']);
+  // onlookers on a dune
+  for (let i = 0; i < 4; i++) drawChar(g, extraSpec(i + 3), laughPose(80 + i * 90, 1060, t, i, .45));
+  // pit + straw
+  g.fillStyle = '#3b2a1a'; g.beginPath(); g.ellipse(560, 1190, 170, 46, 0, 0, TAU); g.fill(); g.strokeStyle = INK; g.lineWidth = 5; g.stroke();
+  const straw = seg(u, .3, 2.6);
+  if (straw > 0) { g.save(); g.beginPath(); g.ellipse(560, 1190, 168, 44, 0, 0, TAU); g.clip(); for (let i = 0; i < 70 * straw; i++) { const x = 400 + (i * 37) % 320, y = 1160 + (i * 23) % 60; g.strokeStyle = i % 2 ? '#e8c35a' : '#c99a2e'; g.lineWidth = 5; g.beginPath(); g.moveTo(x, y); g.lineTo(x + 30, y + 6 - (i % 3) * 5); g.stroke(); } g.restore(); }
+  // dome rising row by row
+  const dome = seg(u, 2.8, 6.8), rows = Math.floor(dome * 9);
+  if (dome > 0) { g.save(); g.beginPath(); g.rect(300, 1190 - (dome * 300), 520, dome * 300 + 10); g.clip();
+    g.fillStyle = '#a8703f'; g.strokeStyle = INK; g.lineWidth = 6; g.beginPath(); g.moveTo(380, 1192); g.quadraticCurveTo(380, 900, 560, 890); g.quadraticCurveTo(740, 900, 740, 1192); g.closePath(); g.fill(); g.stroke();
+    g.strokeStyle = 'rgba(0,0,0,.3)'; g.lineWidth = 3; for (let r = 1; r < 9; r++) { const y = 1192 - r * 33; g.beginPath(); g.moveTo(370, y); g.lineTo(750, y); g.stroke(); }
+    g.restore(); if (rows > 0) fire('brick#' + rows, t); }
+  // tower rising
+  const tw = seg(u, 6.2, 8.4);
+  if (tw > 0) { const th = 420 * easeOut(tw); g.fillStyle = '#b57a46'; g.strokeStyle = INK; g.lineWidth = 6; g.beginPath(); g.rect(790, 1192 - th, 80, th); g.fill(); g.stroke(); if (tw > .98) { g.fillStyle = '#b57a46'; g.beginPath(); g.rect(775, 1192 - th - 30, 110, 30); g.fill(); g.stroke(); } if (tw > .1) fire('brick#t', t); }
+  const wx = u < 2.8 ? 420 + Math.sin(u * 2.5) * 40 : (u < 6.2 ? 300 + (Math.sin(u * 3) * .5 + .5) * 80 : 950);
+  const p = drawChar(g, S.saleem, { x: wx, y: 1280, walk: u * 9, armL: .3, armR: u > 8.6 ? 1.4 : .9, look: u > 8.6 ? .3 : 0, brows: u > 8.6 ? 'oneUp' : 'calm', mouth: u > 8.6 ? 'smile' : 'line' });
+  if (u > 2.8 && u < 8.4 && p.hands) { const [hx, hy] = p.hands[1]; g.fillStyle = '#a8703f'; g.strokeStyle = INK; g.lineWidth = 3; g.beginPath(); g.rect(hx - 18, hy - 22, 36, 20); g.fill(); g.stroke(); }
+  if (u > 7) fire('laugh2', t);
+}
+function scene4(u, D, t) { // scorching summer, the governor's cry
+  const k = ease(seg(u, 2.6, 5.8)); const fx = 540, fy = lerp(2250, 1000, k), z = lerp(1.3, 1.0, k);
+  g.setTransform(1, 0, 0, 1, 0, 0); sky(g, [[0, '#3aa0ff'], [.5, '#bfe6ff'], [1, '#fff4d6']]); cam(fx, fy, z);
+  sky(g, [[0, '#3aa0ff'], [1, '#fff0c8']], 1080, 3200, -400);
+  const pulse = 1 + .05 * Math.sin(t * 6); sun(g, 850, 300, 120 * pulse, '#fffbe0', 'rgba(255,220,80,.8)');
+  // palace facade from the terrace down to the street
+  g.fillStyle = '#e2cfa8'; g.strokeStyle = INK; g.lineWidth = 6; g.fillRect(-100, 1180, 1300, 760); g.strokeRect(-100, 1180, 1300, 760);
+  g.strokeStyle = 'rgba(0,0,0,.18)'; g.lineWidth = 3; for (let y = 1220; y < 1940; y += 46) { g.beginPath(); g.moveTo(-100, y); g.lineTo(1200, y); g.stroke(); }
+  for (const wx of [150, 420, 690, 960]) for (const wy of [1300, 1580]) { g.fillStyle = '#3a2a1e'; g.strokeStyle = INK; g.lineWidth = 5; g.beginPath(); g.moveTo(wx - 45, wy + 120); g.lineTo(wx - 45, wy + 40); g.arc(wx, wy + 40, 45, Math.PI, TAU); g.lineTo(wx + 45, wy + 120); g.closePath(); g.fill(); g.stroke(); g.fillStyle = '#2f6fd1'; g.fillRect(wx - 50, wy + 120, 100, 14); }
+  // palace terrace (upper world)
+  g.fillStyle = '#e9dcc5'; g.strokeStyle = INK; g.lineWidth = 6; g.fillRect(-100, 1110, 1300, 60); g.strokeRect(-100, 1110, 1300, 60);
+  for (const cx of [90, 330, 750, 990]) { g.fillStyle = '#f4ecdc'; g.fillRect(cx - 30, 560, 60, 550); g.strokeRect(cx - 30, 560, 60, 550); g.fillStyle = '#2f6fd1'; g.fillRect(cx - 40, 540, 80, 30); g.strokeRect(cx - 40, 540, 80, 30); }
+  g.fillStyle = '#8e2a6b'; g.beginPath(); g.moveTo(120, 560); g.quadraticCurveTo(200, 800, 150, 1100); g.lineTo(60, 1100); g.lineTo(60, 560); g.fill(); g.beginPath(); g.moveTo(960, 560); g.quadraticCurveTo(880, 800, 930, 1100); g.lineTo(1020, 1100); g.lineTo(1020, 560); g.fill();
+  for (let i = 0; i < 12; i++) { g.fillStyle = i % 2 ? '#2f6fd1' : '#f2c230'; g.fillRect(-100 + i * 110, 1170, 110, 20); }
+  g.fillStyle = '#7a4a22'; g.fillRect(640, 1040, 180, 18); g.fillRect(660, 1058, 14, 52); g.fillRect(786, 1058, 14, 52);
+  // the cup: on the table, then thrown
+  const thr = seg(u, 7.6, 8.6);
+  if (thr === 0) { g.fillStyle = '#ffd23b'; g.strokeStyle = INK; g.lineWidth = 4; g.beginPath(); g.moveTo(712, 1040); g.lineTo(748, 1040); g.lineTo(742, 1005); g.lineTo(718, 1005); g.closePath(); g.fill(); g.stroke(); }
+  else { const cx = lerp(600, 1150, thr), cy = 900 - Math.sin(thr * Math.PI) * 260 + thr * 200; g.save(); g.translate(cx, cy); g.rotate(thr * 12); g.fillStyle = '#ffd23b'; g.strokeStyle = INK; g.lineWidth = 4; g.beginPath(); g.moveTo(-18, 18); g.lineTo(18, 18); g.lineTo(12, -18); g.lineTo(-12, -18); g.closePath(); g.fill(); g.stroke(); g.restore(); fire('clang', t); }
+  const shouting = u > 7.6, fanning = u > 3 && u < 7.6;
+  const p = drawChar(g, S.governor, { x: 470, y: 1110, armR: fanning ? 2.2 + .35 * Math.sin(t * 14) : (shouting ? 2.7 : .4), armL: shouting ? 2.7 : (u > 7.2 ? 1.6 : .3), brows: shouting ? 'angry' : 'sad', eyes: shouting ? 'wide' : 'dot', mouth: 'frown', talk: talkAt(t, shouting), tilt: shouting ? -.08 : Math.sin(t * 2) * .04 });
+  if (fanning && p.hands) { const [hx, hy] = p.hands[1]; g.save(); g.translate(hx, hy); g.rotate(-.6 + .35 * Math.sin(t * 14)); g.fillStyle = '#3fae49'; g.strokeStyle = INK; g.lineWidth = 3; g.beginPath(); g.moveTo(0, 0); g.quadraticCurveTo(-60, -90, 0, -130); g.quadraticCurveTo(60, -90, 0, 0); g.fill(); g.stroke(); g.restore(); }
+  for (let i = 0; i < 5; i++) { const ph = (u * 1.3 + i / 5) % 1; g.fillStyle = `rgba(80,170,255,${1 - ph})`; g.beginPath(); g.ellipse(470 + (i - 2) * 30 + (i - 2) * ph * 60, 820 - ph * -120, 6, 10, 0, 0, TAU); g.fill(); }
+  // ground + dry well (lower world)
+  g.fillStyle = '#f0c27a'; g.fillRect(-500, 1900, 2100, 1800);
+  g.strokeStyle = 'rgba(120,70,20,.6)'; g.lineWidth = 4; for (let i = 0; i < 14; i++) { const x = 200 + (i * 97) % 700, y = 2280 + (i * 53) % 220; g.beginPath(); g.moveTo(x, y); g.lineTo(x + 40, y + 20); g.lineTo(x + 70, y + 5); g.stroke(); }
+  palm(g, 120, 1930, 300, .4, .9);
+  g.fillStyle = '#9a9187'; g.strokeStyle = INK; g.lineWidth = 6; g.beginPath(); g.roundRect(390, 2160, 300, 150, 10); g.fill(); g.stroke();
+  for (let r = 0; r < 3; r++) for (let c = 0; c < 5; c++) { g.strokeRect(390 + c * 60 + (r % 2) * 30, 2160 + r * 50, 60, 50); }
+  g.strokeStyle = '#6b4423'; g.lineWidth = 10; g.beginPath(); g.moveTo(410, 2160); g.lineTo(410, 1960); g.lineTo(670, 1960); g.lineTo(670, 2160); g.stroke();
+  const by = lerp(2150, 2020, ease(seg(u, .2, 2))); g.strokeStyle = '#8a6a3a'; g.lineWidth = 3; g.beginPath(); g.moveTo(540, 1960); g.lineTo(540, by); g.stroke();
+  g.fillStyle = '#7a5530'; g.strokeStyle = INK; g.lineWidth = 4; g.beginPath(); g.moveTo(510, by); g.lineTo(570, by); g.lineTo(560, by + 50); g.lineTo(520, by + 50); g.closePath(); g.fill(); g.stroke();
+  for (let i = 0; i < 8; i++) { const ph = (u * 1.7 + i / 8) % 1; g.fillStyle = `rgba(160,120,70,${.8 * (1 - ph)})`; g.beginPath(); g.arc(525 + (i * 7) % 30, by + 55 + ph * 80, 4, 0, TAU); g.fill(); }
+  // heat haze
+  g.strokeStyle = 'rgba(255,255,255,.35)'; g.lineWidth = 4; for (let i = 0; i < 10; i++) { const y = 1900 - ((u * 120 + i * 140) % 1400); g.beginPath(); for (let x = -100; x < 1200; x += 30) g.lineTo(x, y + Math.sin(x * .03 + t * 4 + i) * 8); g.stroke(); }
+  if (u > .1) fire('heat', t); if (u > 7.6) fire('shout', t);
+}
+function iceHouse(withDoor, doorOpen, glow) {
+  g.fillStyle = '#a8703f'; g.strokeStyle = INK; g.lineWidth = 6; g.beginPath(); g.moveTo(330, 1200); g.quadraticCurveTo(330, 820, 540, 805); g.quadraticCurveTo(750, 820, 750, 1200); g.closePath(); g.fill(); g.stroke();
+  g.strokeStyle = 'rgba(0,0,0,.28)'; g.lineWidth = 3; for (let r = 1; r < 10; r++) { const y = 1200 - r * 38; g.beginPath(); g.moveTo(320, y); g.lineTo(760, y); g.stroke(); }
+  g.fillStyle = '#b57a46'; g.strokeStyle = INK; g.lineWidth = 6; g.fillRect(790, 760, 90, 440); g.strokeRect(790, 760, 90, 440); g.fillRect(772, 730, 126, 32); g.strokeRect(772, 730, 126, 32);
+  if (withDoor) { g.fillStyle = '#1a2a3a'; g.beginPath(); g.roundRect(480, 1040, 120, 160, [60, 60, 0, 0]); g.fill();
+    if (glow > 0) { for (const [x, y] of [[515, 1170], [565, 1172], [540, 1130]]) iceBlock(g, x, y, 48, 30, glow); }
+    g.save(); g.translate(480, 1040); g.scale(1 - doorOpen * .92, 1); g.fillStyle = '#7a4a22'; g.strokeStyle = INK; g.lineWidth = 5; g.beginPath(); g.roundRect(0, 0, 120, 160, [60, 60, 0, 0]); g.fill(); g.stroke(); g.fillStyle = '#f2c230'; g.beginPath(); g.arc(98, 90, 7, 0, TAU); g.fill(); g.restore(); }
+}
+function desertHot() { g.setTransform(1, 0, 0, 1, 0, 0); sky(g, [[0, '#4aa8ff'], [.6, '#cdeaff'], [1, '#ffe9b8']]); }
+const MIST = Array.from({ length: 60 }, (_, i) => [R(), R(), R()]);
+function scene5(u, D, t) { // the door opens
+  let fx = 540, fy = 1120, z = 1.6;
+  if (u > 3) { const k = ease(seg(u, 3, 4.4)); z = lerp(1.6, 1.0, k); fy = lerp(1120, 1000, k); }
+  if (u > 7) { const k = ease(seg(u, 7, 8.2)); z = lerp(1.0, 1.35, k); fx = lerp(540, 470, k); fy = lerp(1000, 1060, k); }
+  desertHot(); cam(fx, fy, z); sun(g, 900, 420, 90, '#fffbe0', 'rgba(255,220,80,.7)'); dunes(g, 1090, ['#e8c27e', '#efcf92']);
+  const open = ease(seg(u, .4, 1.6)); iceHouse(true, open, seg(u, 1.2, 2.5));
+  if (open > 0) fire('door', t);
+  // cold mist pouring out
+  if (u > .9) { fire('mist', t); for (const [a, b, c] of MIST) { const ph = ((u - .9) * .45 + a) % 1, x = 540 + (b - .5) * 80 + (b - .5) * ph * 700, y = 1150 + ph * 120 - c * 40; g.fillStyle = `rgba(240,250,255,${.55 * (1 - ph) * clamp((u - .9) * 2)})`; g.beginPath(); g.arc(x, y, 18 + ph * 60, 0, TAU); g.fill(); } }
+  const shocked = u > 3.2;
+  for (let i = 0; i < 6; i++) { const side = i < 3 ? -1 : 1, x = side < 0 ? 40 + i * 70 : 870 + (i - 3) * 70; drawChar(g, extraSpec(i), { x, y: 1260, s: .7, eyes: shocked ? 'wide' : 'dot', brows: shocked ? 'up' : 'calm', mouth: shocked ? 'o' : 'line', look: side * -.4 }); }
+  drawChar(g, S.abu, { x: 250, y: 1320, eyes: shocked ? 'wide' : 'dot', brows: shocked ? 'up' : 'oneUp', mouth: shocked ? 'open' : 'smile', look: .4, armL: shocked ? 1.0 : .3, armR: shocked ? 1.0 : .3 });
+  const pay = seg(u, 7.2, 9.6);
+  const sp = drawChar(g, S.saleem, { x: 470, y: 1320, armL: pay > 0 ? 1.3 : (u < 1.6 ? 1.4 : .3), armR: pay > 0 ? 1.3 : .3, look: pay > 0 ? .45 : -.2, brows: 'calm', mouth: 'smile' });
+  const gp = drawChar(g, S.governor, { x: 790, y: 1320, armL: pay > 0 ? 1.2 : .3, armR: pay > 0 ? 1.1 : .3, eyes: u > 4 ? 'wide' : 'dot', brows: 'up', mouth: u > 4 ? 'smile' : 'o', look: -.5 });
+  // gold chest beside the governor
+  g.fillStyle = '#7a4a22'; g.strokeStyle = INK; g.lineWidth = 5; g.beginPath(); g.roundRect(890, 1250, 120, 70, 8); g.fill(); g.stroke(); for (let i = 0; i < 6; i++) coin(g, 905 + i * 18, 1248, 11, i);
+  if (pay > 0 && sp.hands && gp.hands) { fire('coins', t); const [tx, ty] = sp.hands[1], [ox, oy] = gp.hands[0];
+    for (let i = 0; i < 14; i++) { const ph = (pay * 3 + i / 14) % 1; coin(g, lerp(ox, tx, ph), lerp(oy, ty, ph) - Math.sin(ph * Math.PI) * 120, 11, t * 8 + i); }
+    const pile = Math.floor(pay * 10); for (let i = 0; i < pile; i++) coin(g, tx - 18 + (i % 4) * 12, ty - 8 - Math.floor(i / 4) * 9, 11, i); }
+}
+function scene6(u, D, t) { // cross-section explanation, then the mocker pays
+  const mix = ease(seg(u, 6.0, 6.7));
+  if (mix < 1) {
+    const z = lerp(1.0, 1.18, seg(u, 0, 6)), fy = lerp(1000, 960, seg(u, 0, 6));
+    g.setTransform(1, 0, 0, 1, 0, 0); sky(g, [[0, '#4aa8ff'], [1, '#ffe9b8']]); cam(560, fy, z);
+    sun(g, 170, 430, 85, '#fffbe0', 'rgba(255,220,80,.7)');
+    // cut-away earth
+    g.fillStyle = '#c99a5a'; g.fillRect(-300, 1200, 1700, 900); g.fillStyle = '#b5864a'; g.fillRect(-300, 1330, 1700, 60); g.fillStyle = '#a3763f'; g.fillRect(-300, 1470, 1700, 70);
+    g.strokeStyle = INK; g.lineWidth = 6; g.beginPath(); g.moveTo(-300, 1200); g.lineTo(1400, 1200); g.stroke();
+    // pit section with straw + ice
+    g.fillStyle = '#e3b84f'; g.beginPath(); g.roundRect(360, 1200, 360, 330, [0, 0, 30, 30]); g.fill(); g.stroke();
+    for (let i = 0; i < 60; i++) { const x = 370 + (i * 41) % 340, y = 1210 + (i * 29) % 310; g.strokeStyle = i % 2 ? '#c99a2e' : '#f0d27a'; g.lineWidth = 4; g.beginPath(); g.moveTo(x, y); g.lineTo(x + 22, y + 4); g.stroke(); }
+    for (let r = 0; r < 3; r++) for (let c = 0; c < 4; c++) iceBlock(g, 425 + c * 77, 1290 + r * 70, 66, 52, .4 + .3 * Math.sin(t * 3 + r + c));
+    // cool mist trapped
+    for (let i = 0; i < 14; i++) { const a = t * .8 + i, x = 540 + Math.cos(a) * 140, y = 1360 + Math.sin(a * 1.3) * 110; g.fillStyle = 'rgba(200,240,255,.35)'; g.beginPath(); g.arc(x, y, 22, 0, TAU); g.fill(); }
+    // dome cut in half (thick wall) and tower with hollow core
+    g.fillStyle = '#a8703f'; g.strokeStyle = INK; g.lineWidth = 6; g.beginPath(); g.moveTo(320, 1200); g.quadraticCurveTo(320, 830, 540, 815); g.quadraticCurveTo(760, 830, 760, 1200); g.lineTo(700, 1200); g.quadraticCurveTo(700, 890, 540, 880); g.quadraticCurveTo(380, 890, 380, 1200); g.closePath(); g.fill(); g.stroke();
+    g.fillStyle = '#b57a46'; g.fillRect(800, 700, 100, 500); g.strokeRect(800, 700, 100, 500); g.fillStyle = '#5a3a1e'; g.fillRect(825, 700, 50, 500);
+    g.strokeStyle = INK; g.lineWidth = 6; g.beginPath(); g.moveTo(700, 1180); g.lineTo(825, 1180); g.stroke();
+    // heat rays bouncing off the dome
+    const ray = seg(u, .3, 3.2); g.lineCap = 'round';
+    for (let i = 0; i < 4; i++) { const ph = (u * .7 + i / 4) % 1, sx = 230, sy = 500, ex = 400 + i * 90, ey = 860 + i * 10; g.strokeStyle = `rgba(255,120,30,${(1 - ph) * ray})`; g.lineWidth = 8;
+      g.beginPath(); for (let k = 0; k <= 20; k++) { const q = k / 20 * Math.min(1, ph * 2); const x = lerp(sx, ex, q), y = lerp(sy, ey, q) + Math.sin(q * 20) * 8; k ? g.lineTo(x, y) : g.moveTo(x, y); } g.stroke();
+      if (ph > .5) { const q = (ph - .5) * 2; g.beginPath(); g.moveTo(ex, ey); g.lineTo(ex - 120 * q, ey - 160 * q); g.stroke(); } }
+    // hot air leaving through the tower
+    const up = seg(u, 3, 6);
+    for (let i = 0; i < 9; i++) { const ph = (u * .6 + i / 9) % 1; g.fillStyle = `rgba(255,140,60,${.7 * (1 - ph) * up})`; g.beginPath(); g.arc(850 + Math.sin(ph * 9 + i) * 12, 1150 - ph * 560, 14 + ph * 10, 0, TAU); g.fill(); }
+    if (u > .3) fire('whoosh', t);
+  }
+  if (mix > 0) {
+    g.globalAlpha = mix; desertHot(); const z = lerp(1.15, 1.25, seg(u, 6.4, 10)); cam(540, 1080, z);
+    sun(g, 900, 420, 90, '#fffbe0', 'rgba(255,220,80,.7)'); dunes(g, 1090, ['#e8c27e', '#efcf92']); iceHouse(true, 1, .6);
+    const handOver = seg(u, 6.8, 8.0);
+    const sp = drawChar(g, S.saleem, { x: 640, y: 1330, armL: 1.2, armR: .3, look: -.3, eyes: u > 8.4 ? 'wink' : 'dot', brows: u > 8.4 ? 'oneUp' : 'calm', mouth: 'smile' });
+    const ap = drawChar(g, S.abu, { x: 380, y: 1330, armR: lerp(.3, 1.35, handOver), armL: u > 8 ? 1.4 : .3, brows: 'sad', mouth: 'frown', look: .35, tilt: .08 });
+    if (sp.hands && ap.hands) { const [ax, ay] = ap.hands[1], [sx, sy] = sp.hands[0];
+      if (handOver < 1) coin(g, lerp(ax, sx, handOver), lerp(ay, sy, handOver) - Math.sin(handOver * Math.PI) * 60, 13, t * 6); else { coin(g, sx, sy - 4, 13, 0); fire('coin1', t); }
+      if (u > 8) { const [cx, cy] = ap.hands[0]; g.fillStyle = '#ffd23b'; g.strokeStyle = INK; g.lineWidth = 4; g.beginPath(); g.moveTo(cx - 16, cy - 2); g.lineTo(cx + 16, cy - 2); g.lineTo(cx + 12, cy - 38); g.lineTo(cx - 12, cy - 38); g.closePath(); g.fill(); g.stroke(); iceBlock(g, cx, cy - 44, 22, 16, .5); } }
+    if (u > 8.4) fire('ding', t);
+    g.globalAlpha = 1;
+  }
+}
+const SCENES = [scene1, scene2, scene3, scene4, scene5, scene6];
+
+// ---------------- captions ----------------
+const font = (px, fam = 'Lalezar') => `${fam === 'Cairo' ? '900 ' : ''}${px}px '${fam}'`;
+function cap(s, y, px, col, fam, mw = 960) { g.font = font(px, fam); let w = g.measureText(s).width; if (w > mw) { px = Math.floor(px * mw / w); g.font = font(px, fam); }
+  g.textAlign = 'center'; g.textBaseline = 'middle'; g.direction = fam === 'Cairo' ? 'ltr' : 'rtl'; g.lineJoin = 'round'; g.lineWidth = px * .22; g.strokeStyle = '#000'; g.strokeText(s, 540, y); g.fillStyle = col; g.fillText(s, 540, y); }
+
+let f = 0;
+window.frame = function () {
+  const t = f / FPS; f++;
+  let i = CFG.sceneStarts.length - 1; while (i > 0 && t < CFG.sceneStarts[i]) i--;
+  const st = CFG.sceneStarts[i], en = i + 1 < CFG.sceneStarts.length ? CFG.sceneStarts[i + 1] : CFG.end;
+  g.save(); const uu = CFG.timeScale ? (t - st) * 10 / (en - st) : t - st; SCENES[i](uu, 10, t); g.restore(); g.setTransform(1, 0, 0, 1, 0, 0); g.globalAlpha = 1;
+  // quick white flash between scenes (Ricks-style snap cut)
+  const sinceCut = t - st; if (i > 0 && sinceCut < .12) { g.fillStyle = `rgba(255,255,255,${.5 * (1 - sinceCut / .12)})`; g.fillRect(0, 0, W, H); }
+  if (i > 0 && sinceCut < .02) fire('cut#' + i, t);
+  const c = CFG.captions.find(c => t >= c.t0 && t < c.t1);
+  if (c) { g.fillStyle = 'rgba(0,0,0,.35)'; g.beginPath(); g.roundRect(50, 1395, 980, 205, 30); g.fill();
+    cap(c.ar, 1455, 70, '#ffffff', 'Lalezar'); cap(c.en, 1545, 42, '#ffe14d', 'Cairo'); }
+  return { t, n: i + 1, state: 'run' };
+};
+window.getEvents = () => events;
+window.getInfo = () => ({ finaleT: CFG.end - 3.6, end: CFG.end });
+</script></body></html>

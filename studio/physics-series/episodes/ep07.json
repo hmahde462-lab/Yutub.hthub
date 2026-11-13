@@ -1,0 +1,4 @@
+{"id": "ep07", "template": "ball2.html", "mode": "axe",
+ "title": "3 فؤوس ضد كرة وحدة!", "partLabel": "الجزء 7", "hook": "بفأسين وصلنا 128... بثلاثة شكد؟",
+ "counterLabel": "كرة", "milestone": 200, "milestoneText": "تجاوزنا 200! 🔥", "endSub": "طلبتوها وسويناها! الفكرة الجاية منك",
+ "sim": {"seed": 1, "spin": 0.7, "g": 900, "axes": 3, "rMin": 6, "maxTime": 32}}

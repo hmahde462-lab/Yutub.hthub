@@ -1,0 +1,46 @@
+{
+ "id": "d06",
+ "template": "duel.html",
+ "title": "المثلث القاتل",
+ "partLabel": "قتال 6",
+ "hook": "3 كرات بمربع... وحدة بس تطلع حية",
+ "endSub": "توقعك صح؟ اكتبه",
+ "bg": [
+  "#10202e",
+  "#04080c"
+ ],
+ "floor": "#1a3040",
+ "fighters": [
+  {
+   "name": "قمقم",
+   "color": "#ffd23b"
+  },
+  {
+   "name": "دمدم",
+   "color": "#ff4b4b"
+  },
+  {
+   "name": "همهم",
+   "color": "#3b8bff"
+  }
+ ],
+ "sim": {
+  "seed": 26,
+  "dmgScale": 1.4,
+  "maxTime": 40,
+  "spawnEvery": 1.7,
+  "sides": 4,
+  "rot": 0,
+  "R": 470,
+  "pool": [
+   "sword",
+   "spear",
+   "saw",
+   "axe",
+   "heal",
+   "shield",
+   "bomb",
+   "speed"
+  ]
+ }
+}

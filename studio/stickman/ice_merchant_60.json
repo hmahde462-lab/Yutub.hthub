@@ -1,0 +1,123 @@
+{
+ "id": "ice_merchant_60",
+ "fps": 30,
+ "sceneStarts": [
+  0,
+  10,
+  20,
+  30,
+  40,
+  50
+ ],
+ "end": 60,
+ "captions": [
+  {
+   "t0": 0.4,
+   "t1": 3.711,
+   "ar": "في عز الشتاء… حفر سليم حفرة عميقة في الصحراء",
+   "en": "In the dead of winter… Saleem dug a deep pit in the desert"
+  },
+  {
+   "t0": 3.711,
+   "t1": 5.767,
+   "ar": "ودفن فيها الثلج… ثم ابتسم وقال:",
+   "en": "buried ice in it… then smiled and said:"
+  },
+  {
+   "t0": 5.767,
+   "t1": 9.85,
+   "ar": "في الصيف، سأبيع هذا بالذهب!",
+   "en": "\"In summer, I'll sell this for gold!\""
+  },
+  {
+   "t0": 10.4,
+   "t1": 13.789,
+   "ar": "ضحك تجار السوق حتى مالت عمائمهم",
+   "en": "The traders laughed so hard their turbans tilted"
+  },
+  {
+   "t0": 13.789,
+   "t1": 15.556,
+   "ar": "يا سليم! الثلج يذوب في كفك خلال دقيقة",
+   "en": "\"Saleem! Ice melts in your palm in a minute…\""
+  },
+  {
+   "t0": 15.556,
+   "t1": 19.85,
+   "ar": "فكيف يعيش شهورًا في الرمل؟",
+   "en": "\"…how will it last months in the sand?\""
+  },
+  {
+   "t0": 20.4,
+   "t1": 23.056,
+   "ar": "لم يرد سليم بكلمة… غطى الثلج بالقش",
+   "en": "Saleem said nothing… he covered the ice with straw"
+  },
+  {
+   "t0": 23.056,
+   "t1": 24.344,
+   "ar": "وبنى فوقه قبة سميكة من الطين",
+   "en": "built a thick mud dome over it"
+  },
+  {
+   "t0": 24.344,
+   "t1": 29.85,
+   "ar": "وبرجًا عاليًا يشبه المدخنة… والناس تضحك",
+   "en": "and a tall chimney-like tower… while people laughed"
+  },
+  {
+   "t0": 30.4,
+   "t1": 31.944,
+   "ar": "ثم جاء الصيف… حر يذيب الحجر",
+   "en": "Then summer came… heat that melts stone"
+  },
+  {
+   "t0": 31.944,
+   "t1": 33.822,
+   "ar": "جفت الآبار… وصاح الوالي في قصره:",
+   "en": "The wells ran dry… and the governor cried out:"
+  },
+  {
+   "t0": 33.822,
+   "t1": 39.85,
+   "ar": "من يأتني بشربة باردة، أعطه ما يشاء من الذهب!",
+   "en": "\"Whoever brings me a cold drink gets all the gold he wants!\""
+  },
+  {
+   "t0": 40.4,
+   "t1": 44.078,
+   "ar": "فتح سليم باب القبة… فخرج بخار أبيض بارد!",
+   "en": "Saleem opened the dome… and cold white mist poured out!"
+  },
+  {
+   "t0": 44.078,
+   "t1": 45.689,
+   "ar": "كان الثلج ما يزال صلبًا لامعًا",
+   "en": "The ice was still solid and shining"
+  },
+  {
+   "t0": 45.689,
+   "t1": 49.85,
+   "ar": "سكت السوق… وامتلأت يدا سليم بالذهب",
+   "en": "The market fell silent… and Saleem's hands filled with gold"
+  },
+  {
+   "t0": 50.4,
+   "t1": 54.7,
+   "ar": "السر؟ القش والطين السميك يمنعان حرارة الشمس",
+   "en": "The secret? Straw and thick mud block the sun's heat"
+  },
+  {
+   "t0": 54.7,
+   "t1": 56.833,
+   "ar": "والبرج يسحب الهواء الساخن… فيبقى البرد تحت الأرض",
+   "en": "The tower pulls hot air out… so the cold stays underground"
+  },
+  {
+   "t0": 56.833,
+   "t1": 59.85,
+   "ar": "ومن ضحك أولًا… دفع آخرًا!",
+   "en": "Whoever laughed first… paid last!"
+  }
+ ]
+}

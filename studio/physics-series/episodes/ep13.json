@@ -1,0 +1,35 @@
+{
+ "id": "ep13",
+ "partLabel": "الجزء 13",
+ "title": "المروحة القاتلة 🌀",
+ "hook": "4 شفرات داخل مثمن... شكد تصير؟",
+ "milestone": 100,
+ "milestoneText": "تجاوزنا 100! 🔥",
+ "endSub": "الجاي: بدون سلاح... الحيطان تقطع 🧱",
+ "bg": [
+  "#26101e",
+  "#10050c"
+ ],
+ "sim": {
+  "r0": 110,
+  "rMin": 8,
+  "container": {
+   "sides": 8,
+   "R": 440,
+   "rot": 0.39269908169872414,
+   "spin": 0
+  },
+  "cutters": [
+   {
+    "kind": "fan",
+    "len": 250,
+    "blades": 4,
+    "spin": 2.08
+   }
+  ],
+  "g": 700,
+  "maxTime": 30
+ },
+ "template": "arena.html",
+ "counterLabel": "كرة"
+}

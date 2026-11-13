@@ -1,0 +1,50 @@
+{
+ "id": "d01",
+ "template": "duel.html",
+ "title": "معركة البطوطات",
+ "partLabel": "قتال 1",
+ "hook": "منو تتوقع يفوز؟ اختار قبل لا تبدي!",
+ "endSub": "توقعك صح؟ اكتبه بالتعليقات",
+ "bg": [
+  "#1d1036",
+  "#07040f"
+ ],
+ "floor": "#24173f",
+ "fighters": [
+  {
+   "name": "الزلبوط",
+   "color": "#ff5a5a"
+  },
+  {
+   "name": "علبوط",
+   "color": "#4f9dff"
+  },
+  {
+   "name": "بلبوط",
+   "color": "#3fd17a"
+  },
+  {
+   "name": "بوط",
+   "color": "#ffd23b"
+  }
+ ],
+ "sim": {
+  "seed": 9,
+  "dmgScale": 1.4,
+  "maxTime": 40,
+  "spawnEvery": 1.7,
+  "R": 430,
+  "pool": [
+   "sword",
+   "knife",
+   "axe",
+   "hammer",
+   "spear",
+   "saw",
+   "heal",
+   "shield",
+   "bomb",
+   "speed"
+  ]
+ }
+}

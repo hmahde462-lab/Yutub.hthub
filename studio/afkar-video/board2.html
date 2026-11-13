@@ -1,0 +1,96 @@
+<!doctype html><html lang="ar" dir="rtl"><head><meta charset="utf-8">
+<link rel="stylesheet" href="fonts/fonts.css">
+<style>
+html,body{margin:0;background:#fff}
+#stage{position:relative;width:1080px;height:1920px;overflow:hidden;background:#fbfbf8}
+#world{position:absolute;inset:0}
+#hand{position:absolute;left:0;top:0;width:10px;height:10px;overflow:visible;filter:drop-shadow(10px 16px 12px rgba(0,0,0,.22))}
+#vig{position:absolute;inset:0;pointer-events:none;background:radial-gradient(ellipse at 50% 45%,rgba(0,0,0,0) 55%,rgba(0,0,0,.07) 100%)}
+#dots{position:absolute;top:150px;left:50%;transform:translateX(-50%);display:flex;gap:26px;direction:rtl}
+#dots i{width:30px;height:30px;border-radius:50%;border:5px solid #1d1d1f;box-sizing:border-box;transition:none}
+#dots i.on{background:#ff5a36;border-color:#ff5a36}
+#brand{position:absolute;top:70px;left:50%;transform:translateX(-50%);font-family:'Cairo';font-weight:900;font-size:40px;color:#9a9a96;white-space:nowrap}
+</style></head><body>
+<div id="stage">
+ <svg id="world" viewBox="0 0 1080 1920">
+  <defs><filter id="grain"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="7"/><feColorMatrix values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 .05 0"/></filter></defs>
+  <rect width="1080" height="1920" filter="url(#grain)"/>
+  <g id="cam"></g>
+ </svg>
+ <div id="vig"></div>
+ <div id="brand">أفكار غريبة</div><div id="dots"></div>
+ <svg id="hand" viewBox="0 0 10 10"><g transform="rotate(-40)">
+   <path d="M30 175 Q90 150 160 180 L230 520 L60 540 Z" fill="#3a6fd8" stroke="#22408a" stroke-width="4"/>
+   <path d="M40 300 L215 285" stroke="#22408a" stroke-width="5" fill="none"/>
+   <path d="M20 160 Q40 120 85 115 Q150 115 160 190 Q165 260 110 300 Q60 320 35 280 Z" fill="#f4c9a3" stroke="#9a6440" stroke-width="4"/>
+   <rect x="-38" y="112" width="96" height="36" rx="18" transform="rotate(14 10 130)" fill="#f4c9a3" stroke="#9a6440" stroke-width="4"/>
+   <rect x="-30" y="148" width="92" height="34" rx="17" transform="rotate(10 16 165)" fill="#f4c9a3" stroke="#9a6440" stroke-width="4"/>
+   <path d="M0 0 L-9 30 L9 30 Z" fill="#1d1d1f"/>
+   <rect x="-16" y="28" width="32" height="44" rx="5" fill="#2b2b2e"/>
+   <rect x="-19" y="70" width="38" height="190" rx="12" fill="#e9483b" stroke="#9e2a20" stroke-width="3"/>
+   <rect x="-19" y="150" width="38" height="20" fill="#fff" opacity=".85"/>
+   <rect x="-22" y="255" width="44" height="40" rx="10" fill="#1d1d1f"/>
+   <path d="M-34 52 Q-10 36 30 50 Q62 64 58 86 Q52 102 20 96 Q-12 90 -34 80 Q-48 66 -34 52 Z" fill="#f4c9a3" stroke="#9a6440" stroke-width="4"/>
+   <path d="M-26 70 Q-40 120 -20 160 Q-6 178 12 164 Q24 140 18 96" fill="#f4c9a3" stroke="#9a6440" stroke-width="4"/>
+   <path d="M30 58 Q40 64 42 76" fill="none" stroke="#d9a07a" stroke-width="3"/>
+ </g></svg>
+</div>
+<script>
+const DATA=__DATA__;const {SCENES,C}=DATA;const NS="http://www.w3.org/2000/svg";const W=1080,H=1920;
+const cam=document.getElementById('cam'),hand=document.getElementById('hand'),dots=document.getElementById('dots');
+for(let i=0;i<5;i++)dots.appendChild(document.createElement('i'));
+const OFF=SCENES.map((s,i)=>({x:-i*1320,y:(i%2)*260}));
+const mk=(tag,attrs,parent)=>{const e=document.createElementNS(NS,tag);for(const k in attrs)e.setAttribute(k,attrs[k]);parent&&parent.appendChild(e);return e};
+const built=SCENES.map((sc,si)=>{const g=mk('g',{transform:`translate(${OFF[si].x},${OFF[si].y})`},cam);
+ const els=sc.els.map(e=>{
+  if(e.p){const fill=e.f?mk('path',{d:e.p,fill:e.f,stroke:'none'},g):null;
+    const sk=mk('path',{d:e.p,fill:'none',stroke:e.c||'#1d1d1f','stroke-width':(e.w||8)*.55,'stroke-linecap':'round','stroke-linejoin':'round',opacity:.28,transform:'translate(3,2)'},g);
+    const st=mk('path',{d:e.p,fill:'none',stroke:e.c||'#1d1d1f','stroke-width':e.w||8,'stroke-linecap':'round','stroke-linejoin':'round'},g);
+    if(e.dash)st.setAttribute('stroke-dasharray','2 22');
+    return {...e,kind:'p',fill,sk,st,L:st.getTotalLength()}}
+  const tg=mk('g',{},g);const ox=e.x-e.width/2;
+  if(e.rot)tg.setAttribute('transform',`rotate(${e.rot} ${e.x} ${e.y-e.s*.35})`);
+  const glyphs=e.glyphs.map(gl=>{const p=mk('path',{d:gl.d,fill:e.c,'fill-opacity':0,stroke:e.stroke||e.c,'stroke-width':2.6,'vector-effect':'non-scaling-stroke','stroke-linejoin':'round',
+     transform:`translate(${ox+gl.x},${e.y+gl.y}) scale(${e.sc},${-e.sc})`},tg);return {p,L:p.getTotalLength(),gx:ox+gl.x,gy:e.y+gl.y}});
+  return {...e,kind:'t',glyphs}});
+ return {sc,els}});
+let TIMES=null;window.setTimes=t=>TIMES=t;
+const clamp=v=>v<0?0:v>1?1:v, ease=x=>{x=clamp(x);return x<.5?4*x*x*x:1-Math.pow(-2*x+2,3)/2};
+const handPos={x:1350,y:2300};let prevHand=null;
+function camAt(t){const n=TIMES.length;let i=TIMES.findIndex(s=>t>=s.start&&t<s.end);if(i<0)i=n-1;
+ const z=(k,tt)=>1+0.045*clamp((tt-TIMES[k].start)/(TIMES[k].end-TIMES[k].start));
+ const c=k=>({x:OFF[k].x+540,y:OFF[k].y+960});const h=.42;
+ // transition into scene i (from i-1) or out to i+1
+ let a=null,b=null,u=0;
+ if(i>0&&t<TIMES[i].start+h){a=i-1;b=i;u=(t-(TIMES[i].start-h))/(2*h)}
+ else if(i<n-1&&t>TIMES[i].end-h){a=i;b=i+1;u=(t-(TIMES[i].end-h))/(2*h)}
+ if(a===null){const p=c(i);return {x:p.x,y:p.y,s:z(i,t),moving:0}}
+ const e=ease(u),pa=c(a),pb=c(b),s=(z(a,TIMES[a].end)*(1-e)+1*e)*(1-0.22*Math.sin(Math.PI*clamp(u)));
+ return {x:pa.x+(pb.x-pa.x)*e,y:pa.y+(pb.y-pa.y)*e,s,moving:Math.sin(Math.PI*clamp(u))}}
+window.renderAt=function(t){const cm=camAt(t);
+ cam.setAttribute('transform',`translate(540 960) scale(${cm.s}) translate(${-cm.x} ${-cm.y})`);
+ let pen=null;
+ built.forEach((b,si)=>{const {start,end}=TIMES[si],D=end-start,lt=t-start;
+  b.els.forEach(e=>{const a=e.t0*D,z=e.t1*D;const p=e.pre?1:clamp((lt-a)/Math.max(.05,z-a));
+   if(e.kind==='p'){const show=p>0;
+     for(const el of [e.st,e.sk]){el.style.visibility=show?'visible':'hidden';if(!e.dash){el.style.strokeDasharray=`${e.L} ${e.L}`;el.style.strokeDashoffset=e.L*(1-p)}}
+     if(e.dash){e.st.style.opacity=p;e.sk.style.opacity=.28*p}
+     if(e.fill)e.fill.style.opacity=e.pre?1:clamp((lt-z)/.35);
+     if(p>0&&p<1){const pt=e.st.getPointAtLength(e.L*p);pen={x:OFF[si].x+pt.x,y:OFF[si].y+pt.y}}}
+   else{const n=e.glyphs.length;e.glyphs.forEach((g,gi)=>{
+      const ws=a+(z-a)*.82*gi/n, wd=(z-a)*.82/n*1.7+.08; const q=e.pre?1:clamp((lt-ws)/wd);
+      const qo=clamp(q/.72);g.p.style.visibility=q>0?'visible':'hidden';
+      g.p.style.strokeDasharray=`${g.L} ${g.L}`;g.p.style.strokeDashoffset=g.L*(1-qo);g.p.style.fillOpacity=clamp((q-.45)/.55);
+      if(q>0&&q<.72){const pt=g.p.getPointAtLength(g.L*qo);let X=g.gx+pt.x*e.sc,Y=g.gy-pt.y*e.sc;pen={x:OFF[si].x+X,y:OFF[si].y+Y}}})}
+  });
+  if(t>=start&&t<end){[...dots.children].forEach((d,i)=>d.className=(b.sc.q?i<b.sc.q:si>0)?'on':'')}
+ });
+ let target,k;
+ if(pen&&cm.moving<.3){target={x:540+cm.s*(pen.x-cm.x),y:960+cm.s*(pen.y-cm.y)};k=.5}else{target={x:1350,y:2300};k=.14}
+ handPos.x+=(target.x-handPos.x)*k;handPos.y+=(target.y-handPos.y)*k;
+ hand.style.transform=`translate(${handPos.x}px,${handPos.y}px)`;
+ const sp=prevHand?Math.hypot(handPos.x-prevHand.x,handPos.y-prevHand.y):0;prevHand={...handPos};
+ return {drawing:!!pen&&cm.moving<.3,speed:sp,whoosh:cm.moving};
+};
+window.resetHand=(x,y)=>{handPos.x=x;handPos.y=y;prevHand=null};
+</script></body></html>

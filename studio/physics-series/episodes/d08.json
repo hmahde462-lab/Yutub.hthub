@@ -1,0 +1,45 @@
+{
+ "id": "d08",
+ "template": "duel.html",
+ "title": "الثأر!",
+ "partLabel": "قتال 8",
+ "hook": "علبوط رجع ينتقم من بلبوط!",
+ "endSub": "نجح الثأر؟ اكتب رأيك",
+ "bg": [
+  "#2a0e1a",
+  "#0c0408"
+ ],
+ "floor": "#3a1426",
+ "fighters": [
+  {
+   "name": "علبوط",
+   "color": "#4f9dff"
+  },
+  {
+   "name": "بلبوط",
+   "color": "#3fd17a"
+  }
+ ],
+ "sim": {
+  "seed": 22,
+  "dmgScale": 1.8,
+  "maxTime": 40,
+  "spawnEvery": 1.7,
+  "sides": 6,
+  "rot": 0.5235987755982988,
+  "R": 440,
+  "r": 60,
+  "pool": [
+   "sword",
+   "knife",
+   "axe",
+   "hammer",
+   "spear",
+   "saw",
+   "heal",
+   "shield",
+   "bomb",
+   "speed"
+  ]
+ }
+}

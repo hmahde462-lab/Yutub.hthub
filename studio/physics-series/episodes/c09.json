@@ -1,0 +1,42 @@
+{
+ "id": "c09",
+ "partLabel": "تقطيع 9",
+ "title": "ليزر متقاطع ➕",
+ "hook": "ليزرين متقاطعين داخل مسدس يدور!",
+ "milestone": 100,
+ "milestoneText": "تجاوزنا 100! 🔥",
+ "endSub": "الجزء الجاي: الزعيم الأخير 👑",
+ "bg": [
+  "#1a0e2a",
+  "#08040f"
+ ],
+ "laserClip": true,
+ "sim": {
+  "r0": 110,
+  "rMin": 8,
+  "container": {
+   "sides": 6,
+   "R": 440,
+   "rot": 0,
+   "spin": -0.2683281572999747
+  },
+  "cutters": [
+   {
+    "kind": "laser",
+    "len": 440,
+    "spin": 0.7200000000000001,
+    "phase": 0
+   },
+   {
+    "kind": "laser",
+    "len": 440,
+    "spin": 0.7200000000000001,
+    "phase": 1.5707963267948966
+   }
+  ],
+  "g": 1100,
+  "maxTime": 24.5
+ },
+ "template": "arena.html",
+ "counterLabel": "كرة"
+}

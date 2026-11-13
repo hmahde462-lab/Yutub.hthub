@@ -1,0 +1,25 @@
+{% extends "base.html" %}{% block content %}
+<div class="card">
+  <div class="row" style="justify-content:space-between"><h2 style="margin:0">القنوات المربوطة</h2>
+  <a class="btn" href="/channels/connect">+ ربط قناة</a></div>
+  <p class="muted">كل قناة لها صلاحية مستقلة ومشفّرة. يمكنك ربط قنوات من حسابات Google مختلفة.</p>
+  {% if channels %}
+  <table>
+  {% for c in channels %}
+    <tr>
+      <td>{% if c.thumbnail_url %}<img class="thumb" src="{{ c.thumbnail_url }}" alt="">{% endif %} <b>{{ c.title }}</b><br><span class="muted">{{ c.custom_url or '' }} · {{ c.channel_id }}</span></td>
+      <td><a class="btn secondary" href="/channels/{{ c.channel_id }}/stats">الإحصائيات</a></td>
+      <td><form method="post" action="/channels/{{ c.channel_id }}/remove" onsubmit="return confirm('فصل القناة {{ c.title }}؟')"><button class="secondary">فصل</button></form></td>
+    </tr>
+  {% endfor %}
+  </table>
+  {% else %}<p>لا توجد قنوات بعد.</p>{% endif %}
+</div>
+<div class="card"><h3 style="margin-top:0">آخر العمليات</h3>
+  {% if jobs %}<table><tr><th>#</th><th>القناة</th><th>النوع</th><th>الوضع</th><th>الحالة</th><th>الفيديو</th></tr>
+  {% for j in jobs %}<tr><td>{{ j.id }}</td><td>{{ j.channel_id }}</td><td>{{ j.video_kind }}</td>
+    <td>{{ 'تجربة' if j.mode == 'dry_run' else 'فعلي' }}</td><td>{{ j.status }}</td>
+    <td>{% if j.youtube_video_id %}<a href="https://youtu.be/{{ j.youtube_video_id }}">{{ j.youtube_video_id }}</a>{% endif %}</td></tr>{% endfor %}
+  </table>{% else %}<p class="muted">لا شيء بعد.</p>{% endif %}
+</div>
+{% endblock %}

@@ -1,0 +1,47 @@
+{
+ "id": "ep16",
+ "partLabel": "الجزء 16",
+ "title": "3 مناشير 🪚🪚🪚",
+ "hook": "3 مناشير بثلاث مدارات... شكد تصير؟",
+ "milestone": 200,
+ "milestoneText": "تجاوزنا 200! 🔥",
+ "endSub": "الجاي: ليزر متقاطع ➕",
+ "bg": [
+  "#2a2410",
+  "#100c04"
+ ],
+ "sim": {
+  "r0": 115,
+  "rMin": 6,
+  "container": {
+   "sides": 0,
+   "R": 430
+  },
+  "cutters": [
+   {
+    "kind": "saw",
+    "orbit": 120,
+    "rad": 42,
+    "spin": 4
+   },
+   {
+    "kind": "saw",
+    "orbit": 230,
+    "rad": 52,
+    "spin": -2.8,
+    "phase": 2
+   },
+   {
+    "kind": "saw",
+    "orbit": 368,
+    "rad": 50,
+    "spin": 2,
+    "phase": 4
+   }
+  ],
+  "g": 900,
+  "maxTime": 24.5
+ },
+ "template": "arena.html",
+ "counterLabel": "كرة"
+}

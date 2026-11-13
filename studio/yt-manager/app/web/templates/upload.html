@@ -1,0 +1,23 @@
+{% extends "base.html" %}{% block content %}
+<form class="card" method="post" action="/upload" enctype="multipart/form-data">
+  <h2 style="margin-top:0">رفع فيديو</h2>
+  <p class="muted">الخطوة الأولى دائماً معاينة تجريبية. لن يُرسل شيء إلى YouTube قبل التأكيد.</p>
+  <label>القناة *</label>
+  <select name="channel_id" required>
+    <option value="" selected disabled>— اختر القناة —</option>
+    {% for c in channels %}<option value="{{ c.channel_id }}">{{ c.title }} ({{ c.custom_url or c.channel_id }})</option>{% endfor %}
+  </select>
+  <label>نوع الفيديو *</label>
+  <select name="kind" required><option value="" selected disabled>— اختر —</option><option value="short">Short (عمودي/مربع، ≤ 3 دقائق)</option><option value="long">فيديو طويل</option></select>
+  <label>الملف *</label><input type="file" name="file" accept="video/*" required>
+  <label>العنوان * <span class="muted">(100 حرف كحد أقصى)</span></label><input name="title" maxlength="100" required>
+  <label>الوصف</label><textarea name="description" rows="6"></textarea>
+  <label>الكلمات المفتاحية <span class="muted">(مفصولة بفواصل، المجموع ≤ 500 حرف)</span></label><input name="tags">
+  <label>الهاشتاغات <span class="muted">(مفصولة بفواصل، تُضاف لنهاية الوصف)</span></label><input name="hashtags">
+  <label>الخصوصية</label>
+  <select name="privacy"><option value="private" selected>خاص</option><option value="unlisted">غير مدرج</option><option value="public">عام</option></select>
+  <label class="row"><input type="checkbox" name="add_shorts_hashtag" value="true" checked> إضافة #Shorts تلقائياً للـ Shorts</label>
+  <label class="row"><input type="checkbox" name="made_for_kids" value="true"> الفيديو مخصص للأطفال</label>
+  <p><button>معاينة تجريبية</button></p>
+</form>
+{% endblock %}

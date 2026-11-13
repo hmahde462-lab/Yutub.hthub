@@ -1,0 +1,53 @@
+{
+ "id": "b05",
+ "template": "battle.html",
+ "title": "معركة القارات",
+ "hook": "5 قارات... وحدة بس تبقى!",
+ "endSub": "قارتك فازت؟ اكتبها",
+ "noGlow": true,
+ "theme": "space",
+ "ballStyle": "glossy",
+ "teams": [
+  {
+   "name": "آسيا",
+   "color": "#ffd23b",
+   "dark": "#8a6a00",
+   "emoji": "🐉"
+  },
+  {
+   "name": "أفريقيا",
+   "color": "#ff8a3a",
+   "dark": "#7a3a00",
+   "emoji": "🦁"
+  },
+  {
+   "name": "أوروبا",
+   "color": "#4f9dff",
+   "dark": "#0f2f7a",
+   "emoji": "🏰"
+  },
+  {
+   "name": "أمريكا",
+   "color": "#ff4b6e",
+   "dark": "#7a1028",
+   "emoji": "🗽"
+  },
+  {
+   "name": "أستراليا",
+   "color": "#3fd17a",
+   "dark": "#0d6a2c",
+   "emoji": "🦘"
+  }
+ ],
+ "sim": {
+  "seed": 202,
+  "teams": 5,
+  "maxTime": 27,
+  "sides": 5,
+  "rot": -1.5707963267948966,
+  "R": 450,
+  "ballR": 33,
+  "perTeam": 7
+ },
+ "partLabel": "معركة 5"
+}

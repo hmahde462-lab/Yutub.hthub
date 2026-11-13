@@ -1,0 +1,47 @@
+{
+ "id": "b08",
+ "template": "battle.html",
+ "title": "معركة الحيوانات",
+ "hook": "منو ملك الغابة؟ اختار قبل لا تبدي",
+ "endSub": "حيوانك فاز؟ اكتبه",
+ "noGlow": true,
+ "theme": "court",
+ "ballStyle": "glossy",
+ "teams": [
+  {
+   "name": "الأسد",
+   "color": "#f2c230",
+   "dark": "#7a5a00",
+   "emoji": "🦁"
+  },
+  {
+   "name": "النمر",
+   "color": "#ff7f2a",
+   "dark": "#7a3000",
+   "emoji": "🐯"
+  },
+  {
+   "name": "الدب",
+   "color": "#a0703f",
+   "dark": "#4a2a10",
+   "emoji": "🐻"
+  },
+  {
+   "name": "الذيب",
+   "color": "#9aa3ad",
+   "dark": "#3a4048",
+   "emoji": "🐺"
+  }
+ ],
+ "sim": {
+  "seed": 209,
+  "teams": 4,
+  "maxTime": 27,
+  "sides": 6,
+  "rot": 0.5235987755982988,
+  "R": 440,
+  "ballR": 38,
+  "perTeam": 8
+ },
+ "partLabel": "معركة 8"
+}

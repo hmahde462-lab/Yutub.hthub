@@ -1,0 +1,68 @@
+<!doctype html><html lang="ar" dir="rtl"><head><meta charset="utf-8">
+<link rel="stylesheet" href="fonts/fonts.css">
+<style>html,body{margin:0;background:#000}#stage{position:relative;width:1080px;height:1920px;background:#000;overflow:hidden}
+canvas{position:absolute;inset:0}</style></head><body>
+<div id="stage"><canvas id="fx" width="1080" height="1920"></canvas><canvas id="ui" width="1080" height="1920"></canvas></div>
+<script src="engine.js"></script>
+<script>
+const EP = {"id":"ep01","title":"كل كرة تهرب = كرتين","partLabel":"الجزء 1","hook":"توقع شكد كرة بالنهاية؟","counterLabel":"كرة","endLine":"انفجرت!","endSub":"اكتب توقعك للجزء الجاي","ringGlow":"#7fd3ff","sim":{"seed":7,"gapDeg":75,"ringSpeed":1.8,"g":900,"cap":400,"maxTime":26}};
+const sim = new PhysicsSim(EP.sim);
+const C = sim.cfg;
+const fx = document.getElementById('fx').getContext('2d'), ui = document.getElementById('ui').getContext('2d');
+fx.fillStyle = '#000'; fx.fillRect(0, 0, 1080, 1920);
+// glow sprites per palette colour
+const SPR = C.palette.map(col => {
+  const r = C.ballR, s = Math.ceil(r * 5), cv = document.createElement('canvas'); cv.width = cv.height = s * 2;
+  const g = cv.getContext('2d'), grd = g.createRadialGradient(s, s, r * 0.6, s, s, s);
+  grd.addColorStop(0, col + 'aa'); grd.addColorStop(1, col + '00'); g.fillStyle = grd; g.fillRect(0, 0, s * 2, s * 2);
+  const body = g.createRadialGradient(s - r * .35, s - r * .35, r * .1, s, s, r);
+  body.addColorStop(0, '#ffffff'); body.addColorStop(.35, col); body.addColorStop(1, col);
+  g.fillStyle = body; g.beginPath(); g.arc(s, s, r, 0, Math.PI * 2); g.fill();
+  return { cv, s };
+});
+const colOf = gen => C.palette[gen % C.palette.length];
+const sprOf = gen => SPR[gen % SPR.length];
+function drawBall(b, alpha) { const sp = sprOf(b.gen); fx.globalAlpha = alpha; fx.drawImage(sp.cv, b.x - sp.s, b.y - sp.s); fx.globalAlpha = 1; }
+let flash = 0, lastEsc = 0, pulse = 0;
+const font = (px, fam = 'Lalezar') => `${fam === 'Cairo' ? '900 ' : ''}${px}px '${fam}'`;
+function text(str, x, y, px, col, opts = {}) {
+  ui.font = font(px, opts.fam); ui.textAlign = 'center'; ui.textBaseline = 'middle'; ui.direction = 'rtl';
+  if (opts.stroke) { ui.lineWidth = opts.stroke; ui.strokeStyle = '#000'; ui.lineJoin = 'round'; ui.strokeText(str, x, y); }
+  ui.fillStyle = col; ui.fillText(str, x, y);
+}
+window.frame = function () {
+  sim.stepFrame();
+  const t = sim.t, newEsc = sim.escapes - lastEsc; lastEsc = sim.escapes; if (newEsc) pulse = 1;
+  // trails
+  fx.fillStyle = 'rgba(0,0,0,0.30)'; fx.fillRect(0, 0, 1080, 1920);
+  // ring
+  if (sim.state === 'run') {
+    fx.save(); fx.lineCap = 'round'; fx.strokeStyle = '#ffffff'; fx.lineWidth = C.ringWidth; fx.shadowColor = EP.ringGlow || '#7fd3ff'; fx.shadowBlur = 28;
+    fx.beginPath(); fx.arc(C.cx, C.cy, C.R, sim.ringAngle + sim.gapHalf, sim.ringAngle - sim.gapHalf + Math.PI * 2); fx.stroke(); fx.restore();
+  }
+  for (const s of sim.shards) {
+    if (s.life <= 0) continue; fx.save(); fx.translate(s.x, s.y); fx.rotate(s.rot); fx.globalAlpha = Math.min(1, s.life / 1.5);
+    fx.strokeStyle = '#fff'; fx.lineWidth = C.ringWidth; fx.lineCap = 'round'; fx.shadowColor = EP.ringGlow || '#7fd3ff'; fx.shadowBlur = 20;
+    fx.beginPath(); fx.moveTo(-s.len / 2, 0); fx.lineTo(s.len / 2, 0); fx.stroke(); fx.restore();
+  }
+  for (const o of sim.outBalls) drawBall(o, Math.max(0, Math.min(1, o.life / 2.5)) * 0.85);
+  for (const b of sim.balls) drawBall(b, 1);
+  if (sim.state === 'finale' && t - sim.finaleT < 0.25) { flash = 1 - (t - sim.finaleT) / 0.25; fx.fillStyle = `rgba(255,255,255,${0.35 * flash})`; fx.fillRect(0, 0, 1080, 1920); }
+
+  // UI
+  ui.clearRect(0, 0, 1080, 1920);
+  text(EP.title, 540, 250, 84, '#ffffff', { stroke: 10 });
+  ui.save(); ui.fillStyle = '#ff3d5a'; const bw = 210, bh = 64; ui.beginPath(); ui.roundRect(540 - bw / 2, 320, bw, bh, 32); ui.fill(); ui.restore();
+  text(EP.partLabel, 540, 354, 46, '#ffffff', { fam: 'Cairo' });
+  const n = sim.state === 'finale' ? sim.finalCount : sim.count;
+  pulse *= 0.86; const ps = 1 + pulse * 0.18;
+  ui.save(); ui.translate(540, 1470); ui.scale(ps, ps);
+  text(String(n), 0, 0, 150, colOf(Math.max(0, ...sim.balls.slice(-1).map(b => b.gen), 0)), { fam: 'Cairo', stroke: 12 }); ui.restore();
+  text(EP.counterLabel, 540, 1570, 56, '#cfcfcf', { stroke: 8 });
+  if (sim.state === 'run' && t < 4.5) { const a = Math.min(1, (4.5 - t) / 0.6); ui.globalAlpha = a; text(EP.hook, 540, 470, 64, '#ffe14d', { stroke: 9 }); ui.globalAlpha = 1; }
+  if (sim.state === 'finale') { const a = Math.min(1, (t - sim.finaleT) / 0.4); ui.globalAlpha = a; text(EP.endLine, 540, 930, 92, '#ffffff', { stroke: 12 }); text(EP.endSub, 540, 1040, 60, '#ffe14d', { stroke: 9 }); ui.globalAlpha = 1; }
+  return { t, n, state: sim.state };
+};
+window.getEvents = () => sim.events;
+window.getInfo = () => ({ finaleT: sim.finaleT, finalCount: sim.finalCount, escapes: sim.escapes });
+</script></body></html>

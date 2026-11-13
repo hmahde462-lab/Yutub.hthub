@@ -1,0 +1,34 @@
+{
+ "id": "b02",
+ "template": "battle.html",
+ "title": "معركة المحافظات",
+ "partLabel": "معركة 2",
+ "hook": "منو مدينتك؟ اختار قبل لا تبدي!",
+ "endSub": "مدينتك فازت؟ اكتبها بالتعليقات",
+ "noGlow": true,
+ "teams": [
+  {
+   "name": "أربيل",
+   "color": "#ffd23b",
+   "dark": "#8a6a00"
+  },
+  {
+   "name": "البصرة",
+   "color": "#ff4b4b",
+   "dark": "#7a1010"
+  },
+  {
+   "name": "الموصل",
+   "color": "#2ee86b",
+   "dark": "#0d6a2c"
+  },
+  {
+   "name": "بغداد",
+   "color": "#3b8bff",
+   "dark": "#0f2f7a"
+  }
+ ],
+ "sim": {
+  "seed": 144
+ }
+}

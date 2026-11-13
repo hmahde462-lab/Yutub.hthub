@@ -1,0 +1,5 @@
+{"id": "ep04", "template": "ball2.html", "mode": "grow",
+ "title": "منو يكبر أسرع؟", "partLabel": "الجزء 4", "hook": "اختار قبل لا تبدي: الأحمر لو الأزرق؟",
+ "leadLabel": "المتصدر:", "endSub": "صح توقعك؟ اكتبه بالتعليقات",
+ "teams": [{"name": "الأحمر", "color": "#ff5a5a"}, {"name": "الأزرق", "color": "#4f9dff"}],
+ "sim": {"seed": 13, "grow": 1.03}}

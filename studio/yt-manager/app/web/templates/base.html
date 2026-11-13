@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>إدارة قنوات YouTube</title>
+<style>
+  :root{--bg:#f6f7f9;--card:#fff;--fg:#1d2330;--muted:#6b7280;--line:#e5e7eb;--accent:#c4302b;--ok:#15803d;--warn:#b45309;--err:#b91c1c}
+  @media (prefers-color-scheme:dark){:root{--bg:#0f1115;--card:#181b22;--fg:#e8eaf0;--muted:#9aa1ad;--line:#2a2f3a}}
+  *{box-sizing:border-box} body{margin:0;font-family:system-ui,"Segoe UI",Tahoma,sans-serif;background:var(--bg);color:var(--fg)}
+  header{display:flex;gap:16px;align-items:center;flex-wrap:wrap;padding:12px 16px;background:var(--card);border-bottom:1px solid var(--line)}
+  header a{color:var(--fg);text-decoration:none;font-weight:600} main{max-width:960px;margin:0 auto;padding:16px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:16px;margin-bottom:16px}
+  .badge{display:inline-block;padding:2px 8px;border-radius:999px;font-size:12px;border:1px solid var(--line)}
+  .live{color:#fff;background:var(--err);border-color:var(--err)} .dry{color:#fff;background:var(--ok);border-color:var(--ok)}
+  table{width:100%;border-collapse:collapse} td,th{padding:8px;border-bottom:1px solid var(--line);text-align:start;vertical-align:top}
+  label{display:block;margin:12px 0 4px;font-weight:600} input,select,textarea{width:100%;padding:8px;border:1px solid var(--line);border-radius:8px;background:var(--bg);color:var(--fg);font:inherit}
+  input[type=checkbox]{width:auto} .row{display:flex;gap:8px;align-items:center}
+  button,.btn{display:inline-block;padding:8px 14px;border:0;border-radius:8px;background:var(--accent);color:#fff;font:inherit;cursor:pointer;text-decoration:none}
+  .btn.secondary,button.secondary{background:transparent;color:var(--fg);border:1px solid var(--line)}
+  .err{color:var(--err)} .warn{color:var(--warn)} .ok{color:var(--ok)} .muted{color:var(--muted)} pre{white-space:pre-wrap;direction:ltr;text-align:left;background:var(--bg);padding:12px;border-radius:8px;overflow:auto}
+  .msg{padding:10px 14px;border-radius:8px;background:var(--card);border:1px solid var(--line);margin-bottom:16px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:12px} .stat b{display:block;font-size:22px}
+  img.thumb{width:36px;height:36px;border-radius:50%;vertical-align:middle}
+</style>
+</head>
+<body>
+<header>
+  <a href="/">القنوات</a><a href="/upload">رفع فيديو</a>
+  <span style="margin-inline-start:auto" class="badge {{ 'live' if live_enabled else 'dry' }}">{{ 'النشر الفعلي مفعّل' if live_enabled else 'وضع التجربة فقط' }}</span>
+  <span class="muted">الحصة اليوم: {{ quota_used }} / {{ quota_limit }}</span>
+</header>
+<main>
+{% if msg %}<div class="msg">{{ msg }}</div>{% endif %}
+{% block content %}{% endblock %}
+</main>
+</body>
+</html>

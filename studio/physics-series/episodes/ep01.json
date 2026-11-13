@@ -1,0 +1,11 @@
+{
+  "id": "ep01",
+  "title": "كل كرة تهرب = كرتين",
+  "partLabel": "الجزء 1",
+  "hook": "توقع شكد كرة بالنهاية؟",
+  "counterLabel": "كرة",
+  "endLine": "انفجرت!",
+  "endSub": "اكتب توقعك للجزء الجاي",
+  "ringGlow": "#7fd3ff",
+  "sim": { "seed": 7, "gapDeg": 75, "ringSpeed": 1.8, "g": 900, "cap": 400, "maxTime": 26 }
+}

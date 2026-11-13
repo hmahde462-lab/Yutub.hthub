@@ -1,0 +1,35 @@
+{
+ "id": "b06",
+ "template": "battle.html",
+ "title": "الشاي ضد القهوة",
+ "hook": "انت شاي لو قهوة؟ ☕",
+ "endSub": "شاي لو قهوة؟ اكتبها بالتعليقات",
+ "noGlow": true,
+ "theme": "wood",
+ "ballStyle": "glossy",
+ "teams": [
+  {
+   "name": "الشاي",
+   "color": "#c0392b",
+   "dark": "#5a0f0b",
+   "emoji": "🫖"
+  },
+  {
+   "name": "القهوة",
+   "color": "#8d6e63",
+   "dark": "#3e2723",
+   "emoji": "☕"
+  }
+ ],
+ "sim": {
+  "seed": 137,
+  "teams": 2,
+  "maxTime": 27,
+  "sides": 4,
+  "rot": 0.7853981633974483,
+  "R": 450,
+  "ballR": 34,
+  "perTeam": 13
+ },
+ "partLabel": "معركة 6"
+}

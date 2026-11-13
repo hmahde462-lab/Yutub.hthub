@@ -1,0 +1,47 @@
+{
+ "id": "b03",
+ "template": "battle.html",
+ "title": "معركة المنتخبات العربية",
+ "hook": "منو منتخبك؟ اختار قبل لا تبدي!",
+ "endSub": "فاز منتخبك؟ اكتبه بالتعليقات",
+ "noGlow": true,
+ "theme": "sand",
+ "ballStyle": "glossy",
+ "teams": [
+  {
+   "name": "العراق",
+   "color": "#2ecc71",
+   "dark": "#0d6a2c",
+   "emoji": "🦅"
+  },
+  {
+   "name": "السعودية",
+   "color": "#f4f4f4",
+   "dark": "#555",
+   "emoji": "🌴"
+  },
+  {
+   "name": "مصر",
+   "color": "#e74c3c",
+   "dark": "#7a1010",
+   "emoji": "🏛️"
+  },
+  {
+   "name": "الكويت",
+   "color": "#3b8bff",
+   "dark": "#0f2f7a",
+   "emoji": "⛵"
+  }
+ ],
+ "sim": {
+  "seed": 29,
+  "teams": 4,
+  "maxTime": 27,
+  "sides": 6,
+  "rot": 0,
+  "R": 430,
+  "ballR": 36,
+  "perTeam": 8
+ },
+ "partLabel": "معركة 3"
+}

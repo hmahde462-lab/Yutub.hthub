@@ -1,0 +1,37 @@
+{
+ "id": "ep12",
+ "partLabel": "الجزء 12",
+ "title": "نجمة النينجا ⭐",
+ "hook": "نجمة تطفر بحرية... وين تضرب؟",
+ "milestone": 100,
+ "milestoneText": "تجاوزنا 100! 🔥",
+ "endSub": "السلاح الجاي: مروحة 🌀",
+ "bg": [
+  "#14261c",
+  "#06100a"
+ ],
+ "sim": {
+  "r0": 110,
+  "rMin": 8,
+  "container": {
+   "sides": 0,
+   "R": 420
+  },
+  "cutters": [
+   {
+    "kind": "shuriken",
+    "rad": 58,
+    "x": 120,
+    "y": -60,
+    "vx": 400,
+    "vy": 300,
+    "speed": 1280,
+    "selfSpin": 16
+   }
+  ],
+  "g": 900,
+  "maxTime": 24.5
+ },
+ "template": "arena.html",
+ "counterLabel": "كرة"
+}

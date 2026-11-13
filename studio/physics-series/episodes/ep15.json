@@ -1,0 +1,41 @@
+{
+ "id": "ep15",
+ "partLabel": "الجزء 15",
+ "title": "سيفين بعكس بعض ⚔️⚔️",
+ "hook": "سيف يمين وسيف يسار... الكرة وين تروح؟",
+ "milestone": 100,
+ "milestoneText": "تجاوزنا 100! 🔥",
+ "endSub": "الجاي: 3 مناشير 🪚🪚🪚",
+ "bg": [
+  "#10202a",
+  "#050c10"
+ ],
+ "sim": {
+  "r0": 110,
+  "rMin": 8,
+  "container": {
+   "sides": 4,
+   "R": 470,
+   "rot": 0.7853981633974483,
+   "spin": 0
+  },
+  "cutters": [
+   {
+    "kind": "sword",
+    "len": 315,
+    "spin": 1.625,
+    "phase": 0
+   },
+   {
+    "kind": "sword",
+    "len": 315,
+    "spin": -1.9375,
+    "phase": 3.141592653589793
+   }
+  ],
+  "g": 700,
+  "maxTime": 30
+ },
+ "template": "arena.html",
+ "counterLabel": "كرة"
+}

@@ -1,0 +1,45 @@
+{
+ "id": "d03",
+ "template": "duel.html",
+ "title": "حرب السكاكين",
+ "partLabel": "قتال 3",
+ "hook": "3 كرات وسكاكين ورماح!",
+ "endSub": "منو البطل؟ اكتبه بالتعليقات",
+ "bg": [
+  "#0a2420",
+  "#020c0a"
+ ],
+ "floor": "#123a33",
+ "fighters": [
+  {
+   "name": "دعبول",
+   "color": "#2fd3e0"
+  },
+  {
+   "name": "كعبول",
+   "color": "#ff4b6e"
+  },
+  {
+   "name": "زعطوط",
+   "color": "#f2c230"
+  }
+ ],
+ "sim": {
+  "seed": 18,
+  "dmgScale": 1.4,
+  "maxTime": 40,
+  "spawnEvery": 1.7,
+  "sides": 6,
+  "rot": 0,
+  "R": 440,
+  "pool": [
+   "knife",
+   "knife",
+   "spear",
+   "spear",
+   "heal",
+   "shield",
+   "speed"
+  ]
+ }
+}

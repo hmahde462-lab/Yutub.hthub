@@ -1,0 +1,21 @@
+{% extends "base.html" %}{% block content %}
+<div class="card"><h2 style="margin-top:0">إحصائيات: {{ channel.title }}</h2>
+{% if error %}<p class="err">{{ error }}</p>{% else %}
+  <div class="grid">
+    <div class="stat"><span class="muted">المشتركون</span><b>{{ '{:,}'.format(data.subscribers) if data.subscribers is not none else 'مخفي' }}</b></div>
+    <div class="stat"><span class="muted">المشاهدات الكلية</span><b>{{ '{:,}'.format(data.views) }}</b></div>
+    <div class="stat"><span class="muted">عدد الفيديوهات</span><b>{{ '{:,}'.format(data.videos) }}</b></div>
+  </div>
+  {% if data.analytics %}<h3>آخر {{ data.analytics.days }} يوماً</h3><div class="grid">
+    <div class="stat"><span class="muted">مشاهدات</span><b>{{ '{:,}'.format(data.analytics.views|int) }}</b></div>
+    <div class="stat"><span class="muted">دقائق المشاهدة</span><b>{{ '{:,}'.format(data.analytics.estimatedMinutesWatched|int) }}</b></div>
+    <div class="stat"><span class="muted">متوسط مدة المشاهدة (ث)</span><b>{{ data.analytics.averageViewDuration|int }}</b></div>
+    <div class="stat"><span class="muted">مشتركون جدد</span><b>{{ (data.analytics.subscribersGained - data.analytics.subscribersLost)|int }}</b></div>
+  </div>{% endif %}
+  {% for w in data.warnings %}<p class="warn">! {{ w }}</p>{% endfor %}
+  <h3>آخر الفيديوهات</h3>
+  <table><tr><th>العنوان</th><th>الخصوصية</th><th>مشاهدات</th><th>إعجابات</th><th>تعليقات</th></tr>
+  {% for v in data.recent_videos %}<tr><td><a href="https://youtu.be/{{ v.id }}">{{ v.title }}</a></td><td>{{ v.privacy }}</td><td>{{ v.views }}</td><td>{{ v.likes }}</td><td>{{ v.comments }}</td></tr>{% endfor %}
+  </table>
+{% endif %}</div>
+{% endblock %}

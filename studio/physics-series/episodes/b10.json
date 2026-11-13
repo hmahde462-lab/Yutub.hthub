@@ -1,0 +1,59 @@
+{
+ "id": "b10",
+ "template": "battle.html",
+ "title": "بطولة الأبطال 👑",
+ "hook": "أبطال السلسلة... بطل واحد بس!",
+ "endSub": "هذا بطل الموسم! تريدون موسم 2؟",
+ "noGlow": true,
+ "theme": "night",
+ "ballStyle": "glossy",
+ "teams": [
+  {
+   "name": "القوة الجوية",
+   "color": "#3b8bff",
+   "dark": "#0f2f7a",
+   "emoji": "✈️"
+  },
+  {
+   "name": "الموصل",
+   "color": "#2ee86b",
+   "dark": "#0d6a2c",
+   "emoji": "🏙️"
+  },
+  {
+   "name": "مصر",
+   "color": "#e74c3c",
+   "dark": "#7a1010",
+   "emoji": "🏛️"
+  },
+  {
+   "name": "برشلونة",
+   "color": "#c2185b",
+   "dark": "#3a0018",
+   "emoji": "⚽"
+  },
+  {
+   "name": "القهوة",
+   "color": "#8d6e63",
+   "dark": "#3e2723",
+   "emoji": "☕"
+  },
+  {
+   "name": "النمر",
+   "color": "#ff7f2a",
+   "dark": "#7a3000",
+   "emoji": "🐯"
+  }
+ ],
+ "sim": {
+  "seed": 156,
+  "teams": 6,
+  "maxTime": 27,
+  "sides": 6,
+  "rot": 0,
+  "R": 450,
+  "ballR": 33,
+  "perTeam": 6
+ },
+ "partLabel": "معركة 10"
+}

@@ -1,0 +1,48 @@
+{
+ "id": "d09",
+ "template": "duel.html",
+ "title": "معركة المناشير",
+ "partLabel": "قتال 9",
+ "hook": "كل الأسلحة مناشير! ⚙️",
+ "endSub": "منو عاش؟ اكتبه بالتعليقات",
+ "bg": [
+  "#1e2410",
+  "#080a04"
+ ],
+ "floor": "#2e3818",
+ "fighters": [
+  {
+   "name": "عنطوز",
+   "color": "#ff8a3a"
+  },
+  {
+   "name": "شنطوز",
+   "color": "#2fd3e0"
+  },
+  {
+   "name": "فنطوز",
+   "color": "#b36bff"
+  },
+  {
+   "name": "زنطوز",
+   "color": "#f2c230"
+  }
+ ],
+ "sim": {
+  "seed": 5,
+  "dmgScale": 1.4,
+  "maxTime": 40,
+  "spawnEvery": 1.7,
+  "sides": 5,
+  "rot": -1.5707963267948966,
+  "R": 450,
+  "pool": [
+   "saw",
+   "saw",
+   "saw",
+   "heal",
+   "shield",
+   "speed"
+  ]
+ }
+}

@@ -1,0 +1,4 @@
+{"id": "ep05", "template": "ball2.html", "mode": "axe",
+ "title": "الفأس رجع... بفأسين!", "partLabel": "الجزء 5", "hook": "بالجزء 3 وصلنا 64... نوصل 100؟",
+ "counterLabel": "كرة", "milestone": 100, "milestoneText": "تجاوزنا 100! 🔥", "endSub": "الجزء الجاي: 3 فؤوس؟ اكتب رأيك",
+ "sim": {"seed": 1, "spin": 1.2, "g": 900, "axes": 2, "rMin": 8, "maxTime": 30}}

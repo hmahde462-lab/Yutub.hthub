@@ -1,0 +1,46 @@
+{
+ "id": "b04",
+ "template": "battle.html",
+ "title": "معركة أندية أوروبا",
+ "hook": "ريال لو برشلونة لو السيتي لو اليوفي؟",
+ "endSub": "ناديك فاز؟ اكتبه بالتعليقات",
+ "noGlow": true,
+ "theme": "night",
+ "ballStyle": "football",
+ "teams": [
+  {
+   "name": "ريال مدريد",
+   "color": "#ffffff",
+   "patch": "#d4af37",
+   "dark": "#7a5a00"
+  },
+  {
+   "name": "برشلونة",
+   "color": "#c2185b",
+   "patch": "#a50044",
+   "dark": "#3a0018"
+  },
+  {
+   "name": "مان سيتي",
+   "color": "#6cabdd",
+   "dark": "#1c4f7a"
+  },
+  {
+   "name": "يوفنتوس",
+   "color": "#dddddd",
+   "patch": "#111111",
+   "dark": "#000"
+  }
+ ],
+ "sim": {
+  "seed": 261,
+  "teams": 4,
+  "maxTime": 27,
+  "sides": 8,
+  "rot": 0.39269908169872414,
+  "R": 430,
+  "ballR": 36,
+  "perTeam": 8
+ },
+ "partLabel": "معركة 4"
+}

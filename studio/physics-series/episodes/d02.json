@@ -1,0 +1,42 @@
+{
+ "id": "d02",
+ "template": "duel.html",
+ "title": "نزال السيوف",
+ "partLabel": "قتال 2",
+ "hook": "سيوف وفؤوس ودروع... منو يصمد؟",
+ "endSub": "منو كنت تشجع؟ اكتبه",
+ "bg": [
+  "#2a1206",
+  "#0c0502"
+ ],
+ "floor": "#3a2410",
+ "ring": "#ffcf3a",
+ "fighters": [
+  {
+   "name": "فرفوط",
+   "color": "#ff8a3a"
+  },
+  {
+   "name": "قرقوط",
+   "color": "#b36bff"
+  }
+ ],
+ "sim": {
+  "seed": 8,
+  "dmgScale": 1.4,
+  "maxTime": 40,
+  "spawnEvery": 1.7,
+  "sides": 4,
+  "rot": 0.7853981633974483,
+  "R": 450,
+  "r": 60,
+  "pool": [
+   "sword",
+   "sword",
+   "axe",
+   "shield",
+   "heal",
+   "knife"
+  ]
+ }
+}

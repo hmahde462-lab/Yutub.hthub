@@ -1,0 +1,50 @@
+<!doctype html><html lang="ar" dir="rtl"><head><meta charset="utf-8">
+<link rel="stylesheet" href="fonts/fonts.css">
+<style>html,body{margin:0;background:#000}#stage{position:relative;width:1080px;height:1920px;overflow:hidden}canvas{position:absolute;inset:0}</style></head><body>
+<div id="stage"><canvas id="cv" width="1080" height="1920"></canvas></div>
+<script>
+// generated illusion template
+const EP = __EP__; const T = EP.timeline; const W = 1080, H = 1920, FPS = 60;
+const g = document.getElementById('cv').getContext('2d');
+const GRAY = '#8a8a8a';
+const font = (px, fam = 'Lalezar') => `${fam === 'Cairo' ? '900 ' : ''}${px}px '${fam}'`;
+function text(s, x, y, px, col, o = {}) { g.font = font(px, o.fam); const mw = o.max ?? 920, w0 = g.measureText(s).width; if (w0 > mw) { px = Math.floor(px * mw / w0); g.font = font(px, o.fam); }
+  g.textAlign = 'center'; g.textBaseline = 'middle'; g.direction = 'rtl'; g.lineJoin = 'round';
+  if (o.stroke !== 0) { g.lineWidth = o.stroke ?? 12; g.strokeStyle = o.sc ?? '#000'; g.strokeText(s, x, y); } g.fillStyle = col; g.fillText(s, x, y); }
+function panel(y, h, a = 1) { g.fillStyle = `rgba(0,0,0,${.6 * a})`; g.beginPath(); g.roundRect(60, y - h / 2, 960, h, 36); g.fill(); }
+const fade = (t, a, b) => Math.max(0, Math.min(1, (t - a) / (b - a)));
+const mixHex = (a, b, k) => { const p = h => [1, 3, 5].map(i => parseInt(h.slice(i, i + 2), 16)); const A = p(a), B = p(b); return `rgb(${A.map((v, i) => Math.round(v + (B[i] - v) * k)).join(',')})`; };
+const events = []; const fired = new Set(); const fire = (k, t) => { if (!fired.has(k)) { fired.add(k); events.push({ t, kind: k }); } };
+
+
+const TAU = Math.PI * 2; let f = 0; let HOOK = '';
+window.frame = function () {
+  const t = f / FPS; f++; HOOK = t < T.reveal ? EP.hook1 : EP.hook2;
+  g.fillStyle = '#05060a'; g.fillRect(0, 0, W, H);
+  const cx = 540, cy = 940, stop = fade(t, T.reveal, T.reveal + 1.2);
+  // rotating blue cross grid (fades on reveal)
+  g.save(); g.beginPath(); g.rect(0, 520, W, 860); g.clip();
+  g.globalAlpha = 1 - stop; g.translate(cx, cy); g.rotate(t * 0.9 * (1 - stop)); g.strokeStyle = '#3b6dff'; g.lineWidth = 7;
+  for (let i = -8; i <= 8; i++) for (let j = -8; j <= 8; j++) { const x = i * 90, y = j * 90; g.beginPath(); g.moveTo(x - 16, y); g.lineTo(x + 16, y); g.moveTo(x, y - 16); g.lineTo(x, y + 16); g.stroke(); }
+  g.restore(); g.globalAlpha = 1;
+  // three static yellow dots
+  const dots = [[cx - 230, cy - 160], [cx + 230, cy - 160], [cx, cy + 250]];
+  for (const [x, y] of dots) { g.fillStyle = '#ffe14d'; g.beginPath(); g.arc(x, y, 22, 0, TAU); g.fill(); }
+  if (stop > 0) { fire('reveal', t); g.strokeStyle = '#7dff9a'; g.lineWidth = 6; for (const [x, y] of dots) { g.beginPath(); g.arc(x, y, 40 + 6 * Math.sin(t * 6), 0, TAU); g.stroke(); } }
+  // blinking green fixation point
+  if (t < T.reveal) { g.fillStyle = (Math.floor(t * 2) % 2) ? '#33ff77' : '#18a84a'; g.beginPath(); g.arc(cx, cy, 14, 0, TAU); g.fill(); }
+  if (t > T.think - .5 && t < T.reveal) fire('switch', t);
+  if (t < T.think) { panel(1460, 190); text(EP.q1, 540, 1430, 70, '#ffe14d', { stroke: 0 }); text(EP.q1b, 540, 1500, 46, '#fff', { stroke: 0 }); }
+  else if (t < T.reveal) { panel(1460, 190); text(EP.q2, 540, 1430, 70, '#fff', { stroke: 0 }); const n = Math.max(1, Math.ceil(T.reveal - t)); text(String(n), 540, 1505, 60, '#ffe14d', { fam: 'Cairo', stroke: 0 }); }
+  else if (t < T.explain) { panel(1460, 190); text(EP.same1, 540, 1430, 80, '#7dff9a', { stroke: 0 }); text(EP.same1b, 540, 1500, 46, '#fff', { stroke: 0 }); }
+  else { panel(1430, 230); text(EP.explain1, 540, 1385, 54, '#fff', { stroke: 0 }); text(EP.explain2, 540, 1470, 54, '#7fe3ff', { stroke: 0 }); }
+
+  panel(300, 250); text(EP.title, 540, 240, 70, '#fff', { stroke: 0 });
+  g.fillStyle = '#ff3d5a'; g.beginPath(); g.roundRect(435, 290, 210, 60, 30); g.fill(); text(EP.partLabel, 540, 321, 42, '#fff', { fam: 'Cairo', stroke: 0 });
+  text(HOOK, 540, 395, 56, '#ffe14d', { stroke: 0 });
+  if (t > T.cta) { fire('cta', t); const a = fade(t, T.cta, T.cta + .35); g.globalAlpha = a; panel(1660, 170); text(EP.cta1, 540, 1630, 70, '#fff', { stroke: 0 }); text(EP.cta2, 540, 1700, 44, '#ffb3c6', { stroke: 0 }); g.globalAlpha = 1; }
+  return { t, n: 'x', state: 'run' };
+};
+window.getEvents = () => events;
+window.getInfo = () => ({ finaleT: T.end - 3.6, end: T.end });
+</script></body></html>

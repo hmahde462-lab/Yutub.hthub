@@ -1,0 +1,40 @@
+{
+ "id": "d05",
+ "template": "duel.html",
+ "title": "الأوزان الثقيلة",
+ "partLabel": "قتال 5",
+ "hook": "فؤوس ومطارق بس! ضربة وحدة تفرق",
+ "endSub": "منو أقوى؟ اكتبه",
+ "bg": [
+  "#14161c",
+  "#050608"
+ ],
+ "floor": "#22262e",
+ "ring": "#c0c8d0",
+ "fighters": [
+  {
+   "name": "الدبدوب",
+   "color": "#a0703f"
+  },
+  {
+   "name": "الفرفور",
+   "color": "#ff5a8a"
+  }
+ ],
+ "sim": {
+  "seed": 30,
+  "dmgScale": 2.7,
+  "maxTime": 40,
+  "spawnEvery": 1.7,
+  "R": 430,
+  "r": 64,
+  "pool": [
+   "axe",
+   "hammer",
+   "hammer",
+   "axe",
+   "shield",
+   "heal"
+  ]
+ }
+}

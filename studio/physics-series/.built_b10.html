@@ -1,0 +1,111 @@
+<!doctype html><html lang="ar" dir="rtl"><head><meta charset="utf-8">
+<link rel="stylesheet" href="fonts/fonts.css">
+<style>html,body{margin:0;background:#000}#stage{position:relative;width:1080px;height:1920px;background:#000;overflow:hidden}canvas{position:absolute;inset:0}</style></head><body>
+<div id="stage"><canvas id="cv" width="1080" height="1920"></canvas></div>
+<script src="battle_engine.js"></script>
+<script>
+const EP = {"id":"b10","template":"battle.html","title":"بطولة الأبطال 👑","hook":"أبطال السلسلة... بطل واحد بس!","endSub":"هذا بطل الموسم! تريدون موسم 2؟","noGlow":true,"theme":"night","ballStyle":"glossy","teams":[{"name":"القوة الجوية","color":"#3b8bff","dark":"#0f2f7a","emoji":"✈️"},{"name":"الموصل","color":"#2ee86b","dark":"#0d6a2c","emoji":"🏙️"},{"name":"مصر","color":"#e74c3c","dark":"#7a1010","emoji":"🏛️"},{"name":"برشلونة","color":"#c2185b","dark":"#3a0018","emoji":"⚽"},{"name":"القهوة","color":"#8d6e63","dark":"#3e2723","emoji":"☕"},{"name":"النمر","color":"#ff7f2a","dark":"#7a3000","emoji":"🐯"}],"sim":{"seed":156,"teams":6,"maxTime":27,"sides":6,"rot":0,"R":450,"ballR":33,"perTeam":6},"partLabel":"معركة 10"};
+const sim = new Battle(EP.sim), C = sim.cfg;
+const TEAMS = EP.teams; // [{name, color, dark}]
+const g = document.getElementById('cv').getContext('2d');
+const TAU = Math.PI * 2;
+
+// ---------- football sprite per team (colour patches instead of black) ----------
+function pent(ctx, x, y, r, rot) { ctx.beginPath(); for (let i = 0; i < 5; i++) { const a = rot + i * TAU / 5 - Math.PI / 2; ctx.lineTo(x + Math.cos(a) * r, y + Math.sin(a) * r); } ctx.closePath(); }
+function ballSprite(team) {
+  const r = C.ballR, S = Math.ceil(r * 2.6), cv = document.createElement('canvas'); cv.width = cv.height = S * 2; const c = cv.getContext('2d');
+  c.translate(S, S);
+  // glow
+  if (!EP.noGlow) { const gl = c.createRadialGradient(0, 0, r * .8, 0, 0, S); gl.addColorStop(0, team.color + '88'); gl.addColorStop(1, team.color + '00'); c.fillStyle = gl; c.fillRect(-S, -S, S * 2, S * 2); }
+  c.save(); c.beginPath(); c.arc(0, 0, r, 0, TAU); c.clip();
+  const style = EP.ballStyle || 'football';
+  if (style === 'football') {
+  c.fillStyle = '#f7f7f2'; c.fillRect(-r, -r, r * 2, r * 2);
+  c.fillStyle = team.patch || team.color; c.strokeStyle = team.dark; c.lineWidth = 1.6;
+  pent(c, 0, 0, r * .34, 0); c.fill(); c.stroke();
+  for (let i = 0; i < 5; i++) { const a = i * TAU / 5 - Math.PI / 2 + Math.PI / 5; pent(c, Math.cos(a) * r * .9, Math.sin(a) * r * .9, r * .32, a + Math.PI / 2); c.fill(); c.stroke(); }
+  c.strokeStyle = 'rgba(40,40,40,.55)'; c.lineWidth = 1.4;
+  for (let i = 0; i < 5; i++) { const a = i * TAU / 5 - Math.PI / 2; c.beginPath(); c.moveTo(Math.cos(a) * r * .34, Math.sin(a) * r * .34); c.lineTo(Math.cos(a) * r * .62, Math.sin(a) * r * .62); c.stroke(); }
+  } else if (style === 'pool') {
+  c.fillStyle = team.color; c.fillRect(-r, -r, r * 2, r * 2); c.fillStyle = '#fff'; c.beginPath(); c.arc(0, 0, r * .5, 0, TAU); c.fill();
+  c.fillStyle = '#111'; c.font = `900 ${Math.round(r * .55)}px 'Cairo'`; c.textAlign = 'center'; c.textBaseline = 'middle'; c.fillText(team.letter || team.name[0], 0, r * .04);
+  } else {
+  c.fillStyle = team.color; c.fillRect(-r, -r, r * 2, r * 2); if (team.emoji) { c.font = `${Math.round(r * 1.05)}px sans-serif`; c.textAlign = 'center'; c.textBaseline = 'middle'; c.fillText(team.emoji, 0, r * .06); }
+  }
+  // 3D shading
+  const sh = c.createRadialGradient(-r * .35, -r * .4, r * .1, 0, 0, r * 1.05); sh.addColorStop(0, 'rgba(255,255,255,.55)'); sh.addColorStop(.45, 'rgba(255,255,255,0)'); sh.addColorStop(1, 'rgba(0,0,0,.45)');
+  c.fillStyle = sh; c.fillRect(-r, -r, r * 2, r * 2); c.restore();
+  c.strokeStyle = 'rgba(0,0,0,.6)'; c.lineWidth = 2; c.beginPath(); c.arc(0, 0, r, 0, TAU); c.stroke();
+  return { cv, S };
+}
+const SPR = TEAMS.map(ballSprite);
+
+// ---------- static pitch (themed, circle or polygon) ----------
+function arenaPath(c, inset = 0) { c.beginPath(); if (C.sides) { for (let k = 0; k < C.sides; k++) { const a = (C.rot || 0) + k * TAU / C.sides, R = (C.R - inset) / Math.cos(0); c.lineTo(C.cx + Math.cos(a) * (C.R - inset), C.cy + Math.sin(a) * (C.R - inset)); } c.closePath(); } else c.arc(C.cx, C.cy, C.R - inset, 0, TAU); }
+const THEME = EP.theme || 'grass';
+const pitch = document.createElement('canvas'); pitch.width = 1080; pitch.height = 1920;
+(function () { const p = pitch.getContext('2d');
+  const bgc = { grass: ['#000', '#000'], sand: ['#2a1a08', '#120a02'], ice: ['#0a1a2a', '#020a12'], space: ['#05030f', '#000'], wood: ['#1a0f06', '#0a0502'], night: ['#0a0a14', '#000'], court: ['#120a1a', '#06030a'] }[THEME];
+  const bgg = p.createLinearGradient(0, 0, 0, 1920); bgg.addColorStop(0, bgc[0]); bgg.addColorStop(1, bgc[1]); p.fillStyle = bgg; p.fillRect(0, 0, 1080, 1920);
+  if (THEME === 'space') { let sd = 9; const r = () => (sd = (sd * 16807) % 2147483647) / 2147483647; for (let i = 0; i < 220; i++) { p.fillStyle = `rgba(255,255,255,${.2 + r() * .7})`; p.beginPath(); p.arc(r() * 1080, r() * 1920, r() * 2.2, 0, TAU); p.fill(); } }
+  p.save(); arenaPath(p); p.clip();
+  const box = [C.cx - C.R, C.cy - C.R, C.R * 2, C.R * 2];
+  if (THEME === 'grass') { for (let i = -7; i < 7; i++) { p.fillStyle = i % 2 ? '#0d4a22' : '#0f5527'; p.fillRect(box[0], C.cy + i * 70, box[2], 70); }
+    p.strokeStyle = 'rgba(255,255,255,.22)'; p.lineWidth = 5; p.beginPath(); p.moveTo(box[0], C.cy); p.lineTo(box[0] + box[2], C.cy); p.stroke(); p.beginPath(); p.arc(C.cx, C.cy, 95, 0, TAU); p.stroke(); }
+  else if (THEME === 'sand') { p.fillStyle = '#c9a063'; p.fillRect(...box); p.strokeStyle = 'rgba(120,80,30,.25)'; p.lineWidth = 3; for (let y = box[1]; y < box[1] + box[3]; y += 26) { p.beginPath(); for (let x = box[0]; x <= box[0] + box[2]; x += 20) p.lineTo(x, y + Math.sin(x * .03 + y) * 6); p.stroke(); } }
+  else if (THEME === 'ice') { const ig = p.createLinearGradient(box[0], box[1], box[0] + box[2], box[1] + box[3]); ig.addColorStop(0, '#d8f1ff'); ig.addColorStop(1, '#9fd4f2'); p.fillStyle = ig; p.fillRect(...box); p.strokeStyle = 'rgba(255,255,255,.6)'; p.lineWidth = 3; for (let i = 0; i < 14; i++) { const x = box[0] + (i * 137) % box[2], y = box[1] + (i * 229) % box[3]; p.beginPath(); p.moveTo(x, y); p.lineTo(x + 60, y + 30); p.lineTo(x + 90, y + 10); p.stroke(); } }
+  else if (THEME === 'space') { const sg = p.createRadialGradient(C.cx, C.cy, 40, C.cx, C.cy, C.R); sg.addColorStop(0, '#2a1450'); sg.addColorStop(1, '#0a0620'); p.fillStyle = sg; p.fillRect(...box); p.strokeStyle = 'rgba(160,120,255,.25)'; p.lineWidth = 3; for (const r of [120, 220, 320]) { p.beginPath(); p.arc(C.cx, C.cy, r, 0, TAU); p.stroke(); } }
+  else if (THEME === 'wood') { for (let i = 0; i < 20; i++) { p.fillStyle = i % 2 ? '#8a5a2e' : '#7a4f28'; p.fillRect(box[0] + i * 46, box[1], 46, box[3]); } p.strokeStyle = 'rgba(40,20,5,.35)'; p.lineWidth = 2; for (let i = 0; i < 20; i++) { p.beginPath(); p.moveTo(box[0] + i * 46, box[1]); p.lineTo(box[0] + i * 46, box[1] + box[3]); p.stroke(); } }
+  else if (THEME === 'court') { p.fillStyle = '#c98a4b'; p.fillRect(...box); p.strokeStyle = 'rgba(255,255,255,.55)'; p.lineWidth = 6; p.beginPath(); p.arc(C.cx, C.cy, 110, 0, TAU); p.stroke(); p.beginPath(); p.moveTo(box[0], C.cy); p.lineTo(box[0] + box[2], C.cy); p.stroke(); }
+  else if (THEME === 'night') { p.fillStyle = '#141428'; p.fillRect(...box); p.strokeStyle = 'rgba(80,200,255,.18)'; p.lineWidth = 2; for (let x = box[0]; x < box[0] + box[2]; x += 60) { p.beginPath(); p.moveTo(x, box[1]); p.lineTo(x, box[1] + box[3]); p.stroke(); } for (let y = box[1]; y < box[1] + box[3]; y += 60) { p.beginPath(); p.moveTo(box[0], y); p.lineTo(box[0] + box[2], y); p.stroke(); } }
+  const vg = p.createRadialGradient(C.cx, C.cy, C.R * .5, C.cx, C.cy, C.R); vg.addColorStop(0, 'rgba(0,0,0,0)'); vg.addColorStop(1, 'rgba(0,0,0,.4)'); p.fillStyle = vg; p.fillRect(0, 0, 1080, 1920);
+  p.restore(); })();
+
+const font = (px, fam = 'Lalezar') => `${fam === 'Cairo' ? '900 ' : ''}${px}px '${fam}'`;
+function text(s, x, y, px, col, o = {}) { g.font = font(px, o.fam); { const mw = o.max ?? 960, w0 = g.measureText(s).width; if (w0 > mw) { px = Math.floor(px * mw / w0); g.font = font(px, o.fam); } } g.textAlign = 'center'; g.textBaseline = 'middle'; g.direction = 'rtl';
+  if (o.stroke) { g.lineWidth = o.stroke; g.strokeStyle = '#000'; g.lineJoin = 'round'; g.strokeText(s, x, y); } g.fillStyle = col; g.fillText(s, x, y); }
+let shake = 0;
+const shownCount = TEAMS.map(() => C.perTeam);
+const elimFlash = TEAMS.map(() => 0);
+let lastElim = 0;
+
+window.frame = function () {
+  sim.stepFrame(); const t = sim.t;
+  while (lastElim < sim.eliminated.length) { elimFlash[sim.eliminated[lastElim]] = 1; shake = 1; lastElim++; }
+  const sx = (Math.random() - .5) * 0 + Math.sin(t * 90) * 10 * shake, sy = Math.cos(t * 77) * 8 * shake; shake *= 0.88;
+  g.setTransform(1, 0, 0, 1, sx, sy); g.drawImage(pitch, 0, 0);
+  // ring in leader colour
+  const n = sim.state === 'finale' ? sim.finalCounts : sim.counts(); const lead = n.indexOf(Math.max(...n));
+  const ringCol = sim.state === 'finale' ? TEAMS[sim.winner].color : TEAMS[lead].color;
+  { g.save(); g.strokeStyle = '#fff'; g.lineWidth = 9; g.shadowColor = ringCol; g.shadowBlur = EP.noGlow ? 0 : 34; arenaPath(g); g.lineJoin = 'round'; g.stroke(); g.restore(); }
+  for (const b of sim.balls) { const sp = SPR[b.team]; const sc = 1 + b.pop * 0.35;
+    g.save(); g.translate(b.x, b.y); g.rotate(b.spin); g.scale(sc, sc); g.drawImage(sp.cv, -sp.S, -sp.S); g.restore(); }
+  if (sim.state === 'finale' && t - sim.finaleT < .3) { g.fillStyle = `rgba(255,255,255,${.4 * (1 - (t - sim.finaleT) / .3)})`; g.fillRect(-20, -20, 1120, 1960); }
+  g.setTransform(1, 0, 0, 1, 0, 0);
+
+  // ---- UI ----
+  text(EP.title, 540, 235, 92, '#fff', { stroke: 11 });
+  g.fillStyle = '#ff3d5a'; g.beginPath(); g.roundRect(540 - 105, 300, 210, 64, 32); g.fill();
+  text(EP.partLabel, 540, 334, 46, '#fff', { fam: 'Cairo' });
+  if (sim.state === 'run' && t < 4.2) { g.globalAlpha = Math.min(1, (4.2 - t) / .6); text(EP.hook, 540, 450, 66, '#ffe14d', { stroke: 9 }); g.globalAlpha = 1; }
+  else if (sim.state === 'run') { text(`المتصدر: ${TEAMS[lead].name}`, 540, 450, 58, TEAMS[lead].color, { stroke: 9 }); }
+  // share bar
+  const total = n.reduce((a, b) => a + b, 0), bx = 140, bw = 800, by = 1400, bh = 34; let x = bx + bw;
+  g.save(); g.beginPath(); g.roundRect(bx, by, bw, bh, 17); g.clip();
+  n.forEach((v, i) => { const w = bw * v / total; g.fillStyle = TEAMS[i].color; g.fillRect(x - w, by, w, bh); x -= w; }); g.restore();
+  g.strokeStyle = 'rgba(255,255,255,.7)'; g.lineWidth = 3; g.beginPath(); g.roundRect(bx, by, bw, bh, 17); g.stroke();
+  // team chips (RTL order)
+  TEAMS.forEach((tm, i) => { const NT = TEAMS.length, rows = NT > 4 ? 2 : 1, per = Math.ceil(NT / rows), row = Math.floor(i / per), j = i % per, inRow = row < rows - 1 ? per : NT - per * (rows - 1), spc = Math.min(205, 960 / per), cx = 540 + ((inRow - 1) / 2 - j) * spc, cy = 1500 + row * 150; shownCount[i] += (n[i] - shownCount[i]) * 0.35;
+    const dead = n[i] === 0; elimFlash[i] *= 0.95;
+    g.globalAlpha = dead ? 0.35 : 1; const sp = SPR[i]; g.save(); g.translate(cx + 52, cy); g.scale(.75, .75); g.drawImage(sp.cv, -sp.S, -sp.S); g.restore();
+    text(String(Math.round(shownCount[i])), cx - 18, cy + 4, 62, dead ? '#888' : '#fff', { fam: 'Cairo', stroke: 8 }); if (EP.showNames !== false) text(tm.name, cx + 17, cy + 72, 38, tm.color, { stroke: 7, max: 190 }); g.globalAlpha = 1;
+    if (dead) { g.strokeStyle = '#ff2d2d'; g.lineWidth = 9; g.lineCap = 'round'; g.beginPath(); g.moveTo(cx - 60, cy - 34); g.lineTo(cx + 84, cy + 34); g.stroke(); }
+    if (elimFlash[i] > 0.05 && sim.state === 'run') { g.globalAlpha = elimFlash[i]; text(`${tm.name} طلع!`, 540, 1270 - (1 - elimFlash[i]) * 60, 74, tm.color, { stroke: 10 }); g.globalAlpha = 1; } });
+  if (sim.state === 'finale') { const a = Math.min(1, (t - sim.finaleT) / .4), w = TEAMS[sim.winner]; g.fillStyle = `rgba(0,0,0,${.55 * a})`; arenaPath(g, 5); g.fill(); g.globalAlpha = a;
+    text('الفائز', 540, 820, 80, '#fff', { stroke: 11 }); text(w.name + '!', 540, 940, 150, w.color, { stroke: 14 });
+    text(EP.endSub, 540, 1070, 60, '#ffe14d', { stroke: 9 }); g.globalAlpha = 1; }
+  return { t, n: n.join('/'), state: sim.state };
+};
+window.getEvents = () => sim.events;
+window.getInfo = () => ({ finaleT: sim.finaleT, winner: sim.winner, finalCounts: sim.finalCounts, eliminated: sim.eliminated });
+</script></body></html>

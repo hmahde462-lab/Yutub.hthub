@@ -1,0 +1,30 @@
+{% extends "base.html" %}{% block content %}
+<div class="card">
+  <h2 style="margin-top:0">
+    {% if out.status == 'uploaded' %}<span class="ok">✓ تم الرفع</span>
+    {% elif out.mode == 'live' %}<span class="err">لم يتم الرفع</span>
+    {% elif out.ok %}<span class="ok">✓ المعاينة ناجحة</span> <span class="muted">(لم يُرفع شيء)</span>
+    {% else %}<span class="err">المعاينة فيها أخطاء</span>{% endif %}
+  </h2>
+  <p>القناة: <b>{{ out.channel_title or out.channel_id or '—' }}</b> · النوع: {{ 'Short' if params.kind == 'short' else 'فيديو طويل' }} · الملف: {{ params.original_name }}</p>
+  {% if out.media %}<p class="muted">{{ out.media.width }}×{{ out.media.height }} ({{ out.media.orientation }}) · {{ '%.1f'|format(out.media.duration_seconds) }} ث · {{ '%.1f'|format(out.media.size_bytes / 1000000) }} MB</p>{% endif %}
+  {% for e in out.errors %}<p class="err">✗ {{ e }}</p>{% endfor %}
+  {% for w in out.warnings %}<p class="warn">! {{ w }}</p>{% endfor %}
+  {% if out.video_id %}<p>الرابط: <a href="https://youtu.be/{{ out.video_id }}">https://youtu.be/{{ out.video_id }}</a></p>{% endif %}
+  <h3>البيانات التي ستُرسل</h3><pre>{{ out.body | tojson(indent=2) }}</pre>
+  <p class="muted">تكلفة الرفع التقريبية: {{ out.quota_cost }} وحدة · المستخدم اليوم: {{ out.quota_used_today }}</p>
+</div>
+{% if out.ok and out.status == 'validated' %}
+<form class="card" method="post" action="/upload/{{ token }}/live">
+  <h3 style="margin-top:0">النشر الفعلي</h3>
+  {% if live_enabled %}
+  <p>سيتم رفع الفيديو إلى قناة <b>{{ out.channel_title }}</b> بخصوصية <b>{{ params.privacy }}</b>.</p>
+  <label>اكتب اسم القناة للتأكيد</label><input name="confirm_channel_title" autocomplete="off" required>
+  <p><button>انشر الآن</button></p>
+  {% else %}
+  <p class="muted">النشر الفعلي معطّل (LIVE_UPLOADS_ENABLED=false). هذه معاينة فقط.</p>
+  {% endif %}
+</form>
+{% endif %}
+<p><a class="btn secondary" href="/upload">رفع آخر</a></p>
+{% endblock %}

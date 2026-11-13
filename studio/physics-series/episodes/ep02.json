@@ -1,0 +1,15 @@
+{
+  "id": "ep02",
+  "template": "battle.html",
+  "title": "معركة الألوان",
+  "partLabel": "الجزء 2",
+  "hook": "اختار لونك قبل لا تبدي!",
+  "endSub": "شنو كان لونك؟ اكتبه",
+  "teams": [
+    {"name": "الأحمر", "color": "#ff3b3b", "dark": "#7a1010"},
+    {"name": "الأزرق", "color": "#3b8bff", "dark": "#0f2f7a"},
+    {"name": "الأخضر", "color": "#2ee86b", "dark": "#0d6a2c"},
+    {"name": "الأصفر", "color": "#ffd23b", "dark": "#8a6a00"}
+  ],
+  "sim": {"seed": 107}
+}

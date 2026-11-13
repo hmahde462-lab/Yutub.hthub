@@ -1,0 +1,51 @@
+{
+ "id": "d10",
+ "template": "duel.html",
+ "title": "بطولة الأبطال 👑",
+ "partLabel": "قتال 10",
+ "hook": "أبطال السلسلة كلهم... بطل واحد بس!",
+ "endSub": "هذا بطل الموسم! تريدون موسم 2؟",
+ "bg": [
+  "#2a2008",
+  "#0c0902"
+ ],
+ "floor": "#3a2e10",
+ "ring": "#ffcf3a",
+ "fighters": [
+  {
+   "name": "بلبوط",
+   "color": "#3fd17a"
+  },
+  {
+   "name": "دعبول",
+   "color": "#2fd3e0"
+  },
+  {
+   "name": "كشكوش",
+   "color": "#e070ff"
+  },
+  {
+   "name": "شنكول",
+   "color": "#ff5a5a"
+  }
+ ],
+ "sim": {
+  "seed": 10,
+  "dmgScale": 1.4,
+  "maxTime": 40,
+  "spawnEvery": 1.7,
+  "R": 460,
+  "pool": [
+   "sword",
+   "knife",
+   "axe",
+   "hammer",
+   "spear",
+   "saw",
+   "heal",
+   "shield",
+   "bomb",
+   "speed"
+  ]
+ }
+}

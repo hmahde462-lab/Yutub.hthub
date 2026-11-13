@@ -1,0 +1,50 @@
+<!doctype html><html lang="ar" dir="rtl"><head><meta charset="utf-8">
+<link rel="stylesheet" href="fonts/fonts.css">
+<style>html,body{margin:0;background:#000}#stage{position:relative;width:1080px;height:1920px;overflow:hidden}canvas{position:absolute;inset:0}</style></head><body>
+<div id="stage"><canvas id="cv" width="1080" height="1920"></canvas></div>
+<script>
+// generated illusion template
+const EP = {"id":"il05","template":"illusion_grid.html","title":"خدعة بصرية","partLabel":"الجزء 5","hook1":"عدّ النقاط السودة قبل العد! ⚫","hook2":"الجولة الثانية... أصعب","q1":"شكد نقطة سودة تشوف؟","q1b":"عدّهن بسرعة!","same1":"ولا نقطة سودة!","same1b":"كلهن بيض... عيونك تخترعهن","q2":"وهسه؟ شكد نقطة سودة؟","q2b":"باوع زين...","same2":"برضو كلهن بيض!","same2b":"النقاط السودة ما موجودة أصلاً","explain1":"خلايا العين تقارن الضوء باللي حواليها","explain2":"فتشوف ظلام بمكان ماكو بيه ظلام!","cta1":"شكد نقطة عدّيت؟ اكتبها 👇","cta2":"الجزء 6 جاي... أغرب 👁️","timeline":{"think":3.5,"zoom1":8.5,"round2":12,"think2":14,"zoom2":18,"explain":21.5,"cta":24,"end":28}}; const T = EP.timeline; const W = 1080, H = 1920, FPS = 60;
+const g = document.getElementById('cv').getContext('2d');
+const GRAY = '#8a8a8a';
+const font = (px, fam = 'Lalezar') => `${fam === 'Cairo' ? '900 ' : ''}${px}px '${fam}'`;
+function text(s, x, y, px, col, o = {}) { g.font = font(px, o.fam); const mw = o.max ?? 920, w0 = g.measureText(s).width; if (w0 > mw) { px = Math.floor(px * mw / w0); g.font = font(px, o.fam); }
+  g.textAlign = 'center'; g.textBaseline = 'middle'; g.direction = 'rtl'; g.lineJoin = 'round';
+  if (o.stroke !== 0) { g.lineWidth = o.stroke ?? 12; g.strokeStyle = o.sc ?? '#000'; g.strokeText(s, x, y); } g.fillStyle = col; g.fillText(s, x, y); }
+function panel(y, h, a = 1) { g.fillStyle = `rgba(0,0,0,${.6 * a})`; g.beginPath(); g.roundRect(60, y - h / 2, 960, h, 36); g.fill(); }
+const fade = (t, a, b) => Math.max(0, Math.min(1, (t - a) / (b - a)));
+const mixHex = (a, b, k) => { const p = h => [1, 3, 5].map(i => parseInt(h.slice(i, i + 2), 16)); const A = p(a), B = p(b); return `rgb(${A.map((v, i) => Math.round(v + (B[i] - v) * k)).join(',')})`; };
+const events = []; const fired = new Set(); const fire = (k, t) => { if (!fired.has(k)) { fired.add(k); events.push({ t, kind: k }); } };
+
+
+const TAU = Math.PI * 2; let f = 0; let HOOK = '';
+function scint(cx, cy, n, cell, line, rot, bg, ln, dot, zoom) {
+  g.save(); g.translate(cx, cy); g.rotate(rot); g.scale(zoom, zoom); const S = n * cell;
+  const M = S * .6; g.fillStyle = bg; g.fillRect(-S / 2 - M, -S / 2 - M, S + 2 * M, S + 2 * M);
+  g.fillStyle = ln; for (let i = -4; i <= n + 4; i++) { const p = -S / 2 + i * cell; g.fillRect(p - line / 2, -S / 2 - M, line, S + 2 * M); g.fillRect(-S / 2 - M, p - line / 2, S + 2 * M, line); }
+  g.fillStyle = dot; for (let i = -4; i <= n + 4; i++) for (let j = -4; j <= n + 4; j++) { g.beginPath(); g.arc(-S / 2 + i * cell, -S / 2 + j * cell, line * .75, 0, TAU); g.fill(); }
+  g.restore(); }
+window.frame = function () {
+  const t = f / FPS; f++; HOOK = t < T.round2 ? EP.hook1 : EP.hook2;
+  g.fillStyle = '#111'; g.fillRect(0, 0, W, H);
+  g.save(); g.beginPath(); g.rect(0, 520, W, 860); g.clip();
+  if (t < T.round2) { const z = 1 + 2.4 * Math.pow(fade(t, T.zoom1, T.zoom1 + 1.5), 2); scint(540, 940, 9, 110, 22, 0, '#000', '#7a7a7a', '#fff', z); if (t > T.zoom1) fire('reveal', t); }
+  else { const z = 1 + 2.4 * Math.pow(fade(t, T.zoom2, T.zoom2 + 1.5), 2); scint(540, 940, 11, 92, 18, Math.PI / 4, '#0b1d3a', '#6a7d9a', '#fff', z); if (t > T.zoom2) fire('reveal2', t); }
+  g.restore();
+  if (t > T.think - .3 && t < T.zoom1) fire('switch', t);
+  const q = (qq, qb, think, end) => { panel(1460, 190); text(qq, 540, 1430, 74, '#ffe14d', { stroke: 0 }); if (t > think) { const n = Math.max(1, Math.ceil(end - t)); text(String(n), 540, 1505, 60, '#fff', { fam: 'Cairo', stroke: 0 }); } else text(qb, 540, 1500, 46, '#fff', { stroke: 0 }); };
+  if (t < T.zoom1) q(EP.q1, EP.q1b, T.think, T.zoom1);
+  else if (t < T.round2) { panel(1460, 190); text(EP.same1, 540, 1430, 80, '#7dff9a', { stroke: 0 }); text(EP.same1b, 540, 1500, 46, '#fff', { stroke: 0 }); }
+  else if (t < T.zoom2) q(EP.q2, EP.q2b, T.think2, T.zoom2);
+  else if (t < T.explain) { panel(1460, 190); text(EP.same2, 540, 1430, 80, '#7dff9a', { stroke: 0 }); text(EP.same2b, 540, 1500, 46, '#fff', { stroke: 0 }); }
+  else { panel(1430, 230); text(EP.explain1, 540, 1385, 54, '#fff', { stroke: 0 }); text(EP.explain2, 540, 1470, 54, '#7fe3ff', { stroke: 0 }); }
+
+  panel(300, 250); text(EP.title, 540, 240, 70, '#fff', { stroke: 0 });
+  g.fillStyle = '#ff3d5a'; g.beginPath(); g.roundRect(435, 290, 210, 60, 30); g.fill(); text(EP.partLabel, 540, 321, 42, '#fff', { fam: 'Cairo', stroke: 0 });
+  text(HOOK, 540, 395, 56, '#ffe14d', { stroke: 0 });
+  if (t > T.cta) { fire('cta', t); const a = fade(t, T.cta, T.cta + .35); g.globalAlpha = a; panel(1660, 170); text(EP.cta1, 540, 1630, 70, '#fff', { stroke: 0 }); text(EP.cta2, 540, 1700, 44, '#ffb3c6', { stroke: 0 }); g.globalAlpha = 1; }
+  return { t, n: 'x', state: 'run' };
+};
+window.getEvents = () => events;
+window.getInfo = () => ({ finaleT: T.end - 3.6, end: T.end });
+</script></body></html>

@@ -1,0 +1,49 @@
+{
+ "id": "ep18",
+ "partLabel": "الجزء 18",
+ "title": "الزعيم الأخير 👑",
+ "hook": "سيف + منشار + نجمة نينجا... سوية!",
+ "milestone": 200,
+ "milestoneText": "تجاوزنا 200! 🔥",
+ "endSub": "انتهت السلسلة! تريدون موسم 2؟",
+ "bg": [
+  "#2a0e0e",
+  "#0f0404"
+ ],
+ "ringColor": "#ffcf3a",
+ "sim": {
+  "r0": 120,
+  "rMin": 6,
+  "container": {
+   "sides": 0,
+   "R": 460
+  },
+  "cutters": [
+   {
+    "kind": "sword",
+    "len": 250,
+    "spin": 2.4
+   },
+   {
+    "kind": "saw",
+    "orbit": 398,
+    "rad": 52,
+    "spin": -2,
+    "phase": 1.5
+   },
+   {
+    "kind": "shuriken",
+    "rad": 40,
+    "x": -200,
+    "y": 150,
+    "vx": 300,
+    "vy": -400,
+    "speed": 1000
+   }
+  ],
+  "g": 700,
+  "maxTime": 24.5
+ },
+ "template": "arena.html",
+ "counterLabel": "كرة"
+}

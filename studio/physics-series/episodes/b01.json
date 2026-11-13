@@ -1,0 +1,35 @@
+{
+ "id": "b01",
+ "template": "battle.html",
+ "title": "معركة الدوري العراقي",
+ "partLabel": "معركة 1",
+ "hook": "منو تشجع؟ اختار قبل لا تبدي!",
+ "endSub": "فاز فريقك؟ اكتبه بالتعليقات",
+ "noGlow": true,
+ "teams": [
+  {
+   "name": "الزوراء",
+   "color": "#ffffff",
+   "patch": "#1a1a1a",
+   "dark": "#000000"
+  },
+  {
+   "name": "الشرطة",
+   "color": "#2ee86b",
+   "dark": "#0d6a2c"
+  },
+  {
+   "name": "الطلاب",
+   "color": "#ffd23b",
+   "dark": "#8a6a00"
+  },
+  {
+   "name": "القوة الجوية",
+   "color": "#3b8bff",
+   "dark": "#0f2f7a"
+  }
+ ],
+ "sim": {
+  "seed": 247
+ }
+}

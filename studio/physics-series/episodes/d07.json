@@ -1,0 +1,54 @@
+{
+ "id": "d07",
+ "template": "duel.html",
+ "title": "الحلبة تصغر!",
+ "partLabel": "قتال 7",
+ "hook": "كل ثانية الحلبة تضيق... منو يصمد؟",
+ "endSub": "شفت شلون ضاقت؟ اكتب الفايز",
+ "bg": [
+  "#26101e",
+  "#0a0408"
+ ],
+ "floor": "#3a1a2e",
+ "ring": "#ff3d5a",
+ "fighters": [
+  {
+   "name": "شنكول",
+   "color": "#ff5a5a"
+  },
+  {
+   "name": "منكول",
+   "color": "#4f9dff"
+  },
+  {
+   "name": "زنكول",
+   "color": "#3fd17a"
+  },
+  {
+   "name": "فنكول",
+   "color": "#ffd23b"
+  }
+ ],
+ "sim": {
+  "seed": 29,
+  "dmgScale": 2.7,
+  "maxTime": 40,
+  "spawnEvery": 1.7,
+  "R": 450,
+  "shrinkFrom": 6,
+  "shrinkTo": 260,
+  "shrinkDur": 16,
+  "pool": [
+   "sword",
+   "knife",
+   "axe",
+   "hammer",
+   "spear",
+   "saw",
+   "heal",
+   "shield",
+   "bomb",
+   "speed"
+  ]
+ }
+}

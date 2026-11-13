@@ -1,0 +1,45 @@
+{
+ "id": "b07",
+ "template": "battle.html",
+ "title": "معركة الفواكه",
+ "hook": "شنو فاكهتك المفضلة؟ اختار!",
+ "endSub": "فاكهتك فازت؟ اكتبها",
+ "noGlow": true,
+ "theme": "ice",
+ "ballStyle": "glossy",
+ "teams": [
+  {
+   "name": "التفاح",
+   "color": "#ff5a5a",
+   "dark": "#7a1010",
+   "emoji": "🍎"
+  },
+  {
+   "name": "البرتقال",
+   "color": "#ff9f3a",
+   "dark": "#7a4000",
+   "emoji": "🍊"
+  },
+  {
+   "name": "الموز",
+   "color": "#ffe04a",
+   "dark": "#8a7000",
+   "emoji": "🍌"
+  },
+  {
+   "name": "العنب",
+   "color": "#a26bff",
+   "dark": "#3a1a7a",
+   "emoji": "🍇"
+  }
+ ],
+ "sim": {
+  "seed": 297,
+  "teams": 4,
+  "maxTime": 27,
+  "R": 420,
+  "ballR": 38,
+  "perTeam": 8
+ },
+ "partLabel": "معركة 7"
+}

@@ -1,0 +1,78 @@
+<!doctype html><html lang="ar" dir="rtl"><head><meta charset="utf-8">
+<link rel="stylesheet" href="fonts/fonts.css">
+<style>html,body{margin:0;background:#000}#stage{position:relative;width:1080px;height:1920px;overflow:hidden}canvas{position:absolute;inset:0}</style></head><body>
+<div id="stage"><canvas id="cv" width="1080" height="1920"></canvas></div>
+<script src="ball2_engine.js"></script>
+<script>
+const EP = __EP__; const TAU = Math.PI * 2;
+const sim = EP.mode === 'axe' ? new AxeSim(EP.sim) : new GrowSim(EP.sim); const C = sim.cfg;
+const g = document.getElementById('cv').getContext('2d');
+const PAL = ['#ffcf3a', '#ff5a5a', '#4f9dff', '#3fd17a', '#b36bff', '#ff8a3a', '#2fd3e0'];
+const DARK = c => { const n = parseInt(c.slice(1), 16), k = .55; return `rgb(${(n >> 16 & 255) * k | 0},${(n >> 8 & 255) * k | 0},${(n & 255) * k | 0})`; };
+function ball(x, y, r, col, face, look) {
+  g.fillStyle = col; g.strokeStyle = DARK(col); g.lineWidth = Math.max(2.5, r * .08); g.beginPath(); g.arc(x, y, r, 0, TAU); g.fill(); g.stroke();
+  g.fillStyle = 'rgba(255,255,255,.55)'; g.beginPath(); g.ellipse(x - r * .35, y - r * .4, r * .28, r * .16, -.6, 0, TAU); g.fill();
+  if (face) { const e = r * .16, lx = (look || 0) * r * .12; g.fillStyle = '#fff'; for (const sd of [-1, 1]) { g.beginPath(); g.arc(x + sd * r * .3 + lx, y - r * .05, e * 1.5, 0, TAU); g.fill(); }
+    g.fillStyle = '#111'; for (const sd of [-1, 1]) { g.beginPath(); g.arc(x + sd * r * .3 + lx * 1.6, y - r * .03, e * .8, 0, TAU); g.fill(); }
+    g.strokeStyle = '#111'; g.lineWidth = Math.max(2, r * .06); g.beginPath(); g.arc(x + lx, y + r * .2, r * .22, .15 * Math.PI, .85 * Math.PI); g.stroke(); }
+}
+const font = (px, fam = 'Lalezar') => `${fam === 'Cairo' ? '900 ' : ''}${px}px '${fam}'`;
+function text(s, x, y, px, col, o = {}) { g.font = font(px, o.fam); const mw = o.max ?? 940, w0 = g.measureText(s).width; if (w0 > mw) { px = Math.floor(px * mw / w0); g.font = font(px, o.fam); }
+  g.textAlign = 'center'; g.textBaseline = 'middle'; g.direction = 'rtl'; g.lineJoin = 'round'; if (o.stroke !== 0) { g.lineWidth = o.stroke ?? 11; g.strokeStyle = '#000'; g.strokeText(s, x, y); } g.fillStyle = col; g.fillText(s, x, y); }
+let msT = null, slashes = [], chips = [], lastEv = 0, pulse = 0; const lastR = [0, 0];
+function header(t) {
+  text(EP.title, 540, 235, 88, '#fff'); g.fillStyle = '#ff3d5a'; g.beginPath(); g.roundRect(435, 300, 210, 64, 32); g.fill(); text(EP.partLabel, 540, 334, 46, '#fff', { fam: 'Cairo', stroke: 0 });
+  if (sim.state === 'run' && t < 4) { g.globalAlpha = Math.min(1, (4 - t) / .6); text(EP.hook, 540, 450, 64, '#ffe14d', { stroke: 9 }); g.globalAlpha = 1; }
+}
+window.frame = function () {
+  sim.stepFrame(); const t = sim.t;
+  const bg = g.createLinearGradient(0, 0, 0, 1920); bg.addColorStop(0, '#141a2e'); bg.addColorStop(1, '#0b0f1c'); g.fillStyle = bg; g.fillRect(0, 0, 1080, 1920);
+  // new events -> effects
+  for (; lastEv < sim.events.length; lastEv++) { const e = sim.events[lastEv];
+    if (e.kind === 'split') { const A = sim.axe(sim.nAxes > 1 ? e.a | 0 : 0); slashes.push({ a: A.b1, b: A.b2, life: .25 }); pulse = 1; for (let i = 0; i < 6; i++) chips.push({ x: A.hx, y: A.hy, vx: (Math.random() - .5) * 0 + Math.cos(i) * 260, vy: Math.sin(i * 2.1) * 260 - 120, life: .6 }); }
+    if (e.kind === 'grow') pulse = 1; }
+  // ring
+  if (sim.state === 'run') { g.strokeStyle = '#fff'; g.lineWidth = 9; g.beginPath(); g.arc(C.cx, C.cy, C.R, 0, TAU); g.stroke(); }
+  if (EP.mode === 'axe') {
+    for (const s of sim.shards) { g.save(); g.translate(s.x, s.y); g.rotate(s.rot); g.strokeStyle = '#fff'; g.lineWidth = 9; g.lineCap = 'round'; g.beginPath(); g.moveTo(-s.len / 2, 0); g.lineTo(s.len / 2, 0); g.stroke(); g.restore(); }
+    for (const b of sim.balls) ball(b.x, b.y, b.r, PAL[b.gen % PAL.length]);
+    if (sim.state === 'run') for (let ai = 0; ai < sim.nAxes; ai++) { const A = sim.axe(ai);
+      g.lineCap = 'round'; g.strokeStyle = '#3a2410'; g.lineWidth = 26; g.beginPath(); g.moveTo(C.cx, C.cy); g.lineTo(A.hx, A.hy); g.stroke();
+      g.strokeStyle = '#a8703f'; g.lineWidth = 18; g.beginPath(); g.moveTo(C.cx, C.cy); g.lineTo(A.hx, A.hy); g.stroke();
+      // axe head: back block toward the centre, curved edge outward
+      const out = 34, back = 20, [x1, y1] = A.b1, [x2, y2] = A.b2;
+      g.fillStyle = '#9aa3ad'; g.strokeStyle = '#2b3036'; g.lineWidth = 5; g.beginPath();
+      g.moveTo(A.hx - A.ca * back - A.sa * 30, A.hy - A.sa * back + A.ca * 30); g.lineTo(x1 - A.ca * 6, y1 - A.sa * 6);
+      g.quadraticCurveTo(A.hx + A.ca * out, A.hy + A.sa * out, x2 - A.ca * 6, y2 - A.sa * 6); g.lineTo(A.hx - A.ca * back + A.sa * 30, A.hy - A.sa * back - A.ca * 30); g.closePath(); g.fill(); g.stroke();
+      g.strokeStyle = '#e8f0f8'; g.lineWidth = 6; g.beginPath(); g.moveTo(x1, y1); g.quadraticCurveTo(A.hx + A.ca * (out + 6), A.hy + A.sa * (out + 6), x2, y2); g.stroke();
+      g.fillStyle = '#555c66'; g.strokeStyle = '#1d2126'; g.lineWidth = 5; g.beginPath(); g.arc(C.cx, C.cy, 22, 0, TAU); g.fill(); g.stroke(); }
+    for (const s of slashes) { g.strokeStyle = `rgba(255,255,255,${s.life * 4})`; g.lineWidth = 10; g.beginPath(); g.moveTo(s.a[0], s.a[1]); g.lineTo(s.b[0], s.b[1]); g.stroke(); s.life -= 1 / 60; } slashes = slashes.filter(s => s.life > 0);
+    for (const c2 of chips) { c2.vy += 15; c2.x += c2.vx / 60; c2.y += c2.vy / 60; c2.life -= 1 / 60; g.fillStyle = `rgba(220,230,240,${c2.life * 1.6})`; g.fillRect(c2.x - 4, c2.y - 4, 8, 8); } chips = chips.filter(c2 => c2.life > 0);
+    header(t);
+    const n = sim.state === 'finale' ? sim.finalCount : sim.count; pulse *= .85;
+    g.save(); g.translate(540, 1480); g.scale(1 + pulse * .15, 1 + pulse * .15); text(String(n), 0, 0, 150, '#fff', { fam: 'Cairo', stroke: 12 }); g.restore();
+    text(EP.counterLabel, 540, 1585, 56, '#cfcfcf', { stroke: 8 });
+    if (EP.milestone && sim.state === 'run') { if (n >= EP.milestone && msT === null) { msT = t; sim.events.push({ t: +t.toFixed(4), kind: 'milestone', v: 1, a: 0 }); }
+      if (msT !== null && t - msT < 2.2) { const k = Math.min(1, (t - msT) / .25), a = Math.min(1, (2.2 - (t - msT)) / .4); g.globalAlpha = a; g.save(); g.translate(540, 520); g.scale(.6 + .4 * k, .6 + .4 * k); text(EP.milestoneText, 0, 0, 96, '#ffcf3a', { stroke: 12 }); g.restore(); g.globalAlpha = 1; } }
+    if (sim.state === 'finale') { const a = Math.min(1, (t - sim.finaleT) / .4); g.globalAlpha = a; text(`${sim.finalCount} ${EP.counterLabel}!`, 540, 900, 120, '#ffcf3a', { fam: 'Lalezar', stroke: 13 }); text(EP.endSub, 540, 1030, 60, '#fff', { stroke: 9 }); g.globalAlpha = 1; }
+  } else {
+    const T = EP.teams;
+    for (const p of sim.particles) { g.fillStyle = T[p.team].color; g.strokeStyle = DARK(T[p.team].color); g.lineWidth = 3; g.beginPath(); g.arc(p.x, p.y, p.r, 0, TAU); g.fill(); g.stroke(); }
+    const [b0, b1] = [sim.balls.find(b => b.team === 0), sim.balls.find(b => b.team === 1)];
+    for (const b of sim.balls) { const other = sim.balls.find(o => o !== b); const sc = 1 + b.pop * .06; ball(b.x, b.y, b.r * sc, T[b.team].color, true, other ? Math.sign(other.x - b.x) : 0); }
+    header(t);
+    // race bars toward the finish line
+    const goal = C.R * C.winFrac, rows = [[0, 1440], [1, 1530]];
+    for (const [tm, y] of rows) { const bb = sim.balls.find(b => b.team === tm); if (bb) lastR[tm] = bb.r; const r = lastR[tm] || C.r0, k = Math.max(0, Math.min(1, (r - C.r0) / (goal - C.r0)));
+      g.fillStyle = 'rgba(255,255,255,.12)'; g.beginPath(); g.roundRect(170, y - 26, 760, 52, 26); g.fill();
+      g.fillStyle = T[tm].color; g.beginPath(); g.roundRect(930 - 760 * Math.max(.06, k), y - 26, 760 * Math.max(.06, k), 52, 26); g.fill();
+      text(T[tm].name, 1010 - 0, y, 40, T[tm].color, { stroke: 6, max: 140 }); text(`${Math.round(k * 100)}%`, 120, y, 40, '#fff', { fam: 'Cairo', stroke: 6 }); }
+    g.strokeStyle = '#fff'; g.lineWidth = 4; g.setLineDash([10, 10]); g.beginPath(); g.moveTo(170, 1400); g.lineTo(170, 1570); g.stroke(); g.setLineDash([]);
+    if (sim.state === 'run' && t >= 4 && sim.lead >= 0) text(`${EP.leadLabel} ${T[sim.lead].name}`, 540, 450, 58, T[sim.lead].color, { stroke: 9 });
+    if (sim.state === 'finale') { const a = Math.min(1, (t - sim.finaleT) / .4), w = T[sim.winner]; g.globalAlpha = a; g.fillStyle = 'rgba(0,0,0,.6)'; g.beginPath(); g.roundRect(150, 690, 780, 370, 40); g.fill(); text('الفائز', 540, 760, 80, '#fff', { stroke: 11 }); text(w.name + '!', 540, 880, 150, w.color, { stroke: 14 }); text(EP.endSub, 540, 1010, 60, '#ffe14d', { stroke: 9 }); g.globalAlpha = 1; }
+  }
+  return { t, n: sim.balls.length, state: sim.state };
+};
+window.getEvents = () => sim.events;
+window.getInfo = () => ({ finaleT: sim.finaleT, final: EP.mode === 'axe' ? sim.finalCount : sim.winner, leadChanges: sim.leadChanges });
+</script></body></html>

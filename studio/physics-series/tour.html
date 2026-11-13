@@ -1,0 +1,168 @@
+<!doctype html><html lang="ar" dir="rtl"><head><meta charset="utf-8">
+<link rel="stylesheet" href="fonts/fonts.css">
+<style>html,body{margin:0;background:#000}#stage{position:relative;width:1920px;height:1080px;overflow:hidden}canvas{position:absolute;inset:0}</style></head><body>
+<div id="stage"><canvas id="cv" width="1920" height="1080"></canvas></div>
+<script src="duel_engine.js"></script>
+<script>
+// 16-team knockout, horizontal 16:9. Global timeline: intro -> (round card -> matches)* -> champion.
+const TOUR = __TOUR__; const TAU = Math.PI * 2, W = 1920, H = 1080;
+const g = document.getElementById('cv').getContext('2d');
+const FLAG = {
+  'العراق': { t: 'h', c: ['#ce1126', '#ffffff', '#000000'], mark: '#007a3d', col: '#ce1126' },
+  'البرازيل': { t: 'brazil', col: '#009c3b' }, 'السعودية': { t: 'solid', c: ['#006c35'], bar: '#ffffff', col: '#006c35' },
+  'الأرجنتين': { t: 'h', c: ['#74acdf', '#ffffff', '#74acdf'], sun: '#f6b40e', col: '#74acdf' },
+  'مصر': { t: 'h', c: ['#ce1126', '#ffffff', '#000000'], eagle: '#c09300', col: '#c09300' },
+  'إسبانيا': { t: 'h', c: ['#aa151b', '#f1bf00', '#f1bf00', '#aa151b'], col: '#f1bf00' },
+  'المغرب': { t: 'solid', c: ['#c1272d'], star: '#006233', col: '#c1272d' },
+  'البرتغال': { t: 'v', c: ['#006600', '#006600', '#ff0000', '#ff0000', '#ff0000'], col: '#ff0000' },
+  'الجزائر': { t: 'v', c: ['#006233', '#ffffff'], cres: '#d21034', col: '#006233' },
+  'فرنسا': { t: 'v', c: ['#0055a4', '#ffffff', '#ef4135'], col: '#0055a4' },
+  'ألمانيا': { t: 'h', c: ['#000000', '#dd0000', '#ffce00'], col: '#ffce00' },
+  'اليابان': { t: 'solid', c: ['#ffffff'], disc: '#bc002d', col: '#bc002d' },
+  'إنجلترا': { t: 'solid', c: ['#ffffff'], cross: '#ce1124', col: '#ffffff' },
+  'إيطاليا': { t: 'v', c: ['#009246', '#ffffff', '#ce2b37'], col: '#009246' },
+  'هولندا': { t: 'h', c: ['#ae1c28', '#ffffff', '#21468b'], col: '#ff7f00' },
+  'أمريكا': { t: 'usa', col: '#3c3b6e' },
+};
+const font = (px, fam = 'Lalezar') => `${fam === 'Cairo' ? '900 ' : ''}${px}px '${fam}'`;
+function text(s, x, y, px, col, o = {}) { g.font = font(px, o.fam); const mw = o.max ?? 1800, w0 = g.measureText(s).width; if (w0 > mw) { px = Math.floor(px * mw / w0); g.font = font(px, o.fam); }
+  g.textAlign = o.align || 'center'; g.textBaseline = 'middle'; g.direction = 'rtl'; g.lineJoin = 'round'; if (o.stroke !== 0) { g.lineWidth = o.stroke ?? 9; g.strokeStyle = '#000'; g.strokeText(s, x, y); } g.fillStyle = col; g.fillText(s, x, y); }
+function flagBall(name, x, y, r, glow = 0) { const f = FLAG[name];
+  if (glow) { g.save(); g.shadowColor = f.col; g.shadowBlur = glow; g.fillStyle = f.col; g.beginPath(); g.arc(x, y, r, 0, TAU); g.fill(); g.restore(); }
+  g.save(); g.beginPath(); g.arc(x, y, r, 0, TAU); g.clip(); const x0 = x - r, y0 = y - r, S = 2 * r;
+  if (f.t === 'h') f.c.forEach((c, i) => { g.fillStyle = c; g.fillRect(x0, y0 + i * S / f.c.length, S, S / f.c.length + 1); });
+  else if (f.t === 'v') f.c.forEach((c, i) => { g.fillStyle = c; g.fillRect(x0 + i * S / f.c.length, y0, S / f.c.length + 1, S); });
+  else if (f.t === 'solid') { g.fillStyle = f.c[0]; g.fillRect(x0, y0, S, S); }
+  else if (f.t === 'brazil') { g.fillStyle = '#009c3b'; g.fillRect(x0, y0, S, S); g.fillStyle = '#ffdf00'; g.beginPath(); g.moveTo(x - r * .85, y); g.lineTo(x, y - r * .6); g.lineTo(x + r * .85, y); g.lineTo(x, y + r * .6); g.fill(); g.fillStyle = '#002776'; g.beginPath(); g.arc(x, y, r * .33, 0, TAU); g.fill(); }
+  else if (f.t === 'usa') { for (let i = 0; i < 9; i++) { g.fillStyle = i % 2 ? '#ffffff' : '#b22234'; g.fillRect(x0, y0 + i * S / 9, S, S / 9 + 1); } g.fillStyle = '#3c3b6e'; g.fillRect(x0, y0, S * .5, S * .5); g.fillStyle = '#fff'; for (let i = 0; i < 3; i++) for (let j = 0; j < 3; j++) { g.beginPath(); g.arc(x0 + S * (.1 + i * .15), y0 + S * (.1 + j * .15), r * .05, 0, TAU); g.fill(); } }
+  if (f.mark) { g.fillStyle = f.mark; for (let i = -1; i <= 1; i++) { g.beginPath(); g.arc(x + i * r * .22, y, r * .07, 0, TAU); g.fill(); } }
+  if (f.eagle) { g.fillStyle = f.eagle; g.beginPath(); g.arc(x, y, r * .14, 0, TAU); g.fill(); }
+  if (f.bar) { g.fillStyle = f.bar; g.fillRect(x - r * .5, y + r * .3, r, r * .08); }
+  if (f.sun) { g.fillStyle = f.sun; g.beginPath(); g.arc(x, y, r * .13, 0, TAU); g.fill(); }
+  if (f.disc) { g.fillStyle = f.disc; g.beginPath(); g.arc(x, y, r * .45, 0, TAU); g.fill(); }
+  if (f.cross) { g.fillStyle = f.cross; g.fillRect(x - r * .13, y0, r * .26, S); g.fillRect(x0, y - r * .13, S, r * .26); }
+  if (f.star) { g.strokeStyle = f.star; g.lineWidth = r * .07; g.beginPath(); for (let i = 0; i <= 5; i++) { const a = -Math.PI / 2 + i * 4 * Math.PI / 5; g.lineTo(x + Math.cos(a) * r * .38, y + Math.sin(a) * r * .38); } g.stroke(); }
+  if (f.cres) { g.fillStyle = f.cres; g.beginPath(); g.arc(x, y, r * .32, 0, TAU); g.fill(); g.fillStyle = '#fff'; g.beginPath(); g.arc(x + r * .1, y, r * .27, 0, TAU); g.fill(); }
+  const sh = g.createRadialGradient(x - r * .35, y - r * .4, r * .1, x, y, r * 1.05); sh.addColorStop(0, 'rgba(255,255,255,.45)'); sh.addColorStop(.5, 'rgba(255,255,255,0)'); sh.addColorStop(1, 'rgba(0,0,0,.35)'); g.fillStyle = sh; g.fillRect(x0, y0, S, S);
+  g.restore(); g.strokeStyle = 'rgba(0,0,0,.75)'; g.lineWidth = Math.max(2, r * .07); g.beginPath(); g.arc(x, y, r, 0, TAU); g.stroke(); }
+function eyes(x, y, r, look, mood) { g.fillStyle = '#fff'; g.strokeStyle = '#000'; g.lineWidth = 2;
+  for (const sd of [-1, 1]) { g.beginPath(); g.ellipse(x + sd * r * .3, y - r * .05, r * .17, r * .21, 0, 0, TAU); g.fill(); g.stroke(); }
+  g.fillStyle = '#111'; for (const sd of [-1, 1]) { g.beginPath(); g.arc(x + sd * r * .3 + Math.cos(look) * r * .07, y - r * .03 + Math.sin(look) * r * .06, r * .085, 0, TAU); g.fill(); }
+  if (mood) { g.strokeStyle = '#000'; g.lineWidth = r * .08; g.lineCap = 'round'; for (const sd of [-1, 1]) { g.beginPath(); g.moveTo(x + sd * r * .12, y - r * .3); g.lineTo(x + sd * r * .48, y - r * .42); g.stroke(); } } }
+const ICON = { sword: '⚔️', knife: '🔪', axe: '🪓', hammer: '🔨', spear: '🔱', saw: '⚙️', heal: '🧪', shield: '🛡️', bomb: '💣', speed: '⚡' };
+const WNAME = { sword: 'سيف', knife: 'سكين', axe: 'فأس', hammer: 'مطرقة', spear: 'رمح', saw: 'منشار', heal: 'علاج', shield: 'درع', bomb: 'قنبلة', speed: 'سرعة' };
+
+// ---------- schedule ----------
+const PRE = 2.2, HOLD = 2.6, POST = 1.0, INTRO = 7, RCARD = 2.6, END = 9;
+const SEG = []; let T0 = 0;
+SEG.push({ k: 'intro', t0: 0, t1: INTRO }); T0 = INTRO;
+TOUR.matches.forEach((m, i) => {
+  if (i === 0 || m.round !== TOUR.matches[i - 1].round) { SEG.push({ k: 'round', r: m.round, t0: T0, t1: T0 + RCARD }); T0 += RCARD; }
+  SEG.push({ k: 'pre', m: i, t0: T0, t1: T0 + PRE }); T0 += PRE;
+  m.fightT0 = T0; m.finishT = T0 + m.dur;
+  SEG.push({ k: 'fight', m: i, t0: T0, t1: T0 + m.dur + HOLD }); T0 += m.dur + HOLD;
+  SEG.push({ k: 'post', m: i, t0: T0, t1: T0 + POST }); T0 += POST; });
+SEG.push({ k: 'end', t0: T0, t1: T0 + END }); const TOTAL = T0 + END;
+window.getTotal = () => TOTAL;
+const winnerName = m => m.winner === 0 ? m.a : m.b;
+// bracket slots: names known at time t
+function slotName(round, idx, t) { if (round === 0) return TOUR.teams[idx];
+  const prev = TOUR.matches.filter(m => m.round === round - 1)[idx]; return prev && t >= prev.finishT ? winnerName(prev) : null; }
+
+// ---------- live sim ----------
+let sim = null, simM = -1, parts = [], pops = [], lastEv = 0, shake = 0;
+function simFor(i, local) { const m = TOUR.matches[i];
+  if (simM !== i || sim.t > local + 1e-6) { sim = new DuelSim(Object.assign({ seed: m.seed, dmgScale: m.ds, cx: 560, cy: 590, r: 58, maxTime: 60, spawnEvery: 1.6, fighters: [{ name: m.a }, { name: m.b }] }, m.arena)); simM = i; lastEv = 0; parts = []; pops = []; }
+  while (sim.t < local - 1e-9) sim.stepFrame(); return sim; }
+function arenaPath(s, R) { const C = s.cfg; g.beginPath(); if (C.sides) { for (let k = 0; k < C.sides; k++) { const a = C.rot + k * TAU / C.sides; g.lineTo(C.cx + Math.cos(a) * R, C.cy + Math.sin(a) * R); } g.closePath(); } else g.arc(C.cx, C.cy, R, 0, TAU); }
+function drawWeapon(s, b) { const w = b.w; if (!w) return; const G = s.weaponGeom(b); g.lineCap = 'round';
+  if (G.disc) { g.save(); g.translate(G.x, G.y); g.rotate(s.t * 18); g.fillStyle = '#c0c8d0'; g.strokeStyle = '#2b3036'; g.lineWidth = 3; g.beginPath(); for (let i = 0; i < 24; i++) { const a = i * Math.PI / 12, r = i % 2 ? G.rad * .78 : G.rad; g.lineTo(Math.cos(a) * r, Math.sin(a) * r); } g.closePath(); g.fill(); g.stroke(); g.restore(); return; }
+  const ux = Math.cos(G.ang), uy = Math.sin(G.ang), px = -uy, py = ux;
+  if (w.type === 'sword' || w.type === 'knife') { const bw = w.type === 'sword' ? 11 : 9; g.strokeStyle = '#4a2c14'; g.lineWidth = 12; g.beginPath(); g.moveTo(G.ax, G.ay); g.lineTo(G.ax + ux * 20, G.ay + uy * 20); g.stroke();
+    const sx = G.ax + ux * 20, sy = G.ay + uy * 20; g.fillStyle = '#e4ebf2'; g.strokeStyle = '#3a4048'; g.lineWidth = 3; g.beginPath(); g.moveTo(sx + px * bw, sy + py * bw); g.lineTo(G.bx - ux * 18 + px * bw * .7, G.by - uy * 18 + py * bw * .7); g.lineTo(G.bx, G.by); g.lineTo(G.bx - ux * 18 - px * bw * .7, G.by - uy * 18 - py * bw * .7); g.lineTo(sx - px * bw, sy - py * bw); g.closePath(); g.fill(); g.stroke();
+    if (w.type === 'sword') { g.strokeStyle = '#d9a52b'; g.lineWidth = 9; g.beginPath(); g.moveTo(sx + px * 24, sy + py * 24); g.lineTo(sx - px * 24, sy - py * 24); g.stroke(); } }
+  else if (w.type === 'axe' || w.type === 'hammer') { g.strokeStyle = '#7a4a22'; g.lineWidth = 11; g.beginPath(); g.moveTo(G.ax, G.ay); g.lineTo(G.bx, G.by); g.stroke(); const hx = G.bx - ux * 14, hy = G.by - uy * 14;
+    g.fillStyle = w.type === 'axe' ? '#a9b2bb' : '#59606a'; g.strokeStyle = '#1d2126'; g.lineWidth = 4; g.beginPath();
+    if (w.type === 'axe') { g.moveTo(hx - px * 8, hy - py * 8); g.lineTo(hx + px * 40 - ux * 14, hy + py * 40 - uy * 14); g.quadraticCurveTo(hx + px * 52 + ux * 10, hy + py * 52 + uy * 10, hx + px * 36 + ux * 22, hy + py * 36 + uy * 22); g.lineTo(hx - px * 8 + ux * 10, hy - py * 8 + uy * 10); }
+    else { g.moveTo(hx - px * 30 - ux * 16, hy - py * 30 - uy * 16); g.lineTo(hx + px * 30 - ux * 16, hy + py * 30 - uy * 16); g.lineTo(hx + px * 30 + ux * 16, hy + py * 30 + uy * 16); g.lineTo(hx - px * 30 + ux * 16, hy - py * 30 + uy * 16); }
+    g.closePath(); g.fill(); g.stroke(); }
+  else if (w.type === 'spear') { g.strokeStyle = '#8a5a2e'; g.lineWidth = 9; g.beginPath(); g.moveTo(G.ax, G.ay); g.lineTo(G.bx - ux * 24, G.by - uy * 24); g.stroke(); g.fillStyle = '#dfe6ee'; g.strokeStyle = '#2b3036'; g.lineWidth = 3; g.beginPath(); g.moveTo(G.bx, G.by); g.lineTo(G.bx - ux * 34 + px * 13, G.by - uy * 34 + py * 13); g.lineTo(G.bx - ux * 26, G.by - uy * 26); g.lineTo(G.bx - ux * 34 - px * 13, G.by - uy * 34 - py * 13); g.closePath(); g.fill(); g.stroke(); } }
+
+// ---------- panels ----------
+function background() { const bg = g.createLinearGradient(0, 0, 0, H); bg.addColorStop(0, '#141a33'); bg.addColorStop(1, '#070912'); g.fillStyle = bg; g.fillRect(0, 0, W, H); }
+function bracket(t, hiMatch) { const X0 = 1150, CW = 182, top = 150, bot = 1030;
+  g.fillStyle = 'rgba(0,0,0,.35)'; g.beginPath(); g.roundRect(1125, 95, 775, 960, 24); g.fill();
+  text('🏆 جدول البطولة', 1512, 125, 34, '#ffd23b', { stroke: 6 });
+  for (let r = 0; r < 5; r++) { const n = 16 >> r;
+    for (let i = 0; i < n; i++) { const y = top + (bot - top) * (i + .5) / n, x = X0 + r * CW;
+      const name = r < 4 ? slotName(r, i, t) : (t >= TOUR.matches[14].finishT ? TOUR.champion : null);
+      if (r > 0) { const yA = top + (bot - top) * (2 * i + .5) / (2 * n), yB = top + (bot - top) * (2 * i + 1.5) / (2 * n); g.strokeStyle = 'rgba(255,255,255,.25)'; g.lineWidth = 2; g.beginPath(); g.moveTo(x - CW + 150, yA); g.lineTo(x - 12, yA); g.lineTo(x - 12, yB); g.lineTo(x - CW + 150, yB); g.moveTo(x - 12, y); g.lineTo(x, y); g.stroke(); }
+      const m = r < 4 ? TOUR.matches.find(mm => mm.round === r && (mm.a === name || mm.b === name)) : null;
+      const lost = m && t >= m.finishT && winnerName(m) !== name;
+      const isHi = hiMatch !== null && m === TOUR.matches[hiMatch];
+      g.fillStyle = isHi ? 'rgba(255,210,59,.9)' : name ? (r === 4 ? '#ffd23b' : 'rgba(255,255,255,.12)') : 'rgba(255,255,255,.05)'; g.beginPath(); g.roundRect(x, y - 21, 150, 42, 10); g.fill();
+      if (name) { g.globalAlpha = lost ? .35 : 1; flagBall(name, x + 128, y, 15); text(name, x + 60, y + 2, 24, isHi || r === 4 ? '#000' : '#fff', { fam: 'Cairo', stroke: 0, max: 98 }); g.globalAlpha = 1; } } } }
+function hpBars(s, m) { const A = s.balls[0], B = s.balls[1];
+  for (const [b, nm, x, dir] of [[A, m.a, 80, 1], [B, m.b, 600, -1]]) { const k = Math.max(0, b.hp) / 100, col = FLAG[nm].col;
+    g.fillStyle = 'rgba(0,0,0,.55)'; g.beginPath(); g.roundRect(x, 40, 440, 64, 20); g.fill();
+    flagBall(nm, dir > 0 ? x + 36 : x + 404, 72, 24);
+    g.fillStyle = 'rgba(255,255,255,.15)'; g.beginPath(); g.roundRect(dir > 0 ? x + 72 : x + 18, 78, 350, 16, 8); g.fill();
+    g.fillStyle = col === '#ffffff' ? '#e8e8e8' : col; const bw = 350 * k; g.beginPath(); g.roundRect(dir > 0 ? x + 72 : x + 368 - bw, 78, bw + .01, 16, 8); g.fill();
+    text(nm, dir > 0 ? x + 180 : x + 260, 58, 26, '#fff', { fam: 'Cairo', stroke: 5 }); text(String(Math.ceil(Math.max(0, b.hp))), dir > 0 ? x + 395 : x + 45, 58, 24, '#ffd23b', { fam: 'Cairo', stroke: 5 }); if (b.w) text(ICON[b.w.type], dir > 0 ? x + 330 : x + 110, 58, 24, '#fff', { stroke: 0 }); }
+  text('VS', 560, 72, 40, '#ff3d5a', { stroke: 7 }); }
+function fightScene(m, i, local, t) { const s = simFor(i, local);
+  for (; lastEv < s.events.length; lastEv++) { const e = s.events[lastEv];
+    if (e.kind === 'hit' && e.w !== 'bump') { pops.push({ x: e.x, y: e.y, s: '-' + e.v, col: '#ff4b4b', t0: local }); if (e.v >= 15) shake = Math.max(shake, .6); }
+    if (e.kind === 'heal') pops.push({ x: e.x, y: e.y - 60, s: '+' + e.v, col: '#5dff8a', t0: local });
+    if (e.kind === 'ko') { shake = 1; const col = FLAG[e.who === 0 ? m.a : m.b].col; for (let k = 0; k < 40; k++) { const a = k / 40 * TAU, sp = 200 + (k * 37 % 400); parts.push({ x: e.x, y: e.y, vx: Math.cos(a) * sp, vy: Math.sin(a) * sp, life: 1.2, col, r: 8 }); } } }
+  const sx = Math.sin(t * 91) * 10 * shake, sy = Math.cos(t * 73) * 8 * shake; shake *= .9;
+  g.save(); g.translate(sx, sy);
+  g.fillStyle = m.round === 3 ? '#2b2410' : '#1a2140'; arenaPath(s, s.R); g.fill(); g.strokeStyle = m.round === 3 ? '#ffd23b' : '#fff'; g.lineWidth = 8; g.lineJoin = 'round'; arenaPath(s, s.R); g.stroke();
+  for (const it of s.items) { const age = local - it.born; g.globalAlpha = Math.min(1, age / .25); g.fillStyle = 'rgba(255,255,255,.12)'; g.strokeStyle = '#ffe14d'; g.lineWidth = 4; g.beginPath(); g.arc(it.x, it.y, 32, 0, TAU); g.fill(); g.stroke(); text(ICON[it.type], it.x, it.y + 3, 36, '#fff', { stroke: 0 }); g.globalAlpha = 1; }
+  for (const bm of s.bombs) text('💣', bm.x, bm.y, 46, '#fff', { stroke: 0 });
+  for (const b of s.balls) { if (!b.alive) continue; const nm = b.i === 0 ? m.a : m.b, foe = s.balls[1 - b.i];
+    drawWeapon(s, b); flagBall(nm, b.x, b.y, b.r, 24); if (b.flash > .5) { g.fillStyle = 'rgba(255,255,255,.6)'; g.beginPath(); g.arc(b.x, b.y, b.r, 0, TAU); g.fill(); }
+    eyes(b.x, b.y, b.r, Math.atan2(foe.y - b.y, foe.x - b.x), !!b.w);
+    if (b.shield > 0) { g.strokeStyle = 'rgba(120,200,255,.85)'; g.lineWidth = 6; g.beginPath(); g.arc(b.x, b.y, b.r + 12, 0, TAU); g.stroke(); }
+    text(nm, b.x, b.y - b.r - 22, 26, '#fff', { fam: 'Cairo', stroke: 6 });
+    if (s.state === 'finale' && b.i === s.winner) text('👑', b.x, b.y - b.r - 62, 52, '#fff', { stroke: 0 }); }
+  for (const p of parts) { p.x += p.vx / 30; p.y += p.vy / 30; p.vx *= .93; p.vy *= .93; p.life -= 1 / 30; g.globalAlpha = Math.max(0, p.life); g.fillStyle = p.col; g.beginPath(); g.arc(p.x, p.y, p.r, 0, TAU); g.fill(); } g.globalAlpha = 1; parts = parts.filter(p => p.life > 0);
+  for (const p of pops) { const k = (local - p.t0) / .8; g.globalAlpha = Math.max(0, 1 - k); text(p.s, p.x, p.y - 40 - k * 60, 40, p.col, { fam: 'Cairo', stroke: 6 }); } g.globalAlpha = 1; pops = pops.filter(p => local - p.t0 < .8);
+  g.restore();
+  hpBars(s, m);
+  const rm = TOUR.matches.filter(x => x.round === m.round), idx = rm.indexOf(m) + 1;
+  text(`${m.roundName}${rm.length > 1 ? ` · المباراة ${idx} من ${rm.length}` : ''}`, 560, 1045, 30, '#ffd23b', { stroke: 6 });
+  if (s.state === 'finale') { const a = Math.min(1, (local - s.finaleT) / .3), w = winnerName(m); g.globalAlpha = a; g.fillStyle = 'rgba(0,0,0,.6)'; g.beginPath(); g.roundRect(210, 470, 700, 240, 34); g.fill();
+    text(m.round === 3 ? 'بطل كأس العالم! 🏆' : 'تأهل! ✅', 560, 535, 52, '#fff', { stroke: 8 }); text(w, 560, 630, 100, FLAG[w].col === '#ffffff' ? '#fff' : FLAG[w].col, { stroke: 12 }); g.globalAlpha = 1; } }
+window.renderAt = function (t) {
+  const sg = SEG.find(s => t >= s.t0 && t < s.t1) || SEG[SEG.length - 1], local = t - sg.t0;
+  background();
+  let hi = null;
+  if (sg.k === 'intro') { text('كأس العالم للكرات 🏆', 960, 140, 110, '#ffd23b', { stroke: 12 }); text('16 منتخب… كرة وحدة بس تاخذ الكأس', 960, 250, 54, '#fff', { stroke: 8 });
+    TOUR.teams.forEach((nm, i) => { const a = Math.min(1, Math.max(0, (local - i * .15) / .3)); if (a <= 0) return; const col = i % 8, row = Math.floor(i / 8), x = 260 + col * 200, y = 470 + row * 260;
+      g.globalAlpha = a; flagBall(nm, x, y, 62 * (0.6 + .4 * a), 18); text(nm, x, y + 95, 34, '#fff', { fam: 'Cairo', stroke: 6 }); g.globalAlpha = 1; });
+    if (local > 3.5) text('اختار منتخبك واكتبه بالتعليقات قبل لا تبدي! 👇', 960, 1000, 50, '#7dff9a', { stroke: 8 }); return { t, k: sg.k }; }
+  if (sg.k === 'end') { const w = TOUR.champion, a = Math.min(1, local / .5);
+    for (let k = 0; k < 60; k++) { const ph = (local * .35 + k * .0167) % 1; g.fillStyle = ['#ffd23b', '#ff4b6e', '#4f9dff', '#3fd17a'][k % 4]; g.fillRect((k * 151) % W, ph * H, 14, 22); }
+    g.globalAlpha = a; text('🏆', 960, 230, 170, '#fff', { stroke: 0 }); flagBall(w, 960, 520, 150 * a, 50); eyes(960, 520, 150 * a, Math.PI / 2, false); text('👑', 960, 330, 110, '#fff', { stroke: 0 });
+    text(`بطل كأس العالم للكرات: ${w}!`, 960, 760, 84, '#ffd23b', { stroke: 12 });
+    if (local > 2.5) { text('منتخبك وصل لوين؟ اكتبه بالتعليقات 👇', 960, 880, 54, '#fff', { stroke: 8 }); text('اشترك… والبطولة الجاية: الأندية 🔥', 960, 970, 50, '#7dff9a', { stroke: 8 }); }
+    g.globalAlpha = 1; return { t, k: sg.k }; }
+  if (sg.k === 'round') { bracket(t, null); const rn = TOUR.rounds[sg.r], a = Math.min(1, local / .3); g.save(); g.translate(560, 540); g.scale(.7 + .3 * a, .7 + .3 * a); text(rn, 0, -30, 130, '#ffd23b', { stroke: 14 });
+    const left = 16 >> sg.r; text(left === 2 ? 'الكأس على المحك! 🏆' : `${left} منتخبات بقت`, 0, 100, 56, '#fff', { stroke: 8 }); g.restore(); return { t, k: sg.k }; }
+  const m = TOUR.matches[sg.m]; hi = sg.m;
+  if (sg.k === 'pre') { bracket(t, hi); const a = Math.min(1, local / .35);
+    flagBall(m.a, 300 - (1 - a) * 300, 560, 120, 30); flagBall(m.b, 820 + (1 - a) * 300, 560, 120, 30);
+    text(m.a, 300, 740, 58, '#fff', { fam: 'Cairo', stroke: 8 }); text(m.b, 820, 740, 58, '#fff', { fam: 'Cairo', stroke: 8 });
+    g.save(); g.translate(560, 560); g.scale(a, a); text('VS', 0, 0, 120, '#ff3d5a', { stroke: 12 }); g.restore(); text(m.roundName, 560, 250, 70, '#ffd23b', { stroke: 10 }); return { t, k: sg.k }; }
+  if (sg.k === 'fight') { bracket(t, hi); fightScene(m, sg.m, local, t); return { t, k: sg.k }; }
+  if (sg.k === 'post') { bracket(t, hi); const w = winnerName(m); flagBall(w, 560, 520, 140, 40); text(`${w} للدور الجاي ➡️`, 560, 760, 64, '#7dff9a', { stroke: 9 }); return { t, k: sg.k }; }
+};
+window.allEvents = function () { const out = [];
+  SEG.filter(s => s.k === 'round').forEach(s => out.push({ t: s.t0, kind: 'round' }));
+  SEG.filter(s => s.k === 'pre').forEach(s => out.push({ t: s.t0 + .2, kind: 'vs' }));
+  out.push({ t: SEG[SEG.length - 1].t0, kind: 'champion' });
+  TOUR.matches.forEach((m, i) => { const s = new DuelSim(Object.assign({ seed: m.seed, dmgScale: m.ds, cx: 560, cy: 590, r: 58, maxTime: 60, spawnEvery: 1.6, fighters: [{ name: m.a }, { name: m.b }] }, m.arena));
+    while (s.t < m.dur + HOLD) s.stepFrame(); s.events.forEach(e => out.push(Object.assign({}, e, { t: m.fightT0 + e.t }))); });
+  return { total: TOTAL, events: out.sort((a, b) => a.t - b.t) }; };
+</script></body></html>

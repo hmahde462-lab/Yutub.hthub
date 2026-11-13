@@ -1,0 +1,112 @@
+<!doctype html><html lang="ar" dir="rtl"><head><meta charset="utf-8">
+<link rel="stylesheet" href="fonts/fonts.css">
+<style>html,body{margin:0;background:#000}#stage{position:relative;width:1080px;height:1920px;overflow:hidden}canvas{position:absolute;inset:0}</style></head><body>
+<div id="stage"><canvas id="cv" width="1080" height="1920"></canvas></div>
+<script>
+const EP = __EP__;
+const W = 1080, H = 1920, FPS = 60, TAU = Math.PI * 2;
+const T = EP.timeline; // seconds
+const g = document.getElementById('cv').getContext('2d');
+const FX = 540, FY = 930; // fixation point
+
+// ---------------- the scene (drawn procedurally, saturated colours) ----------------
+function palm(c, x, y, h, lean, s) {
+  c.save(); c.translate(x, y);
+  c.strokeStyle = '#8a4b14'; c.lineCap = 'round';
+  for (let i = 0; i < 18; i++) { const t0 = i / 18, t1 = (i + 1) / 18;
+    const p = t => [lean * t * t * h * .35, -h * t];
+    const [x0, y0] = p(t0), [x1, y1] = p(t1); c.lineWidth = 46 * s * (1 - t0 * .45); c.beginPath(); c.moveTo(x0, y0); c.lineTo(x1, y1); c.stroke();
+    c.strokeStyle = i % 2 ? '#8a4b14' : '#a85d1c'; }
+  const tx = lean * h * .35, ty = -h;
+  const fronds = [-2.9, -2.4, -1.9, -1.45, -1.0, -0.55, -0.15, -3.3];
+  for (const a of fronds) { const L = 300 * s, ex = tx + Math.cos(a) * L, ey = ty + Math.sin(a) * L * .55 + L * .35;
+    c.fillStyle = '#12c22e'; c.beginPath(); c.moveTo(tx, ty);
+    c.quadraticCurveTo(tx + Math.cos(a) * L * .55, ty + Math.sin(a) * L * .55 - 70 * s, ex, ey);
+    c.quadraticCurveTo(tx + Math.cos(a) * L * .5, ty + Math.sin(a) * L * .5 + 10 * s, tx, ty); c.fill(); }
+  c.fillStyle = '#ff7a00'; for (let k = 0; k < 7; k++) { c.beginPath(); c.arc(tx + (k - 3) * 14 * s, ty + 26 * s + (k % 2) * 12 * s, 13 * s, 0, TAU); c.fill(); }
+  c.restore();
+}
+function drawScene(c) {
+  const sky = c.createLinearGradient(0, 0, 0, 1180); sky.addColorStop(0, '#0033ff'); sky.addColorStop(.55, '#1fa2ff'); sky.addColorStop(1, '#ffd1f0');
+  c.fillStyle = sky; c.fillRect(0, 0, W, 1200);
+  const sun = c.createRadialGradient(760, 600, 40, 760, 600, 260); sun.addColorStop(0, '#fff200'); sun.addColorStop(.5, '#ffd000'); sun.addColorStop(1, 'rgba(255,140,0,0)');
+  c.fillStyle = sun; c.beginPath(); c.arc(760, 600, 260, 0, TAU); c.fill();
+  c.fillStyle = '#ffe600'; c.beginPath(); c.arc(760, 600, 125, 0, TAU); c.fill();
+  // clouds
+  c.fillStyle = '#ff5fd2'; for (const [x, y, s] of [[220, 380, 1], [470, 250, .7], [960, 330, .8]]) { c.beginPath(); for (const [dx, dy, r] of [[-60, 10, 50], [0, -10, 70], [70, 8, 52], [20, 25, 55]]) c.arc(x + dx * s, y + dy * s, r * s, 0, TAU); c.fill(); }
+  // distant hills
+  c.fillStyle = '#7b2cff'; c.beginPath(); c.moveTo(0, 1180); c.quadraticCurveTo(200, 1000, 420, 1150); c.quadraticCurveTo(650, 980, 860, 1140); c.quadraticCurveTo(980, 1060, 1080, 1120); c.lineTo(1080, 1220); c.lineTo(0, 1220); c.fill();
+  // river
+  const river = c.createLinearGradient(0, 1200, 0, 1480); river.addColorStop(0, '#00c8ff'); river.addColorStop(1, '#0057ff');
+  c.fillStyle = river; c.fillRect(0, 1200, W, 290);
+  c.strokeStyle = 'rgba(255,255,255,.85)'; c.lineWidth = 6; c.lineCap = 'round';
+  for (const [x, y, w] of [[120, 1250, 120], [560, 1290, 160], [860, 1240, 110], [330, 1380, 150], [760, 1420, 130]]) { c.beginPath(); c.moveTo(x, y); c.lineTo(x + w, y); c.stroke(); }
+  // boat (mashhoof)
+  c.fillStyle = '#ff1a1a'; c.beginPath(); c.moveTo(300, 1330); c.quadraticCurveTo(470, 1410, 680, 1330); c.lineTo(640, 1370); c.quadraticCurveTo(470, 1430, 340, 1370); c.closePath(); c.fill();
+  c.strokeStyle = '#ffe600'; c.lineWidth = 7; c.beginPath(); c.moveTo(520, 1340); c.lineTo(600, 1180); c.stroke();
+  // grass
+  const grass = c.createLinearGradient(0, 1480, 0, 1920); grass.addColorStop(0, '#2bff3a'); grass.addColorStop(1, '#00a82a');
+  c.fillStyle = grass; c.fillRect(0, 1480, W, 440);
+  for (let i = 0; i < 40; i++) { const x = (i * 197) % 1080, y = 1560 + ((i * 89) % 330); c.fillStyle = i % 3 ? '#ff1a6b' : '#ffe600'; c.beginPath(); c.arc(x, y, 16, 0, TAU); c.fill(); }
+  palm(c, 170, 1700, 900, 1, 1.05); palm(c, 930, 1760, 760, -1, .9);
+}
+const color = document.createElement('canvas'); color.width = W; color.height = H; drawScene(color.getContext('2d'));
+const neg = document.createElement('canvas'), gray = document.createElement('canvas');
+for (const cv of [neg, gray]) { cv.width = W; cv.height = H; }
+(function () { const src = color.getContext('2d').getImageData(0, 0, W, H), n = new ImageData(W, H), gr = new ImageData(W, H);
+  for (let i = 0; i < src.data.length; i += 4) { const r = src.data[i], gg = src.data[i + 1], b = src.data[i + 2];
+    n.data[i] = 255 - r; n.data[i + 1] = 255 - gg; n.data[i + 2] = 255 - b; n.data[i + 3] = 255;
+    const l = Math.round(0.299 * r + 0.587 * gg + 0.114 * b); gr.data[i] = gr.data[i + 1] = gr.data[i + 2] = l; gr.data[i + 3] = 255; }
+  neg.getContext('2d').putImageData(n, 0, 0); gray.getContext('2d').putImageData(gr, 0, 0); })();
+
+// ---------------- text helpers ----------------
+const font = (px, fam = 'Lalezar') => `${fam === 'Cairo' ? '900 ' : ''}${px}px '${fam}'`;
+function text(s, x, y, px, col, o = {}) { g.font = font(px, o.fam); const mw = o.max ?? 920, w0 = g.measureText(s).width; if (w0 > mw) { px = Math.floor(px * mw / w0); g.font = font(px, o.fam); } g.textAlign = 'center'; g.textBaseline = 'middle'; g.direction = 'rtl';
+  g.lineWidth = o.stroke ?? 12; g.strokeStyle = '#000'; g.lineJoin = 'round'; g.strokeText(s, x, y); g.fillStyle = col; g.fillText(s, x, y); }
+function panel(y, h, a) { g.fillStyle = `rgba(0,0,0,${.62 * a})`; g.beginPath(); g.roundRect(60, y - h / 2, 960, h, 36); g.fill(); }
+const fade = (t, a, b) => Math.max(0, Math.min(1, (t - a) / (b - a)));
+const events = []; let f = 0, firedSwitch = false, firedReveal = false, firedCta = false;
+
+window.frame = function () {
+  const t = f / FPS; f++;
+  const staring = t < T.switch;
+  g.drawImage(staring ? neg : gray, 0, 0);
+  if (t >= T.switch && !firedSwitch) { firedSwitch = true; events.push({ t, kind: 'switch' }); }
+  // fixation dot + progress ring
+  if (t < T.switch + 1.2) {
+    const pulse = t < T.stare ? 1 + .25 * Math.sin(t * 8) : 1;
+    g.fillStyle = '#000'; g.beginPath(); g.arc(FX, FY, 15 * pulse, 0, TAU); g.fill();
+    g.fillStyle = '#fff'; g.beginPath(); g.arc(FX, FY, 9 * pulse, 0, TAU); g.fill();
+    if (t >= T.stare && staring) { const p = fade(t, T.stare, T.switch);
+      g.strokeStyle = 'rgba(0,0,0,.55)'; g.lineWidth = 7; g.beginPath(); g.arc(FX, FY, 38, 0, TAU); g.stroke();
+      g.strokeStyle = '#fff'; g.lineWidth = 5; g.lineCap = 'round'; g.beginPath(); g.arc(FX, FY, 38, -Math.PI / 2, -Math.PI / 2 + TAU * p); g.stroke(); }
+  }
+  // ---- text layers ----
+  // hook (first frame is already full)
+  const hookA = 1 - fade(t, T.stare - .6, T.stare);
+  if (hookA > 0) { g.globalAlpha = hookA;
+    panel(300, 300, 1); text(EP.title, 540, 235, 70, '#fff', { stroke: 0 });
+    g.fillStyle = '#ff3d5a'; g.beginPath(); g.roundRect(435, 285, 210, 60, 30); g.fill(); text(EP.partLabel, 540, 316, 42, '#fff', { fam: 'Cairo', stroke: 0 });
+    text(EP.hook, 540, 395, 66, '#ffe14d', { stroke: 0 });
+    if (t >= T.instr) { const a = fade(t, T.instr, T.instr + .3); g.globalAlpha = hookA * a; panel(1180, 210, 1);
+      text(EP.instr1, 540, 1140, 64, '#fff', { stroke: 0 }); text(EP.instr2, 540, 1222, 56, '#ffe14d', { stroke: 0 }); }
+    g.globalAlpha = 1; }
+  // gentle reminder mid-stare (far from the dot, low contrast)
+  if (t > T.stare + 6 && t < T.switch - 1) { g.globalAlpha = .55 * Math.min(fade(t, T.stare + 6, T.stare + 7), 1 - fade(t, T.switch - 2, T.switch - 1));
+    text(EP.keep, 540, 1600, 48, '#fff', { stroke: 8 }); g.globalAlpha = 1; }
+  // after switch
+  if (t >= T.ask && t < T.reveal) { const a = fade(t, T.ask, T.ask + .4); g.globalAlpha = a; panel(330, 170, 1); text(EP.ask, 540, 330, 92, '#fff', { stroke: 0 }); g.globalAlpha = 1; }
+  if (t >= T.reveal) { if (!firedReveal) { firedReveal = true; events.push({ t, kind: 'reveal' }); }
+    const a = fade(t, T.reveal, T.reveal + .4); g.globalAlpha = a; g.fillStyle = `rgba(0,0,0,${.35 * a})`; g.fillRect(0, 0, W, H);
+    panel(330, 190, 1); text(EP.reveal1, 540, 300, 78, '#ffe14d', { stroke: 0 }); text(EP.reveal2, 540, 375, 50, '#fff', { stroke: 0 });
+    if (t >= T.explain) { const b = fade(t, T.explain, T.explain + .4); g.globalAlpha = b; panel(1250, 220, 1);
+      text(EP.explain1, 540, 1205, 54, '#fff', { stroke: 0 }); text(EP.explain2, 540, 1290, 54, '#7fe3ff', { stroke: 0 }); }
+    if (t >= T.cta) { if (!firedCta) { firedCta = true; events.push({ t, kind: 'cta' }); }
+      const c2 = fade(t, T.cta, T.cta + .35); g.globalAlpha = c2; panel(1560, 210, 1);
+      text(EP.cta1, 540, 1520, 76, '#fff', { stroke: 0 }); text(EP.cta2, 540, 1605, 48, '#ffb3c6', { stroke: 0 }); }
+    g.globalAlpha = 1; }
+  return { t, n: staring ? 'stare' : 'gray', state: 'run' };
+};
+window.getEvents = () => events;
+window.getInfo = () => ({ finaleT: T.end - 3.6, end: T.end });
+</script></body></html>

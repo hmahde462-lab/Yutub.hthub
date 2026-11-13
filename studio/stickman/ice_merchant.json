@@ -1,0 +1,26 @@
+{
+  "id": "ice_merchant",
+  "fps": 30,
+  "sceneStarts": [0, 10, 20, 30, 40, 50],
+  "end": 60,
+  "captions": [
+    {"t0": 0.2, "t1": 3.6, "ar": "في عز الشتاء… حفر سليم حفرة عميقة في الصحراء", "en": "In the dead of winter… Saleem dug a deep pit in the desert"},
+    {"t0": 3.6, "t1": 6.0, "ar": "ودفن فيها الثلج!", "en": "and buried ice in it!"},
+    {"t0": 6.0, "t1": 9.9, "ar": "وقال: في الصيف، سأبيع هذا بالذهب!", "en": "\"In summer, I'll sell this for gold!\""},
+    {"t0": 10.1, "t1": 13.3, "ar": "ضحك تجار السوق حتى مالت عمائمهم", "en": "The traders laughed so hard their turbans tilted"},
+    {"t0": 13.3, "t1": 16.8, "ar": "يا سليم! الثلج يذوب في كفك خلال دقيقة", "en": "\"Saleem! Ice melts in your palm in a minute…\""},
+    {"t0": 16.8, "t1": 19.9, "ar": "فكيف يعيش شهورًا في الرمل؟", "en": "\"…how will it last months in the sand?\""},
+    {"t0": 20.1, "t1": 23.3, "ar": "لم يرد سليم بكلمة… غطى الثلج بالقش", "en": "Saleem said nothing… he covered the ice with straw"},
+    {"t0": 23.3, "t1": 26.6, "ar": "وبنى فوقه قبة سميكة من الطين", "en": "built a thick mud dome over it"},
+    {"t0": 26.6, "t1": 29.9, "ar": "وبرجًا عاليًا يشبه المدخنة… والناس تضحك", "en": "and a tall chimney-like tower… while people laughed"},
+    {"t0": 30.1, "t1": 33.4, "ar": "ثم جاء الصيف… حر يذيب الحجر", "en": "Then summer came… heat that melts stone"},
+    {"t0": 33.4, "t1": 36.6, "ar": "جفت الآبار…", "en": "The wells ran dry…"},
+    {"t0": 36.6, "t1": 39.9, "ar": "من يأتني بشربة باردة، أعطه ما يشاء من الذهب!", "en": "\"Whoever brings me a cold drink gets all the gold he wants!\""},
+    {"t0": 40.1, "t1": 43.4, "ar": "فتح سليم باب القبة… فخرج بخار أبيض بارد!", "en": "Saleem opened the dome… and cold white mist poured out!"},
+    {"t0": 43.4, "t1": 46.6, "ar": "كان الثلج ما يزال صلبًا لامعًا", "en": "The ice was still solid and shining"},
+    {"t0": 46.6, "t1": 49.9, "ar": "سكت السوق… وامتلأت يدا سليم بالذهب", "en": "The market fell silent… and Saleem's hands filled with gold"},
+    {"t0": 50.1, "t1": 53.6, "ar": "السر؟ القش والطين السميك يمنعان حرارة الشمس", "en": "The secret? Straw and thick mud block the sun's heat"},
+    {"t0": 53.6, "t1": 57.2, "ar": "والبرج يسحب الهواء الساخن… فيبقى البرد تحت الأرض", "en": "The tower pulls hot air out… so the cold stays underground"},
+    {"t0": 57.2, "t1": 60.0, "ar": "ومن ضحك أولًا… دفع آخرًا!", "en": "Whoever laughed first… paid last!"}
+  ]
+}
