@@ -1,6 +1,6 @@
 // node rec.js <n> preview t1 t2 ... | <n> video out.mp4 | <n> events out.json
 const { chromium } = require('playwright'); const fs = require('fs'); const path = require('path'); const { spawn } = require('child_process');
-const n = +process.argv[2], mode = process.argv[3]; const EP = JSON.parse(fs.readFileSync(path.join(__dirname, 'episodes.json'), 'utf8'))[n - 1]; const FPS = 30;
+const n = +process.argv[2], mode = process.argv[3]; const EP = [...JSON.parse(fs.readFileSync(path.join(__dirname, 'episodes.json'), 'utf8')), ...(fs.existsSync(path.join(__dirname, 'episodes2.json')) ? JSON.parse(fs.readFileSync(path.join(__dirname, 'episodes2.json'), 'utf8')) : [])].find(e => e.n === n); const FPS = 30;
 const built = path.join(__dirname, `.built_${n}.html`); fs.writeFileSync(built, fs.readFileSync(path.join(__dirname, 'flagduel.html'), 'utf8').replace('__EP__', JSON.stringify(EP)));
 (async () => { const b = await chromium.launch(); const p = await b.newPage({ viewport: { width: 1080, height: 1920 } });
   const errs = []; p.on('pageerror', e => errs.push(String(e))); await p.goto('file://' + built);

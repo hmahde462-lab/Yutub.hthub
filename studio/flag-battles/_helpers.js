@@ -20,6 +20,59 @@ const FLAG = {
   'لبنان': { t: 'h', c: ['#ed1c24', '#ffffff', '#ffffff', '#ed1c24'], cedar: '#00a651', col: '#00a651' },
   'تونس': { t: 'solid', c: ['#e70013'], disc: '#ffffff', cres: '#e70013', col: '#e70013' },
   'المكسيك': { t: 'v', c: ['#006847', '#ffffff', '#ce1126'], eagle: '#8b5a2b', col: '#006847' },
+
+  // ---- more countries (simplified) ----
+  'عُمان': { t: 'h', c: ['#ffffff', '#db161b', '#008000'], lband: '#db161b', col: '#db161b' },
+  'اليمن': { t: 'h', c: ['#ce1126', '#ffffff', '#000000'], col: '#ce1126' },
+  'فلسطين': { t: 'h', c: ['#000000', '#ffffff', '#009736'], tri: '#ee2a35', col: '#009736' },
+  'البحرين': { t: 'solid', c: ['#ce1126'], serr: '#ffffff', col: '#ce1126' },
+  'ليبيا': { t: 'h', c: ['#e70013', '#000000', '#000000', '#239e46'], wcres: '#000000', col: '#239e46' },
+  'السودان': { t: 'h', c: ['#d21034', '#ffffff', '#000000'], tri: '#007229', col: '#007229' },
+  'تركيا': { t: 'solid', c: ['#e30a17'], wcres: '#e30a17', col: '#e30a17' },
+  'الصين': { t: 'solid', c: ['#de2910'], cstar: '#ffde00', col: '#de2910' },
+  'كوريا الجنوبية': { t: 'solid', c: ['#ffffff'], korea: 1, col: '#cd2e3a' },
+  'الهند': { t: 'h', c: ['#ff9933', '#ffffff', '#138808'], wheel: '#000080', col: '#ff9933' },
+  'أستراليا': { t: 'solid', c: ['#00008b'], wstars: '#ffffff', col: '#00008b' },
+  'كندا': { t: 'v', c: ['#d52b1e', '#ffffff', '#ffffff', '#d52b1e'], leaf: '#d52b1e', col: '#d52b1e' },
+  'نيجيريا': { t: 'v', c: ['#008751', '#ffffff', '#008751'], col: '#008751' },
+  'غانا': { t: 'h', c: ['#ce1126', '#fcd116', '#006b3f'], star: '#000000', fstar: 1, col: '#fcd116' },
+  'الكاميرون': { t: 'v', c: ['#007a5e', '#ce1126', '#fcd116'], star: '#fcd116', fstar: 1, col: '#007a5e' },
+  'السنغال': { t: 'v', c: ['#00853f', '#fdef42', '#e31b23'], star: '#00853f', fstar: 1, col: '#00853f' },
+  'كرواتيا': { t: 'h', c: ['#ff0000', '#ffffff', '#171796'], checks: 1, col: '#ff0000' },
+  'بلجيكا': { t: 'v', c: ['#000000', '#fdda24', '#ef3340'], col: '#fdda24' },
+  'السويد': { t: 'solid', c: ['#006aa7'], nordic: '#fecc00', col: '#006aa7' },
+  'النرويج': { t: 'solid', c: ['#ba0c2f'], nordic: '#ffffff', nordic2: '#00205b', col: '#ba0c2f' },
+  'أوروغواي': { t: 'h', c: ['#ffffff', '#0038a8', '#ffffff', '#0038a8', '#ffffff', '#0038a8', '#ffffff', '#0038a8', '#ffffff'], sunTL: '#fcd116', col: '#0038a8' },
+  'كولومبيا': { t: 'h', c: ['#fcd116', '#fcd116', '#003893', '#ce1126'], col: '#fcd116' },
+  // ---- football clubs: kit colours only (no crests) ----
+  'ريال مدريد': { t: 'solid', c: ['#ffffff'], band: '#febe10', club: 1, col: '#febe10' },
+  'برشلونة': { t: 'v', c: ['#a50044', '#004d98', '#a50044', '#004d98', '#a50044'], club: 1, col: '#a50044' },
+  'مانشستر يونايتد': { t: 'solid', c: ['#da291c'], band: '#000000', club: 1, col: '#da291c' },
+  'مانشستر سيتي': { t: 'solid', c: ['#6cabdd'], band: '#ffffff', club: 1, col: '#6cabdd' },
+  'ليفربول': { t: 'solid', c: ['#c8102e'], collar: '#f6eb61', club: 1, col: '#c8102e' },
+  'تشيلسي': { t: 'solid', c: ['#034694'], collar: '#ffffff', club: 1, col: '#034694' },
+  'أرسنال': { t: 'v', c: ['#ffffff', '#ef0107', '#ef0107', '#ef0107', '#ffffff'], club: 1, col: '#ef0107' },
+  'توتنهام': { t: 'h', c: ['#ffffff', '#ffffff', '#132257'], club: 1, col: '#132257' },
+  'بايرن ميونخ': { t: 'h', c: ['#dc052d', '#ffffff', '#dc052d'], club: 1, col: '#dc052d' },
+  'دورتموند': { t: 'solid', c: ['#fde100'], band: '#000000', club: 1, col: '#fde100' },
+  'يوفنتوس': { t: 'v', c: ['#000000', '#ffffff', '#000000', '#ffffff', '#000000', '#ffffff'], club: 1, col: '#ffffff' },
+  'ميلان': { t: 'v', c: ['#fb090b', '#000000', '#fb090b', '#000000', '#fb090b', '#000000'], club: 1, col: '#fb090b' },
+  'إنتر': { t: 'v', c: ['#010e80', '#000000', '#010e80', '#000000', '#010e80', '#000000'], club: 1, col: '#0068a8' },
+  'نابولي': { t: 'solid', c: ['#12a0d7'], collar: '#ffffff', club: 1, col: '#12a0d7' },
+  'باريس سان جيرمان': { t: 'v', c: ['#004170', '#004170', '#ffffff', '#da291c', '#ffffff', '#004170', '#004170'], club: 1, col: '#004170' },
+  'مارسيليا': { t: 'solid', c: ['#ffffff'], band: '#2faee0', club: 1, col: '#2faee0' },
+  'أتلتيكو مدريد': { t: 'v', c: ['#cb3524', '#ffffff', '#cb3524', '#ffffff', '#cb3524', '#ffffff'], club: 1, col: '#cb3524' },
+  'بوكا جونيورز': { t: 'h', c: ['#103f79', '#f3b229', '#103f79'], club: 1, col: '#f3b229' },
+  'ريفر بليت': { t: 'solid', c: ['#ffffff'], sash: '#e30613', club: 1, col: '#e30613' },
+  'الهلال': { t: 'solid', c: ['#005eb8'], collar: '#ffffff', club: 1, col: '#005eb8' },
+  'النصر': { t: 'solid', c: ['#ffde00'], band: '#0a2a66', club: 1, col: '#ffde00' },
+  'الاتحاد': { t: 'v', c: ['#fcd116', '#000000', '#fcd116', '#000000', '#fcd116', '#000000'], club: 1, col: '#fcd116' },
+  'الأهلي السعودي': { t: 'solid', c: ['#006747'], band: '#ffffff', club: 1, col: '#006747' },
+  'الأهلي': { t: 'solid', c: ['#e30613'], collar: '#ffffff', club: 1, col: '#e30613' },
+  'الزمالك': { t: 'solid', c: ['#ffffff'], twin: '#e30613', club: 1, col: '#e30613' },
+  'الوداد': { t: 'solid', c: ['#d71920'], band: '#ffffff', club: 1, col: '#d71920' },
+  'الرجاء': { t: 'solid', c: ['#00843d'], band: '#ffffff', club: 1, col: '#00843d' },
+  'الترجي': { t: 'h', c: ['#e2001a', '#fcd116', '#e2001a', '#fcd116', '#e2001a'], club: 1, col: '#fcd116' },
 };
 const font = (px, fam = 'Lalezar') => `${fam === 'Cairo' ? '900 ' : ''}${px}px '${fam}'`;
 function text(s, x, y, px, col, o = {}) { g.font = font(px, o.fam); const mw = o.max ?? 1800, w0 = g.measureText(s).width; if (w0 > mw) { px = Math.floor(px * mw / w0); g.font = font(px, o.fam); }
@@ -46,8 +99,30 @@ function flagBall(name, x, y, r, glow = 0) { const f = FLAG[name];
   if (f.sun) { g.fillStyle = f.sun; g.beginPath(); g.arc(x, y, r * .13, 0, TAU); g.fill(); }
   if (f.disc) { g.fillStyle = f.disc; g.beginPath(); g.arc(x, y, r * .45, 0, TAU); g.fill(); }
   if (f.cross) { g.fillStyle = f.cross; g.fillRect(x - r * .13, y0, r * .26, S); g.fillRect(x0, y - r * .13, S, r * .26); }
-  if (f.star) { g.strokeStyle = f.star; g.lineWidth = r * .07; g.beginPath(); for (let i = 0; i <= 5; i++) { const a = -Math.PI / 2 + i * 4 * Math.PI / 5; g.lineTo(x + Math.cos(a) * r * .38, y + Math.sin(a) * r * .38); } g.stroke(); }
+  if (f.star && !f.fstar) { g.strokeStyle = f.star; g.lineWidth = r * .07; g.beginPath(); for (let i = 0; i <= 5; i++) { const a = -Math.PI / 2 + i * 4 * Math.PI / 5; g.lineTo(x + Math.cos(a) * r * .38, y + Math.sin(a) * r * .38); } g.stroke(); }
   if (f.cres) { g.fillStyle = f.cres; g.beginPath(); g.arc(x, y, r * .32, 0, TAU); g.fill(); g.fillStyle = '#fff'; g.beginPath(); g.arc(x + r * .1, y, r * .27, 0, TAU); g.fill(); }
+
+  if (f.lband) { g.fillStyle = f.lband; g.fillRect(x0, y0, S * .3, S); }
+  if (f.tri) { g.fillStyle = f.tri; g.beginPath(); g.moveTo(x0, y0); g.lineTo(x0 + S * .45, y); g.lineTo(x0, y0 + S); g.fill(); }
+  if (f.serr) { g.fillStyle = f.serr; g.beginPath(); g.moveTo(x0, y0); const n = 5; for (let i = 0; i <= n; i++) { g.lineTo(x0 + S * .3, y0 + i * S / n); if (i < n) g.lineTo(x0 + S * .45, y0 + (i + .5) * S / n); } g.lineTo(x0, y0 + S); g.closePath(); g.fill(); }
+  if (f.wcres) { g.fillStyle = '#fff'; g.beginPath(); g.arc(x - r * .08, y, r * .34, 0, TAU); g.fill(); g.fillStyle = f.wcres; g.beginPath(); g.arc(x + r * .02, y, r * .28, 0, TAU); g.fill();
+    g.fillStyle = '#fff'; g.beginPath(); for (let i = 0; i < 10; i++) { const a = -Math.PI / 2 + i * Math.PI / 5, rr = i % 2 ? r * .05 : r * .12; g.lineTo(x + r * .32 + Math.cos(a) * rr, y + Math.sin(a) * rr); } g.closePath(); g.fill(); }
+  if (f.cstar) { g.fillStyle = f.cstar; const st = (cx, cy, R) => { g.beginPath(); for (let i = 0; i < 10; i++) { const a = -Math.PI / 2 + i * Math.PI / 5, rr = i % 2 ? R * .4 : R; g.lineTo(cx + Math.cos(a) * rr, cy + Math.sin(a) * rr); } g.closePath(); g.fill(); };
+    st(x - r * .35, y - r * .3, r * .3); [[.05, -.6], [.2, -.4], [.2, -.1], [.05, .1]].forEach(([dx, dy]) => st(x + dx * r, y + dy * r, r * .09)); }
+  if (f.korea) { g.fillStyle = '#cd2e3a'; g.beginPath(); g.arc(x, y, r * .38, Math.PI, TAU); g.fill(); g.fillStyle = '#0047a0'; g.beginPath(); g.arc(x, y, r * .38, 0, Math.PI); g.fill();
+    g.fillStyle = '#000'; for (const [dx, dy] of [[-.62, -.5], [.62, -.5], [-.62, .5], [.62, .5]]) g.fillRect(x + dx * r - r * .1, y + dy * r - r * .08, r * .2, r * .16); }
+  if (f.wheel) { g.strokeStyle = f.wheel; g.lineWidth = r * .04; g.beginPath(); g.arc(x, y, r * .2, 0, TAU); g.stroke(); for (let i = 0; i < 12; i++) { const a = i * TAU / 12; g.beginPath(); g.moveTo(x, y); g.lineTo(x + Math.cos(a) * r * .2, y + Math.sin(a) * r * .2); g.stroke(); } }
+  if (f.wstars) { g.fillStyle = '#fff'; const st = (cx, cy, R) => { g.beginPath(); for (let i = 0; i < 14; i++) { const a = -Math.PI / 2 + i * Math.PI / 7, rr = i % 2 ? R * .45 : R; g.lineTo(cx + Math.cos(a) * rr, cy + Math.sin(a) * rr); } g.closePath(); g.fill(); };
+    g.fillStyle = '#c8102e'; g.fillRect(x0, y0 + S * .22, S * .5, S * .06); g.fillRect(x0 + S * .22, y0, S * .06, S * .5); g.fillStyle = '#fff'; st(x - r * .45, y + r * .45, r * .16); [[.45, -.45], [.65, .05], [.25, .1], [.45, .6]].forEach(([dx, dy]) => st(x + dx * r, y + dy * r, r * .09)); }
+  if (f.leaf) { g.fillStyle = f.leaf; g.beginPath(); g.moveTo(x, y - r * .4); g.lineTo(x + r * .3, y - r * .05); g.lineTo(x + r * .15, y + r * .02); g.lineTo(x + r * .22, y + r * .25); g.lineTo(x, y + r * .15); g.lineTo(x - r * .22, y + r * .25); g.lineTo(x - r * .15, y + r * .02); g.lineTo(x - r * .3, y - r * .05); g.closePath(); g.fill(); g.fillRect(x - r * .03, y + r * .1, r * .06, r * .25); }
+  if (f.fstar) { g.fillStyle = f.star; g.beginPath(); for (let i = 0; i < 10; i++) { const a = -Math.PI / 2 + i * Math.PI / 5, rr = i % 2 ? r * .1 : r * .25; g.lineTo(x + Math.cos(a) * rr, y + Math.sin(a) * rr); } g.closePath(); g.fill(); }
+  if (f.checks) { const cs = r * .09; for (let i = -2; i < 3; i++) for (let j = -2; j < 3; j++) { g.fillStyle = (i + j) % 2 ? '#fff' : '#ff0000'; g.fillRect(x + i * cs - cs / 2, y + j * cs - cs / 2, cs, cs); } g.strokeStyle = '#171796'; g.lineWidth = 2; g.strokeRect(x - cs * 2.5, y - cs * 2.5, cs * 5, cs * 5); }
+  if (f.nordic) { g.fillStyle = f.nordic; g.fillRect(x - r * .45, y0, r * .3, S); g.fillRect(x0, y - r * .15, S, r * .3); if (f.nordic2) { g.fillStyle = f.nordic2; g.fillRect(x - r * .38, y0, r * .16, S); g.fillRect(x0, y - r * .08, S, r * .16); } }
+  if (f.sunTL) { g.fillStyle = f.sunTL; g.beginPath(); g.arc(x - r * .45, y - r * .45, r * .2, 0, TAU); g.fill(); }
+  if (f.band) { g.fillStyle = f.band; g.fillRect(x0, y + r * .12, S, r * .2); }
+  if (f.collar) { g.fillStyle = f.collar; g.beginPath(); g.moveTo(x - r * .35, y0); g.lineTo(x, y - r * .55); g.lineTo(x + r * .35, y0); g.lineTo(x + r * .2, y0); g.lineTo(x, y - r * .7); g.lineTo(x - r * .2, y0); g.closePath(); g.fill(); }
+  if (f.sash) { g.strokeStyle = f.sash; g.lineWidth = r * .32; g.beginPath(); g.moveTo(x0, y0 + S); g.lineTo(x0 + S, y0); g.stroke(); }
+  if (f.twin) { g.fillStyle = f.twin; g.fillRect(x0, y - r * .2, S, r * .12); g.fillRect(x0, y + r * .08, S, r * .12); }
   const sh = g.createRadialGradient(x - r * .35, y - r * .4, r * .1, x, y, r * 1.05); sh.addColorStop(0, 'rgba(255,255,255,.45)'); sh.addColorStop(.5, 'rgba(255,255,255,0)'); sh.addColorStop(1, 'rgba(0,0,0,.35)'); g.fillStyle = sh; g.fillRect(x0, y0, S, S);
   g.restore(); g.strokeStyle = 'rgba(0,0,0,.75)'; g.lineWidth = Math.max(2, r * .07); g.beginPath(); g.arc(x, y, r, 0, TAU); g.stroke(); }
 function eyes(x, y, r, look, mood) { g.fillStyle = '#fff'; g.strokeStyle = '#000'; g.lineWidth = 2;

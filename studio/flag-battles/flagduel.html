@@ -15,6 +15,7 @@ const FIGHT0 = PRE, FIGHT1 = PRE + EP.dur + HOLD, TOTAL = FIGHT1 + END;
 window.getTotal = () => TOTAL;
 const CX = 540, CY = 1010;
 const simCfg = () => Object.assign({ seed: EP.seed, dmgScale: EP.ds, cx: CX, cy: CY, r: 66, maxTime: 60, spawnEvery: 1.5, fighters: [{ name: EP.a }, { name: EP.b }] }, EP.arena);
+const CLUB = !!FLAG[EP.a].club; const SERIES = CLUB ? 'معركة الفرق ⚽' : 'معركة الأعلام 🚩';
 const winner = () => EP.winner === 0 ? EP.a : EP.b;
 const colOf = n => FLAG[n].col === '#ffffff' ? '#f2f2f2' : FLAG[n].col;
 
@@ -25,7 +26,7 @@ function simAt(local) { if (!sim || sim.t > local + 1e-6) { sim = new DuelSim(si
 function background(t) { const bg = g.createLinearGradient(0, 0, 0, H); bg.addColorStop(0, '#16204a'); bg.addColorStop(.55, '#0b1028'); bg.addColorStop(1, '#05060f'); g.fillStyle = bg; g.fillRect(0, 0, W, H);
   // two team-coloured glows, top-left and top-right
   for (const [n, x] of [[EP.a, 120], [EP.b, 960]]) { const rg = g.createRadialGradient(x, 300, 10, x, 300, 520); rg.addColorStop(0, colOf(n) + '55'); rg.addColorStop(1, 'rgba(0,0,0,0)'); g.fillStyle = rg; g.fillRect(0, 0, W, 900); } }
-function header() { text(`معركة الأعلام 🚩 · الحلقة ${EP.n}`, 540, 150, 44, '#ffd23b', { stroke: 7 }); }
+function header() { text(`${SERIES} · الحلقة ${EP.n}`, 540, 150, 44, '#ffd23b', { stroke: 7 }); }
 function hpBars(s) { const A = s.balls[0], B = s.balls[1];
   for (const [b, nm, x, dir] of [[A, EP.a, 40, 1], [B, EP.b, 560, -1]]) { const k = Math.max(0, b.hp) / 100, col = colOf(nm);
     g.fillStyle = 'rgba(0,0,0,.55)'; g.beginPath(); g.roundRect(x, 230, 480, 120, 26); g.fill();
@@ -69,13 +70,13 @@ window.renderAt = function (t) {
     flagBall(EP.b, 810 + (1 - a) * 300, 980, 165, 40); eyes(810 + (1 - a) * 300, 980, 165, Math.PI, true);
     text(EP.a, 270, 1215, 70, '#fff', { fam: 'Cairo', stroke: 10, max: 470 }); text(EP.b, 810, 1215, 70, '#fff', { fam: 'Cairo', stroke: 10, max: 470 });
     g.save(); g.translate(540, 980); const sc = Math.min(1.15, a * 1.15); g.scale(sc, sc); text('VS', 0, 0, 150, '#ff3d5a', { stroke: 14 }); g.restore();
-    text('اختار دولتك قبل لا تبدي! 👇', 540, 1450, 52, '#7dff9a', { stroke: 9 }); return; }
+    text(CLUB ? 'اختار فريقك قبل لا تبدي! 👇' : 'اختار دولتك قبل لا تبدي! 👇', 540, 1450, 52, '#7dff9a', { stroke: 9 }); return; }
   if (t < FIGHT1) { fightScene(t - FIGHT0, t); return; }
   const local = t - FIGHT1, a = Math.min(1, local / .4), w = winner();
   for (let k = 0; k < 70; k++) { const ph = (local * .35 + k * .0143) % 1; g.fillStyle = ['#ffd23b', '#ff4b6e', '#4f9dff', '#3fd17a'][k % 4]; g.fillRect((k * 151) % W, ph * H, 14, 24); }
   g.globalAlpha = a; text('👑', 540, 560, 130, '#fff', { stroke: 0 }); flagBall(w, 540, 860, 230 * a, 60); eyes(540, 860, 230 * a, Math.PI / 2, false);
   text('الفايز 🏆', 540, 1150, 70, '#fff', { stroke: 10 }); text(w, 540, 1250, 110, colOf(w), { stroke: 14, max: 1000 });
-  text('فازت دولتك؟ اكتبها بالتعليقات 👇', 540, 1390, 52, '#fff', { stroke: 9 });
+  text(CLUB ? 'فاز فريقك؟ اكتبه بالتعليقات 👇' : 'فازت دولتك؟ اكتبها بالتعليقات 👇', 540, 1390, 52, '#fff', { stroke: 9 });
   text('اشترك حتى تشوف المعركة الجاية 🔥', 540, 1490, 50, '#7dff9a', { stroke: 9 }); g.globalAlpha = 1;
 };
 window.allEvents = function () { const out = [{ t: .15, kind: 'vs' }, { t: FIGHT1, kind: 'champion' }];
