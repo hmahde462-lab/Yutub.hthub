@@ -33,3 +33,4 @@
 - `videos/extra/gta6-hamoudi-voiced.mp4`: مقطع كوميدي (حمودي و GTA 6) بصوت Gemini.
 - `videos/extra/top10-worst-people-stickman.mp4`: غير مخصص لقناة.
 - Kling (klingai.com) مجاني محدود لتوليد 3D.
+- `videos/extra/hamoudi-mama-gta-part2.mp4`: جزء 2 كارتون 2D (ماما تلعب وتاخذ 6 نجوم). كود: `studio/hamoudi-2d/` (animation-studio starter gully-cricket).
