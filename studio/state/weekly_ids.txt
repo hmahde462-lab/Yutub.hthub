@@ -1,0 +1,2 @@
+battle 1 up=bf93032a-ec63-4152-9791-a28b2b1f519e img=32997aee-25d3-4ea2-9f62-6d050092063c
+battle 1 post=64ecb887-26e1-4927-bd95-5f4cc26377e5 rev=8f282630 pub=1ec6eac5-fb9e-417a-838c-63c08c1e8200 FAILED uploadLimitExceeded 2026-11-14 -> retry publish with publicationIds after quota reset
