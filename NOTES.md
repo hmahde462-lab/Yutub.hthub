@@ -78,3 +78,10 @@
 - الثلاثاء: تجميعة المعارك (11 أسبوع، 17/11 → 26/01). الجمعة: تجميعة المعلومات (8، 04/12 → 29/01؛ الأسبوع الأول مدموج 1–10، والأخير 53–61).
 - الحالة: يُحدَّث بـ `studio/state/weekly_progress.txt`.
 - `studio/kahraba30/`: سلسلة «انقطاع الكهرباء ٣٠ يوم» ح١ — script.json، أصوات ElevenLabs (c0-c5.mp3، صوت Ahmed عبر Flows لأن الـAPI ممنوع بالمجاني)، cuts.json، build.py. الصور من Figma (ملف 1uwwhl4Z0MO9FAwkAy2cFz) — urls.txt (تنتهي بعد 7 أيام). ناقص صورتين (58,59) لأن كريدت Figma خلص.
+
+## انقطاع الكهرباء ٣٠ يوم (سلسلة POV — ستايل راس أبيض داخل صورة واقعية)
+- ح١ جاهزة: `videos/long/kahraba30-ep1.mp4` (4:50). ناقص صورتين (مشهد 58 الزقاق باللايت، 59 الظل) — مستبدلة بالمشهد 57. لإعادة البناء: `studio/kahraba30/build.py` (يحتاج img/ من urls.txt — روابط Figma تنتهي بعد 7 أيام).
+- ح٢ «المدرسة والامتحانات»: السكربت `studio/kahraba30/ep2/ep2.json` (54 مشهد، 45 صورة جديدة) + الصوت جاهز e2c0..e2c4.mp3. الباقي: الصور (Figma) + تقطيع الصوت (gts.py بـ Gemini timestamps + تصحيح يدوي بالسكتات) + build.
+- الصوت: ElevenLabs Flows (creative_generate_speech, eleven_v3, voice 6cFz1T5FQxQS8Xk88qQi, generations_count=1). الـAPI المباشر ممنوع للأصوات المكتبية بالخطة المجانية. رصيد باقي ≈3,000.
+- الصور: Figma generate_image gpt-image-2.5-flare 1920x1080، نفس قالب البرومت (بـ script.json حقل prompt). كريدت الحساب القديم يخلص بسرعة (~52 صورة/يوم).
+- الشبكة: أضفت elevenlabsusercontent.com و www.figma.com للبيئة.
