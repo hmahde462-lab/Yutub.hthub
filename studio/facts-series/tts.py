@@ -26,8 +26,15 @@ durs, engine = [], []
 for i, t in enumerate(lines):
     p = os.path.join(out, f'seg{i}.mp3')
     if not os.path.exists(p):
-        try: el(t, p); engine.append('elevenlabs')
-        except Exception as e: print('elevenlabs fail', e, file=sys.stderr); engine.append(gem(t, p))
+        ok = False
+        for k in range(8):
+            try: el(t, p); engine.append('elevenlabs'); ok = True; break
+            except Exception as e:
+                print('elevenlabs retry', k, e, file=sys.stderr)
+                if '429' not in str(e) and '5' != str(getattr(e, 'code', ''))[:1]: break
+                import time; time.sleep(4 + 4 * k)
+        if not ok: engine.append(gem(t, p))
+    else: engine.append('cached')
     d = float(subprocess.run(['ffprobe', '-v', 'error', '-show_entries', 'format=duration', '-of', 'csv=p=0', p], capture_output=True, text=True).stdout)
     durs.append(round(d, 3))
 json.dump({'durs': durs, 'lines': lines, 'engine': engine}, open(os.path.join(out, 'segs.json'), 'w'), ensure_ascii=False)
