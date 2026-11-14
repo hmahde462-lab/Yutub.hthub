@@ -85,3 +85,4 @@
 - الصوت: ElevenLabs Flows (creative_generate_speech, eleven_v3, voice 6cFz1T5FQxQS8Xk88qQi, generations_count=1). الـAPI المباشر ممنوع للأصوات المكتبية بالخطة المجانية. رصيد باقي ≈3,000.
 - الصور: Figma generate_image gpt-image-2.5-flare 1920x1080، نفس قالب البرومت (بـ script.json حقل prompt). كريدت الحساب القديم يخلص بسرعة (~52 صورة/يوم).
 - الشبكة: أضفت elevenlabsusercontent.com و www.figma.com للبيئة.
+- ح٢ جاهزة: `videos/long/kahraba30-ep2.mp4` (4:28). الصور بـ `studio/kahraba30/ep2/img_jpg/` (من ملف Figma OPYoRbmqbu2GXHLIhAOnje، حساب 462 + صلاحية للـMCP). القص: `ep2/cut.py` (سكتات + توزيع بالحروف، بدون Gemini، يطلع lines/*.wav). البناء: `ep2/build2.py`. مشهد 32 طلع البطل بدل المراهق. لم تُنشر.
