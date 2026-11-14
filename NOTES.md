@@ -77,3 +77,4 @@
 - الفيديوهات + الثمبنيلات: `videos/weekly/` (battle-weekNN.mp4، facts-weekNN.mp4، *-thumb.jpg).
 - الثلاثاء: تجميعة المعارك (11 أسبوع، 17/11 → 26/01). الجمعة: تجميعة المعلومات (8، 04/12 → 29/01؛ الأسبوع الأول مدموج 1–10، والأخير 53–61).
 - الحالة: يُحدَّث بـ `studio/state/weekly_progress.txt`.
+- `studio/kahraba30/`: سلسلة «انقطاع الكهرباء ٣٠ يوم» ح١ — script.json، أصوات ElevenLabs (c0-c5.mp3، صوت Ahmed عبر Flows لأن الـAPI ممنوع بالمجاني)، cuts.json، build.py. الصور من Figma (ملف 1uwwhl4Z0MO9FAwkAy2cFz) — urls.txt (تنتهي بعد 7 أيام). ناقص صورتين (58,59) لأن كريدت Figma خلص.

@@ -1,0 +1,333 @@
+[
+{
+"vo": "تخيّل... تصحى بيوم، وتلگى العراق كله بدون كهرباء.",
+"img": "He stands alone in the middle of a dark empty Baghdad street at night, looking up at dead street lamps, small and lonely. Background: photorealistic wide Baghdad street completely dark, moonlight, palm trees, closed shops.",
+"prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon boots, clean vector cel shading. The character: messy curly dark-brown hair on top of the white round head, a thin mustache and a small chin beard, grey knit sweater, dark blue jeans, brown boots. He stands alone in the middle of a dark empty Baghdad street at night, looking up at dead street lamps, small and lonely. Background: photorealistic wide Baghdad street completely dark, moonlight, palm trees, closed shops. Cinematic lighting, dust in the air. Wide shot, 16:9, no text."
+},
+{
+"vo": "مو ساعة، ولا يوم... ثلاثين يوم كاملة.",
+"img": "",
+"reuse": "prev",
+"hud": "30"
+},
+{
+"vo": "هل تگدر تعيش؟",
+"img": "",
+"reuse": "prev"
+},
+{
+"vo": "اليوم الأول.",
+"img": "",
+"hud": "title"
+},
+{
+"vo": "الساعة ثلاثة الفجر... الكهرباء انقطعت، والحر ما ينطاق.",
+"img": "",
+"file": "s01"
+},
+{
+"vo": "المبردة واگفة، والغرفة صارت مثل الفرن.",
+"img": "Close-up of a switched-off evaporative air cooler in a window with an iron grille, he stands next to it fanning his face with his hand, sweating. Background: photorealistic dark Baghdad bedroom, moonlight.",
+"prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon boots, clean vector cel shading. The character: messy curly dark-brown hair on top of the white round head, a thin mustache and a small chin beard, grey knit sweater, dark blue jeans, brown boots. Close-up of a switched-off evaporative air cooler in a window with an iron grille, he stands next to it fanning his face with his hand, sweating. Background: photorealistic dark Baghdad bedroom, moonlight. Cinematic lighting, dust in the air. Wide shot, 16:9, no text."
+},
+{
+"vo": "تمد إيدك للموبايل... وتشوف رسالة غريبة.",
+"img": "Close-up: he holds a glowing smartphone, the screen light illuminating his face from below, eyes wide open in shock. Background: pitch-dark bedroom, faint moonlight, dust in the air.",
+"sfx": "sms",
+"prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon boots, clean vector cel shading. The character: messy curly dark-brown hair on top of the white round head, a thin mustache and a small chin beard, grey knit sweater, dark blue jeans, brown boots. Close-up: he holds a glowing smartphone, the screen light illuminating his face from below, eyes wide open in shock. Background: pitch-dark bedroom, faint moonlight, dust in the air. Cinematic lighting, dust in the air. Wide shot, 16:9, no text."
+},
+{
+"vo": "انقطاع شامل للكهرباء، بكل العراق، لمدة ثلاثين يوم.",
+"img": "Extreme close-up of his shocked face lit by the phone, sweat drops, mouth open. Background: dark room, blurred moonlit window with an iron grille.",
+"hud": "-100⚡",
+"sfx": "hit",
+"prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon boots, clean vector cel shading. The character: messy curly dark-brown hair on top of the white round head, a thin mustache and a small chin beard, grey knit sweater, dark blue jeans, brown boots. Extreme close-up of his shocked face lit by the phone, sweat drops, mouth open. Background: dark room, blurred moonlit window with an iron grille. Cinematic lighting, dust in the air. Wide shot, 16:9, no text."
+},
+{
+"vo": "تگول بنفسك: أكيد مزحة. بس الشبكة تختفي، والإنترنت يوگف.",
+"img": "He stares at his phone showing no signal, confused frown, standing by the window. Background: dark Baghdad bedroom, moonlight, silent air cooler.",
+"prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon boots, clean vector cel shading. The character: messy curly dark-brown hair on top of the white round head, a thin mustache and a small chin beard, grey knit sweater, dark blue jeans, brown boots. He stares at his phone showing no signal, confused frown, standing by the window. Background: dark Baghdad bedroom, moonlight, silent air cooler. Cinematic lighting, dust in the air. Wide shot, 16:9, no text."
+},
+{
+"vo": "تصعد للسطح... بغداد كلها ظلام.",
+"img": "Seen from behind, he stands on a flat Baghdad rooftop at night looking over the city. Background: photorealistic Baghdad skyline completely dark, only moonlight, silhouettes of a mosque minaret, domes and palm trees, water tanks on rooftops, stars.",
+"prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon boots, clean vector cel shading. The character: messy curly dark-brown hair on top of the white round head, a thin mustache and a small chin beard, grey knit sweater, dark blue jeans, brown boots. Seen from behind, he stands on a flat Baghdad rooftop at night looking over the city. Background: photorealistic Baghdad skyline completely dark, only moonlight, silhouettes of a mosque minaret, domes and palm trees, water tanks on rooftops, stars. Cinematic lighting, dust in the air. Wide shot, 16:9, no text."
+},
+{
+"vo": "لا مولدات، لا ضوايات... بس صوت الچلاب من بعيد.",
+"img": "He sits on the rooftop edge hugging his knees, worried, looking at the dark city. Background: photorealistic dark Baghdad neighborhood rooftops at night, satellite dishes, water tanks, faint moonlight.",
+"prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon boots, clean vector cel shading. The character: messy curly dark-brown hair on top of the white round head, a thin mustache and a small chin beard, grey knit sweater, dark blue jeans, brown boots. He sits on the rooftop edge hugging his knees, worried, looking at the dark city. Background: photorealistic dark Baghdad neighborhood rooftops at night, satellite dishes, water tanks, faint moonlight. Cinematic lighting, dust in the air. Wide shot, 16:9, no text."
+},
+{
+"vo": "الجيران كلهم طالعين للسطوح، والجهال يبچون من الحر.",
+"img": "He looks across at neighboring rooftops where silhouettes of families sit and lie on mattresses in the dark. Background: photorealistic Baghdad rooftops at night, mosquito nets, moonlight.",
+"prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon boots, clean vector cel shading. The character: messy curly dark-brown hair on top of the white round head, a thin mustache and a small chin beard, grey knit sweater, dark blue jeans, brown boots. He looks across at neighboring rooftops where silhouettes of families sit and lie on mattresses in the dark. Background: photorealistic Baghdad rooftops at night, mosquito nets, moonlight. Cinematic lighting, dust in the air. Wide shot, 16:9, no text."
+},
+{
+"vo": "الحرارة، الساعة ثلاثة بالليل... أربعة وثلاثين درجة.",
+"img": "Close-up of an old wall thermometer on a rooftop, he leans in reading it with a tired face. Background: photorealistic Baghdad rooftop at night, moonlight.",
+"hud": "34°C",
+"prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon boots, clean vector cel shading. The character: messy curly dark-brown hair on top of the white round head, a thin mustache and a small chin beard, grey knit sweater, dark blue jeans, brown boots. Close-up of an old wall thermometer on a rooftop, he leans in reading it with a tired face. Background: photorealistic Baghdad rooftop at night, moonlight. Cinematic lighting, dust in the air. Wide shot, 16:9, no text."
+},
+{
+"vo": "تنام على الفرشة فوگ السطح، وتهفّ بالمهفة لحد ما يطلع الضو.",
+"img": "He lies on a thin mattress on the rooftop, fanning himself with a traditional palm-leaf hand fan, sweaty and miserable. Background: photorealistic Baghdad rooftop at night, mosquito net, moonlight.",
+"prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon boots, clean vector cel shading. The character: messy curly dark-brown hair on top of the white round head, a thin mustache and a small chin beard, grey knit sweater, dark blue jeans, brown boots. He lies on a thin mattress on the rooftop, fanning himself with a traditional palm-leaf hand fan, sweaty and miserable. Background: photorealistic Baghdad rooftop at night, mosquito net, moonlight. Cinematic lighting, dust in the air. Wide shot, 16:9, no text."
+},
+{
+"vo": "بالصباح، أول شي تفكر بيه: البانزين.",
+"img": "He wakes up on the rooftop at dawn shielding his eyes from the rising sun. Background: photorealistic Baghdad skyline at dawn, orange haze, dust, minaret and palms.",
+"hud": "day",
+"prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon boots, clean vector cel shading. The character: messy curly dark-brown hair on top of the white round head, a thin mustache and a small chin beard, grey knit sweater, dark blue jeans, brown boots. He wakes up on the rooftop at dawn shielding his eyes from the rising sun. Background: photorealistic Baghdad skyline at dawn, orange haze, dust, minaret and palms. Cinematic lighting, dust in the air. Wide shot, 16:9, no text."
+},
+{
+"vo": "تاخذ الجليكان وتطلع، وتنصدم.",
+"img": "He walks out of a house door holding a yellow plastic jerrycan and stops in surprise. Background: photorealistic Baghdad residential street in the morning, parked cars, dusty sunlight.",
+"prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon boots, clean vector cel shading. The character: messy curly dark-brown hair on top of the white round head, a thin mustache and a small chin beard, grey knit sweater, dark blue jeans, brown boots. He walks out of a house door holding a yellow plastic jerrycan and stops in surprise. Background: photorealistic Baghdad residential street in the morning, parked cars, dusty sunlight. Cinematic lighting, dust in the air. Wide shot, 16:9, no text."
+},
+{
+"vo": "طابور البانزين طوله كيلومتر.",
+"img": "He stands at the end of an extremely long line of cars and people at a petrol station, holding a yellow jerrycan, annoyed face. Background: photorealistic Baghdad street, hazy hot morning sun, cars stretching far into the distance.",
+"prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon boots, clean vector cel shading. The character: messy curly dark-brown hair on top of the white round head, a thin mustache and a small chin beard, grey knit sweater, dark blue jeans, brown boots. He stands at the end of an extremely long line of cars and people at a petrol station, holding a yellow jerrycan, annoyed face. Background: photorealistic Baghdad street, hazy hot morning sun, cars stretching far into the distance. Cinematic lighting, dust in the air. Wide shot, 16:9, no text."
+},
+{
+"vo": "والكل شايل جليكانات، والكل معصّب.",
+"img": "Wide shot: a huge crowd of people holding jerrycans in front of a petrol station, he is in the middle looking at his watch. Background: photorealistic Iraqi petrol station, harsh sunlight, heat haze.",
+"prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon boots, clean vector cel shading. The character: messy curly dark-brown hair on top of the white round head, a thin mustache and a small chin beard, grey knit sweater, dark blue jeans, brown boots. Wide shot: a huge crowd of people holding jerrycans in front of a petrol station, he is in the middle looking at his watch. Background: photorealistic Iraqi petrol station, harsh sunlight, heat haze. Cinematic lighting, dust in the air. Wide shot, 16:9, no text."
+},
+{
+"vo": "بعد أربع ساعات بالشمس... يوصل دورك.",
+"img": "",
+"reuse": "prev",
+"hud": "-4 ساعات"
+},
+{
+"vo": "والعامل يگلك: خلص البانزين.",
+"img": "He stands at a petrol pump holding an empty jerrycan, devastated, mouth open, while a worker waves his hands no. Background: photorealistic petrol station, harsh midday sun, dust.",
+"sfx": "hit",
+"prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon boots, clean vector cel shading. The character: messy curly dark-brown hair on top of the white round head, a thin mustache and a small chin beard, grey knit sweater, dark blue jeans, brown boots. He stands at a petrol pump holding an empty jerrycan, devastated, mouth open, while a worker waves his hands no. Background: photorealistic petrol station, harsh midday sun, dust. Cinematic lighting, dust in the air. Wide shot, 16:9, no text."
+},
+{
+"vo": "ترجع للبيت، تفتح الثلاجة... وريحة تضربك بوجهك.",
+"img": "He opens a dark switched-off fridge in a kitchen and pinches his nose in disgust, eyes squinting. Background: photorealistic old Iraqi kitchen, dim daylight, flies in the air.",
+"sfx": "flies",
+"prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon boots, clean vector cel shading. The character: messy curly dark-brown hair on top of the white round head, a thin mustache and a small chin beard, grey knit sweater, dark blue jeans, brown boots. He opens a dark switched-off fridge in a kitchen and pinches his nose in disgust, eyes squinting. Background: photorealistic old Iraqi kitchen, dim daylight, flies in the air. Cinematic lighting, dust in the air. Wide shot, 16:9, no text."
+},
+{
+"vo": "اللحم بدا يخيس، والحليب صار حامض.",
+"img": "Close-up of the open fridge interior with spoiled meat and milk cartons, flies buzzing, he leans in covering his nose with his sweater. Background: photorealistic dark fridge interior.",
+"hud": "-30,000 دينار",
+"prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon boots, clean vector cel shading. The character: messy curly dark-brown hair on top of the white round head, a thin mustache and a small chin beard, grey knit sweater, dark blue jeans, brown boots. Close-up of the open fridge interior with spoiled meat and milk cartons, flies buzzing, he leans in covering his nose with his sweater. Background: photorealistic dark fridge interior. Cinematic lighting, dust in the air. Wide shot, 16:9, no text."
+},
+{
+"vo": "تگول: لازم أشتري ثلج.",
+"img": "",
+"reuse": "prev"
+},
+{
+"vo": "تمشي لمحل الثلج، وتلگى الناس متجمعة على القوالب.",
+"img": "He stands in a crowd in front of an ice shop where large blocks of ice are being cut, people pushing. Background: photorealistic Baghdad street ice seller, steam rising from ice blocks, hot sunlight.",
+"prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon boots, clean vector cel shading. The character: messy curly dark-brown hair on top of the white round head, a thin mustache and a small chin beard, grey knit sweater, dark blue jeans, brown boots. He stands in a crowd in front of an ice shop where large blocks of ice are being cut, people pushing. Background: photorealistic Baghdad street ice seller, steam rising from ice blocks, hot sunlight. Cinematic lighting, dust in the air. Wide shot, 16:9, no text."
+},
+{
+"vo": "قالب الثلج، اللي كان بألفين... صار بخمسة وعشرين ألف.",
+"img": "He holds a big dripping ice block wrapped in a sack, staring at it in shock. Background: photorealistic Iraqi ice shop, hot street, dust.",
+"hud": "-25,000 دينار",
+"prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon boots, clean vector cel shading. The character: messy curly dark-brown hair on top of the white round head, a thin mustache and a small chin beard, grey knit sweater, dark blue jeans, brown boots. He holds a big dripping ice block wrapped in a sack, staring at it in shock. Background: photorealistic Iraqi ice shop, hot street, dust. Cinematic lighting, dust in the air. Wide shot, 16:9, no text."
+},
+{
+"vo": "وبالطريق للبيت، نصّه يذوب.",
+"img": "He walks down a sunny street carrying a melting ice block, water dripping, sweating and sad. Background: photorealistic Baghdad street at noon, heat haze, palm trees.",
+"prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon boots, clean vector cel shading. The character: messy curly dark-brown hair on top of the white round head, a thin mustache and a small chin beard, grey knit sweater, dark blue jeans, brown boots. He walks down a sunny street carrying a melting ice block, water dripping, sweating and sad. Background: photorealistic Baghdad street at noon, heat haze, palm trees. Cinematic lighting, dust in the air. Wide shot, 16:9, no text."
+},
+{
+"vo": "تمر على بقالة الحي تشتري ماي.",
+"img": "He walks into a small neighborhood grocery shop. Background: photorealistic Baghdad corner shop with crowded shelves, crates of water bottles, hanging snacks, dusty street outside.",
+"prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon boots, clean vector cel shading. The character: messy curly dark-brown hair on top of the white round head, a thin mustache and a small chin beard, grey knit sweater, dark blue jeans, brown boots. He walks into a small neighborhood grocery shop. Background: photorealistic Baghdad corner shop with crowded shelves, crates of water bottles, hanging snacks, dusty street outside. Cinematic lighting, dust in the air. Wide shot, 16:9, no text."
+},
+{
+"vo": "قنينة الماي، اللي كانت بمئتين وخمسين... صارت بألفين وخمسمية.",
+"img": "He holds a plastic water bottle and stares at the price in total shock, eyes huge, at the counter where a shopkeeper shrugs. Background: photorealistic Iraqi grocery shop, shelves of bottled water.",
+"hud": "-2500 دينار",
+"sfx": "hit",
+"prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon boots, clean vector cel shading. The character: messy curly dark-brown hair on top of the white round head, a thin mustache and a small chin beard, grey knit sweater, dark blue jeans, brown boots. He holds a plastic water bottle and stares at the price in total shock, eyes huge, at the counter where a shopkeeper shrugs. Background: photorealistic Iraqi grocery shop, shelves of bottled water. Cinematic lighting, dust in the air. Wide shot, 16:9, no text."
+},
+{
+"vo": "والناس تتدافع على آخر الكراتين.",
+"img": "He is squeezed in a crowd of people grabbing the last cases of bottled water in the shop, stressed. Background: photorealistic busy Iraqi grocery shop, almost empty shelves.",
+"prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon boots, clean vector cel shading. The character: messy curly dark-brown hair on top of the white round head, a thin mustache and a small chin beard, grey knit sweater, dark blue jeans, brown boots. He is squeezed in a crowd of people grabbing the last cases of bottled water in the shop, stressed. Background: photorealistic busy Iraqi grocery shop, almost empty shelves. Cinematic lighting, dust in the air. Wide shot, 16:9, no text."
+},
+{
+"vo": "وبطريقك، تشوف طابور ثاني... على باب الفرن.",
+"img": "He walks past a long line of people waiting in front of a traditional Iraqi bakery (furn) with a clay tannour oven. Background: photorealistic Baghdad street bakery, smoke and steam, morning sun.",
+"prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon boots, clean vector cel shading. The character: messy curly dark-brown hair on top of the white round head, a thin mustache and a small chin beard, grey knit sweater, dark blue jeans, brown boots. He walks past a long line of people waiting in front of a traditional Iraqi bakery (furn) with a clay tannour oven. Background: photorealistic Baghdad street bakery, smoke and steam, morning sun. Cinematic lighting, dust in the air. Wide shot, 16:9, no text."
+},
+{
+"vo": "الفرن شغّال على الغاز، بس الطحين قليل... والخبز يخلص بنص ساعة.",
+"img": "He stands at the bakery counter receiving only two loaves of round Iraqi bread, disappointed. Background: photorealistic Iraqi bakery interior, a baker at a glowing tannour clay oven, flour dust.",
+"prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon boots, clean vector cel shading. The character: messy curly dark-brown hair on top of the white round head, a thin mustache and a small chin beard, grey knit sweater, dark blue jeans, brown boots. He stands at the bakery counter receiving only two loaves of round Iraqi bread, disappointed. Background: photorealistic Iraqi bakery interior, a baker at a glowing tannour clay oven, flour dust. Cinematic lighting, dust in the air. Wide shot, 16:9, no text."
+},
+{
+"vo": "تاخذ خبزتين... وتگول: الحمد لله.",
+"img": "",
+"reuse": "prev",
+"reuse_idx": 30
+},
+{
+"vo": "تطلع فلوس من جيبك... وتنتبه إن الصراف الآلي ما يشتغل.",
+"img": "He stands in front of a dead ATM machine with a black screen, holding his bank card, frustrated. Background: photorealistic Baghdad bank front, closed shutters, sunlight.",
+"prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon boots, clean vector cel shading. The character: messy curly dark-brown hair on top of the white round head, a thin mustache and a small chin beard, grey knit sweater, dark blue jeans, brown boots. He stands in front of a dead ATM machine with a black screen, holding his bank card, frustrated. Background: photorealistic Baghdad bank front, closed shutters, sunlight. Cinematic lighting, dust in the air. Wide shot, 16:9, no text."
+},
+{
+"vo": "يعني اللي بجيبك... هو كل اللي عندك.",
+"img": "Close-up of his hands counting a few Iraqi dinar banknotes, worried face behind. Background: photorealistic street, blurred.",
+"prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon boots, clean vector cel shading. The character: messy curly dark-brown hair on top of the white round head, a thin mustache and a small chin beard, grey knit sweater, dark blue jeans, brown boots. Close-up of his hands counting a few Iraqi dinar banknotes, worried face behind. Background: photorealistic street, blurred. Cinematic lighting, dust in the air. Wide shot, 16:9, no text."
+},
+{
+"vo": "تمر على صاحب المولدة الأهلية، وتلگاه رافع السعر عشر مرات.",
+"img": "He stands in front of a huge neighborhood diesel generator covered in tangled electric wires, arguing with arms spread. Background: photorealistic Baghdad alley with a large private generator, spaghetti of cables overhead, afternoon sun, smoke.",
+"hud": "-100,000 دينار",
+"prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon boots, clean vector cel shading. The character: messy curly dark-brown hair on top of the white round head, a thin mustache and a small chin beard, grey knit sweater, dark blue jeans, brown boots. He stands in front of a huge neighborhood diesel generator covered in tangled electric wires, arguing with arms spread. Background: photorealistic Baghdad alley with a large private generator, spaghetti of cables overhead, afternoon sun, smoke. Cinematic lighting, dust in the air. Wide shot, 16:9, no text."
+},
+{
+"vo": "ويگلك: إذا لگيت گاز، أشغّلها ساعتين بس.",
+"img": "",
+"reuse": "prev"
+},
+{
+"vo": "العصر، الماي يوگف بالحنفية. ماكو كهرباء، يعني ماكو ماطور.",
+"img": "He turns a kitchen tap and only a few drops come out, frustrated. Background: photorealistic old Iraqi kitchen sink, afternoon light, empty buckets on the floor.",
+"prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon boots, clean vector cel shading. The character: messy curly dark-brown hair on top of the white round head, a thin mustache and a small chin beard, grey knit sweater, dark blue jeans, brown boots. He turns a kitchen tap and only a few drops come out, frustrated. Background: photorealistic old Iraqi kitchen sink, afternoon light, empty buckets on the floor. Cinematic lighting, dust in the air. Wide shot, 16:9, no text."
+},
+{
+"vo": "تصعد للسطح، وتشوف خزان الماي فارغ.",
+"img": "He peers into an empty plastic rooftop water tank, worried. Background: photorealistic Baghdad rooftop at sunset, water tanks, satellite dishes, orange dusty sky.",
+"prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon boots, clean vector cel shading. The character: messy curly dark-brown hair on top of the white round head, a thin mustache and a small chin beard, grey knit sweater, dark blue jeans, brown boots. He peers into an empty plastic rooftop water tank, worried. Background: photorealistic Baghdad rooftop at sunset, water tanks, satellite dishes, orange dusty sky. Cinematic lighting, dust in the air. Wide shot, 16:9, no text."
+},
+{
+"vo": "وبالشارع، الناس واگفة على سيارة حوضية بالسطول.",
+"img": "He stands in a line of people holding buckets next to a water tanker truck in the street. Background: photorealistic Baghdad street at late afternoon, dust, golden light.",
+"prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon boots, clean vector cel shading. The character: messy curly dark-brown hair on top of the white round head, a thin mustache and a small chin beard, grey knit sweater, dark blue jeans, brown boots. He stands in a line of people holding buckets next to a water tanker truck in the street. Background: photorealistic Baghdad street at late afternoon, dust, golden light. Cinematic lighting, dust in the air. Wide shot, 16:9, no text."
+},
+{
+"vo": "تشيل سطلين ماي، وترجع تحس إيدك راح تنگطع.",
+"img": "He carries two heavy water buckets, arms stretched, struggling, sweating. Background: photorealistic narrow Baghdad alley, late afternoon sun.",
+"prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon boots, clean vector cel shading. The character: messy curly dark-brown hair on top of the white round head, a thin mustache and a small chin beard, grey knit sweater, dark blue jeans, brown boots. He carries two heavy water buckets, arms stretched, struggling, sweating. Background: photorealistic narrow Baghdad alley, late afternoon sun. Cinematic lighting, dust in the air. Wide shot, 16:9, no text."
+},
+{
+"vo": "وانت راجع، تسمع صياح من بيت الجيران.",
+"img": "He stops in the alley and turns toward a neighbor's house where a woman shouts from the doorway for help. Background: photorealistic Baghdad alley at sunset, old brick houses.",
+"prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon boots, clean vector cel shading. The character: messy curly dark-brown hair on top of the white round head, a thin mustache and a small chin beard, grey knit sweater, dark blue jeans, brown boots. He stops in the alley and turns toward a neighbor's house where a woman shouts from the doorway for help. Background: photorealistic Baghdad alley at sunset, old brick houses. Cinematic lighting, dust in the air. Wide shot, 16:9, no text."
+},
+{
+"vo": "أبو حسين، جارك الكبير بالعمر، يعيش على جهاز أوكسجين... والجهاز يحتاج كهرباء.",
+"img": "Inside a dim room, an old man in a traditional dishdasha lies on a bed with an oxygen mask, he stands beside the bed looking worried. All characters in the same 2D cartoon style with round white heads; the old man has a white mustache and a white keffiyeh. Background: photorealistic modest Iraqi bedroom at dusk, a switched-off oxygen concentrator machine.",
+"prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon boots, clean vector cel shading. The character: messy curly dark-brown hair on top of the white round head, a thin mustache and a small chin beard, grey knit sweater, dark blue jeans, brown boots. Inside a dim room, an old man in a traditional dishdasha lies on a bed with an oxygen mask, he stands beside the bed looking worried. All characters in the same 2D cartoon style with round white heads; the old man has a white mustache and a white keffiyeh. Background: photorealistic modest Iraqi bedroom at dusk, a switched-off oxygen concentrator machine. Cinematic lighting, dust in the air. Wide shot, 16:9, no text."
+},
+{
+"vo": "تركض للسيارة، وتشيله ويّا ابنه للمستشفى.",
+"img": "He drives an old car at dusk with the old man in the back seat and the neighbor's son beside him, urgent expression. All characters in the same 2D cartoon style with round white heads. Background: photorealistic dark Baghdad road at dusk, no streetlights.",
+"prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon boots, clean vector cel shading. The character: messy curly dark-brown hair on top of the white round head, a thin mustache and a small chin beard, grey knit sweater, dark blue jeans, brown boots. He drives an old car at dusk with the old man in the back seat and the neighbor's son beside him, urgent expression. All characters in the same 2D cartoon style with round white heads. Background: photorealistic dark Baghdad road at dusk, no streetlights. Cinematic lighting, dust in the air. Wide shot, 16:9, no text."
+},
+{
+"vo": "المستشفى شغّال على مولدة... بس الممرات مليانة ناس.",
+"img": "He stands in a crowded dim hospital corridor lit only by a few emergency lights, people sitting on the floor, worried. Background: photorealistic Iraqi hospital corridor, dim yellow light, crowded.",
+"prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon boots, clean vector cel shading. The character: messy curly dark-brown hair on top of the white round head, a thin mustache and a small chin beard, grey knit sweater, dark blue jeans, brown boots. He stands in a crowded dim hospital corridor lit only by a few emergency lights, people sitting on the floor, worried. Background: photorealistic Iraqi hospital corridor, dim yellow light, crowded. Cinematic lighting, dust in the air. Wide shot, 16:9, no text."
+},
+{
+"vo": "وتعرف إن هاي المولدة، هي هم ما راح تصمد ثلاثين يوم.",
+"img": "He looks out of a hospital window at a large smoking diesel generator in the yard, serious expression. Background: photorealistic hospital yard at night, generator smoke lit by a lamp.",
+"prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon boots, clean vector cel shading. The character: messy curly dark-brown hair on top of the white round head, a thin mustache and a small chin beard, grey knit sweater, dark blue jeans, brown boots. He looks out of a hospital window at a large smoking diesel generator in the yard, serious expression. Background: photorealistic hospital yard at night, generator smoke lit by a lamp. Cinematic lighting, dust in the air. Wide shot, 16:9, no text."
+},
+{
+"vo": "وبطارية الموبايل... عشرين بالمية.",
+"img": "Close-up of him holding his phone showing a red low battery icon, anxious, sweat. Background: photorealistic dim living room at dusk.",
+"hud": "20%🔋",
+"prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon boots, clean vector cel shading. The character: messy curly dark-brown hair on top of the white round head, a thin mustache and a small chin beard, grey knit sweater, dark blue jeans, brown boots. Close-up of him holding his phone showing a red low battery icon, anxious, sweat. Background: photorealistic dim living room at dusk. Cinematic lighting, dust in the air. Wide shot, 16:9, no text."
+},
+{
+"vo": "تنزل للسيارة، وتشحن من البطارية... بس هم البطارية ما تتحمل.",
+"img": "He sits in the driver seat of an old car in the dark charging his phone from a cable, worried face lit by the dashboard. Background: photorealistic car interior at dusk, Baghdad street outside.",
+"prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon boots, clean vector cel shading. The character: messy curly dark-brown hair on top of the white round head, a thin mustache and a small chin beard, grey knit sweater, dark blue jeans, brown boots. He sits in the driver seat of an old car in the dark charging his phone from a cable, worried face lit by the dashboard. Background: photorealistic car interior at dusk, Baghdad street outside. Cinematic lighting, dust in the air. Wide shot, 16:9, no text."
+},
+{
+"vo": "الشمس تغيب، والبيت يغرگ بالظلام.",
+"img": "He stands at a window watching the sun set over the dark city. Background: photorealistic Baghdad sunset, orange sky fading to dark blue, palm and minaret silhouettes.",
+"prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon boots, clean vector cel shading. The character: messy curly dark-brown hair on top of the white round head, a thin mustache and a small chin beard, grey knit sweater, dark blue jeans, brown boots. He stands at a window watching the sun set over the dark city. Background: photorealistic Baghdad sunset, orange sky fading to dark blue, palm and minaret silhouettes. Cinematic lighting, dust in the air. Wide shot, 16:9, no text."
+},
+{
+"vo": "بالليل، تجمع أهلك حول الشموع.",
+"img": "He sits on the floor of a living room around a few candles with his mother wearing a black abaya and his little brother, all faces lit by candlelight, worried. All family members drawn in the same 2D cartoon style with round white heads. Background: photorealistic traditional Iraqi living room with floor cushions, dark, warm candlelight.",
+"prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon boots, clean vector cel shading. The character: messy curly dark-brown hair on top of the white round head, a thin mustache and a small chin beard, grey knit sweater, dark blue jeans, brown boots. He sits on the floor of a living room around a few candles with his mother wearing a black abaya and his little brother, all faces lit by candlelight, worried. All family members drawn in the same 2D cartoon style with round white heads. Background: photorealistic traditional Iraqi living room with floor cushions, dark, warm candlelight. Cinematic lighting, dust in the air. Wide shot, 16:9, no text."
+},
+{
+"vo": "أمك تحاول تطمّنكم: بس كم يوم وترجع.",
+"img": "His mother in a black abaya holds a candle and smiles weakly, the little brother hugs her arm, he watches. All characters in the same 2D cartoon style with round white heads. Background: photorealistic dark Iraqi living room, candlelight, shadows on walls.",
+"prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon boots, clean vector cel shading. The character: messy curly dark-brown hair on top of the white round head, a thin mustache and a small chin beard, grey knit sweater, dark blue jeans, brown boots. His mother in a black abaya holds a candle and smiles weakly, the little brother hugs her arm, he watches. All characters in the same 2D cartoon style with round white heads. Background: photorealistic dark Iraqi living room, candlelight, shadows on walls. Cinematic lighting, dust in the air. Wide shot, 16:9, no text."
+},
+{
+"vo": "بس أخوك الصغير يسأل: إذا خلصت الشموع... شنسوي؟",
+"img": "Close-up of the little brother, a small 2D cartoon boy with a round white head, looking up with scared eyes, candle in front of him. Background: photorealistic dark room, warm candle glow.",
+"prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon boots, clean vector cel shading. The character: messy curly dark-brown hair on top of the white round head, a thin mustache and a small chin beard, grey knit sweater, dark blue jeans, brown boots. Close-up of the little brother, a small 2D cartoon boy with a round white head, looking up with scared eyes, candle in front of him. Background: photorealistic dark room, warm candle glow. Cinematic lighting, dust in the air. Wide shot, 16:9, no text."
+},
+{
+"vo": "تعد الشموع... بس ست.",
+"img": "He counts a few candles laid on a wooden table, serious face. Background: photorealistic dark Iraqi room, a single candle burning, deep shadows.",
+"hud": "6🕯️",
+"prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon boots, clean vector cel shading. The character: messy curly dark-brown hair on top of the white round head, a thin mustache and a small chin beard, grey knit sweater, dark blue jeans, brown boots. He counts a few candles laid on a wooden table, serious face. Background: photorealistic dark Iraqi room, a single candle burning, deep shadows. Cinematic lighting, dust in the air. Wide shot, 16:9, no text."
+},
+{
+"vo": "تحسب بعقلك: ست شموع، لتسعة وعشرين ليلة.",
+"img": "He sits alone thinking, head in his hands, a single candle in front of him. Background: photorealistic dark room, candlelight, moon through an iron grille window.",
+"prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon boots, clean vector cel shading. The character: messy curly dark-brown hair on top of the white round head, a thin mustache and a small chin beard, grey knit sweater, dark blue jeans, brown boots. He sits alone thinking, head in his hands, a single candle in front of him. Background: photorealistic dark room, candlelight, moon through an iron grille window. Cinematic lighting, dust in the air. Wide shot, 16:9, no text."
+},
+{
+"vo": "وتعرف إن الأيام الجاية... أصعب بكثير.",
+"img": "",
+"reuse": "prev"
+},
+{
+"vo": "والبگ... البگ ما يرحم. لا مروحة، ولا مكيف، ولا مبيد.",
+"img": "He sits on the rooftop mattress at night slapping mosquitoes on his arm, annoyed, a cloud of mosquitoes around him. Background: photorealistic Baghdad rooftop at night, moonlight, mosquito net torn.",
+"prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon boots, clean vector cel shading. The character: messy curly dark-brown hair on top of the white round head, a thin mustache and a small chin beard, grey knit sweater, dark blue jeans, brown boots. He sits on the rooftop mattress at night slapping mosquitoes on his arm, annoyed, a cloud of mosquitoes around him. Background: photorealistic Baghdad rooftop at night, moonlight, mosquito net torn. Cinematic lighting, dust in the air. Wide shot, 16:9, no text."
+},
+{
+"vo": "الساعة عشرة بالليل. الزقاق ساكت بشكل مو طبيعي.",
+"img": "He looks out through the iron grille of a front window into a dark alley, suspicious. Background: photorealistic narrow Baghdad alley at night, old brick houses, no lights, moonlight.",
+"prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon boots, clean vector cel shading. The character: messy curly dark-brown hair on top of the white round head, a thin mustache and a small chin beard, grey knit sweater, dark blue jeans, brown boots. He looks out through the iron grille of a front window into a dark alley, suspicious. Background: photorealistic narrow Baghdad alley at night, old brick houses, no lights, moonlight. Cinematic lighting, dust in the air. Wide shot, 16:9, no text."
+},
+{
+"vo": "وفجأة... تسمع صوت بالزقاق.",
+"img": "He freezes in the dark hallway with wide frightened eyes, turning his head toward the front door. Background: photorealistic dark Iraqi house hallway, metal front door, moonlight under the door.",
+"sfx": "heart",
+"prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon boots, clean vector cel shading. The character: messy curly dark-brown hair on top of the white round head, a thin mustache and a small chin beard, grey knit sweater, dark blue jeans, brown boots. He freezes in the dark hallway with wide frightened eyes, turning his head toward the front door. Background: photorealistic dark Iraqi house hallway, metal front door, moonlight under the door. Cinematic lighting, dust in the air. Wide shot, 16:9, no text."
+},
+{
+"vo": "طرگة... وبعدها طرگة ثانية.",
+"img": "Close-up of an old metal front door of an Iraqi house in the dark, he stands nearby holding his breath. Background: photorealistic dark entrance, moonlight from the crack.",
+"sfx": "knock",
+"prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon boots, clean vector cel shading. The character: messy curly dark-brown hair on top of the white round head, a thin mustache and a small chin beard, grey knit sweater, dark blue jeans, brown boots. Close-up of an old metal front door of an Iraqi house in the dark, he stands nearby holding his breath. Background: photorealistic dark entrance, moonlight from the crack. Cinematic lighting, dust in the air. Wide shot, 16:9, no text."
+},
+{
+"vo": "تاخذ اللايت، وتطلع.",
+"img": "He walks slowly down a pitch-dark narrow Baghdad alley holding a flashlight, the beam cutting through dusty air, tense. Background: photorealistic old Baghdad alley at night, brick walls, hanging cables, dust in the beam.",
+"prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon boots, clean vector cel shading. The character: messy curly dark-brown hair on top of the white round head, a thin mustache and a small chin beard, grey knit sweater, dark blue jeans, brown boots. He walks slowly down a pitch-dark narrow Baghdad alley holding a flashlight, the beam cutting through dusty air, tense. Background: photorealistic old Baghdad alley at night, brick walls, hanging cables, dust in the beam. Cinematic lighting, dust in the air. Wide shot, 16:9, no text."
+},
+{
+"vo": "ضوء اللايت يرجف... وتشوف ظل يتحرك آخر الزقاق.",
+"img": "View over his shoulder: his flashlight beam reveals a mysterious tall shadow at the far end of the dark alley. Background: photorealistic dark Baghdad alley, fog and dust, eerie cinematic lighting.",
+"sfx": "heart",
+"prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon boots, clean vector cel shading. The character: messy curly dark-brown hair on top of the white round head, a thin mustache and a small chin beard, grey knit sweater, dark blue jeans, brown boots. View over his shoulder: his flashlight beam reveals a mysterious tall shadow at the far end of the dark alley. Background: photorealistic dark Baghdad alley, fog and dust, eerie cinematic lighting. Cinematic lighting, dust in the air. Wide shot, 16:9, no text."
+},
+{
+"vo": "منو هذا؟ وشيريد؟",
+"img": "",
+"reuse": "prev"
+},
+{
+"vo": "اليوم الأول بس خلص... وباقي تسعة وعشرين يوم.",
+"img": "",
+"hud": "black",
+"sfx": "boom"
+}
+]
