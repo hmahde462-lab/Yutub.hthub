@@ -64,3 +64,16 @@
   20. العراق ضد الأرجنتين — الفايز العراق — 2026-11-23 21:00
 - إنستا: نفس الـ20 ريلز مجدولة عبر vidIQ على @wowshotsiq بنفس المواعيد (14–23/11، 17:00 و 21:00). vidIQ ما يدعم أول تعليق ولا إلغاء المجدول.
 - `videos/hamoudi/`: حمودي وماما الأجزاء 2–7 (3 راوتر، 4 شهادة، 5 ماما پرو، 6 كهرباء، 7 عيدية). كود الحلقات: `studio/hamoudi-2d/eps/` (film.js واحد، score لكل حلقة، صوت gemini-2.5-flash-preview-tts).
+
+## الموسم 2 (معارك 21–81 + معلومات غريبة 1–61) — مجدول بالكامل عبر vidIQ
+- يوتيوب WOW SHOTS (UCgsQ6WAsgA8rk0X3H4ifWPg) + إنستا @wowshotsiq (platformAccountId 29328143896822808).
+- 24/11/2026 → 23/01/2027 يومياً: معركة 17:00، معلومات 21:00 (بغداد). 122 منشور كلها scheduled (ما تنلغي بـ vidIQ).
+- معارك: `studio/flag-battles/` (episodes2.json، تتناوب دول/فرق، بدون أندية عراقية). معلومات: `studio/facts-series/` (facts.json، صوت ElevenLabs pNInz6obpgDQGcFmaJgB، `make_fact.sh N`). الفيديوهات `videos/flags/`, `videos/facts/`.
+- ملفات الحالة: `studio/state/` (todo.json/todo2.json = النصوص والعناوين والأوقات، ids_b/ids_f = uploadIds بـ vidIQ، allev.json = جدول كل الحلقات).
+- أول تعليق: vidIQ ما يدعمه.
+
+## التجميعات الأسبوعية (فيديو طويل 16:9، يوتيوب فقط، 19:00 بغداد)
+- كود: `studio/weekly/` — `plan.py` → comps.json (العناوين/الوصف بالفصول/التاغات/الوقت)، `render_art.js` (اللوحات الجانبية + الثمبنيل)، `build.sh kind week` / `all.sh`.
+- الفيديوهات + الثمبنيلات: `videos/weekly/` (battle-weekNN.mp4، facts-weekNN.mp4، *-thumb.jpg).
+- الثلاثاء: تجميعة المعارك (11 أسبوع، 17/11 → 26/01). الجمعة: تجميعة المعلومات (8، 04/12 → 29/01؛ الأسبوع الأول مدموج 1–10، والأخير 53–61).
+- الحالة: يُحدَّث بـ `studio/state/weekly_progress.txt`.

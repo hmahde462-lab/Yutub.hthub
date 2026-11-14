@@ -1,0 +1,7 @@
+scheduled: all of todo.json[0:52] (54 posts incl. 2 originals) + todo2.json[0:10]. next: todo2.json[10:]
+74 done (todo2 up to idx 19)
+84 done (todo2 up to idx 29)
+94 done (todo2 up to idx 39)
+104 done (todo2 up to idx 49)
+113 done (todo2 up to idx 58)
+122 done ALL
