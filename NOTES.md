@@ -89,3 +89,27 @@
 ### Weekly compilations — scheduled (2026-11-15)
 All 19 uploaded via vidIQ to YouTube (private until publishAt, 19:00 Baghdad). Battles every Tuesday 17/11/2026–26/01/2027,
 facts every Friday 04/12/2026–29/01/2027. Video links + postIds in `studio/state/weekly_ids.txt`.
+
+## Session notes (2026-11-15)
+
+### Weekly compilations — DONE
+19/19 scheduled on YouTube via vidIQ (see section above). Nothing pending.
+Lesson: YouTube daily upload limit (uploadLimitExceeded) after many uploads in one day → a failed vidIQ
+publication can't be retried; create a NEW draft with the same uploadId/imageId and publish.
+
+### Gun sound effects — `studio/sfx/guns/`
+ElevenLabs sound-generation API (api.elevenlabs.io is proxy-authenticated, use dummy xi-api-key):
+- Shots: rifle, shotgun, sniper, ak, smg, lmg (.mp3), all_guns_demo.mp3
+- Reloads: reload.mp3 (generic charging handle) + rifle_/shotgun_/sniper_/ak_/smg_/lmg_reload.mp3
+- Post-process: ffmpeg silenceremove + loudnorm.
+
+### FPS weapon models for game "Magic Forest" — `studio/weapons/`
+Procedural Blender (`pip install bpy` 5.3, headless) — NOT AAA quality; user was told honestly.
+Higgsfield credits = 0, so no AI image-to-3D. Options offered: buy credits / buy assets (Sketchfab/Fab) / refine.
+- `textures.py` → tex/ (procedural 2K PBR, gitignored), `lib.py` helpers, `weapons.py` builders.
+- Output: `glb/` (2K) + `glb_mobile/` (1K): M4, AK47, LMG, Sniper, Shotgun, SMG, Optic_RedDot, Optic_Scope4x, Optic_SniperScope.
+- Separate moving parts + Socket_* empties; muzzle −Z, metres, origin at grip. README.md there.
+- Rebuild: `python3 textures.py 2048 && python3 weapons.py --preview --mobile`
+
+### Environment
+- graphify (graphifyy) installed; Default env setup script now installs it every new session.
