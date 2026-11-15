@@ -85,3 +85,7 @@
 - الصوت: ElevenLabs Flows (creative_generate_speech, eleven_v3, voice 6cFz1T5FQxQS8Xk88qQi, generations_count=1). الـAPI المباشر ممنوع للأصوات المكتبية بالخطة المجانية. رصيد باقي ≈3,000.
 - الصور: Figma generate_image gpt-image-2.5-flare 1920x1080، نفس قالب البرومت (بـ script.json حقل prompt). كريدت الحساب القديم يخلص بسرعة (~52 صورة/يوم).
 - الشبكة: أضفت elevenlabsusercontent.com و www.figma.com للبيئة.
+
+### Weekly compilations — scheduled (2026-11-15)
+All 19 uploaded via vidIQ to YouTube (private until publishAt, 19:00 Baghdad). Battles every Tuesday 17/11/2026–26/01/2027,
+facts every Friday 04/12/2026–29/01/2027. Video links + postIds in `studio/state/weekly_ids.txt`.

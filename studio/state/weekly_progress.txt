@@ -1,1 +1,1 @@
-rendered 19/19; battle1 drafted, YT daily upload limit hit 2026-11-14; retry tomorrow then continue 2..19
+DONE: 19/19 weekly compilations uploaded to YouTube as private, scheduled public at 19:00 Baghdad (battles Tue, facts Fri). See weekly_ids.txt

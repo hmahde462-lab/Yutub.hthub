@@ -1,2 +1,30 @@
 battle 1 up=bf93032a-ec63-4152-9791-a28b2b1f519e img=32997aee-25d3-4ea2-9f62-6d050092063c
 battle 1 post=64ecb887-26e1-4927-bd95-5f4cc26377e5 rev=8f282630 pub=1ec6eac5-fb9e-417a-838c-63c08c1e8200 FAILED uploadLimitExceeded 2026-11-14 -> retry publish with publicationIds after quota reset
+battle 1 OK post=13d108d6-f190-4e91-ac5b-5fc61668835d https://www.youtube.com/watch?v=bjLjxQ5gILc
+battle 2 post=4f1568af-27fa-42ce-a672-b85832f4ff8a up=367405f1-c6bf-4ed6-adf8-45152e997e45 img=9eb0c2b8-cdeb-47d7-b43f-2de370c18140
+battle 2 OK https://www.youtube.com/watch?v=h8tPGdM7jNY
+battle 3 post=90c7b0f1-fb39-47c5-a1fd-a816ea7f945c
+battle 3 OK https://www.youtube.com/watch?v=_nv-MbO0wAc
+facts 1 post=13e9d652-8315-45a4-918c-494c1a890a7c
+facts 1 OK https://www.youtube.com/watch?v=gIysMT2CP1Y
+battle 4 OK https://www.youtube.com/watch?v=e7btrDgki2M
+facts 2 post=a35b30a1-c68f-4409-a9ae-f4dfecf5cdc9
+facts 2 OK https://www.youtube.com/watch?v=FEk6DbJYOSA
+battle 5 OK https://www.youtube.com/watch?v=4CJhF_4Rv9E
+facts 3 post=eb25b3b3-a88c-423c-af1b-f74a974a0cb0
+facts 3 OK https://www.youtube.com/watch?v=lt7pjoQJu6M
+battle 6 OK https://www.youtube.com/watch?v=o0DiM1Gd6Wk
+facts 4 post=f6445388-ffb0-4845-b331-c18da607d215
+facts 4 OK https://www.youtube.com/watch?v=u0vHF5dqhGE
+battle 7 OK https://www.youtube.com/watch?v=4W-flvXNi90
+facts 5 post=379abfe2-63c8-4917-9c4d-537ccf257c45
+facts 5 OK https://www.youtube.com/watch?v=6Js7khwNODA
+battle 8 OK https://www.youtube.com/watch?v=1ZE7QAvLye0
+facts 6 post=0fa3865f-664f-48d7-8406-86ca1855aefe
+facts 6 OK https://www.youtube.com/watch?v=x6p_PAtbRuk
+battle 9 OK https://www.youtube.com/watch?v=6Wmz04VlVS8
+facts 7 post=ef70bb00-b5c6-40e4-a933-a6f04efd5062
+facts 7 OK https://www.youtube.com/watch?v=DYRVnW_JtQA
+battle 10 OK https://www.youtube.com/watch?v=--GeZImIOY0
+battle 11 OK https://www.youtube.com/watch?v=mCpEWZ2UyQg
+facts 8 OK https://www.youtube.com/watch?v=NfQ_7CVeQnc
