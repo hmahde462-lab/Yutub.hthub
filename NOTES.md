@@ -113,3 +113,8 @@ Higgsfield credits = 0, so no AI image-to-3D. Options offered: buy credits / buy
 
 ### Environment
 - graphify (graphifyy) installed; Default env setup script now installs it every new session.
+
+## حساب vidIQ الجديد (15/11)
+- الـ connector صار على حساب vidIQ ثاني: يوتيوب **افكار غريبة** UC8ttgcX1m2LioxDGTINJLIw + انستا **@7ll.ajr** (آيه من القرآن، 9.4K) id 28858832390455960 (OAuth، ينشر). حساب wowshotsiq ومنشوراته الـ138 ما تبين بعد.
+- فحص يومي للربط: trigger trig_015mttUgRtJjsruA55Zy68D9 (12:37 بغداد).
+- جاهز (ما انشر): `videos/afkar/il06-lilac-chaser-part6.mp4` (كود studio/illusions/il06)، `videos/quran/quran-reel-01-alsharh.mp4` (كود studio/quran-reels، خط Amiri، صوت مطر بدون موسيقى).
