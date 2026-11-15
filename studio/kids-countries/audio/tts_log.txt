@@ -1,0 +1,47 @@
+2 gemini-3.8-flash-tts audio/k02.wav 30.12 s 24000 Hz 1 ch
+3 gemini-3.8-flash-tts audio/k03.wav 31.4 s 24000 Hz 1 ch
+4 gemini-3.8-flash-tts audio/k04.wav 35.04 s 24000 Hz 1 ch
+5 gemini-3.8-flash-tts FAIL urllib.error.HTTPError: HTTP Error 429: Too Many Requests
+5 gemini-3.1-flash-tts-preview audio/k05.wav 27.4 s 24000 Hz 1 ch
+6 gemini-3.8-flash-tts audio/k06.wav 26.16 s 24000 Hz 1 ch
+7 gemini-3.8-flash-tts audio/k07.wav 26.32 s 24000 Hz 1 ch
+8 gemini-3.8-flash-tts audio/k08.wav 34.08 s 24000 Hz 1 ch
+9 gemini-3.8-flash-tts audio/k09.wav 29.76 s 24000 Hz 1 ch
+10 gemini-3.8-flash-tts FAIL urllib.error.HTTPError: HTTP Error 429: Too Many Requests
+10 gemini-3.1-flash-tts-preview audio/k10.wav 33.0 s 24000 Hz 1 ch
+11 gemini-3.8-flash-tts audio/k11.wav 27.56 s 24000 Hz 1 ch
+12 gemini-3.8-flash-tts FAIL urllib.error.HTTPError: HTTP Error 429: Too Many Requests
+12 gemini-3.1-flash-tts-preview audio/k12.wav 37.44 s 24000 Hz 1 ch
+13 gemini-3.8-flash-tts FAIL urllib.error.HTTPError: HTTP Error 429: Too Many Requests
+13 gemini-3.1-flash-tts-preview audio/k13.wav 28.0 s 24000 Hz 1 ch
+14 gemini-3.8-flash-tts FAIL urllib.error.HTTPError: HTTP Error 429: Too Many Requests
+14 gemini-3.1-flash-tts-preview audio/k14.wav 33.6 s 24000 Hz 1 ch
+15 gemini-3.8-flash-tts audio/k15.wav 32.96 s 24000 Hz 1 ch
+16 gemini-3.8-flash-tts audio/k16.wav 26.56 s 24000 Hz 1 ch
+17 gemini-3.8-flash-tts FAIL urllib.error.HTTPError: HTTP Error 429: Too Many Requests
+17 gemini-3.1-flash-tts-preview audio/k17.wav 31.08 s 24000 Hz 1 ch
+18 gemini-3.8-flash-tts audio/k18.wav 30.44 s 24000 Hz 1 ch
+19 gemini-3.8-flash-tts FAIL urllib.error.HTTPError: HTTP Error 429: Too Many Requests
+19 gemini-3.1-flash-tts-preview audio/k19.wav 31.2 s 24000 Hz 1 ch
+20 gemini-3.8-flash-tts FAIL urllib.error.HTTPError: HTTP Error 429: Too Many Requests
+20 gemini-3.1-flash-tts-preview audio/k20.wav 33.28 s 24000 Hz 1 ch
+21 gemini-3.8-flash-tts FAIL urllib.error.HTTPError: HTTP Error 429: Too Many Requests
+21 gemini-3.1-flash-tts-preview audio/k21.wav 31.2 s 24000 Hz 1 ch
+22 gemini-3.8-flash-tts FAIL urllib.error.HTTPError: HTTP Error 429: Too Many Requests
+22 gemini-3.1-flash-tts-preview audio/k22.wav 29.72 s 24000 Hz 1 ch
+23 gemini-3.8-flash-tts audio/k23.wav 27.28 s 24000 Hz 1 ch
+24 gemini-3.8-flash-tts FAIL urllib.error.HTTPError: HTTP Error 429: Too Many Requests
+24 gemini-3.1-flash-tts-preview FAIL urllib.error.HTTPError: HTTP Error 429: Too Many Requests
+24 gemini-2.5-flash-preview-tts audio/k24.wav 29.25 s 24000 Hz 1 ch
+25 gemini-3.8-flash-tts FAIL urllib.error.HTTPError: HTTP Error 429: Too Many Requests
+25 gemini-3.1-flash-tts-preview audio/k25.wav 30.8 s 24000 Hz 1 ch
+26 gemini-3.8-flash-tts FAIL urllib.error.HTTPError: HTTP Error 429: Too Many Requests
+26 gemini-3.1-flash-tts-preview audio/k26.wav 29.4 s 24000 Hz 1 ch
+27 gemini-3.8-flash-tts audio/k27.wav 29.04 s 24000 Hz 1 ch
+28 gemini-3.8-flash-tts FAIL urllib.error.HTTPError: HTTP Error 429: Too Many Requests
+28 gemini-3.1-flash-tts-preview audio/k28.wav 28.36 s 24000 Hz 1 ch
+29 gemini-3.8-flash-tts FAIL urllib.error.HTTPError: HTTP Error 429: Too Many Requests
+29 gemini-3.1-flash-tts-preview audio/k29.wav 31.4 s 24000 Hz 1 ch
+30 gemini-3.8-flash-tts FAIL urllib.error.HTTPError: HTTP Error 429: Too Many Requests
+30 gemini-3.1-flash-tts-preview FAIL urllib.error.HTTPError: HTTP Error 429: Too Many Requests
+30 gemini-2.5-flash-preview-tts audio/k30.wav 25.77 s 24000 Hz 1 ch
