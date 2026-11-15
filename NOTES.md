@@ -118,3 +118,5 @@ Higgsfield credits = 0, so no AI image-to-3D. Options offered: buy credits / buy
 - الـ connector صار على حساب vidIQ ثاني: يوتيوب **افكار غريبة** UC8ttgcX1m2LioxDGTINJLIw + انستا **@7ll.ajr** (آيه من القرآن، 9.4K) id 28858832390455960 (OAuth، ينشر). حساب wowshotsiq ومنشوراته الـ138 ما تبين بعد.
 - فحص يومي للربط: trigger trig_015mttUgRtJjsruA55Zy68D9 (12:37 بغداد).
 - جاهز (ما انشر): `videos/afkar/il06-lilac-chaser-part6.mp4` (كود studio/illusions/il06)، `videos/quran/quran-reel-01-alsharh.mp4` (كود studio/quran-reels، خط Amiri، صوت مطر بدون موسيقى).
+- نشر 15/11: il06 يوتيوب https://www.youtube.com/watch?v=EEc3OxFGgf4 (post b653549a) — ريل قرآن 01 انستا https://www.instagram.com/reel/DfxlnZlkx2Y/ (post f23c04c6). YouTube MFA تم.
+- vidIQ ما يگدر ينشر تعليق جديد/يثبّته (بس رد على تعليق) → التعليق المثبت يدوي.
