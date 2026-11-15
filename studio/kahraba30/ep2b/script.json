@@ -1,0 +1,291 @@
+[
+ {
+  "vo": "في ليلة من ليالي انقطاع الكهرباء... شفت ظل يتحرك في آخر الزقاق.",
+  "img": "View over his shoulder: his flashlight beam lights a dark alley and a shadowy figure at the end. Background: photorealistic dark Baghdad alley at night, dust in the beam.",
+  "v": "A"
+ },
+ {
+  "vo": "قرّبت الضو... وقلبي يدق.",
+  "img": "",
+  "reuse": "prev",
+  "sfx": "heart",
+  "v": "A"
+ },
+ {
+  "vo": "طلع ابن الجيران، علي... يلهث، وبيده ورقة مطوية.",
+  "img": "A skinny teenage boy 2D cartoon with a round white head, short black hair, white school shirt, caught in the flashlight beam holding a paper, out of breath. The hero stands in front of him relieved. Background: photorealistic dark Baghdad alley at night.",
+  "v": "A"
+ },
+ {
+  "vo": "قال: لقيتها تحت باب بيتكم... ومكتوب عليها اسمك.",
+  "img": "Close-up of the paper notice in the teenage boy's hands lit by flashlight, the hero reads it with shocked wide eyes. Background: dark alley, dust in the beam.",
+  "sfx": "hit",
+  "v": "A"
+ },
+ {
+  "vo": "فتحتها... وكانت فيها أسئلة الامتحان الوزاري. كاملة.",
+  "img": "The hero puts his hands on his head in disbelief in the dark alley, the teenage boy shrugs. Background: photorealistic dark Baghdad alley, moonlight.",
+  "v": "A"
+ },
+ {
+  "vo": "انقطاع الكهرباء. الحلقة الثانية: الورقة اللي نزلت بالليل.",
+  "img": "",
+  "hud": "title",
+  "v": "A"
+ },
+ {
+  "vo": "معلومة: الدماغ يستهلك حوالي عشرين بالمية من طاقة الجسم، رغم إن وزنه اثنين بالمية بس.",
+  "img": "He sits on the rooftop at dawn with an open textbook on his knees, yawning, tired eyes. Background: photorealistic Baghdad rooftop at dawn, orange sky, minaret silhouette.",
+  "v": "T"
+ },
+ {
+  "vo": "صحيت الفجر حتى أدرس... بس عيني على الورقة، مو على الكتاب.",
+  "img": "Close-up of him staring blankly at a textbook with chemistry formulas, distracted, thought bubbles not drawn. Background: photorealistic rooftop at sunrise, soft light.",
+  "v": "A"
+ },
+ {
+  "vo": "معلومة: بالحر الشديد يقل التركيز، لأن الجسم يصرف طاقته على تبريد نفسه بدل التفكير.",
+  "img": "He sits under a small patch of shade on the rooftop fanning himself with a notebook, sweat pouring. Background: photorealistic Baghdad rooftop under harsh morning sun, heat haze.",
+  "hud": "44°C",
+  "v": "T"
+ },
+ {
+  "vo": "العرق ينزل على الورقة... وأنا أسأل نفسي: مين كتبها؟ وليش أنا؟",
+  "img": "Close-up of his black mitten hand on a notebook page with smeared ink and sweat drops. Background: photorealistic wooden desk in a hot room, harsh light.",
+  "v": "A"
+ },
+ {
+  "vo": "نزلت للغرفة... أحر من السطح، والمبردة ساكتة.",
+  "img": "He stands in his dim bedroom with closed curtains, the silent air cooler, sweating heavily, books in his arms. Background: photorealistic hot Baghdad bedroom at noon, light leaking through curtains.",
+  "v": "A"
+ },
+ {
+  "vo": "هربت للحمام لأن الكاشي بارد... وحطيت الورقة جنبي.",
+  "img": "He sits on the tiled bathroom floor leaning on the cool wall with a textbook, half funny half desperate. Background: photorealistic old Iraqi bathroom with ceramic tiles, dim light.",
+  "v": "A"
+ },
+ {
+  "vo": "دخلت أمي فجأة... خبّيت الورقة بسرعة. لو شافتها... انتهيت.",
+  "img": "His mother in a black abaya and headscarf, same 2D cartoon style with round white head, opens the bathroom door with hands on hips, angry; he looks up guiltily. Background: photorealistic Iraqi bathroom doorway.",
+  "v": "A"
+ },
+ {
+  "vo": "العصر رحت للجامع... قالوا عندهم مولدة.",
+  "img": "He walks down a hot street with books under his arm toward a neighborhood mosque. Background: photorealistic Baghdad street in the afternoon, mosque with a minaret, dust.",
+  "v": "A"
+ },
+ {
+  "vo": "معلومة: الجوامع والمكتبات كانت من زمان ملجأ الطلاب للدراسة بهدوء أيام الامتحانات.",
+  "img": "Inside a mosque hall, many photorealistic students sit on the carpet with books under a few fans, he stands at the entrance surprised. Background: photorealistic mosque interior, carpets, soft light, a single ceiling fan.",
+  "v": "T"
+ },
+ {
+  "vo": "عشرين طالب تحت مروحة وحدة... وواحد منهم يطالعني بنظرة غريبة.",
+  "img": "He squeezes between photorealistic students sitting under one ceiling fan, everyone sweating and leaning toward the airflow. Background: photorealistic mosque interior, carpets.",
+  "v": "A"
+ },
+ {
+  "vo": "وفجأة... انطفت المولدة.",
+  "img": "The ceiling fan stops, all the students and the hero look up in despair. Background: photorealistic mosque interior suddenly dimmer.",
+  "sfx": "hit",
+  "v": "A"
+ },
+ {
+  "vo": "ولما رجع الضو... الطالب الغريب اختفى.",
+  "img": "",
+  "reuse": "prev",
+  "v": "A"
+ },
+ {
+  "vo": "رجعت للبيت مع الغروب... والسؤال يكبر براسي.",
+  "img": "He walks home at sunset carrying books, exhausted. Background: photorealistic Baghdad alley at sunset, orange light, tangled cables.",
+  "v": "A"
+ },
+ {
+  "vo": "معلومة: القلق يرفع هرمون الكورتيزول، وارتفاعه يصعّب تذكر المعلومات وقت الامتحان.",
+  "img": "",
+  "reuse": "prev",
+  "v": "T"
+ },
+ {
+  "vo": "ولّعت شمعة... وفتحت الورقة مرة ثانية.",
+  "img": "He lights a candle next to an open textbook on a small table in a dark room. Background: photorealistic dark Iraqi room, candlelight.",
+  "v": "A"
+ },
+ {
+  "vo": "معلومة: ضو الشمعة أضعف بعشرات المرات من المصباح العادي، والقراءة عليه تتعب العين بسرعة.",
+  "img": "Close-up of a few candles on the table, one already burnt down, he looks at them worried. Background: photorealistic dark room.",
+  "hud": "5🕯️",
+  "v": "T"
+ },
+ {
+  "vo": "أمي قالت: شمعة وحدة بالليلة. فقررت أقرا الورقة على ضوها.",
+  "img": "His mother in a black abaya, round white head cartoon style, holds up one finger strictly, a candle between them. Background: photorealistic dark Iraqi living room, candlelight.",
+  "v": "A"
+ },
+ {
+  "vo": "وانتبهت لشي... الخط مألوف. شايفه قبل.",
+  "img": "He reads by a single candle, mosquitoes and moths circling the flame, squinting. Background: photorealistic dark room, warm candle glow.",
+  "v": "A"
+ },
+ {
+  "vo": "معلومة: العين تحتاج حوالي عشرين دقيقة حتى تتأقلم بالكامل مع الظلام.",
+  "img": "Close-up of his tired eyes and the blurry textbook lines in candlelight. Background: dark.",
+  "v": "T"
+ },
+ {
+  "vo": "وأخوي الصغير صاح: أكو أحد بالسطح!",
+  "img": "The little brother, small 2D cartoon boy with round white head and striped shirt, points up at the ceiling scared, the hero looks up. Background: photorealistic dark Iraqi room, candle.",
+  "v": "A"
+ },
+ {
+  "vo": "صعدت بالضو... ما لقيت غير قطة. بس على الأرض... ورقة ثانية.",
+  "img": "On the dark rooftop his flashlight reveals a skinny street cat eating scraps, he sighs in relief. Background: photorealistic Baghdad rooftop at night, moonlight.",
+  "v": "A"
+ },
+ {
+  "vo": "مكتوب فيها: لا تثق بأحد... حتى بأقرب الناس.",
+  "img": "He sits on the rooftop holding a textbook up to the moonlight. Background: photorealistic Baghdad rooftop at night, big full moon, dark city.",
+  "v": "A"
+ },
+ {
+  "vo": "ومرت الأيام... ثلاثة، أربعة، خمسة.",
+  "img": "",
+  "v": "A"
+ },
+ {
+  "vo": "معلومة: الدماغ يثبّت المعلومات أثناء النوم، فالسهر قبل الامتحان يضيّع جزء من اللي حفظته.",
+  "img": "Montage-like wide shot: he studies at the same table, piles of books growing, empty water bottles around, exhausted. Background: photorealistic dim Iraqi room at daytime, harsh light through curtains.",
+  "v": "T"
+ },
+ {
+  "vo": "صرت أحفظ وأنا أمشي... وأنا آكل... وحتى وأنا نايم.",
+  "img": "He mutters to himself while walking in circles in the room reading notes, thinner, dark circles under the eyes. Background: photorealistic hot Iraqi room.",
+  "v": "A"
+ },
+ {
+  "vo": "وعلي يجيني كل يوم، يدرس وياي، ويسأل: شفت الورقة مرة ثانية؟",
+  "img": "The hero and the teenage neighbor boy (round white head, short black hair, white shirt) study together on the rooftop at dusk, sharing one book. Background: photorealistic Baghdad rooftop at dusk.",
+  "v": "A"
+ },
+ {
+  "vo": "ليش هو مهتم بالورقة لهالدرجة؟",
+  "img": "Close-up of the teenage boy smiling determined, the hero nods. Background: photorealistic rooftop at dusk, warm light.",
+  "v": "A"
+ },
+ {
+  "vo": "ليلة الامتحان... ما نمت.",
+  "img": "He lies awake on the rooftop mattress at night staring at the stars, books next to him. Background: photorealistic Baghdad rooftop at night, stars, moon.",
+  "v": "A"
+ },
+ {
+  "vo": "معلومة: ضو شاشة الموبايل بالليل يقلل هرمون الميلاتونين، فيصعب عليك النوم حتى لو تعبان.",
+  "img": "He reads notes using his phone's flashlight, phone showing a red battery icon. Background: dark rooftop at night.",
+  "hud": "5%🔋",
+  "v": "T"
+ },
+ {
+  "vo": "وانطفى الموبايل.",
+  "img": "",
+  "hud": "blackflash",
+  "sfx": "hit",
+  "v": "A"
+ },
+ {
+  "vo": "صباح الامتحان... الحر أربعين، والمدرسة زحمة.",
+  "img": "He walks with many photorealistic students toward a school building in the morning, holding a pen and ID card. Background: photorealistic Iraqi school gate, hot morning sun, dust.",
+  "hud": "40°C",
+  "v": "A"
+ },
+ {
+  "vo": "الأهالي يدعون عند الباب... والورقة بجيبي.",
+  "img": "Crowds of photorealistic parents stand outside the school gate praying with raised hands, the hero looks back at them. Background: photorealistic Iraqi school yard, harsh sun.",
+  "v": "A"
+ },
+ {
+  "vo": "دخلت القاعة... وانصدمت.",
+  "img": "He stands at the doorway of an exam hall, shocked. Background: photorealistic dark Iraqi classroom with rows of old desks, windows covered, dim.",
+  "v": "A"
+ },
+ {
+  "vo": "الطالب الغريب اللي اختفى بالجامع... كان گاعد بالصف الأول.",
+  "img": "Wide shot of the dark exam hall with students sitting at desks sweating, silent ceiling fans, light only from small high windows. Background: photorealistic Iraqi classroom.",
+  "v": "A"
+ },
+ {
+  "vo": "المراقب وزّع الأسئلة...",
+  "img": "A photorealistic stern exam proctor hands out papers, the hero receives his paper nervously. Background: photorealistic dim exam hall.",
+  "v": "A"
+ },
+ {
+  "vo": "فتحت الورقة...",
+  "img": "Close-up of his mitten hands opening the exam paper. Background: dim exam hall, desk.",
+  "sfx": "heart",
+  "v": "A"
+ },
+ {
+  "vo": "نفس الأسئلة. حرف بحرف.",
+  "img": "He smiles widely looking at the exam paper, eyes shining. Background: photorealistic dim exam hall, a ray of light falling on his desk.",
+  "v": "A"
+ },
+ {
+  "vo": "بس ما طلّعت الورقة من جيبي. كتبت من راسي... من اللي حفظته.",
+  "img": "He writes fast with determination, sweat drops falling on the paper. Background: dim hot exam hall.",
+  "v": "A"
+ },
+ {
+  "vo": "معلومة: حتى الجفاف البسيط ممكن يسبب دوخة وصعوبة بالتركيز، فالماي بالامتحان مو رفاهية.",
+  "img": "A photorealistic student at the next desk faints and slumps, the hero turns alarmed, the proctor rushes over. Background: dim exam hall.",
+  "v": "T"
+ },
+ {
+  "vo": "والطالب الغريب... گام وسلّم ورقته بعد خمس دقايق.",
+  "img": "",
+  "reuse": "prev",
+  "v": "A"
+ },
+ {
+  "vo": "سلّمت ورقتي، وطلعت أدوره... ما لقيته.",
+  "img": "He hands his exam paper to the proctor, exhausted but proud. Background: photorealistic exam hall, students leaving.",
+  "v": "A"
+ },
+ {
+  "vo": "علي ركض علي وگال: شلونه الامتحان؟ استفدت من الورقة؟",
+  "img": "Outside the school, the teenage neighbor boy runs toward the hero excitedly. Background: photorealistic Iraqi school gate, crowds, harsh sun.",
+  "v": "A"
+ },
+ {
+  "vo": "ضحكت وگلت: ولا فتحتها... وتغيّر وجهه.",
+  "img": "The hero and the teenage boy laugh together, hands on each other's shoulders. Background: photorealistic school street, sunlight.",
+  "v": "A"
+ },
+ {
+  "vo": "هنا عرفت... الخط اللي بالورقة، خط علي.",
+  "img": "",
+  "reuse": "prev",
+  "v": "A"
+ },
+ {
+  "vo": "رجعت للبيت... والجيران متجمعين گدام الباب.",
+  "img": "He walks into his alley and sees a crowd of photorealistic neighbors gathered in front of his house door, worried faces. Background: photorealistic Baghdad alley in the afternoon.",
+  "v": "A"
+ },
+ {
+  "vo": "وأمي واگفة تبچي... وبيدها ورقة ثالثة.",
+  "img": "His mother in a black abaya, round white head cartoon style, stands at the door crying, wiping tears. Background: photorealistic Iraqi house doorway, neighbors around.",
+  "v": "A"
+ },
+ {
+  "vo": "مكتوب فيها اسمي... وكلمة وحدة.",
+  "img": "Close-up of the hero's frightened face. Background: blurred alley.",
+  "sfx": "heart",
+  "v": "A"
+ },
+ {
+  "vo": "يتبع.",
+  "img": "",
+  "hud": "black",
+  "sfx": "boom",
+  "v": "A"
+ }
+]

@@ -85,3 +85,6 @@
 - الصوت: ElevenLabs Flows (creative_generate_speech, eleven_v3, voice 6cFz1T5FQxQS8Xk88qQi, generations_count=1). الـAPI المباشر ممنوع للأصوات المكتبية بالخطة المجانية. رصيد باقي ≈3,000.
 - الصور: Figma generate_image gpt-image-2.5-flare 1920x1080، نفس قالب البرومت (بـ script.json حقل prompt). كريدت الحساب القديم يخلص بسرعة (~52 صورة/يوم).
 - الشبكة: أضفت elevenlabsusercontent.com و www.figma.com للبيئة.
+- ح٢ جاهزة: `videos/long/kahraba30-ep2.mp4` (4:28). الصور بـ `studio/kahraba30/ep2/img_jpg/` (من ملف Figma OPYoRbmqbu2GXHLIhAOnje، حساب 462 + صلاحية للـMCP). القص: `ep2/cut.py` (سكتات + توزيع بالحروف، بدون Gemini، يطلع lines/*.wav). البناء: `ep2/build2.py`. مشهد 32 طلع البطل بدل المراهق. لم تُنشر.
+- ح٢ نسخة القصة + المعلومات: `videos/long/kahraba30-ep2-story.mp4` (4:49). قصة «الورقة اللي نزلت بالليل» بصوت Allan (LBWTcQo7Ie6Rzp2s8Xff) + معلومات بصوت Tareq (S7CPkcJPABvw8oef8idX)، نفس صور ح٢. كود: `studio/kahraba30/ep2b/` (script.json فيه v=A/T، cut.py يستخدم align.json من Gemini gemini-3.5-flash + overrides.json، build2b.py). رصيد ElevenLabs باقي ≈340.
+- قصص عراقية حقيقية ح١: `videos/long/iraq-asian-cup-2007.mp4` (3:19) — منتخب العراق بطل آسيا 2007. صوت Gemini (gemini-3.8-flash-tts، Algieba)، صور Figma (34). كود: `studio/iraq2007/` (script.json، align.py+cut.py، build.py). لم تُنشر.
