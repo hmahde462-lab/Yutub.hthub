@@ -1,2 +1,5 @@
 video.mp4
 *.jpg
+out/
+recit/
+*.v.mp4
