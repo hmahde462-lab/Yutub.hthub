@@ -2,7 +2,7 @@
 import math, random, subprocess
 import numpy as np
 from PIL import Image, ImageDraw, ImageFilter, ImageFont
-W, H, FPS, DUR = 1080, 1920, 30, 16.5
+W, H, FPS, DUR = 1080, 1920, 30, 19.5
 AM = 'fonts/Amiri-Bold.ttf'; AMR = 'fonts/Amiri-Regular.ttf'; KUF = '../flag-battles/fonts/Cairo-ExtraBold.ttf'
 def f(p, s): return ImageFont.truetype(p, s)
 GOLD = (236, 200, 120); WHITE = (245, 240, 230); SOFT = (200, 200, 220)
@@ -37,18 +37,18 @@ def frame(t):
     txt(L, 900, 'إذا ضاق صدرك…', f(KUF, 82), WHITE, alpha(t, 0.2, 3.0))
     txt(L, 1030, 'اقرأ هاي', f(KUF, 70), GOLD, alpha(t, 0.7, 3.0))
     # ayah
-    a1, a2 = alpha(t, 3.0, 10.6, 0.8), alpha(t, 5.0, 10.6, 0.8)
+    a1, a2 = alpha(t, 2.8, 12.6, 0.6), alpha(t, 7.4, 12.6, 0.6)
     for lay in (G, L):
         txt(lay, 800, 'فَإِنَّ  مَعَ  الْعُسْرِ  يُسْرًا', f(AM, 112), GOLD, a1)
         txt(lay, 1000, 'إِنَّ  مَعَ  الْعُسْرِ  يُسْرًا', f(AM, 112), GOLD, a2)
-    txt(L, 1160, '﴿ سورة الشرح : ٥ - ٦ ﴾', f(AMR, 48), SOFT, alpha(t, 6.2, 10.6))
+    txt(L, 1160, '﴿ سورة الشرح : ٥ - ٦ ﴾', f(AMR, 48), SOFT, alpha(t, 8.5, 12.6))
     # reflection
-    txt(L, 860, 'ذكر العُسر مرّة…', f(KUF, 72), WHITE, alpha(t, 10.8, 14.4))
-    txt(L, 980, 'واليُسر مرّتين', f(KUF, 72), GOLD, alpha(t, 11.6, 14.4))
-    txt(L, 1120, 'ولن يغلبَ عُسرٌ يُسرين', f(AM, 70), WHITE, alpha(t, 12.4, 14.4))
+    txt(L, 860, 'ذكر العُسر مرّة…', f(KUF, 72), WHITE, alpha(t, 12.8, 17.2))
+    txt(L, 980, 'واليُسر مرّتين', f(KUF, 72), GOLD, alpha(t, 13.6, 17.2))
+    txt(L, 1120, 'ولن يغلبَ عُسرٌ يُسرين', f(AM, 70), WHITE, alpha(t, 14.4, 17.2))
     # cta
-    txt(L, 930, 'أرسلها لشخص', f(KUF, 76), WHITE, alpha(t, 14.4, DUR + 1))
-    txt(L, 1050, 'محتاج يسمعها اليوم', f(KUF, 76), GOLD, alpha(t, 14.7, DUR + 1))
+    txt(L, 930, 'أرسلها لشخص', f(KUF, 76), WHITE, alpha(t, 17.2, DUR + 1))
+    txt(L, 1050, 'محتاج يسمعها اليوم', f(KUF, 76), GOLD, alpha(t, 17.5, DUR + 1))
     G = G.filter(ImageFilter.GaussianBlur(16))
     im = im.convert('RGBA'); im.alpha_composite(G); im.alpha_composite(G); im.alpha_composite(L)
     ImageDraw.Draw(im).text((W / 2, 1800), '@7ll.ajr', font=f(KUF, 34), fill=(200, 190, 210, 150), anchor='mm')
