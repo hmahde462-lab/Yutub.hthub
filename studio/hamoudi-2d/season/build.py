@@ -8,12 +8,19 @@ E=json.load(open(os.path.join(HERE,"season.json")))
 def sh(c,**k): return subprocess.run(c,shell=True,capture_output=True,text=True,**k)
 def dur(f): return float(sh(f"ffprobe -v error -show_entries format=duration -of csv=p=0 {f}").stdout)
 def split(wav,d):
+    global LINES
     out=sh(f"ffmpeg -i {wav} -af silencedetect=n=-35dB:d=0.18 -f null -").stderr
     st=[float(x) for x in re.findall(r"silence_start: ([\d.]+)",out)]; en=[float(x) for x in re.findall(r"silence_end: ([\d.]+)",out)]
     gaps=[(e-s,s,e) for s,e in zip(st,en) if s>0.3 and e<dur(wav)-0.2]
     if len(gaps)<2: raise SystemExit(f"cannot split {wav}: {gaps}")
-    g=sorted(sorted(gaps,reverse=True)[:2],key=lambda x:x[1])
-    T=dur(wav); cuts=[(0,g[0][1]),(g[0][2],g[1][1]),(g[1][2],T)]
+    T=dur(wav); L=[len(x[1]) for x in LINES]; tot=sum(L)
+    best=None
+    for i in range(len(gaps)):
+        for j in range(i+1,len(gaps)):
+            a,b=gaps[i],gaps[j]; segs=[a[1],b[1]-a[2],T-b[2]]; sp=sum(segs)
+            err=sum(abs(sg/sp-l/tot) for sg,l in zip(segs,L))-0.6*(a[0]+b[0])
+            if best is None or err<best[0]: best=(err,a,b)
+    g=[best[1],best[2]]; cuts=[(0,g[0][1]),(g[0][2],g[1][1]),(g[1][2],T)]
     ds=[]
     for i,(a,b) in enumerate(cuts):
         a=max(0,a-0.04); b=min(T,b+0.06)
@@ -27,7 +34,7 @@ for ep in sys.argv[1:]:
     for f in ["engine","index.html"]:
         s=f"{BASE}/{f}"; (shutil.copytree if os.path.isdir(s) else shutil.copy)(s,f"{d}/{f}")
     for f in ["film.js","song.js"]: shutil.copy(f"{HERE}/{f}",f"{d}/{f}")
-    ds=split(f"{HERE}/voice/e{ep}.wav",d)
+    LINES=D['l']; ds=split(f"{HERE}/voice/e{ep}.wav",d)
     who=["hamoudi" if s=="Hamoudi" else "mama" for s,_ in D["l"]]
     a1=0.8; a2=round(a1+ds[0]+0.55,3); gagt=round(a2+ds[1]+0.45,3); c3=round(gagt+1.4,3); a3=round(c3+0.25,3); end=round(a3+ds[2]+0.85,3); DUR=round(end+2.6,2)
     shots=[{"kind":"wide","who":None,"t0":0.0},{"kind":"close","who":who[1],"t0":round(a2-0.25,3)},{"kind":"gag","who":None,"t0":gagt},{"kind":"close","who":who[2],"t0":c3}]

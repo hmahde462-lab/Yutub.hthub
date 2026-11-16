@@ -9,6 +9,6 @@ for ep in sys.argv[1:]:
    {"speaker":"Umm","voiceConfig":{"prebuiltVoiceConfig":{"voiceName":"Sulafat"}}}]}}}}
   req=urllib.request.Request(f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent",data=json.dumps(body).encode(),headers={"Content-Type":"application/json","x-goog-api-key":"dummy"})
   try: r=json.load(urllib.request.urlopen(req,timeout=300))
-  except urllib.error.HTTPError as e: print(ep,e.code,e.read()[:300].decode(errors='ignore')); sys.exit(1)
+  except urllib.error.HTTPError as e: print(ep,e.code,e.read()[:1500].decode(errors='ignore')); sys.exit(1)
   d=base64.b64decode(r["candidates"][0]["content"]["parts"][0]["inlineData"]["data"])
   open(f"voice/e{ep}.pcm","wb").write(d); os.system(f"ffmpeg -v error -y -f s16le -ar 24000 -ac 1 -i voice/e{ep}.pcm voice/e{ep}.wav && rm voice/e{ep}.pcm"); print("ok",ep,flush=True)
