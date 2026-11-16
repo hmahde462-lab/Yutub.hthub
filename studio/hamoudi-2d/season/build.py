@@ -54,4 +54,5 @@ for ep in sys.argv[1:]:
     os.makedirs(OUT,exist_ok=True)
     slug=f"hamoudi-mama-part{n}"
     shutil.copy(f"{d}/out/ep{ep}.mp4",f"{OUT}/{slug}.mp4")
+    sh(f"rm -f {WORK}/../clean/{slug}.mp4; {HERE}/../brand/brand.sh {OUT}/{slug}.mp4")
     print("done",ep,DUR,flush=True)
