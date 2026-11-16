@@ -6,3 +6,11 @@
 2026-11-21 k14 5997f6c7-92b2-46db-b624-1d2d665ac3bb
 2026-11-22 k16 86157ba2-f043-4886-b787-4fa2d9a0a124
 2026-11-23 k13 586c64f2-3eee-4658-b1dd-3bd1b7f0064b
+2026-11-16 il01 37562097-8932-4944-b275-99bef132e93f https://www.youtube.com/watch?v=t7Nmy3CxbCc
+2026-11-17 il02 de102d3d-693b-4e11-ab21-7e350c2352ab https://www.youtube.com/watch?v=ufcxrDGvdfg
+2026-11-18 il03 488013d2-27fc-46b5-8971-5aca7dc0c7fb https://www.youtube.com/watch?v=pGW7VIVxzrI
+2026-11-19 il04 a3df178e-eda0-4b12-8e91-dbfc23f8ec31 https://www.youtube.com/watch?v=WNVtL2Xov1c
+2026-11-20 il05 4fa41051-95ee-4e76-b992-551e3c3eb411 https://www.youtube.com/watch?v=eIexGYAc_BY
+2026-11-21 il06 147a794d-60e7-422f-845b-d6216f26f457 https://www.youtube.com/watch?v=AFM_BjDR1OQ
+2026-11-22 il07 d12f600b-265c-4154-af71-c86bc2f34d1f https://www.youtube.com/watch?v=GWtdc9VmDeQ
+2026-11-23 il08 48a05846-4601-4be0-bc82-72e634a385c7 https://www.youtube.com/watch?v=xlapHdAuKoQ

@@ -131,3 +131,5 @@ Higgsfield credits = 0, so no AI image-to-3D. Options offered: buy credits / buy
 - نشر 15/11: il06 يوتيوب https://www.youtube.com/watch?v=EEc3OxFGgf4 (post b653549a) — ريل قرآن 01 انستا https://www.instagram.com/reel/DfxlnZlkx2Y/ (post f23c04c6). YouTube MFA تم.
 - vidIQ ما يگدر ينشر تعليق جديد/يثبّته (بس رد على تعليق) → التعليق المثبت يدوي.
 - ريلز القرآن (شهر): 30 ريل `videos/quran/month/qr-NN.mp4` (كود studio/quran-reels/build.py، reels.json، خط AmiriQuran، نص عثماني من npm quran-json). مجدولة يومياً 21:00 بغداد 16/11 → 15/12 على @7ll.ajr. postIds بـ studio/quran-reels/posts.txt.
+- افكار غريبة (شهر): 60 شورت. خطة `studio/afkar_month_plan.json` (خدعة 16:00 + أسئلة دول 20:00 بغداد، 16/11→15/12). فيديوهات `videos/afkar/illusions/ilNN.mp4` (أجزاء 7-36) و`videos/afkar/countries/kNN.mp4`. المجدول لحد هسه: أول 8 أيام (16 شورت) — بـ studio/afkar_posts.txt. الباقي (أيام 9-30) يتجدول عبر المهمة اليومية.
+- ملاحظة: نداءات vidIQ المتوازية الكثيرة تسبب restart للجلسة → سوّها 1-4 بالمرة.
