@@ -17,15 +17,15 @@ for w,(a,b) in enumerate(GROUPS,1):
     src=f"{C}/hamoudi-mama-week{w}-parts{a}-{b}.mp4"; out=f"{C}/hamoudi-mama-week{w}-parts{a}-{b}-16x9.mp4"
     # side panels
     P=Image.new("RGBA",(1920,1080),(0,0,0,0)); d=ImageDraw.Draw(P)
-    txt(d,"حمودي وماما",(330,380),96,"#F2C23B"); txt(d,f"تجميعة الأسبوع {w}",(330,520),64,"#FFFFFF"); txt(d,f"الأجزاء {a} – {b}",(330,630),56,"#E8E4FF")
-    a2,m2=circ(av,200); P.paste(a2,(1490,330),m2); txt(d,"@jazar2002",(1590,600),56,"#FFFFFF",6); txt(d,"اشترك وفعّل الجرس",(1590,700),44,"#F2C23B",5)
+    txt(d,"حمودي وماما",(330,380),96,"#F2C23B"); txt(d,f"تجميعة الأسبوع {w}",(330,520),64,"#FFFFFF"); txt(d,f"الأجزاء من {a} إلى {b}",(330,630),56,"#E8E4FF")
+    a2,m2=circ(av,200); P.paste(a2,(1490,330),m2); d.text((1590,600),"@jazar2002",font=ImageFont.truetype(W+"/base/engine/fonts/Inter-800.ttf",54),fill="#FFFFFF",anchor="mm",stroke_width=6,stroke_fill="#14121C"); txt(d,"اشترك وفعّل الجرس",(1590,700),44,"#F2C23B",5)
     P.save(f"{T}/panel{w}.png")
     sh(f"ffmpeg -v error -y -i '{src}' -i {T}/panel{w}.png -filter_complex \"[0:v]split[a][b];[a]scale=1920:1080:force_original_aspect_ratio=increase,crop=1920:1080,boxblur=30:3,eq=brightness=-0.18[bg];[b]scale=-2:1080[fg];[bg][fg]overlay=(W-w)/2:0[m];[m][1]overlay,format=yuv420p[v]\" -map [v] -map 0:a -c:v libx264 -crf 20 -preset medium -c:a copy -movflags +faststart '{out}'")
     # thumbnail: gag frame of a mid episode
     n=a+3 if a+3>=8 else 8
     sc=open(f"{W}/season/ep{n}/score.js").read(); g=float(re.search(r"gag: ([\d.]+)",sc).group(1))
-    fr=f"{T}/fr{w}.png"; sh(f"ffmpeg -v error -y -ss {g+0.5} -i '{R}/videos/hamoudi/hamoudi-mama-part{n}.mp4' -frames:v 1 {fr}")
-    sc2=f"{T}/fr{w}b.png"; sh(f"ffmpeg -v error -y -ss 2.0 -i '{R}/videos/hamoudi/hamoudi-mama-part{n}.mp4' -frames:v 1 {sc2}")
+    fr=f"{T}/fr{w}.png"; sh(f"ffmpeg -v error -y -ss {g+0.5} -i '{W}/season/ep{n}/out/ep{n}.mp4' -frames:v 1 {fr}")
+    sc2=f"{T}/fr{w}b.png"; sh(f"ffmpeg -v error -y -ss 2.0 -i '{W}/season/ep{n}/out/ep{n}.mp4' -frames:v 1 {sc2}")
     th=Image.open(sc2).convert("RGB").crop((0,1050,1080,1050+608)).resize((1280,720)).filter(ImageFilter.GaussianBlur(2))
     gag=Image.open(fr).convert("RGB").crop((140,420,940,1260)).resize((480,504))
     th.paste(gag,(770,140)); dt=ImageDraw.Draw(th)
