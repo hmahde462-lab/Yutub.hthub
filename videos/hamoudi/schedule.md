@@ -1,55 +1,51 @@
-# جدول نشر حمودي وماما
+# جدول نشر حمودي وماما (مجدول على يوتيوب)
 
-حلقة وحدة يومياً الساعة 7 المسا بتوقيت بغداد.
+قناة @jazar2002، كل يوم الساعة 8 المسا بتوقيت بغداد (17:00 UTC). مجدولة عن طريق vidIQ، والتعديل من YouTube Studio.
 
-| # | الجزء | التاريخ | العنوان | الملف |
-|---|---|---|---|---|
-| 1 | 6 | 2026-11-17 | حمودي وماما الجزء 6: الكهرباء راحت 😂 #shorts | `hamoudi-mama-part6.mp4` |
-| 2 | 7 | 2026-11-18 | حمودي وماما الجزء 7: العيدية 😂 #shorts | `hamoudi-mama-part7.mp4` |
-| 3 | 8 | 2026-11-19 | حمودي وماما الجزء 8: البلي الحار 😂 #shorts | `hamoudi-mama-part8.mp4` |
-| 4 | 9 | 2026-11-20 | حمودي وماما الجزء 9: الواجب 😂 #shorts | `hamoudi-mama-part9.mp4` |
-| 5 | 10 | 2026-11-21 | حمودي وماما الجزء 10: الشاحن 😂 #shorts | `hamoudi-mama-part10.mp4` |
-| 6 | 11 | 2026-11-22 | حمودي وماما الجزء 11: الضيوف 😂 #shorts | `hamoudi-mama-part11.mp4` |
-| 7 | 12 | 2026-11-23 | حمودي وماما الجزء 12: الدولمة 😂 #shorts | `hamoudi-mama-part12.mp4` |
-| 8 | 13 | 2026-11-24 | حمودي وماما الجزء 13: الحلاق 😂 #shorts | `hamoudi-mama-part13.mp4` |
-| 9 | 14 | 2026-11-25 | حمودي وماما الجزء 14: الريموت 😂 #shorts | `hamoudi-mama-part14.mp4` |
-| 10 | 15 | 2026-11-26 | حمودي وماما الجزء 15: البث 😂 #shorts | `hamoudi-mama-part15.mp4` |
-| 11 | 16 | 2026-11-27 | حمودي وماما الجزء 16: الرياضيات 😂 #shorts | `hamoudi-mama-part16.mp4` |
-| 12 | 17 | 2026-11-28 | حمودي وماما الجزء 17: المبردة 😂 #shorts | `hamoudi-mama-part17.mp4` |
-| 13 | 18 | 2026-11-29 | حمودي وماما الجزء 18: العزيمة 😂 #shorts | `hamoudi-mama-part18.mp4` |
-| 14 | 19 | 2026-11-30 | حمودي وماما الجزء 19: الرجيم 😂 #shorts | `hamoudi-mama-part19.mp4` |
-| 15 | 20 | 2026-12-01 | حمودي وماما الجزء 20: الجمعة 😂 #shorts | `hamoudi-mama-part20.mp4` |
-| 16 | 21 | 2026-12-02 | حمودي وماما الجزء 21: الهدية 😂 #shorts | `hamoudi-mama-part21.mp4` |
-| 17 | 22 | 2026-12-03 | حمودي وماما الجزء 22: الطبخ 😂 #shorts | `hamoudi-mama-part22.mp4` |
-| 18 | 23 | 2026-12-04 | حمودي وماما الجزء 23: الكهرباء رجعت 😂 #shorts | `hamoudi-mama-part23.mp4` |
-| 19 | 24 | 2026-12-05 | حمودي وماما الجزء 24: الصينية 😂 #shorts | `hamoudi-mama-part24.mp4` |
-| 20 | 25 | 2026-12-06 | حمودي وماما الجزء 25: الحنفية 😂 #shorts | `hamoudi-mama-part25.mp4` |
-| 21 | 26 | 2026-12-07 | حمودي وماما الجزء 26: الفلتر 😂 #shorts | `hamoudi-mama-part26.mp4` |
-| 22 | 27 | 2026-12-08 | حمودي وماما الجزء 27: القطة 😂 #shorts | `hamoudi-mama-part27.mp4` |
-| 23 | 28 | 2026-12-09 | حمودي وماما الجزء 28: الچاي 😂 #shorts | `hamoudi-mama-part28.mp4` |
-| 24 | 29 | 2026-12-10 | حمودي وماما الجزء 29: الرياضي 😂 #shorts | `hamoudi-mama-part29.mp4` |
-| 25 | 30 | 2026-12-11 | حمودي وماما الجزء 30: التوصيل 😂 #shorts | `hamoudi-mama-part30.mp4` |
-| 26 | 31 | 2026-12-12 | حمودي وماما الجزء 31: النظارة 😂 #shorts | `hamoudi-mama-part31.mp4` |
-| 27 | 32 | 2026-12-13 | حمودي وماما الجزء 32: الأخ الصغير 😂 #shorts | `hamoudi-mama-part32.mp4` |
-| 28 | 33 | 2026-12-14 | حمودي وماما الجزء 33: المطر 😂 #shorts | `hamoudi-mama-part33.mp4` |
-| 29 | 34 | 2026-12-15 | حمودي وماما الجزء 34: الكشخة 😂 #shorts | `hamoudi-mama-part34.mp4` |
-| 30 | 35 | 2026-12-16 | حمودي وماما الجزء 35: الرمز 😂 #shorts | `hamoudi-mama-part35.mp4` |
-| 31 | 36 | 2026-12-17 | حمودي وماما الجزء 36: الخالة 😂 #shorts | `hamoudi-mama-part36.mp4` |
-| 32 | 37 | 2026-12-18 | حمودي وماما الجزء 37: النوم 😂 #shorts | `hamoudi-mama-part37.mp4` |
-| 33 | 38 | 2026-12-19 | حمودي وماما الجزء 38: المدرّس 😂 #shorts | `hamoudi-mama-part38.mp4` |
-| 34 | 39 | 2026-12-20 | حمودي وماما الجزء 39: الكيك 😂 #shorts | `hamoudi-mama-part39.mp4` |
-| 35 | 40 | 2026-12-21 | حمودي وماما الجزء 40: العطلة 😂 #shorts | `hamoudi-mama-part40.mp4` |
-| 36 | 41 | 2026-12-22 | حمودي وماما الجزء 41: الإنگليزي 😂 #shorts | `hamoudi-mama-part41.mp4` |
-| 37 | 42 | 2026-12-23 | حمودي وماما الجزء 42: السوق 😂 #shorts | `hamoudi-mama-part42.mp4` |
-| 38 | 43 | 2026-12-24 | حمودي وماما الجزء 43: المزهرية 😂 #shorts | `hamoudi-mama-part43.mp4` |
-| 39 | 44 | 2026-12-25 | حمودي وماما الجزء 44: المسلسل 😂 #shorts | `hamoudi-mama-part44.mp4` |
-| 40 | 45 | 2026-12-26 | حمودي وماما الجزء 45: بيبي 😂 #shorts | `hamoudi-mama-part45.mp4` |
-| 41 | 46 | 2026-12-27 | حمودي وماما الجزء 46: الأصدقاء 😂 #shorts | `hamoudi-mama-part46.mp4` |
-| 42 | 47 | 2026-12-28 | حمودي وماما الجزء 47: الكاميرا 😂 #shorts | `hamoudi-mama-part47.mp4` |
-| 43 | 48 | 2026-12-29 | حمودي وماما الجزء 48: الدرجة 😂 #shorts | `hamoudi-mama-part48.mp4` |
-| 44 | 49 | 2026-12-30 | حمودي وماما الجزء 49: السلطة 😂 #shorts | `hamoudi-mama-part49.mp4` |
-| 45 | 50 | 2026-12-31 | حمودي وماما الجزء 50: الشمال 😂 #shorts | `hamoudi-mama-part50.mp4` |
-| 46 | 51 | 2027-01-01 | حمودي وماما الجزء 51: الشلال 😂 #shorts | `hamoudi-mama-part51.mp4` |
-| 47 | 52 | 2027-01-02 | حمودي وماما الجزء 52: شكراً يمّه 😂 #shorts | `hamoudi-mama-part52.mp4` |
-
-الوصف لكل حلقة موجود بملف `schedule.csv`.
+| الجزء | التاريخ | العنوان | الرابط |
+|---|---|---|---|
+| 8 | 2026-11-17 | البلي الحار | https://youtu.be/E2FLbfY105E |
+| 9 | 2026-11-18 | الواجب | https://youtu.be/COe3scmBphk |
+| 10 | 2026-11-19 | الشاحن | https://youtu.be/Bm7-DKm0O6g |
+| 11 | 2026-11-20 | الضيوف | https://youtu.be/e-YqcTBUj18 |
+| 12 | 2026-11-21 | الدولمة | https://youtu.be/gUtnroRI_7U |
+| 13 | 2026-11-22 | الحلاق | https://youtu.be/KwupZW6WF0w |
+| 14 | 2026-11-23 | الريموت | https://youtu.be/WfFJLUazWG4 |
+| 15 | 2026-11-24 | البث | https://youtu.be/Y1RDJhkEzEQ |
+| 16 | 2026-11-25 | الرياضيات | https://youtu.be/s6Mg7klqhGQ |
+| 17 | 2026-11-26 | المبردة | https://youtu.be/hKxUly7T_Ws |
+| 18 | 2026-11-27 | العزيمة | https://youtu.be/mxKN-tYfNik |
+| 19 | 2026-11-28 | الرجيم | https://youtu.be/qY4TjuuH_Kc |
+| 20 | 2026-11-29 | الجمعة | https://youtu.be/8xqzySYZtA4 |
+| 21 | 2026-11-30 | الهدية | https://youtu.be/k7_jUB00rJg |
+| 22 | 2026-12-01 | الطبخ | https://youtu.be/yJj_XTbzjYw |
+| 23 | 2026-12-02 | الكهرباء رجعت | https://youtu.be/ufHPCuIfqr4 |
+| 24 | 2026-12-03 | الصينية | https://youtu.be/-gWv0_uvQ9w |
+| 25 | 2026-12-04 | الحنفية | https://youtu.be/IXZCS3x0RAE |
+| 26 | 2026-12-05 | الفلتر | https://youtu.be/UVjUgDy0UHw |
+| 27 | 2026-12-06 | القطة | https://youtu.be/Gm0ZeKkUvME |
+| 28 | 2026-12-07 | الچاي | https://youtu.be/i51Cu31KSAY |
+| 29 | 2026-12-08 | الرياضي | https://youtu.be/Ow3INe-h2rE |
+| 30 | 2026-12-09 | التوصيل | https://youtu.be/KGUoIfBrTzc |
+| 31 | 2026-12-10 | النظارة | https://youtu.be/kFwsqX1FZJc |
+| 32 | 2026-12-11 | الأخ الصغير | https://youtu.be/jnxXpSRtuIQ |
+| 33 | 2026-12-12 | المطر | https://youtu.be/H48D74AkDGI |
+| 34 | 2026-12-13 | الكشخة | https://youtu.be/5fv0KZ86pMQ |
+| 35 | 2026-12-14 | الرمز | https://youtu.be/-C7RbLxo708 |
+| 36 | 2026-12-15 | الخالة | https://youtu.be/qCyjYZ-N-Gc |
+| 37 | 2026-12-16 | النوم | https://youtu.be/nYSs-70w4Ec |
+| 38 | 2026-12-17 | المدرّس | https://youtu.be/_DPWRDLS2H4 |
+| 39 | 2026-12-18 | الكيك | https://youtu.be/wmm1zVcVJ4Y |
+| 40 | 2026-12-19 | العطلة | https://youtu.be/rlVv1YGAXZU |
+| 41 | 2026-12-20 | الإنگليزي | https://youtu.be/Z0_elvSA3wQ |
+| 42 | 2026-12-21 | السوق | https://youtu.be/vmuIdZ_un3M |
+| 43 | 2026-12-22 | المزهرية | https://youtu.be/LCh5wCOM1Eg |
+| 44 | 2026-12-23 | المسلسل | https://youtu.be/Th91ywuWmeg |
+| 45 | 2026-12-24 | بيبي | https://youtu.be/BIVw6w-bhgk |
+| 46 | 2026-12-25 | الأصدقاء | https://youtu.be/t1a6J00gAmw |
+| 47 | 2026-12-26 | الكاميرا | https://youtu.be/vhlEaEW6PZo |
+| 48 | 2026-12-27 | الدرجة | https://youtu.be/s_RoZbQmzqQ |
+| 49 | 2026-12-28 | السلطة | https://youtu.be/k25q8ZsmTj8 |
+| 50 | 2026-12-29 | الشمال | https://youtu.be/u0GZ2hCbMEU |
+| 51 | 2026-12-30 | الشلال | https://youtu.be/6yCmCg0bjoY |
+| 52 | 2026-12-31 | شكراً يمّه | https://youtu.be/8F7hJZBlLDw |
