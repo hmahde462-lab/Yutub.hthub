@@ -49,3 +49,15 @@
 | 50 | 2026-12-29 | الشمال | https://youtu.be/u0GZ2hCbMEU |
 | 51 | 2026-12-30 | الشلال | https://youtu.be/6yCmCg0bjoY |
 | 52 | 2026-12-31 | شكراً يمّه | https://youtu.be/8F7hJZBlLDw |
+
+## تجميعات الجمعة (فيديوهات طويلة 16:9، الساعة 4 العصر بتوقيت بغداد)
+
+| التجميعة | الأجزاء | التاريخ | الرابط |
+|---|---|---|---|
+| 1 | 2-8 | 2026-11-20 | https://youtu.be/stncJJZlIUA |
+| 2 | 9-15 | 2026-11-27 | https://youtu.be/KjnD5QxN8jo |
+| 3 | 16-22 | 2026-12-04 | https://youtu.be/d5gExKpS7FI |
+| 4 | 23-29 | 2026-12-11 | https://youtu.be/T_t5ZX53DJE |
+| 5 | 30-36 | 2026-12-18 | https://youtu.be/z3P72OoVWqk |
+| 6 | 37-43 | 2026-12-25 | https://youtu.be/pIICxeEhGKc |
+| 7 | 44-52 | 2027-01-01 | https://youtu.be/4xZ3kKJ1IOk |
