@@ -90,3 +90,5 @@
 - قصص عراقية حقيقية ح١: `videos/long/iraq-asian-cup-2007.mp4` (3:19) — منتخب العراق بطل آسيا 2007. صوت Gemini (gemini-3.8-flash-tts، Algieba)، صور Figma (34). كود: `studio/iraq2007/` (script.json، align.py+cut.py، build.py). لم تُنشر.
 - قصص حقيقية ح٢: ياماگوچي (نجا من قنبلتين ذريتين) — `videos/long/yamaguchi-two-bombs.mp4` (4:15) + ثمبنيل، و4 شورتات عمودية `videos/shorts/yamaguchi-part1..4.mp4`. كود `studio/yamaguchi/`: align3.py (Gemini gemini-3-flash-preview بنوافذ 30ث مع أسطر السكربت) + cut2.py (DP على السكتات + عدد الوقفات المتوقعة) → build.py (NOSUB=1 OUT=… للنسخة النظيفة) → shorts.py. لم تُنشر.
 - vidIQ (21/11/2026): الحساب المربوط صار قناة يوتيوب «ورطة حمودي» (UCbJktdkRq1fn8PdAIlUl9Uw، @ورطةحمودي). WOW SHOTS وإنستا @wowshotsiq ما عادوا يطلعون بقائمة vidIQ.
+- خطة النشر لقناة «ورطة حمودي» (بغداد): شورتين باليوم + طويل واحد بالأسبوع.
+  السبت–الخميس: 5:30م مقطع ~30ث من طويل الأسبوع، 9:30م كهرباء/سؤال بالتناوب. الجمعة: 5:30م شورت + 8:00م الطويل (قصة حقيقية 3–5 د).
