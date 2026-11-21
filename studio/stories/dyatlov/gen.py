@@ -1,0 +1,68 @@
+import json
+PRE = ("A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, "
+ "thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, "
+ "detailed flat-shaded cartoon clothes and chunky cartoon shoes, clean vector cel shading. The characters are young Soviet student hikers in 1959: "
+ "thick wool sweaters, padded dark winter jackets, fur ushanka hats or knitted caps, wool trousers, heavy ski boots, big canvas backpacks. "
+ "Igor (the leader, 23) has short dark hair and a dark blue knitted cap; Zina (a girl) has dark braided hair and a red knitted hat. ")
+POST = " Historically accurate 1959 Soviet Union, northern Ural Mountains unless stated, no modern objects. Cinematic lighting. Wide shot, 16:9, no text, no logos."
+NOCH = " Cinematic, photorealistic, historically accurate 1959, 16:9, no text, no logos, no people."
+# (part, vo, img, char, extra)
+S = [
+(1,"تخيّل... تسعة شباب، بليلة ثلج، والبرد ثلاثين تحت الصفر... يشگون خيمتهم من جوة، ويطلعون يركضون بالظلمة... حفاة.","A canvas tent on a snowy mountain slope at night, slashed open from the inside, fabric flapping in the wind, moonlight, eerie blue tones. Background: photorealistic bare snowy Ural mountain slope, night.",0,{}),
+(1,"ومحد منهم رجع.","Lines of bare footprints in deep snow leading down a dark mountain slope toward a distant black forest edge, night, fog. Background: photorealistic snowy slope at night.",0,{"sfx":"heart"}),
+(1,"حادثة ممر دياتلوف... اللغز اللي حيّر العالم أكثر من ستين سنة.","",0,{"hud":"title"}),
+(1,"هاي مو قصة رعب مخترعة... هاي قصة حقيقية صارت بروسيا سنة ألف وتسعمية وتسعة وخمسين، وملفاتها لهسه تنفتح.","Old Soviet case files and black-and-white photos of a snowy tent scattered on a wooden desk under a lamp, a stamp and a typewriter. Background: photorealistic dim archive office.",0,{}),
+(2,"بالاتحاد السوفيتي، بمدينة اسمها سفيردلوفسك، جانت أكو مجموعة طلاب جامعة يحبون التسلق والتخييم بالجبال.","A group of the student hikers standing together, smiling, in front of a Soviet university building in winter, holding skis. Background: photorealistic 1950s Sverdlovsk Ural Polytechnic Institute building with columns, snow.",1,{}),
+(2,"قائدهم شاب عمره ثلاثة وعشرين سنة، اسمه إيگور دياتلوف... طالب هندسة، وعنده خبرة بالرحلات الصعبة.","Igor, confident, studying a big paper map spread on a table with a compass and a pencil. Background: photorealistic 1950s Soviet student dormitory room, radio, books.",1,{}),
+(2,"المجموعة جانت عشرة: ثمن شباب وبنتين... كلهم أصدقاء، ومتعودين على البرد والثلج.","Ten student hikers posing together with skis and backpacks, laughing, snow falling. Background: photorealistic snowy Soviet town street, 1959.",1,{}),
+(2,"وخطتهم رحلة تقريباً ثلثمية كيلومتر بالتزلج، بجبال الأورال الشمالية... وهي من أصعب درجات الرحلات بذاك الوقت.","The hikers skiing in a single line across a vast white snowy plain toward distant mountains. Background: photorealistic northern Ural mountains, overcast, deep snow.",1,{}),
+(3,"طلعوا بالقطار بنهاية كانون الثاني... يضحكون، ويغنون، ويكتبون مذكراتهم، ويصورون كل شي.","The hikers inside an old Soviet train compartment, one playing a guitar, others laughing, one writing in a diary, one holding an old camera. Background: photorealistic 1950s Soviet train wagon interior, frosted windows.",1,{}),
+(3,"بس بالطريق، واحد منهم، اسمه يوري يودين، مرض... ورجليه صارت توجعه، وما گدر يكمل.","One hiker (Yuri, wearing glasses and a grey cap) sitting on a sled holding his aching leg, looking sad, others around him concerned. Background: photorealistic abandoned snowy logging settlement with wooden huts.",1,{}),
+(3,"ودّع أصدقاءه ورجع... وما كان يعرف إن هذا المرض راح ينقذ حياته.","Yuri hugging Igor goodbye while the others watch, the group about to leave on skis into the forest. Background: photorealistic snowy forest edge, wooden huts, grey sky.",1,{}),
+(3,"وهسه صاروا تسعة... ودخلوا بالغابة والثلج، بعيد عن كل البشر.","Nine hikers skiing in a line into a deep snowy pine forest, small figures among huge trees. Background: photorealistic snowy taiga forest, heavy snow.",1,{}),
+(4,"يوم واحد شباط... وصلوا لسفح جبل، اسمه بلغة السكان المحليين: خولات سياخل... يعني: الجبل الميت.","The hikers on skis looking up at a bare white mountain slope with dark clouds, wind blowing snow. Background: photorealistic Kholat Syakhl mountain, bare snowy slope, stormy sky.",1,{}),
+(4,"الريح قوية، والثلج يغطي كلشي... فقرروا ينصبون خيمتهم على منحدر الجبل، بالمكان المكشوف.","The hikers pitching a long canvas tent on an open snowy slope in strong wind, digging snow with shovels, skis laid on the ground. Background: photorealistic open mountain slope, blowing snow, dusk.",1,{}),
+(4,"تعشوا، وكتبوا آخر سطور بمذكراتهم... حتى سووا جريدة مزح صغيرة يضحكون بيها.","Inside the cramped long tent lit by a candle, the hikers sitting close, eating from tin cups and laughing, one writing a funny handwritten newsletter. Background: photorealistic 1950s canvas tent interior, warm candlelight.",1,{}),
+(4,"وبعدين... بنص الليل... صار شي.","The lonely tent on the dark snowy slope at night, a faint glow inside, huge dark mountain above. Background: photorealistic snowy mountain at night, stars hidden by clouds.",0,{"sfx":"boom"}),
+(5,"شي خلاهم يطلعون من الخيمة بسرعة مجنونة...","Inside the dark tent, the hikers waking up terrified, eyes wide, looking up at the tent roof. Background: photorealistic dark canvas tent interior, night.",1,{"sfx":"hit"}),
+(5,"ما طلعوا من الباب... شگوا الخيمة بالسچاچين من جوة!","Close-up of a knife slashing the canvas tent wall from the inside, a hiker pushing through the cut. Background: photorealistic tent fabric at night, snow outside.",1,{}),
+(5,"وطلعوا بالظلمة، أغلبهم بدون قماصل، بدون أحذية... بالجواريب، أو حفاة، بثلاثين تحت الصفر.","The hikers outside the torn tent in the dark, wearing only sweaters and socks, some barefoot, shivering in the snow. Background: photorealistic snowy slope at night, blowing snow, moonlight.",1,{}),
+(5,"ونزلوا بالجبل... كيلومتر ونص... لحد حافة الغابة.","The hikers walking down the dark snowy slope in a group toward a distant forest, small figures, wind. Background: photorealistic long snowy mountain slope at night leading to a black forest.",1,{}),
+(6,"مرت الأيام... والطلاب ما رجعوا، وأهلهم صاروا يضغطون على الجامعة.","Worried parents and a professor standing in a Soviet university office, a calendar on the wall, a telephone. Background: photorealistic 1950s Soviet office, winter light.",1,{}),
+(6,"وبعشرين شباط بدت عملية بحث كبيرة... طلاب، وجنود، وطيارات، وصيادين محليين.","A search party of volunteers and soldiers on skis with a 1950s Soviet helicopter landing on snow behind them. Background: photorealistic northern Ural snowfield, 1959 Mi-4 helicopter.",1,{}),
+(6,"وبستة وعشرين شباط... لگوا الخيمة. نصها مدفونة بالثلج، ومشگوگة من جوة.","Searchers on skis finding the half-buried collapsed tent in the snow, staring in shock. Background: photorealistic snowy mountain slope, daylight, grey sky.",1,{}),
+(6,"وجوة الخيمة كل أغراضهم: القماصل، والأحذية، والأكل... كأنهم تركوها بلحظة وحدة.","Inside the abandoned tent: jackets, boots, backpacks, food tins and a diary left in place, covered with some snow. Background: photorealistic canvas tent interior, cold daylight through the slashes.",0,{}),
+(7,"ومن الخيمة، آثار أقدام تسعة أشخاص، نازلة باتجاه الغابة... بعضها حافي.","Close-up of preserved footprints in snow, some barefoot, some in socks, leading downhill. Background: photorealistic snowy slope, daylight, the tent far behind.",0,{}),
+(7,"وتحت شجرة أرز عملاقة... لگوا بقايا نار صغيرة.","A searcher crouching near the remains of a small burnt campfire under a giant old cedar tree at the forest edge. Background: photorealistic giant Siberian cedar in snow.",1,{}),
+(7,"وجنبها أول اثنين من الطلاب... بالملابس الخفيفة، بدون قماصل ولا أحذية.","Searchers standing silently with heads bowed near the cedar tree, a dark tarp on the snow, nothing graphic. Background: photorealistic snowy forest edge, gloomy.",1,{}),
+(7,"وأغصان الشجرة مكسورة لحد ارتفاع خمس أمتار... كأن واحد صعد يشوف شي، أو يدور على الخيمة.","A searcher looking up at broken branches high on the giant cedar tree. Background: photorealistic giant cedar trunk with broken branches, snowy forest.",1,{}),
+(8,"وبين الشجرة والخيمة... لگوا ثلاثة ثانيين، كل واحد بعيد عن الثاني.","Searchers with long probing poles spread out on the snowy slope between the forest and the distant tent. Background: photorealistic snowy slope, overcast.",1,{}),
+(8,"بينهم القائد إيگور دياتلوف... وكان وجهه باتجاه الخيمة.","Igor at night crawling up the snowy slope toward the tiny distant tent, exhausted, reaching forward. Background: photorealistic snowy slope at night, wind.",1,{}),
+(8,"كأنهم كانوا يحاولون يرجعون للخيمة... بس البرد كان أقوى منهم.","Zina struggling uphill through deep snow in the dark wind toward the tent, hugging herself from cold. Background: photorealistic snowy slope at night, blizzard.",1,{}),
+(8,"وبقى أربعة... محد يعرف وين راحوا.","Four empty question-like gaps: a snowy forest ravine at dusk with deep snow and no one in sight. Background: photorealistic snowy forest ravine, silence.",0,{}),
+(9,"مرت شهرين... وبشهر أيار، من بدا الثلج يذوب، لگوهم.","Searchers in spring digging in melting snow near a stream in a forest ravine. Background: photorealistic Ural forest ravine in May, melting snow, small stream.",1,{}),
+(9,"جانوا بوادي صغير، مدفونين تحت أربع أمتار ثلج... بعيد شوية عن الشجرة.","Searchers looking down into a deep snow ravine with a stream, shovels in hand, serious faces. Background: photorealistic deep snowy ravine in forest, spring light.",1,{}),
+(9,"وهنا صار اللغز أغرب... إصاباتهم جانت قوية: كسور بالصدر والراس، مثل ضربة سيارة... بس تقريباً بدون جروح من برا.","A Soviet doctor in a white coat looking shocked at X-ray films of a chest and skull on a light box. Background: photorealistic 1950s Soviet hospital examination room.",1,{}),
+(9,"وبعض ملابسهم بيها آثار إشعاع.","An old Soviet Geiger counter clicking next to a folded sweater on a lab table. Background: photorealistic 1950s laboratory, dim light.",0,{}),
+(10,"التحقيق السوفيتي سكّر الملف... وكتب إن سبب الموت: قوة طبيعية قاهرة... وبس.","A Soviet investigator in a uniform stamping and closing a thick case file. Background: photorealistic 1959 Soviet prosecutor office, portrait on the wall blurred.",1,{}),
+(10,"والمنطقة انسدت على الناس ثلاث سنين.","A wooden barrier and a warning sign in the snow blocking a forest trail. Background: photorealistic snowy Ural forest trail.",0,{}),
+(10,"وهنا بدت النظريات: ناس گالوا تجارب أسلحة سرية للجيش... وناس گالوا صوت الريح يخلي الإنسان يرتعب بدون سبب.","Strange orange lights in the night sky above the snowy mountains, a hiker pointing up in fear. Background: photorealistic night sky over the Ural mountains.",1,{}),
+(10,"وناس وصلت تحچي عن مخلوقات الثلج... وحتى أطباق طائرة.","A hiker peeking from behind a tree at a huge shadowy hairy figure in a snowstorm, comedic fear. Background: photorealistic snowy forest in a blizzard.",1,{}),
+(11,"بعد ستين سنة، بألفين وتسعطعش... الحكومة الروسية فتحت التحقيق من جديد.","Modern investigators in winter gear examining the slope with tablets and measuring tools. Background: photorealistic Dyatlov Pass slope, 2019, snow.",0,{}),
+(11,"وبألفين وعشرين طلعت النتيجة: انهيار ثلجي صغير.","A slab of snow breaking off and sliding down a mountain slope, powder cloud. Background: photorealistic snowy mountain slope.",0,{}),
+(11,"وبعدها علماء من سويسرا سووا نماذج بالكومبيوتر، وگالوا: كتلة ثلج صغيرة گدرت تنزل على الخيمة بالليل... وتسبب هيج إصابات.","Scientists in a modern lab looking at a computer simulation of a snow slab hitting a tent. Background: photorealistic modern Swiss research lab.",0,{}),
+(11,"يعني يمكن الطلاب سمعوا الثلج ينهار عليهم، وخافوا يندفنون... فشگوا الخيمة وهربوا للغابة، ينتظرون الصبح.","The hikers bursting out of the tent as snow slides onto it, running downhill in fear at night. Background: photorealistic snowy slope at night, snow cloud.",1,{}),
+(12,"بس مو كل الناس اقتنعت... لأن الخيمة ما انضغطت كلش، وأكو أشياء لهسه بدون تفسير.","Igor's dark blue knitted cap lying on the snow next to the torn tent, a question in the air. Background: photorealistic snowy slope, foggy.",0,{}),
+(12,"ويوري يودين، الشاب اللي رجع لأنه مرض، عاش لحد ألفين وثلطعش... وگال: لو أگدر أسأل الله سؤال واحد، راح أسأله: شنو صار بأصدقائي بتلك الليلة؟","Yuri as an old man with grey hair and glasses, sitting by a window holding an old black-and-white photo of the group, sad. Background: photorealistic modest Russian apartment, winter window.",1,{}),
+(12,"والممر اللي بالجبل، هسه اسمه: ممر دياتلوف... على اسم القائد.","A metal memorial plaque on a large rock at a snowy mountain pass with flowers in front. Background: photorealistic Dyatlov Pass memorial rocks in snow.",0,{}),
+(12,"وكل سنة، ناس يروحون للمكان، يحطون ورد... ويحاولون يفهمون شنو صار.","Modern hikers in colorful gear laying flowers at the memorial rocks at sunset. Background: photorealistic Dyatlov Pass, sunset, snow.",0,{}),
+(12,"تسعة شباب... شگوا خيمتهم وهربوا للبرد... ومحد يعرف ليش بالضبط. انت شنو تعتقد صار؟","",0,{"hud":"black","sfx":"boom"}),
+]
+out = []
+for p, vo, img, ch, ex in S:
+    d = {"vo": vo, "img": img, "part": p}
+    if img: d["prompt"] = (PRE + img + POST) if ch else (img + NOCH)
+    d.update(ex); out.append(d)
+json.dump(out, open('script.json', 'w'), ensure_ascii=False, indent=1)
+open('vo.txt', 'w').write('\n\n'.join(x['vo'] for x in out) + '\n')
+print(len(out), sum(len(x['vo']) for x in out))
