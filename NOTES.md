@@ -104,3 +104,4 @@
 - رصيد: vidIQ ~125 كردت (يتجدد 21/12)، ElevenLabs ~340 حرف (ما يكفي، استعمل Gemini TTS).
 - كوپكه دفعة 1 (22/11): الطويل M7HxpZrGYYM (27/11 20:00)، الجزء 1 PuPx662x3FA، الجزء 2 znReG9mtFyk — مرفوعة ومجدولة.
 - دياتلوف جاهز: videos/long/dyatlov.mp4 + thumb + videos/shorts/dyatlov/ (12). ينتظر موافقة المستخدم للجدولة 27/11–1/12 (موعد الطويل 4/12 20:00).
+- 22/11: حساب vidIQ تغيّر لحساب جديد (مجاني) بعد إعادة الربط. مسودات كوپكه 3–12 انعادت بالحساب الجديد (studio/stories/koepcke/drafts.json، القديمة drafts_oldacct.json ما تشتغل). ياماگوچي 3 و4 رفعهم المستخدم بنفسه (TecVe4TpE_4, MZalvq431Wo).
