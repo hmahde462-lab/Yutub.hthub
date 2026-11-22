@@ -119,6 +119,11 @@ for i, x in enumerate(s):
     if imgs[i] is None:
         src = ['-f', 'lavfi', '-t', f'{d:.3f}', '-i', f'color=black:s={W}x{H}:r={FPS}']
         vf = f"[0:v]format=yuv420p[bg]"
+    elif os.path.exists(f'motion/{i}.mp4'):
+        # AI motion clip for this scene: loop/stretch to the scene length, scale to frame
+        src = ['-stream_loop', '-1', '-t', f'{d:.3f}', '-i', f'motion/{i}.mp4']
+        slow = min(1.7, max(1.0, d / 5.0))
+        vf = f"[0:v]setpts=PTS*{slow:.3f},scale={W}:{H}:force_original_aspect_ratio=increase,crop={W}:{H},fps={FPS},format=yuv420p[bg]"
     else:
         mv = moves[i % len(moves)]
         z = {'in': "1+0.10*on/{n}", 'in2': "1.05+0.10*on/{n}", 'out': "1.12-0.10*on/{n}", 'panr': "1.12", 'panl': "1.12", 'up': "1.10"}[mv].format(n=n)
