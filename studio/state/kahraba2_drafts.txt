@@ -1,0 +1,9 @@
+# ح٢ كهرباء — مسودات vidIQ (قناة ورطة حمودي UCbJktdkRq1fn8PdAIlUl9Uw). كلها draft، ما انجدولت لين الموافقة.
+# key postId revision publishAt(Baghdad)
+long f72cce6f-2ca0-4cc6-ae8d-1df5713c6c93 1ec6b364 2026-11-23T19:00
+a    7c266a2f-7458-44f3-96ef-f55697144c30 8409dc49 2026-11-24T20:00
+b    d6953a3e-0e88-430c-8690-420202c263f7 3a353568 2026-11-25T20:00
+c    1ebc0b49-c983-4aea-842f-acc3b1ed532a 302b54a9 2026-11-26T20:00
+d    6b72be24-3524-453d-b0fe-ae167bf3ce1b 816d8b90 2026-11-27T20:00
+e    498680a1-e2e7-413c-b635-49ff0625b1b7 25bf5b99 2026-11-28T20:00
+f    c124748b-f845-4166-8176-bf8b4e3a9362 f7bf2a93 2026-11-29T20:00
