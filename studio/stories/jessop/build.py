@@ -22,7 +22,7 @@ for i, x in enumerate(s):
     else: imgs.append(imgs[-1])  # missing image: hold the previous one
 
 # ---------- timing ----------
-LONG_GAP = {2, 7, 15, 19, 23, 31, 35, 39, 43, 45}
+LONG_GAP = {2, 7, 15, 17, 21, 27, 31, 35, 37, 42, 43, 47}
 times = []; t = 0.0
 for i, x in enumerate(s):
     lead = 0.35
@@ -92,14 +92,14 @@ def overlay(i, x):
         p = Image.new('RGBA', (W, H), (0, 0, 0, 0)); im = text_img('٣٠ يوم', 220, (255, 214, 90), 10)
         p.alpha_composite(im, ((W - im.width) // 2, 300)); p.save(f'ov/pop{i:02d}.png'); pop = f'ov/pop{i:02d}.png'
     if hud == 'title':
-        p = Image.new('RGBA', (W, H), (0, 0, 0, 170)); a = text_img('اللغز اللي ما انحل', 130, (255, 255, 255), 8); b = text_img('ممر دياتلوف ' + ar(1959), 120, (255, 214, 90), 9); c = text_img('قصة حقيقية', 80, (230, 230, 230), 6)
+        p = Image.new('RGBA', (W, H), (0, 0, 0, 170)); a = text_img('البنت اللي ما تغرق', 130, (255, 255, 255), 8); b = text_img('فيوليت جيسوب ' + ar(1911) + '–' + ar(1916), 120, (255, 214, 90), 9); c = text_img('قصة حقيقية', 80, (230, 230, 230), 6)
         p.alpha_composite(a, ((W - a.width) // 2, 230)); p.alpha_composite(b, ((W - b.width) // 2, 420)); p.alpha_composite(c, ((W - c.width) // 2, 700))
         p.save(f'ov/pop{i:02d}.png'); pop = f'ov/pop{i:02d}.png'
     if hud == 'day':
         p = Image.new('RGBA', (W, H), (0, 0, 0, 0)); im = text_img('اليوم ' + ar(1) + ' — الصباح', 90, (255, 214, 90), 7)
         p.alpha_composite(im, ((W - im.width) // 2, 140)); p.save(f'ov/pop{i:02d}.png'); pop = f'ov/pop{i:02d}.png'
     if hud == 'black':
-        p = Image.new('RGBA', (W, H), (0, 0, 0, 0)); im = text_img('انت شنو تعتقد صار؟', 170, (255, 255, 255), 0)
+        p = Image.new('RGBA', (W, H), (0, 0, 0, 0)); im = text_img('انت تركب سفينة بعدها؟', 160, (255, 255, 255), 0)
         p.alpha_composite(im, ((W - im.width) // 2, (H - im.height) // 2 - 40)); p.save(f'ov/pop{i:02d}.png'); pop = f'ov/pop{i:02d}.png'
     return pop
 
@@ -206,9 +206,10 @@ def hit(g=0.5):
 
 def section(i):
     if i in (2, 48): return 'none'
-    if i in (3, 4, 5, 20, 34, 35, 36, 42, 45): return 'none'
-    if i in (8,): return 'murmur'
-    if i in (14,): return 'night_in'
+    if i in (3, 4, 5, 6, 44, 46): return 'none'
+    if i in (7, 10, 16, 18, 33, 34): return 'street'
+    if i in (11, 32): return 'murmur'
+    if i in (19, 20): return 'night_in'
     return 'wind'
 for i, x in enumerate(s):
     st, d = times[i]; sec = section(i)
@@ -243,6 +244,6 @@ mix = mix[:int(TOTAL * SR)]
 mix /= max(1e-6, np.abs(mix).max()) / 0.9
 with wave.open('audio.wav', 'wb') as w:
     w.setnchannels(1); w.setsampwidth(2); w.setframerate(SR); w.writeframes((mix * 32767).astype(np.int16).tobytes())
-subprocess.run(['ffmpeg', '-v', 'error', '-y', '-i', 'video_noaudio.mp4', '-i', 'audio.wav', '-c:v', 'copy', '-af', 'loudnorm=I=-14:TP=-1.5:LRA=11', '-c:a', 'aac', '-b:a', '192k', '-ar', '48000', '-shortest', os.environ.get('OUT', 'dyatlov.mp4')], check=True)
+subprocess.run(['ffmpeg', '-v', 'error', '-y', '-i', 'video_noaudio.mp4', '-i', 'audio.wav', '-c:v', 'copy', '-af', 'loudnorm=I=-14:TP=-1.5:LRA=11', '-c:a', 'aac', '-b:a', '192k', '-ar', '48000', '-shortest', os.environ.get('OUT', 'jessop.mp4')], check=True)
 json.dump([{'i': i, 'start': round(t0, 3), 'dur': round(dd, 3)} for i, (t0, dd) in enumerate(times)], open('timeline.json', 'w'))
 print('done', TOTAL)

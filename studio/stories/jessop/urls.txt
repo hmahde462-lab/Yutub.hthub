@@ -34,3 +34,14 @@
 34 https://www.figma.com/api/mcp/asset/775cb0cc-8abb-4c3b-90e7-2da53d369773.png
 35 https://www.figma.com/api/mcp/asset/be65a55d-4050-4e5d-b9f1-116eca02bcca.png
 36 https://www.figma.com/api/mcp/asset/65577783-0351-4197-ba8d-143cd18e9f43.png
+37 https://www.figma.com/api/mcp/asset/808177cb-f60d-4ad9-b5ad-6ebc397c0886.png
+38 https://www.figma.com/api/mcp/asset/f1130f4c-13b7-4fed-9518-cc7ddef69ac9.png
+39 https://www.figma.com/api/mcp/asset/59867fdc-b618-4a73-99f2-cd2315c0b0d0.png
+40 https://www.figma.com/api/mcp/asset/3f608958-d534-4db7-9e7e-73711cc73960.png
+41 https://www.figma.com/api/mcp/asset/5f418761-1cd6-482e-8f98-8a42fb07c06a.png
+42 https://www.figma.com/api/mcp/asset/c8f1730c-15bf-488f-85f8-eda67e3c82a0.png
+43 https://www.figma.com/api/mcp/asset/7e600a0c-b600-44ab-a004-5e3a57e31f7f.png
+44 https://www.figma.com/api/mcp/asset/ca97d749-7075-46ad-81e2-f113833afdd8.png
+45 https://www.figma.com/api/mcp/asset/41df3c6e-20b1-41ea-b8fb-827bc48330f0.png
+46 https://www.figma.com/api/mcp/asset/063cff2f-6059-4429-a3b0-2733432448d4.png
+47 https://www.figma.com/api/mcp/asset/cdd9cb2a-c29a-4998-821b-e97d375f167e.png
