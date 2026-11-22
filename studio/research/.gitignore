@@ -1,0 +1,7 @@
+refs/
+out/*/stems/
+out/*/shots/
+out/*/sfx/
+out/*/packaging/
+out/*/breakdown.json
+out/*/moments/

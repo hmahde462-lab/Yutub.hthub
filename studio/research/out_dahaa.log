@@ -1,0 +1,43 @@
+21:40:56 INFO video dahaa.mp4 1080x1920 30.00fps 58.97s
+21:41:02 INFO detected 16 shots
+21:41:04 INFO separating stems (vocals / music) in the background
+21:41:04 INFO packaging layer: subtitle timeline, 花字, stickers
+[33m[WARNING] 2026-11-22 21:41:10,142 [RapidOCR] main.py:164: The text detection result is empty[0m
+[33m[WARNING] 2026-11-22 21:41:33,262 [RapidOCR] main.py:164: The text detection result is empty[0m
+[33m[WARNING] 2026-11-22 21:41:47,383 [RapidOCR] main.py:164: The text detection result is empty[0m
+[33m[WARNING] 2026-11-22 21:42:03,016 [RapidOCR] main.py:164: The text detection result is empty[0m
+[33m[WARNING] 2026-11-22 21:42:38,219 [RapidOCR] main.py:164: The text detection result is empty[0m
+[33m[WARNING] 2026-11-22 21:42:43,742 [RapidOCR] main.py:164: The text detection result is empty[0m
+[33m[WARNING] 2026-11-22 21:42:57,717 [RapidOCR] main.py:164: The text detection result is empty[0m
+[33m[WARNING] 2026-11-22 21:43:29,635 [RapidOCR] main.py:164: The text detection result is empty[0m
+[33m[WARNING] 2026-11-22 21:43:58,314 [RapidOCR] main.py:164: The text detection result is empty[0m
+[33m[WARNING] 2026-11-22 21:44:10,402 [RapidOCR] main.py:164: The text detection result is empty[0m
+[33m[WARNING] 2026-11-22 21:45:03,982 [RapidOCR] main.py:164: The text detection result is empty[0m
+[33m[WARNING] 2026-11-22 21:45:15,014 [RapidOCR] main.py:164: The text detection result is empty[0m
+21:45:37 INFO downloading face model face_detection_yunet_2023mar.onnx -> /root/.cache/rea-video/models/face_detection_yunet_2023mar.onnx
+21:45:38 WARNING face model download failed (HTTP Error 403: Forbidden); face detection falls back to Haar or is skipped
+21:45:39 INFO shot_001 00:00.000-00:12.367 det=ai_video(60%) dynamic
+21:45:42 INFO shot_002 00:12.367-00:25.367 det=ai_video(68%) dynamic
+21:45:45 INFO shot_003 00:25.367-00:27.300 det=ai_video(85%) dynamic
+21:45:48 INFO shot_004 00:27.300-00:28.700 det=ai_video(87%) dynamic
+21:45:52 INFO shot_005 00:28.700-00:30.533 det=ai_video(88%) dynamic
+21:45:54 INFO shot_006 00:30.533-00:31.300 det=ai_video(75%) dynamic
+21:45:57 INFO shot_007 00:31.300-00:35.367 det=ai_video(82%) dynamic
+21:46:00 INFO shot_008 00:35.367-00:37.200 det=ai_video(88%) dynamic
+21:46:03 INFO shot_009 00:37.200-00:38.800 det=ai_video(87%) dynamic
+21:46:06 INFO shot_010 00:38.800-00:40.633 det=ai_video(82%) dynamic
+21:46:09 INFO shot_011 00:40.633-00:42.833 det=ai_video(88%) dynamic
+21:46:12 INFO shot_012 00:42.833-00:45.367 det=ai_video(76%) dynamic
+21:46:15 INFO shot_013 00:45.367-00:48.767 det=ai_video(87%) dynamic
+21:46:19 INFO shot_014 00:48.767-00:51.800 det=ai_video(63%) dynamic
+21:46:22 INFO shot_015 00:51.800-00:55.367 det=ai_video(88%) dynamic
+21:46:25 INFO shot_016 00:55.367-00:58.967 det=ai_video(86%) dynamic
+21:49:33 INFO done in 517.5s -> /home/user/Yutub.hthub/studio/research/out/dahaa
+{
+  "out": "out/dahaa",
+  "verdict": "Mixed production: live action or AI, to confirm 100% (48% of the duration is live action or AI, to confirm: the platform transcode erased the noise evidence, needs a VLM pass or a human look at the frames); overlays: animated sticker / GIF, styled text, text labels, static graphics, static sticker, subtitles (composited in code / an editor); audio: voice; packaging: styled text ×3, text labels ×8, stickers / GIFs ×5",
+  "shots": 16,
+  "confidence": 0.57,
+  "vlm": "No VLM; live action / AI / 3D are told apart from pixel statistics only, so confidence is limited. An agent that can see images: run rea-video review, look at each shot and merge with apply-review; otherwise configure a VLM (any OpenAI-compatible multimodal model, e.g. Gemini / GPT-4o / Doubao / Qwen-VL): set REA_VLM_BASE_URL, REA_VLM_API_KEY and REA_VLM_MODEL (several models comma-separated as fallbacks), then rerun with --vlm",
+  "report": "out/dahaa/report.html"
+}

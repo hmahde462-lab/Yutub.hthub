@@ -1,0 +1,170 @@
+21:24:20 INFO video midad.mp4 1080x1920 30.00fps 110.27s
+21:24:33 INFO detected 16 shots
+21:24:37 INFO separating stems (vocals / music) in the background
+21:24:37 INFO packaging layer: subtitle timeline, 花字, stickers
+21:24:41 INFO downloading UVR-MDX-NET-Inst_HQ_3.onnx (~67 MB) -> /root/.cache/rea-video/models/UVR-MDX-NET-Inst_HQ_3.onnx
+[33m[WARNING] 2026-11-22 21:24:41,741 [RapidOCR] main.py:164: The text detection result is empty[0m
+[33m[WARNING] 2026-11-22 21:24:43,629 [RapidOCR] main.py:164: The text detection result is empty[0m
+[33m[WARNING] 2026-11-22 21:24:45,078 [RapidOCR] main.py:164: The text detection result is empty[0m
+[33m[WARNING] 2026-11-22 21:24:47,046 [RapidOCR] main.py:164: The text detection result is empty[0m
+[33m[WARNING] 2026-11-22 21:24:54,027 [RapidOCR] main.py:164: The text detection result is empty[0m
+[33m[WARNING] 2026-11-22 21:24:56,380 [RapidOCR] main.py:164: The text detection result is empty[0m
+[33m[WARNING] 2026-11-22 21:24:59,988 [RapidOCR] main.py:164: The text detection result is empty[0m
+[33m[WARNING] 2026-11-22 21:25:04,106 [RapidOCR] main.py:164: The text detection result is empty[0m
+[33m[WARNING] 2026-11-22 21:25:07,034 [RapidOCR] main.py:164: The text detection result is empty[0m
+[33m[WARNING] 2026-11-22 21:25:09,448 [RapidOCR] main.py:164: The text detection result is empty[0m
+[33m[WARNING] 2026-11-22 21:25:24,413 [RapidOCR] main.py:164: The text detection result is empty[0m
+[33m[WARNING] 2026-11-22 21:25:26,377 [RapidOCR] main.py:164: The text detection result is empty[0m
+[33m[WARNING] 2026-11-22 21:25:28,508 [RapidOCR] main.py:164: The text detection result is empty[0m
+[33m[WARNING] 2026-11-22 21:25:34,409 [RapidOCR] main.py:164: The text detection result is empty[0m
+[33m[WARNING] 2026-11-22 21:25:37,142 [RapidOCR] main.py:164: The text detection result is empty[0m
+[33m[WARNING] 2026-11-22 21:25:38,947 [RapidOCR] main.py:164: The text detection result is empty[0m
+[33m[WARNING] 2026-11-22 21:25:40,695 [RapidOCR] main.py:164: The text detection result is empty[0m
+[33m[WARNING] 2026-11-22 21:25:42,834 [RapidOCR] main.py:164: The text detection result is empty[0m
+[33m[WARNING] 2026-11-22 21:25:44,245 [RapidOCR] main.py:164: The text detection result is empty[0m
+[33m[WARNING] 2026-11-22 21:25:45,373 [RapidOCR] main.py:164: The text detection result is empty[0m
+[33m[WARNING] 2026-11-22 21:25:48,928 [RapidOCR] main.py:164: The text detection result is empty[0m
+[33m[WARNING] 2026-11-22 21:25:53,118 [RapidOCR] main.py:164: The text detection result is empty[0m
+[33m[WARNING] 2026-11-22 21:25:57,696 [RapidOCR] main.py:164: The text detection result is empty[0m
+[33m[WARNING] 2026-11-22 21:26:00,576 [RapidOCR] main.py:164: The text detection result is empty[0m
+[33m[WARNING] 2026-11-22 21:26:03,183 [RapidOCR] main.py:164: The text detection result is empty[0m
+[33m[WARNING] 2026-11-22 21:26:07,285 [RapidOCR] main.py:164: The text detection result is empty[0m
+[33m[WARNING] 2026-11-22 21:26:12,182 [RapidOCR] main.py:164: The text detection result is empty[0m
+[33m[WARNING] 2026-11-22 21:26:16,250 [RapidOCR] main.py:164: The text detection result is empty[0m
+[33m[WARNING] 2026-11-22 21:26:18,653 [RapidOCR] main.py:164: The text detection result is empty[0m
+[33m[WARNING] 2026-11-22 21:26:25,516 [RapidOCR] main.py:164: The text detection result is empty[0m
+[33m[WARNING] 2026-11-22 21:26:27,870 [RapidOCR] main.py:164: The text detection result is empty[0m
+[33m[WARNING] 2026-11-22 21:26:29,861 [RapidOCR] main.py:164: The text detection result is empty[0m
+[33m[WARNING] 2026-11-22 21:26:32,452 [RapidOCR] main.py:164: The text detection result is empty[0m
+[33m[WARNING] 2026-11-22 21:26:34,281 [RapidOCR] main.py:164: The text detection result is empty[0m
+[33m[WARNING] 2026-11-22 21:26:36,202 [RapidOCR] main.py:164: The text detection result is empty[0m
+[33m[WARNING] 2026-11-22 21:26:38,195 [RapidOCR] main.py:164: The text detection result is empty[0m
+[33m[WARNING] 2026-11-22 21:26:40,198 [RapidOCR] main.py:164: The text detection result is empty[0m
+[33m[WARNING] 2026-11-22 21:26:47,973 [RapidOCR] main.py:164: The text detection result is empty[0m
+[33m[WARNING] 2026-11-22 21:26:49,985 [RapidOCR] main.py:164: The text detection result is empty[0m
+[33m[WARNING] 2026-11-22 21:26:51,918 [RapidOCR] main.py:164: The text detection result is empty[0m
+[33m[WARNING] 2026-11-22 21:26:53,910 [RapidOCR] main.py:164: The text detection result is empty[0m
+[33m[WARNING] 2026-11-22 21:26:55,813 [RapidOCR] main.py:164: The text detection result is empty[0m
+[33m[WARNING] 2026-11-22 21:26:57,599 [RapidOCR] main.py:164: The text detection result is empty[0m
+[33m[WARNING] 2026-11-22 21:26:58,873 [RapidOCR] main.py:164: The text detection result is empty[0m
+[33m[WARNING] 2026-11-22 21:27:00,829 [RapidOCR] main.py:164: The text detection result is empty[0m
+[33m[WARNING] 2026-11-22 21:27:02,549 [RapidOCR] main.py:164: The text detection result is empty[0m
+[33m[WARNING] 2026-11-22 21:27:04,512 [RapidOCR] main.py:164: The text detection result is empty[0m
+[33m[WARNING] 2026-11-22 21:27:06,507 [RapidOCR] main.py:164: The text detection result is empty[0m
+[33m[WARNING] 2026-11-22 21:27:08,099 [RapidOCR] main.py:164: The text detection result is empty[0m
+[33m[WARNING] 2026-11-22 21:27:09,733 [RapidOCR] main.py:164: The text detection result is empty[0m
+[33m[WARNING] 2026-11-22 21:27:11,931 [RapidOCR] main.py:164: The text detection result is empty[0m
+[33m[WARNING] 2026-11-22 21:27:15,240 [RapidOCR] main.py:164: The text detection result is empty[0m
+[33m[WARNING] 2026-11-22 21:27:18,738 [RapidOCR] main.py:164: The text detection result is empty[0m
+[33m[WARNING] 2026-11-22 21:27:20,471 [RapidOCR] main.py:164: The text detection result is empty[0m
+[33m[WARNING] 2026-11-22 21:27:27,170 [RapidOCR] main.py:164: The text detection result is empty[0m
+[33m[WARNING] 2026-11-22 21:27:29,256 [RapidOCR] main.py:164: The text detection result is empty[0m
+[33m[WARNING] 2026-11-22 21:27:31,061 [RapidOCR] main.py:164: The text detection result is empty[0m
+[33m[WARNING] 2026-11-22 21:27:32,663 [RapidOCR] main.py:164: The text detection result is empty[0m
+[33m[WARNING] 2026-11-22 21:27:34,534 [RapidOCR] main.py:164: The text detection result is empty[0m
+[33m[WARNING] 2026-11-22 21:27:36,410 [RapidOCR] main.py:164: The text detection result is empty[0m
+[33m[WARNING] 2026-11-22 21:27:37,986 [RapidOCR] main.py:164: The text detection result is empty[0m
+[33m[WARNING] 2026-11-22 21:27:39,891 [RapidOCR] main.py:164: The text detection result is empty[0m
+[33m[WARNING] 2026-11-22 21:27:44,557 [RapidOCR] main.py:164: The text detection result is empty[0m
+[33m[WARNING] 2026-11-22 21:27:53,032 [RapidOCR] main.py:164: The text detection result is empty[0m
+[33m[WARNING] 2026-11-22 21:27:54,740 [RapidOCR] main.py:164: The text detection result is empty[0m
+[33m[WARNING] 2026-11-22 21:27:56,453 [RapidOCR] main.py:164: The text detection result is empty[0m
+[33m[WARNING] 2026-11-22 21:27:58,309 [RapidOCR] main.py:164: The text detection result is empty[0m
+[33m[WARNING] 2026-11-22 21:28:00,313 [RapidOCR] main.py:164: The text detection result is empty[0m
+[33m[WARNING] 2026-11-22 21:28:02,098 [RapidOCR] main.py:164: The text detection result is empty[0m
+[33m[WARNING] 2026-11-22 21:28:04,245 [RapidOCR] main.py:164: The text detection result is empty[0m
+[33m[WARNING] 2026-11-22 21:28:09,044 [RapidOCR] main.py:164: The text detection result is empty[0m
+[33m[WARNING] 2026-11-22 21:28:12,886 [RapidOCR] main.py:164: The text detection result is empty[0m
+[33m[WARNING] 2026-11-22 21:28:14,343 [RapidOCR] main.py:164: The text detection result is empty[0m
+[33m[WARNING] 2026-11-22 21:28:17,811 [RapidOCR] main.py:164: The text detection result is empty[0m
+[33m[WARNING] 2026-11-22 21:28:19,541 [RapidOCR] main.py:164: The text detection result is empty[0m
+[33m[WARNING] 2026-11-22 21:28:23,184 [RapidOCR] main.py:164: The text detection result is empty[0m
+[33m[WARNING] 2026-11-22 21:28:26,361 [RapidOCR] main.py:164: The text detection result is empty[0m
+[33m[WARNING] 2026-11-22 21:28:30,139 [RapidOCR] main.py:164: The text detection result is empty[0m
+[33m[WARNING] 2026-11-22 21:28:50,687 [RapidOCR] main.py:164: The text detection result is empty[0m
+[33m[WARNING] 2026-11-22 21:28:52,693 [RapidOCR] main.py:164: The text detection result is empty[0m
+[33m[WARNING] 2026-11-22 21:28:54,448 [RapidOCR] main.py:164: The text detection result is empty[0m
+[33m[WARNING] 2026-11-22 21:28:56,083 [RapidOCR] main.py:164: The text detection result is empty[0m
+[33m[WARNING] 2026-11-22 21:28:57,428 [RapidOCR] main.py:164: The text detection result is empty[0m
+[33m[WARNING] 2026-11-22 21:28:58,378 [RapidOCR] main.py:164: The text detection result is empty[0m
+21:28:58 INFO downloading bandit-v2-multi.onnx (~149 MB) -> /root/.cache/rea-video/models/bandit-v2-multi.onnx
+[33m[WARNING] 2026-11-22 21:28:59,317 [RapidOCR] main.py:164: The text detection result is empty[0m
+[33m[WARNING] 2026-11-22 21:29:00,135 [RapidOCR] main.py:164: The text detection result is empty[0m
+[33m[WARNING] 2026-11-22 21:29:01,116 [RapidOCR] main.py:164: The text detection result is empty[0m
+[33m[WARNING] 2026-11-22 21:29:02,034 [RapidOCR] main.py:164: The text detection result is empty[0m
+[33m[WARNING] 2026-11-22 21:29:02,946 [RapidOCR] main.py:164: The text detection result is empty[0m
+[33m[WARNING] 2026-11-22 21:29:05,148 [RapidOCR] main.py:164: The text detection result is empty[0m
+[33m[WARNING] 2026-11-22 21:29:09,064 [RapidOCR] main.py:164: The text detection result is empty[0m
+[33m[WARNING] 2026-11-22 21:29:09,939 [RapidOCR] main.py:164: The text detection result is empty[0m
+[33m[WARNING] 2026-11-22 21:29:11,509 [RapidOCR] main.py:164: The text detection result is empty[0m
+[33m[WARNING] 2026-11-22 21:29:17,109 [RapidOCR] main.py:164: The text detection result is empty[0m
+[33m[WARNING] 2026-11-22 21:29:19,177 [RapidOCR] main.py:164: The text detection result is empty[0m
+[33m[WARNING] 2026-11-22 21:29:23,583 [RapidOCR] main.py:164: The text detection result is empty[0m
+[33m[WARNING] 2026-11-22 21:29:25,533 [RapidOCR] main.py:164: The text detection result is empty[0m
+[33m[WARNING] 2026-11-22 21:29:40,761 [RapidOCR] main.py:164: The text detection result is empty[0m
+[33m[WARNING] 2026-11-22 21:29:44,697 [RapidOCR] main.py:164: The text detection result is empty[0m
+[33m[WARNING] 2026-11-22 21:29:46,458 [RapidOCR] main.py:164: The text detection result is empty[0m
+[33m[WARNING] 2026-11-22 21:29:48,061 [RapidOCR] main.py:164: The text detection result is empty[0m
+[33m[WARNING] 2026-11-22 21:29:52,137 [RapidOCR] main.py:164: The text detection result is empty[0m
+[33m[WARNING] 2026-11-22 21:29:54,046 [RapidOCR] main.py:164: The text detection result is empty[0m
+[33m[WARNING] 2026-11-22 21:29:55,913 [RapidOCR] main.py:164: The text detection result is empty[0m
+[33m[WARNING] 2026-11-22 21:30:00,062 [RapidOCR] main.py:164: The text detection result is empty[0m
+[33m[WARNING] 2026-11-22 21:30:01,558 [RapidOCR] main.py:164: The text detection result is empty[0m
+[33m[WARNING] 2026-11-22 21:30:06,376 [RapidOCR] main.py:164: The text detection result is empty[0m
+[33m[WARNING] 2026-11-22 21:30:15,534 [RapidOCR] main.py:164: The text detection result is empty[0m
+[33m[WARNING] 2026-11-22 21:30:17,490 [RapidOCR] main.py:164: The text detection result is empty[0m
+[33m[WARNING] 2026-11-22 21:30:19,178 [RapidOCR] main.py:164: The text detection result is empty[0m
+[33m[WARNING] 2026-11-22 21:30:20,823 [RapidOCR] main.py:164: The text detection result is empty[0m
+[33m[WARNING] 2026-11-22 21:30:22,521 [RapidOCR] main.py:164: The text detection result is empty[0m
+[33m[WARNING] 2026-11-22 21:30:37,812 [RapidOCR] main.py:164: The text detection result is empty[0m
+[33m[WARNING] 2026-11-22 21:30:48,349 [RapidOCR] main.py:164: The text detection result is empty[0m
+[33m[WARNING] 2026-11-22 21:30:50,237 [RapidOCR] main.py:164: The text detection result is empty[0m
+[33m[WARNING] 2026-11-22 21:30:52,052 [RapidOCR] main.py:164: The text detection result is empty[0m
+[33m[WARNING] 2026-11-22 21:30:54,001 [RapidOCR] main.py:164: The text detection result is empty[0m
+[33m[WARNING] 2026-11-22 21:31:45,934 [RapidOCR] main.py:164: The text detection result is empty[0m
+[33m[WARNING] 2026-11-22 21:31:47,577 [RapidOCR] main.py:164: The text detection result is empty[0m
+[33m[WARNING] 2026-11-22 21:31:49,124 [RapidOCR] main.py:164: The text detection result is empty[0m
+[33m[WARNING] 2026-11-22 21:31:51,456 [RapidOCR] main.py:164: The text detection result is empty[0m
+[33m[WARNING] 2026-11-22 21:31:53,710 [RapidOCR] main.py:164: The text detection result is empty[0m
+[33m[WARNING] 2026-11-22 21:31:56,065 [RapidOCR] main.py:164: The text detection result is empty[0m
+[33m[WARNING] 2026-11-22 21:31:58,405 [RapidOCR] main.py:164: The text detection result is empty[0m
+[33m[WARNING] 2026-11-22 21:32:00,273 [RapidOCR] main.py:164: The text detection result is empty[0m
+[33m[WARNING] 2026-11-22 21:32:02,117 [RapidOCR] main.py:164: The text detection result is empty[0m
+[33m[WARNING] 2026-11-22 21:32:04,049 [RapidOCR] main.py:164: The text detection result is empty[0m
+[33m[WARNING] 2026-11-22 21:32:06,005 [RapidOCR] main.py:164: The text detection result is empty[0m
+[33m[WARNING] 2026-11-22 21:32:07,966 [RapidOCR] main.py:164: The text detection result is empty[0m
+[33m[WARNING] 2026-11-22 21:32:09,848 [RapidOCR] main.py:164: The text detection result is empty[0m
+[33m[WARNING] 2026-11-22 21:32:11,456 [RapidOCR] main.py:164: The text detection result is empty[0m
+[33m[WARNING] 2026-11-22 21:32:13,159 [RapidOCR] main.py:164: The text detection result is empty[0m
+[33m[WARNING] 2026-11-22 21:32:15,083 [RapidOCR] main.py:164: The text detection result is empty[0m
+[33m[WARNING] 2026-11-22 21:32:16,968 [RapidOCR] main.py:164: The text detection result is empty[0m
+[33m[WARNING] 2026-11-22 21:32:19,064 [RapidOCR] main.py:164: The text detection result is empty[0m
+[33m[WARNING] 2026-11-22 21:32:20,872 [RapidOCR] main.py:164: The text detection result is empty[0m
+[33m[WARNING] 2026-11-22 21:32:22,861 [RapidOCR] main.py:164: The text detection result is empty[0m
+21:32:56 INFO downloading face model face_detection_yunet_2023mar.onnx -> /root/.cache/rea-video/models/face_detection_yunet_2023mar.onnx
+21:32:56 WARNING face model download failed (HTTP Error 403: Forbidden); face detection falls back to Haar or is skipped
+21:32:58 INFO shot_001 00:00.000-00:10.000 det=ai_video(82%) dynamic
+21:33:02 INFO shot_002 00:10.000-00:11.767 det=ai_video(57%) dynamic
+21:33:07 INFO shot_003 00:11.767-00:17.833 det=ai_video(69%) dynamic
+21:33:10 INFO shot_004 00:17.833-00:25.833 det=ai_video(71%) dynamic
+21:33:13 INFO shot_005 00:25.833-00:35.833 det=ai_video(75%) dynamic
+21:33:17 INFO shot_006 00:35.833-00:40.000 det=ai_video(79%) dynamic
+21:33:22 INFO shot_007 00:40.000-00:45.867 det=ai_video(75%) dynamic
+21:33:27 INFO shot_008 00:45.867-00:48.933 det=ai_video(78%) dynamic
+21:33:33 INFO shot_009 00:48.933-00:55.833 det=ai_video(80%) dynamic
+21:33:35 INFO shot_010 00:55.833-00:59.767 det=ai_video(81%) dynamic
+21:33:38 INFO shot_011 00:59.767-01:05.200 det=ai_video(84%) dynamic
+21:33:42 INFO shot_012 01:05.200-01:11.067 det=ai_video(79%) dynamic
+21:33:45 INFO shot_013 01:11.067-01:20.267 det=ai_video(87%) dynamic
+21:33:48 INFO shot_014 01:20.267-01:30.233 det=ai_video(65%) dynamic
+21:33:50 INFO shot_015 01:30.233-01:40.333 det=ai_video(67%) dynamic
+21:33:53 INFO shot_016 01:40.333-01:50.267 det=ai_video(88%) dynamic
+21:40:47 INFO done in 987.7s -> /home/user/Yutub.hthub/studio/research/out/midad
+{
+  "out": "out/midad",
+  "verdict": "Mixed production: live action or AI, to confirm 100%; overlays: styled text, text labels, subtitles, title (composited in code / an editor); audio: voice + music 132.5BPM (to confirm, leaning stock library music); packaging: styled text ×4, text labels ×12",
+  "shots": 16,
+  "confidence": 0.656,
+  "vlm": "No VLM; live action / AI / 3D are told apart from pixel statistics only, so confidence is limited. An agent that can see images: run rea-video review, look at each shot and merge with apply-review; otherwise configure a VLM (any OpenAI-compatible multimodal model, e.g. Gemini / GPT-4o / Doubao / Qwen-VL): set REA_VLM_BASE_URL, REA_VLM_API_KEY and REA_VLM_MODEL (several models comma-separated as fallbacks), then rerun with --vlm",
+  "report": "out/midad/report.html"
+}
