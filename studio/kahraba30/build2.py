@@ -53,7 +53,7 @@ def overlay(i, x):
             r = (W - 160) / sub.width; sub = sub.resize((int(sub.width * r), int(sub.height * r)), Image.LANCZOS)
         base.alpha_composite(sub, ((W - sub.width) // 2, H - sub.height - 70))
     if i >= 5 and x.get('hud') not in ('title', 'black', 'blackflash'):
-        dn = '٢' if i < 28 else ('٣ - ٥' if i < 36 else '٥')
+        dn = '٢' if i < 28 else ('٣ إلى ٥' if i < 36 else '٥')
         day = text_img('اليوم ' + dn + ' من ' + ar(30), 46, (255, 214, 90), 5)
         pill = Image.new('RGBA', (day.width + 40, day.height + 10), (0, 0, 0, 150))
         pill.alpha_composite(day, (20, 5)); base.alpha_composite(pill, (W - pill.width - 50, 40))
