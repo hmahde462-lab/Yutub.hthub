@@ -133,3 +133,6 @@ Higgsfield credits = 0, so no AI image-to-3D. Options offered: buy credits / buy
 - ريلز القرآن (شهر): 30 ريل `videos/quran/month/qr-NN.mp4` (كود studio/quran-reels/build.py، reels.json، خط AmiriQuran، نص عثماني من npm quran-json). مجدولة يومياً 21:00 بغداد 16/11 → 15/12 على @7ll.ajr. postIds بـ studio/quran-reels/posts.txt.
 - افكار غريبة (شهر): 60 شورت. خطة `studio/afkar_month_plan.json` (خدعة 16:00 + أسئلة دول 20:00 بغداد، 16/11→15/12). فيديوهات `videos/afkar/illusions/ilNN.mp4` (أجزاء 7-36) و`videos/afkar/countries/kNN.mp4`. كل الـ60 مجدولة (16/11→15/12) — بـ studio/afkar_posts.txt.
 - ملاحظة: نداءات vidIQ المتوازية الكثيرة تسبب restart للجلسة → سوّها 1-4 بالمرة.
+
+## ح٢ كهرباء — صور 37–47 (22/11)
+- مولّدة بـ Figma (حساب ثاني، ملف kvCMq1O8ohSJ7J3I9jEGRm): `studio/kahraba30/ep2/img/e2_37..45,47.png` (1536x864). مشهد 46 بدون صورة بالسكربت.
