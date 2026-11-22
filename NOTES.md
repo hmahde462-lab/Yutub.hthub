@@ -108,7 +108,7 @@
 - طابور النشر: studio/state/publish_queue.json (كوپكه 6–12 + دياتلوف 13). تذكير يومي 12:00 بغداد ينشر أول 3 done=false بـ vidiq_social_post_publish ويعلّمها done ويرفع. كوپكه 3–5 انجدولت 22/11 (3 cu5KGhVOUXM).
 
 ## تسليم لجلسة جديدة (22/11/2026)
-- جيسوب: studio/stories/jessop/ — السكربت (gen.py → script.json) والصوت (chunk0.mp3) والقص (lines/, lines.json) جاهزة، الصور 0–36 موجودة. الناقص: صور 37–47 (برومبتاتها بـ script.json، المشهد 48 شاشة سودة). بعدها عدّل build.py (العنوان «البنت اللي ما تغرق» / «فيوليت جيسوب ١٩١١–١٩١٦»، نص الشاشة السودة «انت تركب سفينة بعدها؟»، OUT jessop.mp4، LONG_GAP، section) و shorts.py (HEAD «نجت من 3 سفن غرقت!»، SLUG jessop) و thumb.py، ثم البناء حسب studio/stories/README.md.
+- جيسوب: خلص (videos/long/jessop.mp4 + 12 شورت)، مسوداته بالطابور (studio/stories/jessop/drafts.json). Figma الجديد: ملف PCT2vXT5xHQHTWtQvWRax9 (حساب rockabelleshop، session a4575d70-…).
 - Figma: الحساب القديم hmahde462 خلص رصيده لحد 1/12. المستخدم ربط حساب Figma جديد مدفوع → بالجلسة الجديدة اعمل create_new_file وكمل عليه.
 - vidIQ: الحساب الحالي 2955e90d… (مجاني، 3 رفعات/يوم). طابور النشر studio/state/publish_queue.json وتذكيره اليومي 12:07 بغداد (23–29/11) شغّال بالجلسة القديمة session_01QEbwXC1gCW2hrwMbMeGhu6 — لا تكرره.
 - مواعيد جيسوب: الطويل 11/12 20:00، الشورتات 12–17/12 (17:30 و21:30). الرفع يبدي من 30/11 بعد ما يخلص الطابور.
