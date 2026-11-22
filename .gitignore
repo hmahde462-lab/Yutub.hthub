@@ -4,3 +4,11 @@ studio/hamoudi-2d/season/voice/
 studio/hamoudi-2d/season/render-log.txt
 videos/hamoudi/compilations/*.mp4
 !videos/hamoudi/compilations/*-16x9.mp4
+studio/kahraba30/ep2/clips/
+studio/kahraba30/ep2/big/
+studio/kahraba30/ep2/ov/
+studio/kahraba30/ep2/audio.wav
+studio/kahraba30/ep2/video_noaudio.mp4
+studio/kahraba30/ep2/episode2.mp4
+studio/kahraba30/ep2/shorts/
+studio/kahraba30/ep2/wts*.json
