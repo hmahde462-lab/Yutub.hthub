@@ -106,3 +106,9 @@
 - دياتلوف جاهز: videos/long/dyatlov.mp4 + thumb + videos/shorts/dyatlov/ (12). ينتظر موافقة المستخدم للجدولة 27/11–1/12 (موعد الطويل 4/12 20:00).
 - 22/11: حساب vidIQ تغيّر لحساب جديد (مجاني) بعد إعادة الربط. مسودات كوپكه 3–12 انعادت بالحساب الجديد (studio/stories/koepcke/drafts.json، القديمة drafts_oldacct.json ما تشتغل). ياماگوچي 3 و4 رفعهم المستخدم بنفسه (TecVe4TpE_4, MZalvq431Wo).
 - طابور النشر: studio/state/publish_queue.json (كوپكه 6–12 + دياتلوف 13). تذكير يومي 12:00 بغداد ينشر أول 3 done=false بـ vidiq_social_post_publish ويعلّمها done ويرفع. كوپكه 3–5 انجدولت 22/11 (3 cu5KGhVOUXM).
+
+## تسليم لجلسة جديدة (22/11/2026)
+- جيسوب: studio/stories/jessop/ — السكربت (gen.py → script.json) والصوت (chunk0.mp3) والقص (lines/, lines.json) جاهزة، الصور 0–36 موجودة. الناقص: صور 37–47 (برومبتاتها بـ script.json، المشهد 48 شاشة سودة). بعدها عدّل build.py (العنوان «البنت اللي ما تغرق» / «فيوليت جيسوب ١٩١١–١٩١٦»، نص الشاشة السودة «انت تركب سفينة بعدها؟»، OUT jessop.mp4، LONG_GAP، section) و shorts.py (HEAD «نجت من 3 سفن غرقت!»، SLUG jessop) و thumb.py، ثم البناء حسب studio/stories/README.md.
+- Figma: الحساب القديم hmahde462 خلص رصيده لحد 1/12. المستخدم ربط حساب Figma جديد مدفوع → بالجلسة الجديدة اعمل create_new_file وكمل عليه.
+- vidIQ: الحساب الحالي 2955e90d… (مجاني، 3 رفعات/يوم). طابور النشر studio/state/publish_queue.json وتذكيره اليومي 12:07 بغداد (23–29/11) شغّال بالجلسة القديمة session_01QEbwXC1gCW2hrwMbMeGhu6 — لا تكرره.
+- مواعيد جيسوب: الطويل 11/12 20:00، الشورتات 12–17/12 (17:30 و21:30). الرفع يبدي من 30/11 بعد ما يخلص الطابور.
