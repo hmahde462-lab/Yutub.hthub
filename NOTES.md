@@ -105,3 +105,4 @@
 - كوپكه دفعة 1 (22/11): الطويل M7HxpZrGYYM (27/11 20:00)، الجزء 1 PuPx662x3FA، الجزء 2 znReG9mtFyk — مرفوعة ومجدولة.
 - دياتلوف جاهز: videos/long/dyatlov.mp4 + thumb + videos/shorts/dyatlov/ (12). ينتظر موافقة المستخدم للجدولة 27/11–1/12 (موعد الطويل 4/12 20:00).
 - 22/11: حساب vidIQ تغيّر لحساب جديد (مجاني) بعد إعادة الربط. مسودات كوپكه 3–12 انعادت بالحساب الجديد (studio/stories/koepcke/drafts.json، القديمة drafts_oldacct.json ما تشتغل). ياماگوچي 3 و4 رفعهم المستخدم بنفسه (TecVe4TpE_4, MZalvq431Wo).
+- طابور النشر: studio/state/publish_queue.json (كوپكه 6–12 + دياتلوف 13). تذكير يومي 12:00 بغداد ينشر أول 3 done=false بـ vidiq_social_post_publish ويعلّمها done ويرفع. كوپكه 3–5 انجدولت 22/11 (3 cu5KGhVOUXM).
