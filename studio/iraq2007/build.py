@@ -59,6 +59,7 @@ def overlay(i, x):
                 if best is None or m_ < best[0]: best = (m_, a_, b_)
             rows = [best[1], best[2]]
         y_ = H - 70
+        if os.environ.get('NOSUB'): rows = []
         for row in reversed(rows):
             sub = text_img(row, 56, col)
             if sub.width > W - 160:
@@ -243,6 +244,6 @@ mix = mix[:int(TOTAL * SR)]
 mix /= max(1e-6, np.abs(mix).max()) / 0.9
 with wave.open('audio.wav', 'wb') as w:
     w.setnchannels(1); w.setsampwidth(2); w.setframerate(SR); w.writeframes((mix * 32767).astype(np.int16).tobytes())
-subprocess.run(['ffmpeg', '-v', 'error', '-y', '-i', 'video_noaudio.mp4', '-i', 'audio.wav', '-c:v', 'copy', '-af', 'loudnorm=I=-14:TP=-1.5:LRA=11', '-c:a', 'aac', '-b:a', '192k', '-ar', '48000', '-shortest', 'iraq2007.mp4'], check=True)
+subprocess.run(['ffmpeg', '-v', 'error', '-y', '-i', 'video_noaudio.mp4', '-i', 'audio.wav', '-c:v', 'copy', '-af', 'loudnorm=I=-14:TP=-1.5:LRA=11', '-c:a', 'aac', '-b:a', '192k', '-ar', '48000', '-shortest', os.environ.get('OUT', 'iraq2007.mp4')], check=True)
 json.dump([{'i': i, 'start': round(t0, 3), 'dur': round(dd, 3)} for i, (t0, dd) in enumerate(times)], open('timeline.json', 'w'))
 print('done', TOTAL)

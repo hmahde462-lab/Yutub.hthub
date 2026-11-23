@@ -5,7 +5,8 @@
   "postId": "9d022ba3-656d-4d64-b24d-84924bacd00e",
   "revision": "8a9739b4",
   "time": "2026-11-23 17:30",
-  "done": false
+  "done": true,
+  "note": "manual upload by user (vidIQ daily limit)"
  },
  {
   "story": "kahraba-ep2",
@@ -13,7 +14,8 @@
   "postId": "4086952f-9a3d-49b6-81a1-b7e5affcc322",
   "revision": "e80319cb",
   "time": "2026-11-23 21:30",
-  "done": false
+  "done": true,
+  "note": "manual upload by user (vidIQ daily limit)"
  },
  {
   "story": "kahraba-ep2",
