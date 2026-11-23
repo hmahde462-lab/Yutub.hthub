@@ -410,7 +410,8 @@
   "postId": "2e326e88-1d0d-483d-bf39-24d6eb2ee02a",
   "revision": "54f4969c",
   "time": "2026-12-21 21:30",
-  "done": false
+  "done": true,
+  "note": "manual by user (Claude sub ends 7/12)"
  },
  {
   "story": "shackleton",
@@ -418,7 +419,8 @@
   "postId": "0e178c0d-4013-4e65-9494-2346e79ad55f",
   "revision": "7b2ba775",
   "time": "2026-12-22 17:30",
-  "done": false
+  "done": true,
+  "note": "manual by user (Claude sub ends 7/12)"
  },
  {
   "story": "shackleton",
@@ -426,7 +428,8 @@
   "postId": "0693a1f8-f022-4592-90d2-56d4f3f56c05",
   "revision": "e6540ef3",
   "time": "2026-12-22 21:30",
-  "done": false
+  "done": true,
+  "note": "manual by user (Claude sub ends 7/12)"
  },
  {
   "story": "shackleton",
@@ -434,7 +437,8 @@
   "postId": "805103ad-759f-49d9-975f-a3f842b5cb31",
   "revision": "68ed393d",
   "time": "2026-12-23 17:30",
-  "done": false
+  "done": true,
+  "note": "manual by user (Claude sub ends 7/12)"
  },
  {
   "story": "shackleton",
@@ -442,7 +446,8 @@
   "postId": "cd702589-f469-4169-a789-078567ca9b5f",
   "revision": "65a8fa96",
   "time": "2026-12-23 21:30",
-  "done": false
+  "done": true,
+  "note": "manual by user (Claude sub ends 7/12)"
  },
  {
   "story": "shackleton",
@@ -450,7 +455,8 @@
   "postId": "75871231-6116-4781-a383-46494e0624fa",
   "revision": "1ebf2b8d",
   "time": "2026-12-24 17:30",
-  "done": false
+  "done": true,
+  "note": "manual by user (Claude sub ends 7/12)"
  },
  {
   "story": "shackleton",
@@ -458,6 +464,7 @@
   "postId": "a6e0b6be-0467-47c5-9614-423bdbb935c5",
   "revision": "76bbe877",
   "time": "2026-12-24 21:30",
-  "done": false
+  "done": true,
+  "note": "manual by user (Claude sub ends 7/12)"
  }
 ]
