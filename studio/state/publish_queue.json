@@ -151,7 +151,8 @@
   "postId": "46fa5b83-4bf7-4184-a704-8449aa475183",
   "revision": "687f4871",
   "time": "2026-12-04 20:00",
-  "done": false
+  "done": true,
+  "note": "manual by user (YouTube Studio)"
  },
  {
   "story": "dyatlov",
@@ -255,7 +256,8 @@
   "postId": "c01180f6-a465-4d89-8c0e-5f7ea51c0637",
   "revision": "0ec7d2a6",
   "time": "2026-12-11 20:00",
-  "done": false
+  "done": true,
+  "note": "manual by user (YouTube Studio)"
  },
  {
   "story": "jessop",
@@ -359,7 +361,8 @@
   "postId": "d8d86926-9a39-416b-910d-cb380b1e711f",
   "revision": "b5cd25c5",
   "time": "2026-12-18 20:00",
-  "done": false
+  "done": true,
+  "note": "manual by user (YouTube Studio)"
  },
  {
   "story": "shackleton",
