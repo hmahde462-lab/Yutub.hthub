@@ -6,6 +6,9 @@ sc = json.load(open('script.json')); f = 'chunk0.mp3'; GM = os.environ.get('GM',
 dur = float(subprocess.check_output(['ffprobe','-v','error','-show_entries','format=duration','-of','csv=p=0',f]))
 w = [len(re.sub(r'[\s.…،؟?!:]', '', x['vo'])) + 4 for x in sc]; tot = sum(w)
 est = [sum(w[:i]) / tot * dur for i in range(len(sc))]
+# spliced audio: lines 0-24 in [0,174], lines 25-48 in [174.3, dur]
+K = 25; A = sum(w[:K]); B = sum(w[K:])
+est = [sum(w[:i]) / A * 174.0 if i < K else 174.3 + sum(w[K:i]) / B * (dur - 174.3) for i in range(len(sc))]
 cache = json.load(open('a3.json')) if os.path.exists('a3.json') else {}
 W = 30; t0 = 0
 while t0 < dur:

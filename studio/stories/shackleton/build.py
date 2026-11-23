@@ -22,7 +22,7 @@ for i, x in enumerate(s):
     else: imgs.append(imgs[-1])  # missing image: hold the previous one
 
 # ---------- timing ----------
-LONG_GAP = {2, 7, 15, 17, 21, 27, 31, 35, 37, 42, 43, 47}
+LONG_GAP = {2, 3, 7, 11, 15, 19, 23, 27, 31, 35, 39, 43, 45, 46}
 times = []; t = 0.0
 for i, x in enumerate(s):
     lead = 0.35
@@ -210,11 +210,10 @@ def hit(g=0.5):
     return (np.sin(2 * np.pi * np.cumsum(fr) / SR) * np.exp(-t * 4) * g).astype(np.float32)
 
 def section(i):
-    if i in (2, 48): return 'none'
-    if i in (3, 4, 5, 6, 44, 46): return 'none'
-    if i in (7, 10, 16, 18, 33, 34): return 'street'
-    if i in (11, 32): return 'murmur'
-    if i in (19, 20): return 'night_in'
+    if i in (2, 3, 31, 47, 48): return 'none'
+    if i in (4, 5, 6, 7): return 'street'
+    if i in (14, 20): return 'night_in'
+    if i in (41, 42): return 'murmur'
     return 'wind'
 for i, x in enumerate(s):
     st, d = times[i]; sec = section(i)
