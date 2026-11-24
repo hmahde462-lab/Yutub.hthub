@@ -12,3 +12,8 @@ f    c124748b-f845-4166-8176-bf8b4e3a9362 f7bf2a93 2026-11-29T20:00
 # a    https://www.youtube.com/watch?v=SKuE9dZyYKY  (20:00 24/11)
 # b    https://www.youtube.com/watch?v=AMTlUlnafig  (20:00 25/11)
 # باقي: c,d,e (batch 2 — 24/11) و f (batch 3 — 25/11). حد vidIQ المجاني 3 رفعات باليوم.
+# --- 2026-11-24: batch 2 uploaded & scheduled
+# c https://www.youtube.com/watch?v=tAHsHaoDFhA (20:00 26/11)
+# d https://www.youtube.com/watch?v=2K_j2kiEoXw (20:00 27/11)
+# e https://www.youtube.com/watch?v=vLDmjAmHlqM (20:00 28/11)
+# باقي: f (batch 3 — 25/11)
