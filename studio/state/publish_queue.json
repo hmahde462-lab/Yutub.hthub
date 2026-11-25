@@ -23,7 +23,8 @@
   "postId": "a5c685aa-5bb1-4888-9a76-47035d23f227",
   "revision": "e0ab9779",
   "time": "2026-11-24 17:30",
-  "done": false
+  "done": true,
+  "note": "missed date 24/11 (vidIQ limit) - skipped"
  },
  {
   "story": "kahraba-ep2",
@@ -31,7 +32,8 @@
   "postId": "f956c8f7-d0fe-4d1d-8594-6052caf62dc3",
   "revision": "7d91c384",
   "time": "2026-11-24 21:30",
-  "done": false
+  "done": true,
+  "note": "missed date 24/11 (vidIQ limit) - skipped"
  },
  {
   "story": "kahraba-ep2",
@@ -39,7 +41,7 @@
   "postId": "86992786-3c44-4a9a-9a5e-cc01270128fa",
   "revision": "a9af7e6d",
   "time": "2026-11-25 17:30",
-  "done": false
+  "done": true
  },
  {
   "story": "kahraba-ep2",
@@ -47,7 +49,7 @@
   "postId": "efcdf7d8-1c5d-4a6e-8cca-0d41c88b4d77",
   "revision": "1645b339",
   "time": "2026-11-25 21:30",
-  "done": false
+  "done": true
  },
  {
   "story": "kahraba-ep2",
