@@ -17,3 +17,5 @@ f    c124748b-f845-4166-8176-bf8b4e3a9362 f7bf2a93 2026-11-29T20:00
 # d https://www.youtube.com/watch?v=2K_j2kiEoXw (20:00 27/11)
 # e https://www.youtube.com/watch?v=vLDmjAmHlqM (20:00 28/11)
 # باقي: f (batch 3 — 25/11)
+# --- 2026-11-25: batch 3 uploaded & scheduled — كل الـ7 انرفعت
+# f https://www.youtube.com/watch?v=iIB8bl75e1w (20:00 29/11)
