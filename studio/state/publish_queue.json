@@ -57,7 +57,7 @@
   "postId": "be1b6d37-ca64-436f-bc10-44b64500b020",
   "revision": "c4b1acf9",
   "time": "2026-11-26 17:30",
-  "done": false
+  "done": true
  },
  {
   "story": "kahraba-ep2",
@@ -65,7 +65,7 @@
   "postId": "48bc5401-64f8-4921-af5b-5860087bbeef",
   "revision": "e83ac1a4",
   "time": "2026-11-26 21:30",
-  "done": false
+  "done": true
  },
  {
   "story": "koepcke",
@@ -97,7 +97,7 @@
   "postId": "5e1bfd5d-232d-43b0-b1ff-37348532cef6",
   "revision": "a14746c5",
   "time": "2026-11-30 21:30",
-  "done": false
+  "done": true
  },
  {
   "story": "koepcke",
