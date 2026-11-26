@@ -28,14 +28,14 @@ def stack(rows, sz, col, gap=6):
     out = Image.new('RGBA', (W, h), (0, 0, 0, 0)); y = 0
     for i in ims: out.alpha_composite(i, ((W - i.width)//2, y)); y += i.height + gap
     return out
-HEAD = 'قصة بيت الحكمة'; SLUG = 'hikma'; CLEAN = 'hikma_clean.mp4'; OUTDIR = '../../../videos/shorts/' + SLUG
+HEAD = 'جي تي أي ٦ بالعراقي'; SLUG = 'gta6iq'; CLEAN = 'gta_clean.mp4'; OUTDIR = '../../../videos/shorts/' + SLUG
 os.makedirs('sov', exist_ok=True); os.makedirs(OUTDIR, exist_ok=True)
 FG_Y, FG_H = 470, 810
 for p, (a, b) in enumerate(PARTS, 1):
     t0 = tl[a][0]; t1 = tl[b+1][0] if b+1 < len(sc) else END; d = t1 - t0
     head = Image.new('RGBA', (W, H), (0, 0, 0, 0))
     h1 = stack([HEAD], 84, (255, 255, 255)); head.alpha_composite(h1, (0, 120))
-    tag = timg(['الجزء الأول','الجزء الثاني','الجزء الثالث'][p-1], 60, (255, 214, 60), 6)
+    tag = timg('لو انسوت بالعراق', 60, (255, 214, 60), 6)
     pill = Image.new('RGBA', (tag.width + 50, tag.height + 10), (200, 20, 30, 230)); pill.alpha_composite(tag, (25, 5))
     head.alpha_composite(pill, ((W - pill.width)//2, 120 + h1.height + 20)); head.save(f'sov/head{p}.png')
     inputs = ['-ss', f'{t0:.3f}', '-t', f'{d:.3f}', '-i', CLEAN, '-i', f'sov/head{p}.png']
@@ -56,7 +56,7 @@ for p, (a, b) in enumerate(PARTS, 1):
             inputs += ['-i', f'sov/s{p}_{i}_{j}.png']
             chain += f";[{last}][{k}:v]overlay=0:{1180 - im.height // 2}:enable='between(t,{cs:.2f},{ce:.2f})'[v{k}]"; last = f'v{k}'; k += 1
     if True:
-        e = Image.new('RGBA', (W, H), (0, 0, 0, 0)); ec = stack([['تابع الجزء الثاني','تابع الجزء الثالث','اشترك حتى توصلك القصة الجاية'][p-1]], 72, (255, 214, 60))
+        e = Image.new('RGBA', (W, H), (0, 0, 0, 0)); ec = stack(['اشترك بالقناة'], 72, (255, 214, 60))
         box = Image.new('RGBA', (W, ec.height + 40), (0, 0, 0, 170)); box.alpha_composite(ec, (0, 20)); e.alpha_composite(box, (0, 1650)); e.save(f'sov/end{p}.png')
         inputs += ['-i', f'sov/end{p}.png']
         chain += f";[{last}][{k}:v]overlay=0:0:enable='gte(t,{d-2.5:.2f})'[v{k}]"; last = f'v{k}'
