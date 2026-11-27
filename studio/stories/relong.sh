@@ -7,7 +7,7 @@ ffmpeg -nostdin -v error -y -i vo.wav -b:a 192k chunk0.mp3
 dur=$(ffprobe -v error -show_entries format=duration -of csv=p=0 chunk0.mp3); echo "$d audio $dur"
 rm -f a3.json
 for k in $(seq 1 12); do
-  GM=gemini-3.6-flash python3 align3.py > align.log 2>&1 || true
+  GM=gemini-3-flash-preview python3 align3.py > align.log 2>&1 || true
   ok=$(python3 -c "import json,math;c=json.load(open('a3.json'));print(int(len(c)>=math.ceil($dur/30)))" 2>/dev/null || echo 0)
   [ "$ok" = 1 ] && break; sleep 90
 done
