@@ -1,6 +1,6 @@
 [
  {
-  "vo": "تخيّل... بنّاء يبني بيت، والبيت يوگع ويموت صاحبه. شنو العقوبة؟ الإعدام.",
+  "vo": "تخيّل... بنّاء يبني بيت، والبيت يوگع على صاحبه ويموت. شنو العقوبة؟ مو غرامة، مو سجن... الإعدام.",
   "img": "A collapsed mud-brick house in ancient Babylon with dust rising, a shocked builder with tools standing beside the ruins, crowd gathering.",
   "part": 1,
   "prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon sandals, clean vector cel shading. All people in the image are drawn as these cartoon characters. King Hammurabi: long curly black Mesopotamian beard, tall rounded royal cap, fringed robe draped over one shoulder. A collapsed mud-brick house in ancient Babylon with dust rising, a shocked builder with tools standing beside the ruins, crowd gathering. Historically accurate ancient Babylon, Mesopotamia, around 1750 BC. Cinematic lighting. Wide shot, 16:9, no readable text, no logos.",
@@ -25,7 +25,7 @@
   "prompt": "Close-up of ancient cuneiform signs carved into dark stone, a hand-held oil lamp lighting them. Cinematic, photorealistic, historically accurate, 16:9, no readable text, no logos, no people."
  },
  {
-  "vo": "قبل حوالي ألف وثمانمية سنة قبل الميلاد، جانت بابل مدينة صغيرة... قرب الحلة اليوم.",
+  "vo": "قبل حوالي ألف وثمانمية سنة قبل الميلاد، جانت بابل مدينة صغيرة على الفرات... قرب الحلة اليوم.",
   "img": "Aerial view of ancient Babylon as a modest walled city by the Euphrates river surrounded by palm groves and fields.",
   "part": 2,
   "prompt": "Aerial view of ancient Babylon as a modest walled city by the Euphrates river surrounded by palm groves and fields. Cinematic, photorealistic, historically accurate, 16:9, no readable text, no logos, no people.",
@@ -33,19 +33,19 @@
   "day": "١٧٩٢ ق.م"
  },
  {
-  "vo": "وصار ملكها شاب اسمه حمورابي.",
+  "vo": "وصار ملكها شاب اسمه حمورابي... ورث مملكة صغيرة، محاطة بممالك أقوى منها.",
   "img": "Young King Hammurabi being crowned in a Babylonian temple hall, priests and nobles around him.",
   "part": 2,
   "prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon sandals, clean vector cel shading. All people in the image are drawn as these cartoon characters. King Hammurabi: long curly black Mesopotamian beard, tall rounded royal cap, fringed robe draped over one shoulder. Young King Hammurabi being crowned in a Babylonian temple hall, priests and nobles around him. Historically accurate ancient Babylon, Mesopotamia, around 1750 BC. Cinematic lighting. Wide shot, 16:9, no readable text, no logos."
  },
  {
-  "vo": "بلاد الرافدين ذاك الوقت جانت مقسمة: كل مدينة إلها ملك، وكلهم يتحاربون على الماي والأرض.",
+  "vo": "بلاد الرافدين ذاك الوقت جانت مقسمة: لارسا، وماري، وإشنونا... كل مدينة إلها ملك، وكلهم يتحاربون على الماي والأرض.",
   "img": "Ancient Mesopotamian soldiers with spears and shields fighting near a canal, rival city walls in the distance.",
   "part": 2,
   "prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon sandals, clean vector cel shading. All people in the image are drawn as these cartoon characters. King Hammurabi: long curly black Mesopotamian beard, tall rounded royal cap, fringed robe draped over one shoulder. Ancient Mesopotamian soldiers with spears and shields fighting near a canal, rival city walls in the distance. Historically accurate ancient Babylon, Mesopotamia, around 1750 BC. Cinematic lighting. Wide shot, 16:9, no readable text, no logos."
  },
  {
-  "vo": "وحمورابي، بالحرب والسياسة، وحّدها كلها تحت بابل.",
+  "vo": "وحمورابي صبر سنين، وتحالف، وخان، وحارب... لحد ما وحّدها كلها تحت بابل.",
   "img": "Hammurabi standing on a ziggurat terrace looking over a vast united land with rivers and cities, banners.",
   "part": 2,
   "prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon sandals, clean vector cel shading. All people in the image are drawn as these cartoon characters. King Hammurabi: long curly black Mesopotamian beard, tall rounded royal cap, fringed robe draped over one shoulder. Hammurabi standing on a ziggurat terrace looking over a vast united land with rivers and cities, banners. Historically accurate ancient Babylon, Mesopotamia, around 1750 BC. Cinematic lighting. Wide shot, 16:9, no readable text, no logos."
@@ -57,7 +57,7 @@
   "prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon sandals, clean vector cel shading. All people in the image are drawn as these cartoon characters. King Hammurabi: long curly black Mesopotamian beard, tall rounded royal cap, fringed robe draped over one shoulder. A chaotic ancient courtyard where a corrupt judge takes a bribe while a poor farmer protests, crowd arguing. Historically accurate ancient Babylon, Mesopotamia, around 1750 BC. Cinematic lighting. Wide shot, 16:9, no readable text, no logos."
  },
  {
-  "vo": "الغني يربح دائماً، والفقير يخسر.",
+  "vo": "الغني يربح دائماً، والفقير يخسر... واللي عنده واسطة يطلع بريء.",
   "img": "A rich merchant laughing with bags of silver while a poor man sits sadly on the ground, ancient Babylon market.",
   "part": 3,
   "prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon sandals, clean vector cel shading. All people in the image are drawn as these cartoon characters. King Hammurabi: long curly black Mesopotamian beard, tall rounded royal cap, fringed robe draped over one shoulder. A rich merchant laughing with bags of silver while a poor man sits sadly on the ground, ancient Babylon market. Historically accurate ancient Babylon, Mesopotamia, around 1750 BC. Cinematic lighting. Wide shot, 16:9, no readable text, no logos."
@@ -69,13 +69,13 @@
   "prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon sandals, clean vector cel shading. All people in the image are drawn as these cartoon characters. King Hammurabi: long curly black Mesopotamian beard, tall rounded royal cap, fringed robe draped over one shoulder. Hammurabi sitting on his throne thinking deeply, scribes waiting with clay tablets. Historically accurate ancient Babylon, Mesopotamia, around 1750 BC. Cinematic lighting. Wide shot, 16:9, no readable text, no logos."
  },
  {
-  "vo": "يكتب القوانين... ويحطها قدام كل الناس، حتى محد يگول ما دريت.",
+  "vo": "يكتب القوانين... ويحطها قدام كل الناس، بلغتهم، حتى محد يگول ما دريت.",
   "img": "Hammurabi pointing at a large blank black stone while scribes and stone carvers listen.",
   "part": 3,
   "prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon sandals, clean vector cel shading. All people in the image are drawn as these cartoon characters. King Hammurabi: long curly black Mesopotamian beard, tall rounded royal cap, fringed robe draped over one shoulder. Hammurabi pointing at a large blank black stone while scribes and stone carvers listen. Historically accurate ancient Babylon, Mesopotamia, around 1750 BC. Cinematic lighting. Wide shot, 16:9, no readable text, no logos."
  },
  {
-  "vo": "نحتوا مية واثنين وثمانين قانون، على مسلة سودة طولها أكثر من مترين.",
+  "vo": "نحتوا مية واثنين وثمانين قانون، بالخط المسماري، على مسلة من حجر البازلت الأسود... طولها أكثر من مترين.",
   "img": "Stone carvers chiseling cuneiform text into a tall black basalt stele in a workshop, dust and lamps.",
   "part": 4,
   "prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon sandals, clean vector cel shading. All people in the image are drawn as these cartoon characters. King Hammurabi: long curly black Mesopotamian beard, tall rounded royal cap, fringed robe draped over one shoulder. Stone carvers chiseling cuneiform text into a tall black basalt stele in a workshop, dust and lamps. Historically accurate ancient Babylon, Mesopotamia, around 1750 BC. Cinematic lighting. Wide shot, 16:9, no readable text, no logos."
@@ -93,7 +93,7 @@
   "prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon sandals, clean vector cel shading. All people in the image are drawn as these cartoon characters. King Hammurabi: long curly black Mesopotamian beard, tall rounded royal cap, fringed robe draped over one shoulder. Hammurabi standing beside the finished stele in a temple courtyard at sunrise, people gathering to look. Historically accurate ancient Babylon, Mesopotamia, around 1750 BC. Cinematic lighting. Wide shot, 16:9, no readable text, no logos."
  },
  {
-  "vo": "وحطوا المسلة بمكان عام، وأي واحد عنده مشكلة... يروح يقرا.",
+  "vo": "وحطوا المسلة بمكان عام، بالمعبد، وأي واحد مظلوم... يروح يقرا حقه بعينه.",
   "img": "Common people, farmers and merchants, gathered around the stele while a scribe reads it aloud to them.",
   "part": 4,
   "prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon sandals, clean vector cel shading. All people in the image are drawn as these cartoon characters. King Hammurabi: long curly black Mesopotamian beard, tall rounded royal cap, fringed robe draped over one shoulder. Common people, farmers and merchants, gathered around the stele while a scribe reads it aloud to them. Historically accurate ancient Babylon, Mesopotamia, around 1750 BC. Cinematic lighting. Wide shot, 16:9, no readable text, no logos."
@@ -118,19 +118,19 @@
   "prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon sandals, clean vector cel shading. All people in the image are drawn as these cartoon characters. King Hammurabi: long curly black Mesopotamian beard, tall rounded royal cap, fringed robe draped over one shoulder. A scribe reading the law to a crowd while children listen, warm light. Historically accurate ancient Babylon, Mesopotamia, around 1750 BC. Cinematic lighting. Wide shot, 16:9, no readable text, no logos."
  },
  {
-  "vo": "وأول قوانين بالمسلة؟ إذا اتهمت واحد بجريمة وما گدرت تثبتها... انت تتعاقب.",
+  "vo": "وأول قانون بالمسلة؟ إذا اتهمت واحد بجريمة قتل، وما گدرت تثبتها... انت تنعدم. يعني لا تتهم أحد بالباطل.",
   "img": "A false accuser being led away by guards while the accused man looks relieved, ancient court.",
   "part": 5,
   "prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon sandals, clean vector cel shading. All people in the image are drawn as these cartoon characters. King Hammurabi: long curly black Mesopotamian beard, tall rounded royal cap, fringed robe draped over one shoulder. A false accuser being led away by guards while the accused man looks relieved, ancient court. Historically accurate ancient Babylon, Mesopotamia, around 1750 BC. Cinematic lighting. Wide shot, 16:9, no readable text, no logos."
  },
  {
-  "vo": "وأكو قوانين للبنّائين: إذا وگع البيت على صاحبه... البنّاء ينعدم.",
+  "vo": "وأكو قوانين للبنّائين: إذا وگع البيت على صاحبه ومات... البنّاء ينعدم. وإذا مات ابن صاحب البيت... ينعدم ابن البنّاء!",
   "img": "A builder inspecting mud-brick walls nervously as a judge watches, ancient Babylon construction site.",
   "part": 6,
   "prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon sandals, clean vector cel shading. All people in the image are drawn as these cartoon characters. King Hammurabi: long curly black Mesopotamian beard, tall rounded royal cap, fringed robe draped over one shoulder. A builder inspecting mud-brick walls nervously as a judge watches, ancient Babylon construction site. Historically accurate ancient Babylon, Mesopotamia, around 1750 BC. Cinematic lighting. Wide shot, 16:9, no readable text, no logos."
  },
  {
-  "vo": "وللأطباء: إذا الطبيب عالج مريض وشفى، ياخذ أجرة محددة.",
+  "vo": "وللأطباء: إذا الطبيب عالج مريض وشفى، ياخذ أجرة محددة... والنبيل يدفع أكثر من الفقير.",
   "img": "An ancient Babylonian doctor treating a patient's arm with bandages and herbs, the patient grateful.",
   "part": 6,
   "prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon sandals, clean vector cel shading. All people in the image are drawn as these cartoon characters. King Hammurabi: long curly black Mesopotamian beard, tall rounded royal cap, fringed robe draped over one shoulder. An ancient Babylonian doctor treating a patient's arm with bandages and herbs, the patient grateful. Historically accurate ancient Babylon, Mesopotamia, around 1750 BC. Cinematic lighting. Wide shot, 16:9, no readable text, no logos."
@@ -149,7 +149,7 @@
   "prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon sandals, clean vector cel shading. All people in the image are drawn as these cartoon characters. King Hammurabi: long curly black Mesopotamian beard, tall rounded royal cap, fringed robe draped over one shoulder. A modern Iraqi doctor in a white coat sweating nervously holding a scalpel, comic. Historically accurate ancient Babylon, Mesopotamia, around 1750 BC. Cinematic lighting. Wide shot, 16:9, no readable text, no logos."
  },
  {
-  "vo": "وجان أكو قوانين للتجارة: الأسعار، والأجور، والقروض.",
+  "vo": "وجان أكو قوانين للتجارة: الأسعار، والأجور، والقروض، وحتى الفايدة... كلها إلها حد.",
   "img": "A busy ancient Babylonian market with merchants weighing silver and grain on scales.",
   "part": 7,
   "prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon sandals, clean vector cel shading. All people in the image are drawn as these cartoon characters. King Hammurabi: long curly black Mesopotamian beard, tall rounded royal cap, fringed robe draped over one shoulder. A busy ancient Babylonian market with merchants weighing silver and grain on scales. Historically accurate ancient Babylon, Mesopotamia, around 1750 BC. Cinematic lighting. Wide shot, 16:9, no readable text, no logos."
@@ -167,7 +167,7 @@
   "prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon sandals, clean vector cel shading. All people in the image are drawn as these cartoon characters. King Hammurabi: long curly black Mesopotamian beard, tall rounded royal cap, fringed robe draped over one shoulder. An ancient Babylonian wedding ceremony with families exchanging gifts, a scribe writing a clay contract. Historically accurate ancient Babylon, Mesopotamia, around 1750 BC. Cinematic lighting. Wide shot, 16:9, no readable text, no logos."
  },
  {
-  "vo": "والمرأة جان إلها حق تملك أموال، وتدير تجارة... قبل آلاف السنين.",
+  "vo": "والمرأة جان إلها حق تملك أموال، وتدير تجارة، وتطلب الطلاق... قبل آلاف السنين.",
   "img": "A Babylonian woman merchant confidently selling textiles at her own market stall, customers around.",
   "part": 7,
   "prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon sandals, clean vector cel shading. All people in the image are drawn as these cartoon characters. King Hammurabi: long curly black Mesopotamian beard, tall rounded royal cap, fringed robe draped over one shoulder. A Babylonian woman merchant confidently selling textiles at her own market stall, customers around. Historically accurate ancient Babylon, Mesopotamia, around 1750 BC. Cinematic lighting. Wide shot, 16:9, no readable text, no logos."
@@ -192,7 +192,7 @@
   "prompt": "Wide shot of the Euphrates river at sunset with ancient Babylon on its banks. Cinematic, photorealistic, historically accurate, 16:9, no readable text, no logos, no people."
  },
  {
-  "vo": "قوانين بعضها قاسية... بس جانت خطوة كبيرة: إن الحاكم نفسه يلتزم بقانون مكتوب.",
+  "vo": "قوانين بعضها قاسية كلش... بس جانت خطوة كبيرة: إن العدالة مكتوبة، والحاكم نفسه يلتزم بيها.",
   "img": "Hammurabi touching the stele respectfully, standing among his people, solemn.",
   "part": 8,
   "prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon sandals, clean vector cel shading. All people in the image are drawn as these cartoon characters. King Hammurabi: long curly black Mesopotamian beard, tall rounded royal cap, fringed robe draped over one shoulder. Hammurabi touching the stele respectfully, standing among his people, solemn. Historically accurate ancient Babylon, Mesopotamia, around 1750 BC. Cinematic lighting. Wide shot, 16:9, no readable text, no logos."
@@ -206,13 +206,13 @@
   "day": "١٧٥٠ ق.م"
  },
  {
-  "vo": "وبعد موته بمئات السنين... بابل ضعفت.",
+  "vo": "وبعد موته بمئات السنين... بابل ضعفت، والممالك اللي حواليها صارت أقوى.",
   "img": "Ancient Babylon walls partly crumbling, sandstorm, abandoned streets.",
   "part": 9,
   "prompt": "Ancient Babylon walls partly crumbling, sandstorm, abandoned streets. Cinematic, photorealistic, historically accurate, 16:9, no readable text, no logos, no people."
  },
  {
-  "vo": "ملك عيلامي اسمه شوتروك ناخونتي هجم على بلاد الرافدين...",
+  "vo": "وبحدود سنة ألف ومية وخمسين قبل الميلاد، ملك عيلامي اسمه شوتروك ناخونتي هجم على بلاد الرافدين...",
   "img": "An Elamite army with chariots attacking a Mesopotamian city, smoke rising.",
   "part": 9,
   "prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon sandals, clean vector cel shading. All people in the image are drawn as these cartoon characters. King Hammurabi: long curly black Mesopotamian beard, tall rounded royal cap, fringed robe draped over one shoulder. An Elamite army with chariots attacking a Mesopotamian city, smoke rising. Historically accurate ancient Babylon, Mesopotamia, around 1750 BC. Cinematic lighting. Wide shot, 16:9, no readable text, no logos.",
@@ -225,7 +225,7 @@
   "prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon sandals, clean vector cel shading. All people in the image are drawn as these cartoon characters. King Hammurabi: long curly black Mesopotamian beard, tall rounded royal cap, fringed robe draped over one shoulder. Soldiers dragging the tall black stele on wooden rollers across the desert toward a distant city. Historically accurate ancient Babylon, Mesopotamia, around 1750 BC. Cinematic lighting. Wide shot, 16:9, no readable text, no logos."
  },
  {
-  "vo": "وهناك... اندفنت تحت التراب. ونسيها العالم ثلاث آلاف سنة.",
+  "vo": "وهناك... انهدمت المدينة، والمسلة اندفنت تحت التراب. ونسيها العالم ثلاث آلاف سنة.",
   "img": "The black stele lying buried in sand and ruins, only its top visible, centuries passing, desert.",
   "part": 10,
   "prompt": "The black stele lying buried in sand and ruins, only its top visible, centuries passing, desert. Cinematic, photorealistic, historically accurate, 16:9, no readable text, no logos, no people."
@@ -239,7 +239,7 @@
   "day": "١٩٠١م"
  },
  {
-  "vo": "لگوا قطع حجر أسود... ولما ركبوها، انصدموا.",
+  "vo": "لگوا ثلاث قطع حجر أسود كبيرة... ولما ركبوها على بعض، انصدموا.",
   "img": "Archaeologists brushing dust off broken pieces of the black stele, astonished expressions.",
   "part": 10,
   "prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon sandals, clean vector cel shading. All people in the image are drawn as these cartoon characters. King Hammurabi: long curly black Mesopotamian beard, tall rounded royal cap, fringed robe draped over one shoulder. Archaeologists brushing dust off broken pieces of the black stele, astonished expressions. Historically accurate ancient Babylon, Mesopotamia, around 1750 BC. Cinematic lighting. Wide shot, 16:9, no readable text, no logos.",
@@ -258,7 +258,7 @@
   "prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon sandals, clean vector cel shading. All people in the image are drawn as these cartoon characters. King Hammurabi: long curly black Mesopotamian beard, tall rounded royal cap, fringed robe draped over one shoulder. The tall black stele displayed in a museum hall in Paris with tourists looking at it. Historically accurate ancient Babylon, Mesopotamia, around 1750 BC. Cinematic lighting. Wide shot, 16:9, no readable text, no logos."
  },
  {
-  "vo": "وملايين الناس يزورونها كل سنة... بس الأصل مو بالعراق.",
+  "vo": "وملايين الناس يزورونها كل سنة، ويتصورون وياها... بس الأصل مو بالعراق.",
   "img": "Crowds of tourists photographing the black stele in a museum, an Iraqi visitor among them looking sad.",
   "part": 11,
   "prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon sandals, clean vector cel shading. All people in the image are drawn as these cartoon characters. King Hammurabi: long curly black Mesopotamian beard, tall rounded royal cap, fringed robe draped over one shoulder. Crowds of tourists photographing the black stele in a museum, an Iraqi visitor among them looking sad. Historically accurate ancient Babylon, Mesopotamia, around 1750 BC. Cinematic lighting. Wide shot, 16:9, no readable text, no logos."
@@ -270,7 +270,7 @@
   "prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon sandals, clean vector cel shading. All people in the image are drawn as these cartoon characters. King Hammurabi: long curly black Mesopotamian beard, tall rounded royal cap, fringed robe draped over one shoulder. A replica of the black stele in the Iraq Museum in Baghdad with Iraqi schoolchildren visiting. Historically accurate ancient Babylon, Mesopotamia, around 1750 BC. Cinematic lighting. Wide shot, 16:9, no readable text, no logos."
  },
  {
-  "vo": "وصورة حمورابي اليوم محفورة حتى ببرلمانات بالعالم... لأنه من أوائل اللي كتبوا القانون.",
+  "vo": "وصورة حمورابي اليوم محفورة حتى بالكونغرس الأمريكي... ويا أشهر اللي كتبوا القوانين بالتاريخ.",
   "img": "A marble relief portrait of an ancient bearded lawgiver on the wall of a grand modern government chamber.",
   "part": 11,
   "prompt": "A marble relief portrait of an ancient bearded lawgiver on the wall of a grand modern government chamber. Cinematic, photorealistic, historically accurate, 16:9, no readable text, no logos, no people."

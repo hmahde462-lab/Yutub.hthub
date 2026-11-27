@@ -1,6 +1,6 @@
 [
  {
-  "vo": "تخيّل... خليفة يغفى بليلة، ويشوف بالحلم رجال غريب، يگله: آني أرسطو.",
+  "vo": "تخيّل... خليفة يغفى بليلة، ويشوف بالحلم رجال غريب، أبيض الوجه، گاعد على كرسي... يگله: آني أرسطو.",
   "img": "Caliph al-Ma'mun sleeping on cushions in a moonlit palace room, a glowing ghostly figure of an ancient Greek philosopher in a toga appearing beside him in a dream.",
   "part": 1,
   "prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon shoes, clean vector cel shading. All people in the image are drawn as these cartoon characters. Caliph al-Ma'mun: black beard, black Abbasid turban, rich dark robe with gold trim. Al-Khwarizmi: grey beard, white turban, blue scholar robe. Caliph al-Ma'mun sleeping on cushions in a moonlit palace room, a glowing ghostly figure of an ancient Greek philosopher in a toga appearing beside him in a dream. Historically accurate 9th century Abbasid Baghdad. Cinematic lighting. Wide shot, 16:9, no readable text, no logos.",
@@ -19,7 +19,7 @@
   "hud": "title"
  },
  {
-  "vo": "شلون مدينة وحدة صارت عاصمة العلم بالعالم كله؟ وشنو اخترعوا بيها؟ وليش لهسه نستخدم شغلهم كل يوم؟ هاي قصة حقيقية.",
+  "vo": "شلون مدينة وحدة صارت عاصمة العلم بالعالم كله؟ وشنو اخترعوا بيها؟ وليش لهسه نستخدم شغلهم كل يوم، حتى بموبايلك؟ هاي قصة حقيقية.",
   "img": "Old Arabic manuscripts, an astrolabe, an ink pot and a reed pen on a wooden desk lit by an oil lamp.",
   "part": 1,
   "prompt": "Old Arabic manuscripts, an astrolabe, an ink pot and a reed pen on a wooden desk lit by an oil lamp. Cinematic, photorealistic, historically accurate, 16:9, no readable text, no logos, no people."
@@ -33,19 +33,19 @@
   "day": "٧٦٢م"
  },
  {
-  "vo": "سمّاها: مدينة السلام. وبسرعة صارت أكبر مدينة بالعالم.",
+  "vo": "سمّاها: مدينة السلام. وبيها أربع أبواب، ونص المدينة قصر الخليفة وجامع كبير... وبسرعة صارت أكبر مدينة بالعالم.",
   "img": "Busy Abbasid Baghdad streets full of merchants, camels, boats on the Tigris, domes and minarets.",
   "part": 2,
   "prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon shoes, clean vector cel shading. All people in the image are drawn as these cartoon characters. Caliph al-Ma'mun: black beard, black Abbasid turban, rich dark robe with gold trim. Al-Khwarizmi: grey beard, white turban, blue scholar robe. Busy Abbasid Baghdad streets full of merchants, camels, boats on the Tigris, domes and minarets. Historically accurate 9th century Abbasid Baghdad. Cinematic lighting. Wide shot, 16:9, no readable text, no logos."
  },
  {
-  "vo": "وبهديك الأيام، وصل سر جديد من الصين: صناعة الورق.",
+  "vo": "وبهديك الأيام، وصل سر جديد من الصين، يگولون عن طريق أسرى حرب: صناعة الورق.",
   "img": "Workers in an early paper mill pressing pulp into sheets and hanging them to dry, water wheel turning.",
   "part": 2,
   "prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon shoes, clean vector cel shading. All people in the image are drawn as these cartoon characters. Caliph al-Ma'mun: black beard, black Abbasid turban, rich dark robe with gold trim. Al-Khwarizmi: grey beard, white turban, blue scholar robe. Workers in an early paper mill pressing pulp into sheets and hanging them to dry, water wheel turning. Historically accurate 9th century Abbasid Baghdad. Cinematic lighting. Wide shot, 16:9, no readable text, no logos."
  },
  {
-  "vo": "الورق كان أرخص من الجلد بهواية... فصار الكتاب بإيد كل واحد.",
+  "vo": "الورق كان أرخص من الجلد بهواية... فصار الكتاب بإيد كل واحد، وانفتحت ببغداد أسواق كاملة بس للكتب.",
   "img": "A busy Baghdad book market with stalls full of paper books and scribes copying manuscripts.",
   "part": 2,
   "prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon shoes, clean vector cel shading. All people in the image are drawn as these cartoon characters. Caliph al-Ma'mun: black beard, black Abbasid turban, rich dark robe with gold trim. Al-Khwarizmi: grey beard, white turban, blue scholar robe. A busy Baghdad book market with stalls full of paper books and scribes copying manuscripts. Historically accurate 9th century Abbasid Baghdad. Cinematic lighting. Wide shot, 16:9, no readable text, no logos."
@@ -57,7 +57,7 @@
   "prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon shoes, clean vector cel shading. All people in the image are drawn as these cartoon characters. Caliph al-Ma'mun: black beard, black Abbasid turban, rich dark robe with gold trim. Al-Khwarizmi: grey beard, white turban, blue scholar robe. Caliph Harun al-Rashid (white turban, brown beard, golden robe) walking among tall shelves of manuscripts with librarians. Historically accurate 9th century Abbasid Baghdad. Cinematic lighting. Wide shot, 16:9, no readable text, no logos."
  },
  {
-  "vo": "وبعده إجه ابنه المأمون... وكان مجنون بالعلم.",
+  "vo": "وبعده إجه ابنه المأمون... وكان مجنون بالعلم. يقرا، ويناقش العلماء، ويسهر على الكتب.",
   "img": "Al-Ma'mun sitting cross-legged reading a large manuscript surrounded by piles of books, eager expression.",
   "part": 3,
   "prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon shoes, clean vector cel shading. All people in the image are drawn as these cartoon characters. Caliph al-Ma'mun: black beard, black Abbasid turban, rich dark robe with gold trim. Al-Khwarizmi: grey beard, white turban, blue scholar robe. Al-Ma'mun sitting cross-legged reading a large manuscript surrounded by piles of books, eager expression. Historically accurate 9th century Abbasid Baghdad. Cinematic lighting. Wide shot, 16:9, no readable text, no logos."
@@ -69,7 +69,7 @@
   "prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon shoes, clean vector cel shading. All people in the image are drawn as these cartoon characters. Caliph al-Ma'mun: black beard, black Abbasid turban, rich dark robe with gold trim. Al-Khwarizmi: grey beard, white turban, blue scholar robe. Al-Ma'mun receiving Byzantine envoys who present chests full of old Greek scrolls instead of gold, his eyes shining. Historically accurate 9th century Abbasid Baghdad. Cinematic lighting. Wide shot, 16:9, no readable text, no logos."
  },
  {
-  "vo": "وصارت القوافل تجيب كتب من اليونان، والهند، وفارس... لبغداد.",
+  "vo": "وصارت القوافل تجيب كتب من اليونان، والهند، وفارس... لبغداد. كتب طب، وفلك، وفلسفة، ورياضيات.",
   "img": "A camel caravan arriving at the gates of Baghdad loaded with chests of scrolls and books, sunset.",
   "part": 3,
   "prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon shoes, clean vector cel shading. All people in the image are drawn as these cartoon characters. Caliph al-Ma'mun: black beard, black Abbasid turban, rich dark robe with gold trim. Al-Khwarizmi: grey beard, white turban, blue scholar robe. A camel caravan arriving at the gates of Baghdad loaded with chests of scrolls and books, sunset. Historically accurate 9th century Abbasid Baghdad. Cinematic lighting. Wide shot, 16:9, no readable text, no logos."
@@ -81,7 +81,7 @@
   "prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon shoes, clean vector cel shading. All people in the image are drawn as these cartoon characters. Caliph al-Ma'mun: black beard, black Abbasid turban, rich dark robe with gold trim. Al-Khwarizmi: grey beard, white turban, blue scholar robe. A large hall in the House of Wisdom with translators of different religions and clothing working together at long tables. Historically accurate 9th century Abbasid Baghdad. Cinematic lighting. Wide shot, 16:9, no readable text, no logos."
  },
  {
-  "vo": "أشهرهم طبيب مسيحي اسمه حنين بن إسحاق... ترجم كتب الطب اليونانية كلها تقريباً.",
+  "vo": "أشهرهم طبيب مسيحي اسمه حنين بن إسحاق... يحچي أربع لغات، وترجم كتب الطب اليونانية كلها تقريباً.",
   "img": "Hunayn ibn Ishaq (Christian physician, short dark beard, dark robe and small cap) translating a Greek medical manuscript with anatomical drawings.",
   "part": 4,
   "prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon shoes, clean vector cel shading. All people in the image are drawn as these cartoon characters. Caliph al-Ma'mun: black beard, black Abbasid turban, rich dark robe with gold trim. Al-Khwarizmi: grey beard, white turban, blue scholar robe. Hunayn ibn Ishaq (Christian physician, short dark beard, dark robe and small cap) translating a Greek medical manuscript with anatomical drawings. Historically accurate 9th century Abbasid Baghdad. Cinematic lighting. Wide shot, 16:9, no readable text, no logos."
@@ -94,7 +94,7 @@
   "sfx": "hit"
  },
  {
-  "vo": "وبيت الحكمة ما بقى مكتبة بس... صار جامعة، ومختبر، ومرصد.",
+  "vo": "وبيت الحكمة ما بقى مكتبة بس... صار جامعة، ومختبر، ومرصد. والعلماء يجون من كل مكان، ويستلمون رواتب من الدولة.",
   "img": "Scholars debating in a courtyard of the House of Wisdom, some with astrolabes, some drawing geometry in sand.",
   "part": 4,
   "prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon shoes, clean vector cel shading. All people in the image are drawn as these cartoon characters. Caliph al-Ma'mun: black beard, black Abbasid turban, rich dark robe with gold trim. Al-Khwarizmi: grey beard, white turban, blue scholar robe. Scholars debating in a courtyard of the House of Wisdom, some with astrolabes, some drawing geometry in sand. Historically accurate 9th century Abbasid Baghdad. Cinematic lighting. Wide shot, 16:9, no readable text, no logos."
@@ -106,7 +106,7 @@
   "prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon shoes, clean vector cel shading. All people in the image are drawn as these cartoon characters. Caliph al-Ma'mun: black beard, black Abbasid turban, rich dark robe with gold trim. Al-Khwarizmi: grey beard, white turban, blue scholar robe. Al-Khwarizmi writing in a manuscript by candlelight, surrounded by geometric drawings and calculations. Historically accurate 9th century Abbasid Baghdad. Cinematic lighting. Wide shot, 16:9, no readable text, no logos."
  },
  {
-  "vo": "كتب كتاب اسمه: الجبر والمقابلة... أول كتاب يحل المعادلات بطريقة منظمة.",
+  "vo": "كتب كتاب اسمه: الجبر والمقابلة... أول كتاب يحل المعادلات بطريقة منظمة. وكلمة الجبر نفسها، اللي تنحچى بكل لغات العالم، طلعت من هذا الكتاب.",
   "img": "Close-up of al-Khwarizmi's hands drawing squares and geometric diagrams to solve an equation, ink and paper.",
   "part": 5,
   "prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon shoes, clean vector cel shading. All people in the image are drawn as these cartoon characters. Caliph al-Ma'mun: black beard, black Abbasid turban, rich dark robe with gold trim. Al-Khwarizmi: grey beard, white turban, blue scholar robe. Close-up of al-Khwarizmi's hands drawing squares and geometric diagrams to solve an equation, ink and paper. Historically accurate 9th century Abbasid Baghdad. Cinematic lighting. Wide shot, 16:9, no readable text, no logos."
@@ -124,7 +124,7 @@
   "prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon shoes, clean vector cel shading. All people in the image are drawn as these cartoon characters. Caliph al-Ma'mun: black beard, black Abbasid turban, rich dark robe with gold trim. Al-Khwarizmi: grey beard, white turban, blue scholar robe. A modern Iraqi classroom with students solving algebra, a ghostly image of al-Khwarizmi standing behind the teacher. Historically accurate 9th century Abbasid Baghdad. Cinematic lighting. Wide shot, 16:9, no readable text, no logos."
  },
  {
-  "vo": "وثلاث إخوة، اسمهم بنو موسى... كانوا يخترعون آلات ما شافها أحد.",
+  "vo": "وثلاث إخوة، اسمهم بنو موسى... أبوهم جان قاطع طريق! بس المأمون رباهم، وصاروا يخترعون آلات ما شافها أحد.",
   "img": "Three young brothers in Abbasid clothes working on brass gears and mechanisms in a workshop.",
   "part": 6,
   "prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon shoes, clean vector cel shading. All people in the image are drawn as these cartoon characters. Caliph al-Ma'mun: black beard, black Abbasid turban, rich dark robe with gold trim. Al-Khwarizmi: grey beard, white turban, blue scholar robe. Three young brothers in Abbasid clothes working on brass gears and mechanisms in a workshop. Historically accurate 9th century Abbasid Baghdad. Cinematic lighting. Wide shot, 16:9, no readable text, no logos."
@@ -154,7 +154,7 @@
   "prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon shoes, clean vector cel shading. All people in the image are drawn as these cartoon characters. Caliph al-Ma'mun: black beard, black Abbasid turban, rich dark robe with gold trim. Al-Khwarizmi: grey beard, white turban, blue scholar robe. Al-Kindi (elderly scholar, white beard, grey turban) writing at a desk full of books, thoughtful. Historically accurate 9th century Abbasid Baghdad. Cinematic lighting. Wide shot, 16:9, no readable text, no logos."
  },
  {
-  "vo": "الكندي كتب بكل شي: الفلسفة، والطب، والموسيقى، والفلك.",
+  "vo": "الكندي كتب أكثر من مئتين وخمسين كتاب: بالفلسفة، والطب، والموسيقى، والفلك.",
   "img": "Al-Kindi surrounded by an oud, an astrolabe, medicine jars and books, explaining to students.",
   "part": 7,
   "prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon shoes, clean vector cel shading. All people in the image are drawn as these cartoon characters. Caliph al-Ma'mun: black beard, black Abbasid turban, rich dark robe with gold trim. Al-Khwarizmi: grey beard, white turban, blue scholar robe. Al-Kindi surrounded by an oud, an astrolabe, medicine jars and books, explaining to students. Historically accurate 9th century Abbasid Baghdad. Cinematic lighting. Wide shot, 16:9, no readable text, no logos."
@@ -179,7 +179,7 @@
   "prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon shoes, clean vector cel shading. All people in the image are drawn as these cartoon characters. Caliph al-Ma'mun: black beard, black Abbasid turban, rich dark robe with gold trim. Al-Khwarizmi: grey beard, white turban, blue scholar robe. Al-Ma'mun looking at a large globe-like astronomical model with scholars around him, curious. Historically accurate 9th century Abbasid Baghdad. Cinematic lighting. Wide shot, 16:9, no readable text, no logos."
  },
  {
-  "vo": "دز فريق علماء لصحراء سنجار... ومعاهم حبال وعصي وآلات قياس.",
+  "vo": "دز فريق علماء لصحراء سنجار، بشمال العراق... ومعاهم حبال وعصي وآلات قياس.",
   "img": "A team of 9th century scholars with ropes, wooden rods and astrolabes walking across a flat desert plain.",
   "part": 8,
   "prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon shoes, clean vector cel shading. All people in the image are drawn as these cartoon characters. Caliph al-Ma'mun: black beard, black Abbasid turban, rich dark robe with gold trim. Al-Khwarizmi: grey beard, white turban, blue scholar robe. A team of 9th century scholars with ropes, wooden rods and astrolabes walking across a flat desert plain. Historically accurate 9th century Abbasid Baghdad. Cinematic lighting. Wide shot, 16:9, no readable text, no logos."
@@ -191,7 +191,7 @@
   "prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon shoes, clean vector cel shading. All people in the image are drawn as these cartoon characters. Caliph al-Ma'mun: black beard, black Abbasid turban, rich dark robe with gold trim. Al-Khwarizmi: grey beard, white turban, blue scholar robe. Scholars at night in the desert measuring a star's angle with an astrolabe, stars filling the sky. Historically accurate 9th century Abbasid Baghdad. Cinematic lighting. Wide shot, 16:9, no readable text, no logos."
  },
  {
-  "vo": "والنتيجة طلعت قريبة هواية من الحقيقة... قبل ما أحد يطلع للفضاء بألف سنة.",
+  "vo": "والنتيجة طلعت قريبة هواية من الحقيقة: محيط الأرض حوالي أربعين ألف كيلو... قبل ما أحد يطلع للفضاء بألف سنة.",
   "img": "The Earth seen from space at sunrise, a faint golden line of measurement drawn across Iraq.",
   "part": 8,
   "prompt": "The Earth seen from space at sunrise, a faint golden line of measurement drawn across Iraq. Cinematic, photorealistic, historically accurate, 16:9, no readable text, no logos, no people."
@@ -209,13 +209,13 @@
   "prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon shoes, clean vector cel shading. All people in the image are drawn as these cartoon characters. Caliph al-Ma'mun: black beard, black Abbasid turban, rich dark robe with gold trim. Al-Khwarizmi: grey beard, white turban, blue scholar robe. A starry night sky over Baghdad with bright named stars glowing, a scholar pointing at them. Historically accurate 9th century Abbasid Baghdad. Cinematic lighting. Wide shot, 16:9, no readable text, no logos."
  },
  {
-  "vo": "بغداد ذاك الوقت كانت مثل وادي السيليكون هسه... كل عقل ذكي بالعالم يحلم يجيها.",
+  "vo": "بغداد ذاك الوقت كانت مثل وادي السيليكون هسه... كل عقل ذكي بالعالم يحلم يجيها، ويشتغل بيها.",
   "img": "Travelers from many lands arriving at Baghdad with books under their arms, the city glowing at sunset.",
   "part": 9,
   "prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon shoes, clean vector cel shading. All people in the image are drawn as these cartoon characters. Caliph al-Ma'mun: black beard, black Abbasid turban, rich dark robe with gold trim. Al-Khwarizmi: grey beard, white turban, blue scholar robe. Travelers from many lands arriving at Baghdad with books under their arms, the city glowing at sunset. Historically accurate 9th century Abbasid Baghdad. Cinematic lighting. Wide shot, 16:9, no readable text, no logos."
  },
  {
-  "vo": "واستمر هذا العلم مئات السنين...",
+  "vo": "واستمر هذا العلم مئات السنين... جيل يسلّم جيل، وكتاب يجيب كتاب.",
   "img": "Wide golden-hour shot of Baghdad and the Tigris with the House of Wisdom glowing, peaceful.",
   "part": 9,
   "prompt": "Wide golden-hour shot of Baghdad and the Tigris with the House of Wisdom glowing, peaceful. Cinematic, photorealistic, historically accurate, 16:9, no readable text, no logos, no people."
@@ -229,14 +229,14 @@
   "day": "١٢٥٨م"
  },
  {
-  "vo": "المغول، بقيادة هولاكو... حاصروا بغداد ودخلوها.",
+  "vo": "المغول، بقيادة هولاكو... حاصروا بغداد بجيش ضخم، وبعد أسبوعين دخلوها.",
   "img": "13th century Mongol horsemen with fur hats and bows storming the gates of Baghdad, smoke and fire.",
   "part": 10,
   "prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon shoes, clean vector cel shading. All people in the image are drawn as these cartoon characters. Caliph al-Ma'mun: black beard, black Abbasid turban, rich dark robe with gold trim. Al-Khwarizmi: grey beard, white turban, blue scholar robe. 13th century Mongol horsemen with fur hats and bows storming the gates of Baghdad, smoke and fire. Historically accurate 9th century Abbasid Baghdad. Cinematic lighting. Wide shot, 16:9, no readable text, no logos.",
   "sfx": "boom"
  },
  {
-  "vo": "حرگوا المدينة، ودمروا بيت الحكمة.",
+  "vo": "حرگوا المدينة، وقتلوا آلاف الناس، ودمروا بيت الحكمة.",
   "img": "A great library burning, flames climbing the shelves of manuscripts, pages flying in the hot air.",
   "part": 10,
   "prompt": "A great library burning, flames climbing the shelves of manuscripts, pages flying in the hot air. Cinematic, photorealistic, historically accurate, 16:9, no readable text, no logos, no people."
@@ -255,7 +255,7 @@
   "prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon shoes, clean vector cel shading. All people in the image are drawn as these cartoon characters. Caliph al-Ma'mun: black beard, black Abbasid turban, rich dark robe with gold trim. Al-Khwarizmi: grey beard, white turban, blue scholar robe. A 13th century Persian scholar with a grey beard and white turban loading manuscripts onto camels at night, a burning city behind. Historically accurate 9th century Abbasid Baghdad. Cinematic lighting. Wide shot, 16:9, no readable text, no logos."
  },
  {
-  "vo": "والكتب اللي انترجمت ببغداد، وصلت للأندلس... وبطليطلة رجعوا ترجموها للاتيني.",
+  "vo": "والكتب اللي انترجمت ببغداد، وصلت للأندلس... وبطليطلة رجعوا ترجموها للاتيني، ومنها بدت النهضة بأوروبا.",
   "img": "Medieval scholars translating Arabic manuscripts into Latin at long tables in a stone library in Toledo, candlelight.",
   "part": 11,
   "prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon shoes, clean vector cel shading. All people in the image are drawn as these cartoon characters. Caliph al-Ma'mun: black beard, black Abbasid turban, rich dark robe with gold trim. Al-Khwarizmi: grey beard, white turban, blue scholar robe. Medieval scholars translating Arabic manuscripts into Latin at long tables in a stone library in Toledo, candlelight. Historically accurate 9th century Abbasid Baghdad. Cinematic lighting. Wide shot, 16:9, no readable text, no logos."
@@ -273,7 +273,7 @@
   "prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon shoes, clean vector cel shading. All people in the image are drawn as these cartoon characters. Caliph al-Ma'mun: black beard, black Abbasid turban, rich dark robe with gold trim. Al-Khwarizmi: grey beard, white turban, blue scholar robe. A medieval European merchant learning to write numbers on parchment from an Arab trader, both smiling. Historically accurate 9th century Abbasid Baghdad. Cinematic lighting. Wide shot, 16:9, no readable text, no logos."
  },
  {
-  "vo": "يعني كل مرة تفتح موبايلك، وكل مرة تحسب... علم بيت الحكمة وياك.",
+  "vo": "يعني كل مرة تفتح موبايلك، وكل مرة تحسب، وكل مرة تبحث بالإنترنت... علم بيت الحكمة وياك.",
   "img": "A modern Iraqi young man holding a glowing smartphone, faint golden Arabic manuscripts and geometric diagrams floating around it.",
   "part": 12,
   "prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon shoes, clean vector cel shading. All people in the image are drawn as these cartoon characters. Caliph al-Ma'mun: black beard, black Abbasid turban, rich dark robe with gold trim. Al-Khwarizmi: grey beard, white turban, blue scholar robe. A modern Iraqi young man holding a glowing smartphone, faint golden Arabic manuscripts and geometric diagrams floating around it. Historically accurate 9th century Abbasid Baghdad. Cinematic lighting. Wide shot, 16:9, no readable text, no logos."
