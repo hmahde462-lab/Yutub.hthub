@@ -1,0 +1,297 @@
+[
+ {
+  "vo": "تخيّل... ممر ضيق بين جبل وبحر. على جهة، جيش ضخم ما ينعد. وعلى الجهة الثانية... ثلاثمية جندي بس، يمشطون شعرهم بهدوء، ويستنون الموت.",
+  "img": "A narrow coastal mountain pass at dawn, a small line of Spartan soldiers with red cloaks standing calmly, a vast army dust cloud on the horizon.",
+  "part": 1,
+  "prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon sandals, clean vector cel shading. All people in the image are drawn as these cartoon characters. King Leonidas: short black beard, bronze Corinthian helmet with a red crest, red cloak, bronze breastplate, round bronze shield. Spartan soldiers: red cloaks, bronze helmets, round bronze shields and long spears. A narrow coastal mountain pass at dawn, a small line of Spartan soldiers with red cloaks standing calmly, a vast army dust cloud on the horizon. Historically accurate ancient Greece, 480 BC. Cinematic lighting. Wide shot, 16:9, no readable text, no logos."
+ },
+ {
+  "vo": "والملك العدو يدز رسول يگلهم: سلّموا سلاحكم... وانتو أحرار. والجواب جان كلمتين بس: تعال... وخذها.",
+  "img": "A Persian messenger on horseback facing King Leonidas, who holds his spear firmly, Spartan soldiers behind him.",
+  "part": 1,
+  "prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon sandals, clean vector cel shading. All people in the image are drawn as these cartoon characters. King Leonidas: short black beard, bronze Corinthian helmet with a red crest, red cloak, bronze breastplate, round bronze shield. Spartan soldiers: red cloaks, bronze helmets, round bronze shields and long spears. Persian messenger: colorful robes, tall hat. A Persian messenger on horseback facing King Leonidas, who holds his spear firmly, Spartan soldiers behind him. Historically accurate ancient Greece, 480 BC. Cinematic lighting. Wide shot, 16:9, no readable text, no logos."
+ },
+ {
+  "vo": "معركة الثلاثمية إسبرطي.",
+  "img": "",
+  "part": 1,
+  "hud": "title"
+ },
+ {
+  "vo": "منو هذوله الإسبرطيين؟ وشلون ثلاثمية رجال وقفوا گدام أكبر جيش بالعالم؟ وليش خسارتهم صارت أشهر من انتصارات غيرهم؟ هاي قصة حقيقية.",
+  "img": "Ancient Greek temple ruins on a hill at sunset, a bronze Spartan helmet resting on a stone.",
+  "part": 1,
+  "prompt": "Ancient Greek temple ruins on a hill at sunset, a bronze Spartan helmet resting on a stone. Cinematic, photorealistic, historically accurate, 16:9, no readable text, no logos, no people."
+ },
+ {
+  "vo": "اليونان، قبل حوالي ألفين وخمسمية سنة... ما جانت دولة وحدة. جانت مدن صغيرة، كل وحدة إلها جيشها وقوانينها.",
+  "img": "Aerial view of ancient Greek city-states with temples, harbors and olive groves among mountains.",
+  "part": 2,
+  "prompt": "Aerial view of ancient Greek city-states with temples, harbors and olive groves among mountains. Cinematic, photorealistic, historically accurate, 16:9, no readable text, no logos, no people.",
+  "hud": "day",
+  "day": "٤٨٠ ق.م"
+ },
+ {
+  "vo": "وأغرب مدينة بيهم: إسبرطة. مدينة بلا سور... لأنهم يگولون: سورنا هو رجالنا.",
+  "img": "The ancient town of Sparta with simple buildings and no city walls, Spartan soldiers training in a field outside.",
+  "part": 2,
+  "prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon sandals, clean vector cel shading. All people in the image are drawn as these cartoon characters. King Leonidas: short black beard, bronze Corinthian helmet with a red crest, red cloak, bronze breastplate, round bronze shield. Spartan soldiers: red cloaks, bronze helmets, round bronze shields and long spears. The ancient town of Sparta with simple buildings and no city walls, Spartan soldiers training in a field outside. Historically accurate ancient Greece, 480 BC. Cinematic lighting. Wide shot, 16:9, no readable text, no logos."
+ },
+ {
+  "vo": "الطفل الإسبرطي، بعمر سبع سنين، ياخذوه من أهله... ويدخل معسكر تدريب قاسي، اسمه الأغوغي.",
+  "img": "A crying 7-year-old Spartan boy being led away by a stern instructor from his mother, other boys training in the background.",
+  "part": 2,
+  "prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon sandals, clean vector cel shading. All people in the image are drawn as these cartoon characters. King Leonidas: short black beard, bronze Corinthian helmet with a red crest, red cloak, bronze breastplate, round bronze shield. Spartan soldiers: red cloaks, bronze helmets, round bronze shields and long spears. A crying 7-year-old Spartan boy being led away by a stern instructor from his mother, other boys training in the background. Historically accurate ancient Greece, 480 BC. Cinematic lighting. Wide shot, 16:9, no readable text, no logos."
+ },
+ {
+  "vo": "يمشي حافي، وياكل قليل، وينام على القصب... حتى يتعلم الصبر والألم. ومن يكبر، يصير جندي ما يعرف غير القتال.",
+  "img": "Spartan boys in simple tunics training barefoot with wooden swords and shields in a dusty field, an instructor watching.",
+  "part": 2,
+  "prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon sandals, clean vector cel shading. All people in the image are drawn as these cartoon characters. King Leonidas: short black beard, bronze Corinthian helmet with a red crest, red cloak, bronze breastplate, round bronze shield. Spartan soldiers: red cloaks, bronze helmets, round bronze shields and long spears. Spartan boys in simple tunics training barefoot with wooden swords and shields in a dusty field, an instructor watching. Historically accurate ancient Greece, 480 BC. Cinematic lighting. Wide shot, 16:9, no readable text, no logos."
+ },
+ {
+  "vo": "والأم الإسبرطية جانت تنطي ابنها الدرع قبل الحرب، وتگله: ارجع بيه... لو عليه.",
+  "img": "A Spartan mother handing a round bronze shield to her son in red cloak at the door of a stone house, serious faces.",
+  "part": 3,
+  "prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon sandals, clean vector cel shading. All people in the image are drawn as these cartoon characters. King Leonidas: short black beard, bronze Corinthian helmet with a red crest, red cloak, bronze breastplate, round bronze shield. Spartan soldiers: red cloaks, bronze helmets, round bronze shields and long spears. A Spartan mother handing a round bronze shield to her son in red cloak at the door of a stone house, serious faces. Historically accurate ancient Greece, 480 BC. Cinematic lighting. Wide shot, 16:9, no readable text, no logos."
+ },
+ {
+  "vo": "يعني ارجع منتصر وانت شايل درعك... لو ارجع شهيد محمول فوگه. بس لا ترجع هارب.",
+  "img": "Close-up of a round bronze shield with a Greek lambda symbol leaning on a stone wall, red cloak draped over it.",
+  "part": 3,
+  "prompt": "Close-up of a round bronze shield with a Greek lambda symbol leaning on a stone wall, red cloak draped over it. Cinematic, photorealistic, historically accurate, 16:9, no readable text, no logos, no people."
+ },
+ {
+  "vo": "وبنفس الوقت، بالشرق، جانت أكو أكبر إمبراطورية بالعالم: الإمبراطورية الفارسية.",
+  "img": "A grand Persian palace at Persepolis with tall columns, guards and golden decorations.",
+  "part": 3,
+  "prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon sandals, clean vector cel shading. All people in the image are drawn as these cartoon characters. King Xerxes of Persia: curly black beard, tall golden crown, rich purple and gold robes. Persian soldiers: colorful long robes, wicker shields, bows and short spears. A grand Persian palace at Persepolis with tall columns, guards and golden decorations. Historically accurate ancient Greece, 480 BC. Cinematic lighting. Wide shot, 16:9, no readable text, no logos."
+ },
+ {
+  "vo": "وملكها خشايارشا... قرر يحتل اليونان كلها، وينتقم لهزيمة أبوه قبل عشر سنين.",
+  "img": "King Xerxes sitting on a golden throne in his palace, pointing at a map table, generals bowing.",
+  "part": 3,
+  "prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon sandals, clean vector cel shading. All people in the image are drawn as these cartoon characters. King Xerxes of Persia: curly black beard, tall golden crown, rich purple and gold robes. Persian soldiers: colorful long robes, wicker shields, bows and short spears. King Xerxes sitting on a golden throne in his palace, pointing at a map table, generals bowing. Historically accurate ancient Greece, 480 BC. Cinematic lighting. Wide shot, 16:9, no readable text, no logos."
+ },
+ {
+  "vo": "جمع جيش ضخم... المؤرخين القدماء گالوا مليون، والمؤرخين اليوم يگولون يمكن مئة لـ ثلاثمية ألف. بس بكل الأحوال... جيش ما ينعد.",
+  "img": "A massive Persian army marching across a plain, countless soldiers, cavalry and banners stretching to the horizon.",
+  "part": 4,
+  "prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon sandals, clean vector cel shading. All people in the image are drawn as these cartoon characters. King Xerxes of Persia: curly black beard, tall golden crown, rich purple and gold robes. Persian soldiers: colorful long robes, wicker shields, bows and short spears. A massive Persian army marching across a plain, countless soldiers, cavalry and banners stretching to the horizon. Historically accurate ancient Greece, 480 BC. Cinematic lighting. Wide shot, 16:9, no readable text, no logos."
+ },
+ {
+  "vo": "ويگولون جيشه جان كبير لدرجة يشربون الأنهار لحد ما تنشف!",
+  "img": "Persian soldiers and horses drinking from a river that is nearly dry, the army stretching behind them.",
+  "part": 4,
+  "prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon sandals, clean vector cel shading. All people in the image are drawn as these cartoon characters. King Xerxes of Persia: curly black beard, tall golden crown, rich purple and gold robes. Persian soldiers: colorful long robes, wicker shields, bows and short spears. Persian soldiers and horses drinking from a river that is nearly dry, the army stretching behind them. Historically accurate ancient Greece, 480 BC. Cinematic lighting. Wide shot, 16:9, no readable text, no logos."
+ },
+ {
+  "vo": "وبنى جسر من السفن على البحر... حتى يعبر جيشه من آسيا لأوروبا.",
+  "img": "A bridge made of hundreds of ships tied together across a strait, the Persian army crossing it.",
+  "part": 4,
+  "prompt": "A bridge made of hundreds of ships tied together across a strait, the Persian army crossing it. Cinematic, photorealistic, historically accurate, 16:9, no readable text, no logos, no people."
+ },
+ {
+  "vo": "واليونانيين انصدموا... والكثير منهم استسلموا من الخوف.",
+  "img": "Worried Greek leaders arguing in a council hall, some throwing up their hands in despair.",
+  "part": 4,
+  "prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon sandals, clean vector cel shading. All people in the image are drawn as these cartoon characters. King Leonidas: short black beard, bronze Corinthian helmet with a red crest, red cloak, bronze breastplate, round bronze shield. Spartan soldiers: red cloaks, bronze helmets, round bronze shields and long spears. Worried Greek leaders arguing in a council hall, some throwing up their hands in despair. Historically accurate ancient Greece, 480 BC. Cinematic lighting. Wide shot, 16:9, no readable text, no logos."
+ },
+ {
+  "vo": "بس ملك إسبرطة، ليونيداس، گرر يوقفهم. وجان عمره ستين سنة تقريباً.",
+  "img": "King Leonidas standing in front of his house in Sparta, putting on his helmet, determined.",
+  "part": 5,
+  "prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon sandals, clean vector cel shading. All people in the image are drawn as these cartoon characters. King Leonidas: short black beard, bronze Corinthian helmet with a red crest, red cloak, bronze breastplate, round bronze shield. Spartan soldiers: red cloaks, bronze helmets, round bronze shields and long spears. King Leonidas standing in front of his house in Sparta, putting on his helmet, determined. Historically accurate ancient Greece, 480 BC. Cinematic lighting. Wide shot, 16:9, no readable text, no logos."
+ },
+ {
+  "vo": "وما گدر ياخذ كل جيش إسبرطة، لأن جان عدهم عيد ديني... فاختار ثلاثمية رجال بس. وكلهم عندهم ولد، حتى ما تنقطع عوائلهم.",
+  "img": "King Leonidas inspecting a line of 300 Spartan soldiers in red cloaks, choosing them one by one.",
+  "part": 5,
+  "prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon sandals, clean vector cel shading. All people in the image are drawn as these cartoon characters. King Leonidas: short black beard, bronze Corinthian helmet with a red crest, red cloak, bronze breastplate, round bronze shield. Spartan soldiers: red cloaks, bronze helmets, round bronze shields and long spears. King Leonidas inspecting a line of 300 Spartan soldiers in red cloaks, choosing them one by one. Historically accurate ancient Greece, 480 BC. Cinematic lighting. Wide shot, 16:9, no readable text, no logos."
+ },
+ {
+  "vo": "وانضموا إلهم جنود من مدن يونانية ثانية... فصار العدد حوالي سبع آلاف.",
+  "img": "Spartans marching with other Greek soldiers in different colored cloaks along a mountain road.",
+  "part": 5,
+  "prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon sandals, clean vector cel shading. All people in the image are drawn as these cartoon characters. King Leonidas: short black beard, bronze Corinthian helmet with a red crest, red cloak, bronze breastplate, round bronze shield. Spartan soldiers: red cloaks, bronze helmets, round bronze shields and long spears. Spartans marching with other Greek soldiers in different colored cloaks along a mountain road. Historically accurate ancient Greece, 480 BC. Cinematic lighting. Wide shot, 16:9, no readable text, no logos."
+ },
+ {
+  "vo": "واختار ليونيداس مكان ذكي: ممر ثيرموبيلي... يعني البوابات الحارة. ممر ضيق بين الجبل والبحر.",
+  "img": "A very narrow pass between steep cliffs and the sea at Thermopylae, hot springs steaming.",
+  "part": 5,
+  "prompt": "A very narrow pass between steep cliffs and the sea at Thermopylae, hot springs steaming. Cinematic, photorealistic, historically accurate, 16:9, no readable text, no logos, no people."
+ },
+ {
+  "vo": "بالممر الضيق، كثرة الجيش ما تفيد... لأن ما يگدرون يقاتلون إلا عدد قليل بنفس الوقت.",
+  "img": "Spartans in a tight shield wall in the narrow pass, only a few Persian soldiers able to reach them at once.",
+  "part": 6,
+  "prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon sandals, clean vector cel shading. All people in the image are drawn as these cartoon characters. King Leonidas: short black beard, bronze Corinthian helmet with a red crest, red cloak, bronze breastplate, round bronze shield. Spartan soldiers: red cloaks, bronze helmets, round bronze shields and long spears. Spartans in a tight shield wall in the narrow pass, only a few Persian soldiers able to reach them at once. Historically accurate ancient Greece, 480 BC. Cinematic lighting. Wide shot, 16:9, no readable text, no logos."
+ },
+ {
+  "vo": "وخشايارشا وصل، وشاف الإسبرطيين... يمشطون شعرهم، ويسوون رياضة! وضحك عليهم.",
+  "img": "Persian king Xerxes on a hill laughing, looking down at Spartans combing their long hair and exercising.",
+  "part": 6,
+  "prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon sandals, clean vector cel shading. All people in the image are drawn as these cartoon characters. King Leonidas: short black beard, bronze Corinthian helmet with a red crest, red cloak, bronze breastplate, round bronze shield. Spartan soldiers: red cloaks, bronze helmets, round bronze shields and long spears. King Xerxes of Persia: curly black beard, tall golden crown, rich purple and gold robes. Persian soldiers: colorful long robes, wicker shields, bows and short spears. Persian king Xerxes on a hill laughing, looking down at Spartans combing their long hair and exercising. Historically accurate ancient Greece, 480 BC. Cinematic lighting. Wide shot, 16:9, no readable text, no logos."
+ },
+ {
+  "vo": "وواحد گله: هذوله من يمشطون شعرهم... يعني مستعدين يموتون.",
+  "img": "A Greek advisor explaining seriously to King Xerxes, Xerxes frowning.",
+  "part": 6,
+  "prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon sandals, clean vector cel shading. All people in the image are drawn as these cartoon characters. King Leonidas: short black beard, bronze Corinthian helmet with a red crest, red cloak, bronze breastplate, round bronze shield. Spartan soldiers: red cloaks, bronze helmets, round bronze shields and long spears. King Xerxes of Persia: curly black beard, tall golden crown, rich purple and gold robes. Persian soldiers: colorful long robes, wicker shields, bows and short spears. A Greek advisor explaining seriously to King Xerxes, Xerxes frowning. Historically accurate ancient Greece, 480 BC. Cinematic lighting. Wide shot, 16:9, no readable text, no logos."
+ },
+ {
+  "vo": "وانتظر أربع أيام، يستنى يهربون... وما هربوا.",
+  "img": "Spartans sitting calmly by campfires at night in the pass, Persian camp fires covering the plain beyond.",
+  "part": 6,
+  "prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon sandals, clean vector cel shading. All people in the image are drawn as these cartoon characters. King Leonidas: short black beard, bronze Corinthian helmet with a red crest, red cloak, bronze breastplate, round bronze shield. Spartan soldiers: red cloaks, bronze helmets, round bronze shields and long spears. Spartans sitting calmly by campfires at night in the pass, Persian camp fires covering the plain beyond. Historically accurate ancient Greece, 480 BC. Cinematic lighting. Wide shot, 16:9, no readable text, no logos."
+ },
+ {
+  "vo": "وبيوم الخامس... بدت المعركة. موجة ورا موجة من الجنود الفرس هجمت على الممر.",
+  "img": "Waves of Persian soldiers charging into the narrow pass against the Spartan shield wall, dust and spears.",
+  "part": 7,
+  "prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon sandals, clean vector cel shading. All people in the image are drawn as these cartoon characters. King Leonidas: short black beard, bronze Corinthian helmet with a red crest, red cloak, bronze breastplate, round bronze shield. Spartan soldiers: red cloaks, bronze helmets, round bronze shields and long spears. King Xerxes of Persia: curly black beard, tall golden crown, rich purple and gold robes. Persian soldiers: colorful long robes, wicker shields, bows and short spears. Waves of Persian soldiers charging into the narrow pass against the Spartan shield wall, dust and spears. Historically accurate ancient Greece, 480 BC. Cinematic lighting. Wide shot, 16:9, no readable text, no logos.",
+  "sfx": "boom"
+ },
+ {
+  "vo": "والإسبرطيين، بدروعهم ورماحهم الطويلة، صاروا مثل جدار حديد... محد يگدر يعبره.",
+  "img": "A solid wall of bronze Spartan shields with long spears pushing back attackers in the pass.",
+  "part": 7,
+  "prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon sandals, clean vector cel shading. All people in the image are drawn as these cartoon characters. King Leonidas: short black beard, bronze Corinthian helmet with a red crest, red cloak, bronze breastplate, round bronze shield. Spartan soldiers: red cloaks, bronze helmets, round bronze shields and long spears. A solid wall of bronze Spartan shields with long spears pushing back attackers in the pass. Historically accurate ancient Greece, 480 BC. Cinematic lighting. Wide shot, 16:9, no readable text, no logos."
+ },
+ {
+  "vo": "ويگولون الفرس دزوا سهام هواية لدرجة تغطي الشمس... وجندي إسبرطي اسمه دينيكيس گال: زين... نقاتل بالظل!",
+  "img": "The sky darkened by thousands of arrows, a Spartan soldier smiling under his raised shield.",
+  "part": 7,
+  "prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon sandals, clean vector cel shading. All people in the image are drawn as these cartoon characters. King Leonidas: short black beard, bronze Corinthian helmet with a red crest, red cloak, bronze breastplate, round bronze shield. Spartan soldiers: red cloaks, bronze helmets, round bronze shields and long spears. The sky darkened by thousands of arrows, a Spartan soldier smiling under his raised shield. Historically accurate ancient Greece, 480 BC. Cinematic lighting. Wide shot, 16:9, no readable text, no logos."
+ },
+ {
+  "vo": "وبعدين دز خشايارشا أحسن جنوده: الخالدين. عشرة آلاف جندي نخبة.",
+  "img": "Elite Persian Immortals in ornate robes and golden-tipped spears marching in perfect ranks.",
+  "part": 7,
+  "prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon sandals, clean vector cel shading. All people in the image are drawn as these cartoon characters. King Xerxes of Persia: curly black beard, tall golden crown, rich purple and gold robes. Persian soldiers: colorful long robes, wicker shields, bows and short spears. Elite Persian Immortals in ornate robes and golden-tipped spears marching in perfect ranks. Historically accurate ancient Greece, 480 BC. Cinematic lighting. Wide shot, 16:9, no readable text, no logos."
+ },
+ {
+  "vo": "بس حتى الخالدين... ما گدروا يعبرون. ويگولون خشايارشا گام من كرسيه ثلاث مرات من الخوف على جيشه.",
+  "img": "King Xerxes jumping up from his golden throne on a hill in fear, watching the battle below.",
+  "part": 8,
+  "prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon sandals, clean vector cel shading. All people in the image are drawn as these cartoon characters. King Xerxes of Persia: curly black beard, tall golden crown, rich purple and gold robes. Persian soldiers: colorful long robes, wicker shields, bows and short spears. King Xerxes jumping up from his golden throne on a hill in fear, watching the battle below. Historically accurate ancient Greece, 480 BC. Cinematic lighting. Wide shot, 16:9, no readable text, no logos."
+ },
+ {
+  "vo": "يومين كاملة... والممر ما انفتح.",
+  "img": "The narrow pass at sunset after battle, broken spears and shields, Spartans still standing in line.",
+  "part": 8,
+  "prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon sandals, clean vector cel shading. All people in the image are drawn as these cartoon characters. King Leonidas: short black beard, bronze Corinthian helmet with a red crest, red cloak, bronze breastplate, round bronze shield. Spartan soldiers: red cloaks, bronze helmets, round bronze shields and long spears. The narrow pass at sunset after battle, broken spears and shields, Spartans still standing in line. Historically accurate ancient Greece, 480 BC. Cinematic lighting. Wide shot, 16:9, no readable text, no logos."
+ },
+ {
+  "vo": "بس بعدين... صارت الخيانة. واحد يوناني اسمه إفيالتيس، طمع بالفلوس.",
+  "img": "A sneaky Greek shepherd named Ephialtes whispering to Persian officers in a tent, bags of gold.",
+  "part": 8,
+  "prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon sandals, clean vector cel shading. All people in the image are drawn as these cartoon characters. King Xerxes of Persia: curly black beard, tall golden crown, rich purple and gold robes. Persian soldiers: colorful long robes, wicker shields, bows and short spears. A sneaky Greek shepherd named Ephialtes whispering to Persian officers in a tent, bags of gold. Historically accurate ancient Greece, 480 BC. Cinematic lighting. Wide shot, 16:9, no readable text, no logos."
+ },
+ {
+  "vo": "وراح لخشايارشا، وگله: أكو طريق سري بالجبل... يلف من ورا الإسبرطيين.",
+  "img": "Ephialtes pointing a secret mountain path on a map to King Xerxes, Xerxes smiling.",
+  "part": 8,
+  "prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon sandals, clean vector cel shading. All people in the image are drawn as these cartoon characters. King Leonidas: short black beard, bronze Corinthian helmet with a red crest, red cloak, bronze breastplate, round bronze shield. Spartan soldiers: red cloaks, bronze helmets, round bronze shields and long spears. King Xerxes of Persia: curly black beard, tall golden crown, rich purple and gold robes. Persian soldiers: colorful long robes, wicker shields, bows and short spears. Ephialtes pointing a secret mountain path on a map to King Xerxes, Xerxes smiling. Historically accurate ancient Greece, 480 BC. Cinematic lighting. Wide shot, 16:9, no readable text, no logos."
+ },
+ {
+  "vo": "وبالليل، مشى الخالدين بالطريق السري... وصاروا وراهم.",
+  "img": "Persian Immortals walking at night along a narrow mountain goat path with torches.",
+  "part": 9,
+  "prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon sandals, clean vector cel shading. All people in the image are drawn as these cartoon characters. King Xerxes of Persia: curly black beard, tall golden crown, rich purple and gold robes. Persian soldiers: colorful long robes, wicker shields, bows and short spears. Persian Immortals walking at night along a narrow mountain goat path with torches. Historically accurate ancient Greece, 480 BC. Cinematic lighting. Wide shot, 16:9, no readable text, no logos."
+ },
+ {
+  "vo": "ليونيداس عرف إن المعركة خسرانة... فدز أغلب اليونانيين يرجعون، حتى يعيشون ويقاتلون بعدين.",
+  "img": "King Leonidas ordering Greek allies to retreat at dawn, soldiers leaving sadly.",
+  "part": 9,
+  "prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon sandals, clean vector cel shading. All people in the image are drawn as these cartoon characters. King Leonidas: short black beard, bronze Corinthian helmet with a red crest, red cloak, bronze breastplate, round bronze shield. Spartan soldiers: red cloaks, bronze helmets, round bronze shields and long spears. King Leonidas ordering Greek allies to retreat at dawn, soldiers leaving sadly. Historically accurate ancient Greece, 480 BC. Cinematic lighting. Wide shot, 16:9, no readable text, no logos."
+ },
+ {
+  "vo": "وبقى هو، والثلاثمية، وحوالي سبعمية من مدينة ثيسبيا رفضوا يتركوه.",
+  "img": "Leonidas with the remaining Spartans and other Greek volunteers standing together, determined, dawn light.",
+  "part": 9,
+  "prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon sandals, clean vector cel shading. All people in the image are drawn as these cartoon characters. King Leonidas: short black beard, bronze Corinthian helmet with a red crest, red cloak, bronze breastplate, round bronze shield. Spartan soldiers: red cloaks, bronze helmets, round bronze shields and long spears. Leonidas with the remaining Spartans and other Greek volunteers standing together, determined, dawn light. Historically accurate ancient Greece, 480 BC. Cinematic lighting. Wide shot, 16:9, no readable text, no logos."
+ },
+ {
+  "vo": "وگال إلهم: افطروا زين... لأن العشا راح يكون بالعالم الثاني.",
+  "img": "Spartans eating a simple breakfast around a fire at dawn, Leonidas speaking to them.",
+  "part": 9,
+  "prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon sandals, clean vector cel shading. All people in the image are drawn as these cartoon characters. King Leonidas: short black beard, bronze Corinthian helmet with a red crest, red cloak, bronze breastplate, round bronze shield. Spartan soldiers: red cloaks, bronze helmets, round bronze shields and long spears. Spartans eating a simple breakfast around a fire at dawn, Leonidas speaking to them. Historically accurate ancient Greece, 480 BC. Cinematic lighting. Wide shot, 16:9, no readable text, no logos."
+ },
+ {
+  "vo": "وطلعوا للقتال... من گدام ومن ورا. ولما انكسرت رماحهم، قاتلوا بالسيوف... ولما انكسرت السيوف، قاتلوا بإيدهم.",
+  "img": "The final stand: Spartans surrounded on a small hill fighting with swords, Persians attacking from all sides.",
+  "part": 10,
+  "prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon sandals, clean vector cel shading. All people in the image are drawn as these cartoon characters. King Leonidas: short black beard, bronze Corinthian helmet with a red crest, red cloak, bronze breastplate, round bronze shield. Spartan soldiers: red cloaks, bronze helmets, round bronze shields and long spears. King Xerxes of Persia: curly black beard, tall golden crown, rich purple and gold robes. Persian soldiers: colorful long robes, wicker shields, bows and short spears. The final stand: Spartans surrounded on a small hill fighting with swords, Persians attacking from all sides. Historically accurate ancient Greece, 480 BC. Cinematic lighting. Wide shot, 16:9, no readable text, no logos.",
+  "sfx": "boom"
+ },
+ {
+  "vo": "وليونيداس انقتل... والإسبرطيين قاتلوا حتى ياخذون جسده وما يخلونه للعدو.",
+  "img": "Spartans fighting fiercely around the fallen body of King Leonidas, protecting it with their shields.",
+  "part": 10,
+  "prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon sandals, clean vector cel shading. All people in the image are drawn as these cartoon characters. King Leonidas: short black beard, bronze Corinthian helmet with a red crest, red cloak, bronze breastplate, round bronze shield. Spartan soldiers: red cloaks, bronze helmets, round bronze shields and long spears. Spartans fighting fiercely around the fallen body of King Leonidas, protecting it with their shields. Historically accurate ancient Greece, 480 BC. Cinematic lighting. Wide shot, 16:9, no readable text, no logos."
+ },
+ {
+  "vo": "وبالأخير، الفرس ما گدروا يقربون... فرموهم بالسهام لحد ما ماتوا كلهم.",
+  "img": "A storm of arrows falling on the last Spartans on a small hill, silhouettes against the sun.",
+  "part": 10,
+  "prompt": "A storm of arrows falling on the last Spartans on a small hill, silhouettes against the sun. Cinematic, photorealistic, historically accurate, 16:9, no readable text, no logos, no people."
+ },
+ {
+  "vo": "خسروا المعركة... بس أخروا أكبر جيش بالعالم أيام، وكلّفوه آلاف القتلى.",
+  "img": "The empty pass after the battle, broken shields and red cloaks on the ground, quiet sunset.",
+  "part": 10,
+  "prompt": "The empty pass after the battle, broken shields and red cloaks on the ground, quiet sunset. Cinematic, photorealistic, historically accurate, 16:9, no readable text, no logos, no people."
+ },
+ {
+  "vo": "وهاي الأيام كفت اليونانيين يجهزون أسطولهم... وبعد أسابيع، انتصروا على الفرس بمعركة بحرية كبيرة اسمها سلاميس.",
+  "img": "A great ancient naval battle with Greek triremes ramming Persian ships near an island.",
+  "part": 11,
+  "prompt": "A great ancient naval battle with Greek triremes ramming Persian ships near an island. Cinematic, photorealistic, historically accurate, 16:9, no readable text, no logos, no people.",
+  "hud": "day",
+  "day": "سلاميس"
+ },
+ {
+  "vo": "وبالسنة اللي بعدها، اليونانيين انتصروا مرة ثانية... ورجع خشايارشا لبلاده.",
+  "img": "Xerxes riding away in his chariot looking back angrily, his army retreating in the distance.",
+  "part": 11,
+  "prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon sandals, clean vector cel shading. All people in the image are drawn as these cartoon characters. King Xerxes of Persia: curly black beard, tall golden crown, rich purple and gold robes. Persian soldiers: colorful long robes, wicker shields, bows and short spears. Xerxes riding away in his chariot looking back angrily, his army retreating in the distance. Historically accurate ancient Greece, 480 BC. Cinematic lighting. Wide shot, 16:9, no readable text, no logos."
+ },
+ {
+  "vo": "وبمكان المعركة، حطوا حجر مكتوب عليه: يا غريب، گول لأهل إسبرطة... إحنا هنا نايمين، وطعنا الأمر.",
+  "img": "An ancient stone monument with carved Greek inscription at the Thermopylae pass, flowers around it.",
+  "part": 11,
+  "prompt": "An ancient stone monument with carved Greek inscription at the Thermopylae pass, flowers around it. Cinematic, photorealistic, historically accurate, 16:9, no readable text, no logos, no people."
+ },
+ {
+  "vo": "واليوم أكو تمثال برونز لليونيداس بنفس المكان... ومكتوب تحته: تعال وخذها.",
+  "img": "A modern bronze statue of King Leonidas with spear and shield at Thermopylae, blue sky.",
+  "part": 11,
+  "prompt": "A modern bronze statue of King Leonidas with spear and shield at Thermopylae, blue sky. Cinematic, photorealistic, historically accurate, 16:9, no readable text, no logos, no people."
+ },
+ {
+  "vo": "وقصتهم صارت أفلام، وألعاب، ورمز للشجاعة بكل العالم.",
+  "img": "Modern young people watching an epic Spartan movie in a cinema, faces lit by the screen.",
+  "part": 12,
+  "prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon shoes, clean vector cel shading. All people in the image are drawn as these cartoon characters. Modern young people watching an epic Spartan movie in a cinema, faces lit by the screen. Modern day. Cinematic lighting. Wide shot, 16:9, no readable text, no logos."
+ },
+ {
+  "vo": "بس الحقيقة أعمق: مو بس شجاعة... هذا جيش عرف إن الخسارة أحياناً تنقذ الكل.",
+  "img": "A lone Spartan helmet and spear on a rock overlooking the sea at sunset.",
+  "part": 12,
+  "prompt": "A lone Spartan helmet and spear on a rock overlooking the sea at sunset. Cinematic, photorealistic, historically accurate, 16:9, no readable text, no logos, no people."
+ },
+ {
+  "vo": "ثلاثمية رجال... وقفوا بممر ضيق، وغيروا التاريخ.",
+  "img": "Silhouettes of 300 Spartan soldiers standing in a line on a ridge at sunset, cloaks blowing.",
+  "part": 12,
+  "prompt": "Silhouettes of 300 Spartan soldiers standing in a line on a ridge at sunset, cloaks blowing. Cinematic, photorealistic, historically accurate, 16:9, no readable text, no logos, no people."
+ },
+ {
+  "vo": "انت لو جنت بمكانهم، تبقى ويا ليونيداس... لو ترجع؟ اكتبها بالتعليقات.",
+  "img": "",
+  "part": 12,
+  "hud": "black",
+  "sfx": "boom"
+ }
+]
