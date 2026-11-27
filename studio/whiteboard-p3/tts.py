@@ -2,7 +2,8 @@
 import sys, json, base64, urllib.request, wave
 voice, out, tf = sys.argv[1], sys.argv[2], sys.argv[3]
 text = open(tf, encoding='utf-8').read().strip()
-model = 'gemini-3.8-flash-tts'
+import os
+model = os.environ.get('TTS_MODEL', 'gemini-3.8-flash-tts')
 body = {"contents": [{"parts": [{"text": text}]}],
         "generationConfig": {"responseModalities": ["AUDIO"], "speechConfig": {"voiceConfig": {"prebuiltVoiceConfig": {"voiceName": voice}}}}}
 req = urllib.request.Request(f'https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent', data=json.dumps(body).encode(),
