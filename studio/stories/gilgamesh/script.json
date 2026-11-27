@@ -1,0 +1,301 @@
+[
+ {
+  "vo": "تخيّل... موظف بمتحف بلندن، يقرأ لوح طين عمره آلاف السنين، وفجأة يقوم يركض بالقاعة ويفصخ هدومه من الفرحة!",
+  "img": "George Smith jumping up excitedly in a museum study room full of clay tablets, pulling off his jacket, colleagues shocked.",
+  "part": 1,
+  "prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon shoes, clean vector cel shading. All people in the image are drawn as these cartoon characters. George Smith: Victorian Englishman, brown beard, dark suit, waistcoat. George Smith jumping up excitedly in a museum study room full of clay tablets, pulling off his jacket, colleagues shocked. Historically accurate Victorian London, 1872. Cinematic lighting. Wide shot, 16:9, no readable text, no logos."
+ },
+ {
+  "vo": "شنو لگا باللوح؟ لگا قصة طوفان... أقدم من كل القصص اللي يعرفها.",
+  "img": "Close-up of a broken clay tablet covered in cuneiform signs on a wooden desk, lamp light.",
+  "part": 1,
+  "prompt": "Close-up of a broken clay tablet covered in cuneiform signs on a wooden desk, lamp light. Cinematic, photorealistic, historically accurate, 16:9, no readable text, no logos, no people."
+ },
+ {
+  "vo": "ملحمة جلجامش... أقدم قصة بالتاريخ، من العراق.",
+  "img": "",
+  "part": 1,
+  "hud": "title"
+ },
+ {
+  "vo": "منو جلجامش؟ وشنو سر الخلود اللي دوّر عليه؟ وشلون رجعت قصته للدنيا بعد آلاف السنين؟ هاي القصة.",
+  "img": "Ancient Sumerian ziggurat and city walls of Uruk at dawn with mist over the Euphrates marshes.",
+  "part": 1,
+  "prompt": "Ancient Sumerian ziggurat and city walls of Uruk at dawn with mist over the Euphrates marshes. Cinematic, photorealistic, historically accurate, 16:9, no readable text, no logos, no people."
+ },
+ {
+  "vo": "قبل حوالي أربع آلاف وسبعمية سنة، جانت أكو مدينة اسمها أوروك... قرب السماوة اليوم.",
+  "img": "Aerial view of the ancient city of Uruk with massive mud-brick walls, a white temple on a ziggurat, palm groves and canals.",
+  "part": 2,
+  "prompt": "Aerial view of the ancient city of Uruk with massive mud-brick walls, a white temple on a ziggurat, palm groves and canals. Cinematic, photorealistic, historically accurate, 16:9, no readable text, no logos, no people.",
+  "hud": "day",
+  "day": "٢٧٠٠ ق.م"
+ },
+ {
+  "vo": "وملكها جلجامش... قوي، وجميل، ويگولون ثلثينه إله وثلثه إنسان.",
+  "img": "King Gilgamesh standing proudly on the city wall of Uruk, wind in his robe, citizens looking up at him.",
+  "part": 2,
+  "prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon sandals, clean vector cel shading. All people in the image are drawn as these cartoon characters. King Gilgamesh: long curly black beard, golden crown band, muscular, fringed royal robe with gold. Enkidu: wild long brown hair and beard, animal-skin loincloth. King Gilgamesh standing proudly on the city wall of Uruk, wind in his robe, citizens looking up at him. Historically accurate ancient Uruk, Sumer, Mesopotamia, around 2700 BC. Cinematic lighting. Wide shot, 16:9, no readable text, no logos."
+ },
+ {
+  "vo": "بس جان ملك متكبر... يتعب الناس بالشغل، ومحد يگدر يوقفه.",
+  "img": "King Gilgamesh ordering exhausted workers carrying heavy mud bricks to build the giant wall of Uruk, workers tired.",
+  "part": 2,
+  "prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon sandals, clean vector cel shading. All people in the image are drawn as these cartoon characters. King Gilgamesh: long curly black beard, golden crown band, muscular, fringed royal robe with gold. Enkidu: wild long brown hair and beard, animal-skin loincloth. King Gilgamesh ordering exhausted workers carrying heavy mud bricks to build the giant wall of Uruk, workers tired. Historically accurate ancient Uruk, Sumer, Mesopotamia, around 2700 BC. Cinematic lighting. Wide shot, 16:9, no readable text, no logos."
+ },
+ {
+  "vo": "فالناس دعت الآلهة: انطونا واحد بقوته... يوقف بوجهه.",
+  "img": "Worried citizens of Uruk praying at night in a temple, raising hands toward the starry sky.",
+  "part": 2,
+  "prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon sandals, clean vector cel shading. All people in the image are drawn as these cartoon characters. King Gilgamesh: long curly black beard, golden crown band, muscular, fringed royal robe with gold. Enkidu: wild long brown hair and beard, animal-skin loincloth. Worried citizens of Uruk praying at night in a temple, raising hands toward the starry sky. Historically accurate ancient Uruk, Sumer, Mesopotamia, around 2700 BC. Cinematic lighting. Wide shot, 16:9, no readable text, no logos."
+ },
+ {
+  "vo": "فالآلهة خلقت إنكيدو... رجل وحشي، يعيش بالبرية ويا الحيوانات.",
+  "img": "Enkidu, a wild man, drinking water at a desert spring together with gazelles and wild animals, sunrise.",
+  "part": 3,
+  "prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon sandals, clean vector cel shading. All people in the image are drawn as these cartoon characters. King Gilgamesh: long curly black beard, golden crown band, muscular, fringed royal robe with gold. Enkidu: wild long brown hair and beard, animal-skin loincloth. Enkidu, a wild man, drinking water at a desert spring together with gazelles and wild animals, sunrise. Historically accurate ancient Uruk, Sumer, Mesopotamia, around 2700 BC. Cinematic lighting. Wide shot, 16:9, no readable text, no logos."
+ },
+ {
+  "vo": "وإنكيدو إجه لأوروك... وتلاگى ويا جلجامش، وصارت بينهم معركة.",
+  "img": "Gilgamesh and Enkidu wrestling fiercely in the street of Uruk at a doorway, crowd watching in shock.",
+  "part": 3,
+  "prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon sandals, clean vector cel shading. All people in the image are drawn as these cartoon characters. King Gilgamesh: long curly black beard, golden crown band, muscular, fringed royal robe with gold. Enkidu: wild long brown hair and beard, animal-skin loincloth. Gilgamesh and Enkidu wrestling fiercely in the street of Uruk at a doorway, crowd watching in shock. Historically accurate ancient Uruk, Sumer, Mesopotamia, around 2700 BC. Cinematic lighting. Wide shot, 16:9, no readable text, no logos.",
+  "sfx": "hit"
+ },
+ {
+  "vo": "تصارعوا وتصارعوا... ومحد غلب.",
+  "img": "Gilgamesh and Enkidu both exhausted sitting on the ground after wrestling, dust in the air.",
+  "part": 3,
+  "prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon sandals, clean vector cel shading. All people in the image are drawn as these cartoon characters. King Gilgamesh: long curly black beard, golden crown band, muscular, fringed royal robe with gold. Enkidu: wild long brown hair and beard, animal-skin loincloth. Gilgamesh and Enkidu both exhausted sitting on the ground after wrestling, dust in the air. Historically accurate ancient Uruk, Sumer, Mesopotamia, around 2700 BC. Cinematic lighting. Wide shot, 16:9, no readable text, no logos."
+ },
+ {
+  "vo": "وبالأخير ضحكوا... وصاروا أعز صديقين بالدنيا.",
+  "img": "Gilgamesh and Enkidu laughing and embracing as friends, the people of Uruk cheering.",
+  "part": 3,
+  "prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon sandals, clean vector cel shading. All people in the image are drawn as these cartoon characters. King Gilgamesh: long curly black beard, golden crown band, muscular, fringed royal robe with gold. Enkidu: wild long brown hair and beard, animal-skin loincloth. Gilgamesh and Enkidu laughing and embracing as friends, the people of Uruk cheering. Historically accurate ancient Uruk, Sumer, Mesopotamia, around 2700 BC. Cinematic lighting. Wide shot, 16:9, no readable text, no logos."
+ },
+ {
+  "vo": "وگرروا يسوون مغامرة كبيرة: يروحون لغابة الأرز... بعيد بالشمال.",
+  "img": "Gilgamesh and Enkidu walking with axes across mountains toward a vast dark cedar forest.",
+  "part": 4,
+  "prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon sandals, clean vector cel shading. All people in the image are drawn as these cartoon characters. King Gilgamesh: long curly black beard, golden crown band, muscular, fringed royal robe with gold. Enkidu: wild long brown hair and beard, animal-skin loincloth. Gilgamesh and Enkidu walking with axes across mountains toward a vast dark cedar forest. Historically accurate ancient Uruk, Sumer, Mesopotamia, around 2700 BC. Cinematic lighting. Wide shot, 16:9, no readable text, no logos."
+ },
+ {
+  "vo": "وبالغابة جان يحرسها وحش مخيف اسمه خمبابا.",
+  "img": "A monstrous giant guardian Humbaba with a terrifying face of coils among giant cedar trees, Gilgamesh and Enkidu small in front of him.",
+  "part": 4,
+  "prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon sandals, clean vector cel shading. All people in the image are drawn as these cartoon characters. King Gilgamesh: long curly black beard, golden crown band, muscular, fringed royal robe with gold. Enkidu: wild long brown hair and beard, animal-skin loincloth. A monstrous giant guardian Humbaba with a terrifying face of coils among giant cedar trees, Gilgamesh and Enkidu small in front of him. Historically accurate ancient Uruk, Sumer, Mesopotamia, around 2700 BC. Cinematic lighting. Wide shot, 16:9, no readable text, no logos."
+ },
+ {
+  "vo": "تقاتلوا وياه... وانتصروا عليه.",
+  "img": "Gilgamesh and Enkidu fighting the giant monster Humbaba in the cedar forest, axes raised, dramatic light.",
+  "part": 4,
+  "prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon sandals, clean vector cel shading. All people in the image are drawn as these cartoon characters. King Gilgamesh: long curly black beard, golden crown band, muscular, fringed royal robe with gold. Enkidu: wild long brown hair and beard, animal-skin loincloth. Gilgamesh and Enkidu fighting the giant monster Humbaba in the cedar forest, axes raised, dramatic light. Historically accurate ancient Uruk, Sumer, Mesopotamia, around 2700 BC. Cinematic lighting. Wide shot, 16:9, no readable text, no logos.",
+  "sfx": "boom"
+ },
+ {
+  "vo": "ورجعوا لأوروك أبطال... ويا خشب الأرز.",
+  "img": "Gilgamesh and Enkidu floating a raft of huge cedar logs down the Euphrates toward Uruk, triumphant.",
+  "part": 4,
+  "prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon sandals, clean vector cel shading. All people in the image are drawn as these cartoon characters. King Gilgamesh: long curly black beard, golden crown band, muscular, fringed royal robe with gold. Enkidu: wild long brown hair and beard, animal-skin loincloth. Gilgamesh and Enkidu floating a raft of huge cedar logs down the Euphrates toward Uruk, triumphant. Historically accurate ancient Uruk, Sumer, Mesopotamia, around 2700 BC. Cinematic lighting. Wide shot, 16:9, no readable text, no logos."
+ },
+ {
+  "vo": "بس الإلهة عشتار شافت جلجامش... وطلبت يتزوجها.",
+  "img": "The goddess Ishtar, beautiful with a star crown and wings, appearing before Gilgamesh in his palace, offering her hand.",
+  "part": 5,
+  "prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon sandals, clean vector cel shading. All people in the image are drawn as these cartoon characters. King Gilgamesh: long curly black beard, golden crown band, muscular, fringed royal robe with gold. Enkidu: wild long brown hair and beard, animal-skin loincloth. The goddess Ishtar, beautiful with a star crown and wings, appearing before Gilgamesh in his palace, offering her hand. Historically accurate ancient Uruk, Sumer, Mesopotamia, around 2700 BC. Cinematic lighting. Wide shot, 16:9, no readable text, no logos."
+ },
+ {
+  "vo": "وجلجامش رفضها... وگلها كلام يجرح.",
+  "img": "Gilgamesh turning away and refusing Ishtar with crossed arms, Ishtar looking insulted and furious.",
+  "part": 5,
+  "prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon sandals, clean vector cel shading. All people in the image are drawn as these cartoon characters. King Gilgamesh: long curly black beard, golden crown band, muscular, fringed royal robe with gold. Enkidu: wild long brown hair and beard, animal-skin loincloth. Gilgamesh turning away and refusing Ishtar with crossed arms, Ishtar looking insulted and furious. Historically accurate ancient Uruk, Sumer, Mesopotamia, around 2700 BC. Cinematic lighting. Wide shot, 16:9, no readable text, no logos."
+ },
+ {
+  "vo": "فعصّبت... ودزت عليهم ثور السما يخرب المدينة.",
+  "img": "A giant bull of heaven made of storm clouds and fire stampeding into the city of Uruk, people fleeing.",
+  "part": 5,
+  "prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon sandals, clean vector cel shading. All people in the image are drawn as these cartoon characters. King Gilgamesh: long curly black beard, golden crown band, muscular, fringed royal robe with gold. Enkidu: wild long brown hair and beard, animal-skin loincloth. A giant bull of heaven made of storm clouds and fire stampeding into the city of Uruk, people fleeing. Historically accurate ancient Uruk, Sumer, Mesopotamia, around 2700 BC. Cinematic lighting. Wide shot, 16:9, no readable text, no logos.",
+  "sfx": "boom"
+ },
+ {
+  "vo": "بس جلجامش وإنكيدو قتلوا الثور... والآلهة غضبت أكثر.",
+  "img": "Gilgamesh and Enkidu standing over the defeated giant bull of heaven, dark storm clouds gathering above.",
+  "part": 5,
+  "prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon sandals, clean vector cel shading. All people in the image are drawn as these cartoon characters. King Gilgamesh: long curly black beard, golden crown band, muscular, fringed royal robe with gold. Enkidu: wild long brown hair and beard, animal-skin loincloth. Gilgamesh and Enkidu standing over the defeated giant bull of heaven, dark storm clouds gathering above. Historically accurate ancient Uruk, Sumer, Mesopotamia, around 2700 BC. Cinematic lighting. Wide shot, 16:9, no readable text, no logos."
+ },
+ {
+  "vo": "والآلهة گررت: لازم واحد منهم يموت... إنكيدو.",
+  "img": "Enkidu lying sick in bed in a dark room, Gilgamesh kneeling beside him holding his hand, oil lamp.",
+  "part": 6,
+  "prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon sandals, clean vector cel shading. All people in the image are drawn as these cartoon characters. King Gilgamesh: long curly black beard, golden crown band, muscular, fringed royal robe with gold. Enkidu: wild long brown hair and beard, animal-skin loincloth. Enkidu lying sick in bed in a dark room, Gilgamesh kneeling beside him holding his hand, oil lamp. Historically accurate ancient Uruk, Sumer, Mesopotamia, around 2700 BC. Cinematic lighting. Wide shot, 16:9, no readable text, no logos."
+ },
+ {
+  "vo": "إنكيدو مرض... ومات بحضن صديقه.",
+  "img": "Gilgamesh crying holding Enkidu, candles around, deep sorrow.",
+  "part": 6,
+  "prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon sandals, clean vector cel shading. All people in the image are drawn as these cartoon characters. King Gilgamesh: long curly black beard, golden crown band, muscular, fringed royal robe with gold. Enkidu: wild long brown hair and beard, animal-skin loincloth. Gilgamesh crying holding Enkidu, candles around, deep sorrow. Historically accurate ancient Uruk, Sumer, Mesopotamia, around 2700 BC. Cinematic lighting. Wide shot, 16:9, no readable text, no logos."
+ },
+ {
+  "vo": "وجلجامش بچى عليه سبع أيام وسبع ليالي... وما خلاهم يدفنوه.",
+  "img": "Gilgamesh sitting alone mourning beside a covered body, seven candles burning down, dark night.",
+  "part": 6,
+  "prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon sandals, clean vector cel shading. All people in the image are drawn as these cartoon characters. King Gilgamesh: long curly black beard, golden crown band, muscular, fringed royal robe with gold. Enkidu: wild long brown hair and beard, animal-skin loincloth. Gilgamesh sitting alone mourning beside a covered body, seven candles burning down, dark night. Historically accurate ancient Uruk, Sumer, Mesopotamia, around 2700 BC. Cinematic lighting. Wide shot, 16:9, no readable text, no logos."
+ },
+ {
+  "vo": "ولأول مرة... جلجامش خاف من الموت.",
+  "img": "Gilgamesh alone on the walls of Uruk at night staring at the stars, frightened and thoughtful.",
+  "part": 6,
+  "prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon sandals, clean vector cel shading. All people in the image are drawn as these cartoon characters. King Gilgamesh: long curly black beard, golden crown band, muscular, fringed royal robe with gold. Enkidu: wild long brown hair and beard, animal-skin loincloth. Gilgamesh alone on the walls of Uruk at night staring at the stars, frightened and thoughtful. Historically accurate ancient Uruk, Sumer, Mesopotamia, around 2700 BC. Cinematic lighting. Wide shot, 16:9, no readable text, no logos."
+ },
+ {
+  "vo": "وگرر يدوّر على سر الخلود... حتى ما يموت مثل صديقه.",
+  "img": "Gilgamesh in torn animal skins leaving Uruk alone toward the desert, long shadow, sunset.",
+  "part": 7,
+  "prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon sandals, clean vector cel shading. All people in the image are drawn as these cartoon characters. King Gilgamesh: long curly black beard, golden crown band, muscular, fringed royal robe with gold. Enkidu: wild long brown hair and beard, animal-skin loincloth. Gilgamesh in torn animal skins leaving Uruk alone toward the desert, long shadow, sunset. Historically accurate ancient Uruk, Sumer, Mesopotamia, around 2700 BC. Cinematic lighting. Wide shot, 16:9, no readable text, no logos."
+ },
+ {
+  "vo": "مشى بالبراري، وعبر جبال، ومشى بطريق الشمس بالظلام.",
+  "img": "Gilgamesh walking through a pitch dark mountain tunnel with only a faint light at the end.",
+  "part": 7,
+  "prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon sandals, clean vector cel shading. All people in the image are drawn as these cartoon characters. King Gilgamesh: long curly black beard, golden crown band, muscular, fringed royal robe with gold. Enkidu: wild long brown hair and beard, animal-skin loincloth. Gilgamesh walking through a pitch dark mountain tunnel with only a faint light at the end. Historically accurate ancient Uruk, Sumer, Mesopotamia, around 2700 BC. Cinematic lighting. Wide shot, 16:9, no readable text, no logos."
+ },
+ {
+  "vo": "لحد ما وصل لصاحبة حانة على البحر اسمها سيدوري... گالتله: ارجع واستانس بحياتك.",
+  "img": "Gilgamesh meeting a kind tavern keeper woman by a glowing seaside tavern at the edge of the world.",
+  "part": 7,
+  "prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon sandals, clean vector cel shading. All people in the image are drawn as these cartoon characters. King Gilgamesh: long curly black beard, golden crown band, muscular, fringed royal robe with gold. Enkidu: wild long brown hair and beard, animal-skin loincloth. Gilgamesh meeting a kind tavern keeper woman by a glowing seaside tavern at the edge of the world. Historically accurate ancient Uruk, Sumer, Mesopotamia, around 2700 BC. Cinematic lighting. Wide shot, 16:9, no readable text, no logos."
+ },
+ {
+  "vo": "بس ما سمع... وعبر بحر الموت بالقارب.",
+  "img": "Gilgamesh on a small boat crossing a misty dark sea of death with a ferryman, eerie glow.",
+  "part": 7,
+  "prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon sandals, clean vector cel shading. All people in the image are drawn as these cartoon characters. King Gilgamesh: long curly black beard, golden crown band, muscular, fringed royal robe with gold. Enkidu: wild long brown hair and beard, animal-skin loincloth. Gilgamesh on a small boat crossing a misty dark sea of death with a ferryman, eerie glow. Historically accurate ancient Uruk, Sumer, Mesopotamia, around 2700 BC. Cinematic lighting. Wide shot, 16:9, no readable text, no logos."
+ },
+ {
+  "vo": "ووصل لرجل اسمه أوتنابشتم... الإنسان الوحيد اللي الآلهة انطته الخلود.",
+  "img": "Gilgamesh meeting an ancient white-bearded man Utnapishtim on a peaceful paradise island.",
+  "part": 8,
+  "prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon sandals, clean vector cel shading. All people in the image are drawn as these cartoon characters. King Gilgamesh: long curly black beard, golden crown band, muscular, fringed royal robe with gold. Enkidu: wild long brown hair and beard, animal-skin loincloth. Gilgamesh meeting an ancient white-bearded man Utnapishtim on a peaceful paradise island. Historically accurate ancient Uruk, Sumer, Mesopotamia, around 2700 BC. Cinematic lighting. Wide shot, 16:9, no readable text, no logos."
+ },
+ {
+  "vo": "وأوتنابشتم حچاله قصة غريبة... قصة الطوفان.",
+  "img": "Utnapishtim telling a story to Gilgamesh by a fire, gesturing dramatically.",
+  "part": 8,
+  "prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon sandals, clean vector cel shading. All people in the image are drawn as these cartoon characters. King Gilgamesh: long curly black beard, golden crown band, muscular, fringed royal robe with gold. Enkidu: wild long brown hair and beard, animal-skin loincloth. Utnapishtim telling a story to Gilgamesh by a fire, gesturing dramatically. Historically accurate ancient Uruk, Sumer, Mesopotamia, around 2700 BC. Cinematic lighting. Wide shot, 16:9, no readable text, no logos."
+ },
+ {
+  "vo": "الآلهة گررت تغرق الأرض كلها... فأمروه يبني سفينة كبيرة.",
+  "img": "Utnapishtim and workers building a gigantic wooden ark in ancient Mesopotamia, dark clouds gathering.",
+  "part": 8,
+  "prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon sandals, clean vector cel shading. All people in the image are drawn as these cartoon characters. King Gilgamesh: long curly black beard, golden crown band, muscular, fringed royal robe with gold. Enkidu: wild long brown hair and beard, animal-skin loincloth. Utnapishtim and workers building a gigantic wooden ark in ancient Mesopotamia, dark clouds gathering. Historically accurate ancient Uruk, Sumer, Mesopotamia, around 2700 BC. Cinematic lighting. Wide shot, 16:9, no readable text, no logos."
+ },
+ {
+  "vo": "وحط بيها عائلته، والحيوانات... وإجه المطر سبع أيام.",
+  "img": "A huge ark floating on endless floodwater in heavy rain, animals on deck, lightning.",
+  "part": 8,
+  "prompt": "A huge ark floating on endless floodwater in heavy rain, animals on deck, lightning. Cinematic, photorealistic, historically accurate, 16:9, no readable text, no logos, no people.",
+  "sfx": "boom"
+ },
+ {
+  "vo": "ولما وقف المطر، دز طير يشوف إذا الأرض نشفت.",
+  "img": "A dove flying from the ark over calm floodwater at sunrise, mountain peaks appearing.",
+  "part": 9,
+  "prompt": "A dove flying from the ark over calm floodwater at sunrise, mountain peaks appearing. Cinematic, photorealistic, historically accurate, 16:9, no readable text, no logos, no people."
+ },
+ {
+  "vo": "قصة تشبه هواية قصة نوح... بس مكتوبة قبلها بأكثر من ألف سنة.",
+  "img": "Close-up of a clay tablet with cuneiform beside an old open book, soft light, scholarly mood.",
+  "part": 9,
+  "prompt": "Close-up of a clay tablet with cuneiform beside an old open book, soft light, scholarly mood. Cinematic, photorealistic, historically accurate, 16:9, no readable text, no logos, no people."
+ },
+ {
+  "vo": "وأوتنابشتم گال لجلجامش: الخلود مو إلك... بس أكو نبتة بقاع البحر ترجعك شباب.",
+  "img": "Utnapishtim pointing toward the sea, telling Gilgamesh about a magical plant on the seabed.",
+  "part": 9,
+  "prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon sandals, clean vector cel shading. All people in the image are drawn as these cartoon characters. King Gilgamesh: long curly black beard, golden crown band, muscular, fringed royal robe with gold. Enkidu: wild long brown hair and beard, animal-skin loincloth. Utnapishtim pointing toward the sea, telling Gilgamesh about a magical plant on the seabed. Historically accurate ancient Uruk, Sumer, Mesopotamia, around 2700 BC. Cinematic lighting. Wide shot, 16:9, no readable text, no logos."
+ },
+ {
+  "vo": "فجلجامش ربط حجار برجليه... ونزل لقاع البحر وجاب النبتة!",
+  "img": "Gilgamesh underwater with stones tied to his feet reaching for a glowing thorny plant on the seabed.",
+  "part": 9,
+  "prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon sandals, clean vector cel shading. All people in the image are drawn as these cartoon characters. King Gilgamesh: long curly black beard, golden crown band, muscular, fringed royal robe with gold. Enkidu: wild long brown hair and beard, animal-skin loincloth. Gilgamesh underwater with stones tied to his feet reaching for a glowing thorny plant on the seabed. Historically accurate ancient Uruk, Sumer, Mesopotamia, around 2700 BC. Cinematic lighting. Wide shot, 16:9, no readable text, no logos."
+ },
+ {
+  "vo": "وبطريق الرجعة... وقف يسبح بعين ماي.",
+  "img": "Gilgamesh bathing in a desert spring, the glowing plant left on the shore beside his clothes.",
+  "part": 10,
+  "prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon sandals, clean vector cel shading. All people in the image are drawn as these cartoon characters. King Gilgamesh: long curly black beard, golden crown band, muscular, fringed royal robe with gold. Enkidu: wild long brown hair and beard, animal-skin loincloth. Gilgamesh bathing in a desert spring, the glowing plant left on the shore beside his clothes. Historically accurate ancient Uruk, Sumer, Mesopotamia, around 2700 BC. Cinematic lighting. Wide shot, 16:9, no readable text, no logos."
+ },
+ {
+  "vo": "وإجت حية... وأكلت النبتة!",
+  "img": "A snake slithering away with the glowing plant in its mouth, shedding its old skin, Gilgamesh shocked in the water.",
+  "part": 10,
+  "prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon sandals, clean vector cel shading. All people in the image are drawn as these cartoon characters. King Gilgamesh: long curly black beard, golden crown band, muscular, fringed royal robe with gold. Enkidu: wild long brown hair and beard, animal-skin loincloth. A snake slithering away with the glowing plant in its mouth, shedding its old skin, Gilgamesh shocked in the water. Historically accurate ancient Uruk, Sumer, Mesopotamia, around 2700 BC. Cinematic lighting. Wide shot, 16:9, no readable text, no logos.",
+  "sfx": "hit"
+ },
+ {
+  "vo": "وجلجامش گعد يبچي... كل التعب راح.",
+  "img": "Gilgamesh sitting on the ground crying in the desert, empty hands, sunset.",
+  "part": 10,
+  "prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon sandals, clean vector cel shading. All people in the image are drawn as these cartoon characters. King Gilgamesh: long curly black beard, golden crown band, muscular, fringed royal robe with gold. Enkidu: wild long brown hair and beard, animal-skin loincloth. Gilgamesh sitting on the ground crying in the desert, empty hands, sunset. Historically accurate ancient Uruk, Sumer, Mesopotamia, around 2700 BC. Cinematic lighting. Wide shot, 16:9, no readable text, no logos."
+ },
+ {
+  "vo": "ورجع لأوروك... وشاف سورها العالي، وفهم: الخلود مو بالجسم... الخلود باللي تتركه وراك.",
+  "img": "Gilgamesh standing on the great walls of Uruk at sunrise, looking at the city full of life, peaceful.",
+  "part": 10,
+  "prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon sandals, clean vector cel shading. All people in the image are drawn as these cartoon characters. King Gilgamesh: long curly black beard, golden crown band, muscular, fringed royal robe with gold. Enkidu: wild long brown hair and beard, animal-skin loincloth. Gilgamesh standing on the great walls of Uruk at sunrise, looking at the city full of life, peaceful. Historically accurate ancient Uruk, Sumer, Mesopotamia, around 2700 BC. Cinematic lighting. Wide shot, 16:9, no readable text, no logos."
+ },
+ {
+  "vo": "والقصة انكتبت على ألواح طين... وانحفظت بمكتبة الملك آشوربانيبال بنينوى.",
+  "img": "The library of Ashurbanipal in Nineveh with scribes and shelves full of clay tablets, Assyrian decor.",
+  "part": 11,
+  "prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon sandals, clean vector cel shading. All people in the image are drawn as these cartoon characters. King Gilgamesh: long curly black beard, golden crown band, muscular, fringed royal robe with gold. Enkidu: wild long brown hair and beard, animal-skin loincloth. The library of Ashurbanipal in Nineveh with scribes and shelves full of clay tablets, Assyrian decor. Historically accurate ancient Uruk, Sumer, Mesopotamia, around 2700 BC. Cinematic lighting. Wide shot, 16:9, no readable text, no logos."
+ },
+ {
+  "vo": "بس نينوى احترگت... والألواح اندفنت تحت التراب ألفين وخمسمية سنة.",
+  "img": "Burning palace of ancient Nineveh at night, clay tablets falling, flames.",
+  "part": 11,
+  "prompt": "Burning palace of ancient Nineveh at night, clay tablets falling, flames. Cinematic, photorealistic, historically accurate, 16:9, no readable text, no logos, no people.",
+  "sfx": "boom"
+ },
+ {
+  "vo": "وبالقرن التاسع عشر، الإنگليز حفروا بالموصل... وطلعوا آلاف الألواح ودزوها للندن.",
+  "img": "Victorian archaeologists and local workers digging up clay tablets at the mound of Nineveh near Mosul, 1850s.",
+  "part": 11,
+  "prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon shoes, clean vector cel shading. All people in the image are drawn as these cartoon characters. Victorian archaeologists and local workers digging up clay tablets at the mound of Nineveh near Mosul, 1850s. Cinematic lighting. Wide shot, 16:9, no readable text, no logos."
+ },
+ {
+  "vo": "وهناك جورج سميث، موظف بسيط علّم نفسه المسمارية... قرا اللوح، ودار العالم كله يحچي عن جلجامش.",
+  "img": "George Smith reading a clay tablet with a magnifying glass at a desk in the British Museum, piles of tablets around.",
+  "part": 11,
+  "prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon shoes, clean vector cel shading. All people in the image are drawn as these cartoon characters. George Smith: Victorian Englishman, brown beard, dark suit, waistcoat. George Smith reading a clay tablet with a magnifying glass at a desk in the British Museum, piles of tablets around. Historically accurate Victorian London, 1872. Cinematic lighting. Wide shot, 16:9, no readable text, no logos.",
+  "hud": "day",
+  "day": "١٨٧٢م"
+ },
+ {
+  "vo": "اليوم ملحمة جلجامش مترجمة لعشرات اللغات... ويدرسوها بكل جامعات العالم.",
+  "img": "Students in a modern university library reading a book about ancient Mesopotamia, a cuneiform tablet poster on the wall.",
+  "part": 12,
+  "prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon shoes, clean vector cel shading. All people in the image are drawn as these cartoon characters. Students in a modern university library reading a book about ancient Mesopotamia, a cuneiform tablet poster on the wall. Cinematic lighting. Wide shot, 16:9, no readable text, no logos."
+ },
+ {
+  "vo": "وبسنة ألفين وواحد وعشرين... رجعت لوحة من الملحمة للعراق بعد ما انسرقت.",
+  "img": "Iraqi officials and museum staff unveiling a returned small cuneiform tablet in a glass case at the Iraq Museum in Baghdad, cameras flashing.",
+  "part": 12,
+  "prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon shoes, clean vector cel shading. All people in the image are drawn as these cartoon characters. Iraqi officials and museum staff unveiling a returned small cuneiform tablet in a glass case at the Iraq Museum in Baghdad, cameras flashing. Cinematic lighting. Wide shot, 16:9, no readable text, no logos."
+ },
+ {
+  "vo": "أوروك اليوم أطلال بالصحرا... بس قصتها بعدها عايشة.",
+  "img": "Aerial view of the ruins of Uruk at Warka in the Iraqi desert at sunset.",
+  "part": 12,
+  "prompt": "Aerial view of the ruins of Uruk at Warka in the Iraqi desert at sunset. Cinematic, photorealistic, historically accurate, 16:9, no readable text, no logos, no people."
+ },
+ {
+  "vo": "أقدم قصة بالدنيا عن الصداقة والموت والخلود... من العراق. انت لو تلگى نبتة الخلود، تاكلها؟ اكتبها بالتعليقات.",
+  "img": "",
+  "part": 12,
+  "hud": "black",
+  "sfx": "boom"
+ }
+]
