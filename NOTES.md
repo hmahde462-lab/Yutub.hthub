@@ -124,3 +124,8 @@
 - **ملاحظة خط**: NotoNaskh ما بيه حروف لاتينية ولا '-' ولا '…' ولا إيموجي — لا تحطها بالنصوص المحروقة على الفيديو.
 - **اشتراك Claude** ينتهي حوالي 7/12.
 - فحص ربط vidIQ اليومي: trig_01WvaxQkVEs8gmA3piFAHx34.
+
+## حالة 27/11/2026 مساءً
+- فيغما صار على حساب جديد (ba770736@gmail، ملف erUAT3EtVuvJwxYpSSYlQz). الحد اليومي يرجع 00:00 UTC.
+- بيت الحكمة الطويل جاهز: videos/long/hikma.mp4 (5:36) + 12 شورت videos/shorts/hikma-long/ + schedule.txt بـ studio/stories/hikma (الجمعة 1/1/2027).
+- حمورابي: 44 صورة من 48 نازلة؛ باقي 43، 44، 45، 46 (برومبتاتها بـ script.json). بعدها build.py (عنوان/شاشة سودة/section/OUT) + shorts + thumb + ضغط.

@@ -22,7 +22,7 @@ for i, x in enumerate(s):
     else: imgs.append(imgs[-1])  # missing image: hold the previous one
 
 # ---------- timing ----------
-LONG_GAP = {2, 3, 7, 11, 15, 19, 23, 26, 27, 31, 35, 39, 43, 45, 46}
+LONG_GAP = {2, 3, 7, 11, 15, 19, 23, 27, 31, 35, 39, 43, 45, 46}
 times = []; t = 0.0
 for i, x in enumerate(s):
     lead = 0.35
@@ -92,14 +92,14 @@ def overlay(i, x):
         p = Image.new('RGBA', (W, H), (0, 0, 0, 0)); im = text_img('٣٠ يوم', 220, (255, 214, 90), 10)
         p.alpha_composite(im, ((W - im.width) // 2, 300)); p.save(f'ov/pop{i:02d}.png'); pop = f'ov/pop{i:02d}.png'
     if hud == 'title':
-        p = Image.new('RGBA', (W, H), (0, 0, 0, 170)); a = text_img('الشارع اللي ما مات', 120, (255, 255, 255), 8); b = text_img('شارع المتنبي', 140, (255, 214, 90), 9); c = text_img('قصة حقيقية', 80, (230, 230, 230), 6)
+        p = Image.new('RGBA', (W, H), (0, 0, 0, 170)); a = text_img('المكان اللي غيّر العالم', 120, (255, 255, 255), 8); b = text_img('بيت الحكمة', 140, (255, 214, 90), 9); c = text_img('قصة حقيقية', 80, (230, 230, 230), 6)
         p.alpha_composite(a, ((W - a.width) // 2, 230)); p.alpha_composite(b, ((W - b.width) // 2, 420)); p.alpha_composite(c, ((W - c.width) // 2, 700))
         p.save(f'ov/pop{i:02d}.png'); pop = f'ov/pop{i:02d}.png'
     if hud == 'day':
         p = Image.new('RGBA', (W, H), (0, 0, 0, 0)); im = text_img(ar(s[i].get('day', '')), 96, (255, 214, 90), 8)
         p.alpha_composite(im, ((W - im.width) // 2, 140)); p.save(f'ov/pop{i:02d}.png'); pop = f'ov/pop{i:02d}.png'
     if hud == 'black':
-        p = Image.new('RGBA', (W, H), (0, 0, 0, 0)); im = text_img('شوكت آخر مرة رحت للمتنبي؟', 120, (255, 255, 255), 0)
+        p = Image.new('RGBA', (W, H), (0, 0, 0, 0)); im = text_img('شنو اختراع عربي غيّر العالم أكثر؟', 120, (255, 255, 255), 0)
         p.alpha_composite(im, ((W - im.width) // 2, (H - im.height) // 2 - 40)); p.save(f'ov/pop{i:02d}.png'); pop = f'ov/pop{i:02d}.png'
     return pop
 
@@ -210,9 +210,10 @@ def hit(g=0.5):
     return (np.sin(2 * np.pi * np.cumsum(fr) / SR) * np.exp(-t * 4) * g).astype(np.float32)
 
 def section(i):
-    if i in (2, 3, 27, 28, 29, 31, 32, 47): return 'none'
-    if i in (0, 4, 5, 6, 7, 8, 30): return 'wind'
-    if i in (24,): return 'street'
+    if i in (2, 22, 36, 47): return 'none'
+    if i in (4, 29, 31, 35, 46): return 'wind'
+    if i in (30, 32, 33, 26, 27, 16): return 'night_out'
+    if i in (5, 7, 11, 34, 44): return 'street'
     return 'murmur'
 for i, x in enumerate(s):
     st, d = times[i]; sec = section(i)
@@ -247,6 +248,6 @@ mix = mix[:int(TOTAL * SR)]
 mix /= max(1e-6, np.abs(mix).max()) / 0.9
 with wave.open('audio.wav', 'wb') as w:
     w.setnchannels(1); w.setsampwidth(2); w.setframerate(SR); w.writeframes((mix * 32767).astype(np.int16).tobytes())
-subprocess.run(['ffmpeg', '-v', 'error', '-y', '-i', 'video_noaudio.mp4', '-i', 'audio.wav', '-c:v', 'copy', '-af', 'loudnorm=I=-14:TP=-1.5:LRA=11', '-c:a', 'aac', '-b:a', '192k', '-ar', '48000', '-shortest', os.environ.get('OUT', 'mutanabbi.mp4')], check=True)
+subprocess.run(['ffmpeg', '-v', 'error', '-y', '-i', 'video_noaudio.mp4', '-i', 'audio.wav', '-c:v', 'copy', '-af', 'loudnorm=I=-14:TP=-1.5:LRA=11', '-c:a', 'aac', '-b:a', '192k', '-ar', '48000', '-shortest', os.environ.get('OUT', 'hikma.mp4')], check=True)
 json.dump([{'i': i, 'start': round(t0, 3), 'dur': round(dd, 3)} for i, (t0, dd) in enumerate(times)], open('timeline.json', 'w'))
 print('done', TOTAL)
