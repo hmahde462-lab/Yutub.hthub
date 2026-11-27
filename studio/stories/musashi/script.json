@@ -1,6 +1,6 @@
 [
  {
-  "vo": "تخيّل... مبارزة على جزيرة صغيرة. واحد من أقوى سيافين اليابان واگف يستنى... وخصمه متأخر ساعات.",
+  "vo": "تخيّل... مبارزة على جزيرة صغيرة. واحد من أقوى سيافين اليابان واگف يستنى، والناس بالقوارب يتفرجون... وخصمه متأخر ساعات.",
   "img": "A lone samurai with a very long sword waiting impatiently on a small beach of an island, sea and morning sun.",
   "part": 1,
   "prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon sandals, clean vector cel shading. All people in the image are drawn as these cartoon characters. Sasaki Kojiro: long black hair in a high ponytail, elegant bright red kimono, an extremely long katana on his back. A lone samurai with a very long sword waiting impatiently on a small beach of an island, sea and morning sun. Historically accurate early 17th century Edo-period Japan. Cinematic lighting. Wide shot, 16:9, no readable text, no logos."
@@ -18,13 +18,13 @@
   "hud": "title"
  },
  {
-  "vo": "منو هذا الرجل اللي ما انغلب بولا مبارزة؟ وليش بآخر عمره رمى السيف ومسك الفرشاة؟ هاي قصة حقيقية.",
+  "vo": "منو هذا الرجل اللي يگولون ما انغلب بولا مبارزة، من أكثر من ستين؟ وليش بآخر عمره ترك السيف ومسك الفرشاة؟ هاي قصة حقيقية.",
   "img": "A katana resting beside an ink brush and a sheet of calligraphy paper on a low wooden table, soft light.",
   "part": 1,
   "prompt": "A katana resting beside an ink brush and a sheet of calligraphy paper on a low wooden table, soft light. Cinematic, photorealistic, historically accurate, 16:9, no readable text, no logos, no people."
  },
  {
-  "vo": "اليابان، أواخر القرن السادس عشر... بلد كله حروب بين الأمراء والساموراي.",
+  "vo": "اليابان، أواخر القرن السادس عشر... بلد مقسوم بين أمراء، والحروب ما تخلص.",
   "img": "Feudal Japanese landscape with a castle on a hill, armies with banners marching through rice fields, smoke on the horizon.",
   "part": 2,
   "prompt": "Feudal Japanese landscape with a castle on a hill, armies with banners marching through rice fields, smoke on the horizon. Cinematic, photorealistic, historically accurate, 16:9, no readable text, no logos, no people.",
@@ -32,31 +32,31 @@
   "day": "١٥٨٤م"
  },
  {
-  "vo": "وبقرية صغيرة، انولد طفل اسمه موساشي... وأبوه جان مدرب سيف قاسي.",
+  "vo": "وبقرية صغيرة، انولد طفل اسمه موساشي... وأبوه جان مدرب سيف، بس قاسي كلش وياه.",
   "img": "A strict samurai father training a young boy with a wooden sword in a village courtyard, thatched houses.",
   "part": 2,
   "prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon sandals, clean vector cel shading. All people in the image are drawn as these cartoon characters. Miyamoto Musashi: messy black hair tied loosely, rough stubble, plain dark grey kimono and hakama, two katana swords at his waist. A strict samurai father training a young boy with a wooden sword in a village courtyard, thatched houses. Historically accurate early 17th century Edo-period Japan. Cinematic lighting. Wide shot, 16:9, no readable text, no logos."
  },
  {
-  "vo": "الطفل جان عصبي وقوي... ويتعلم السيف لحاله أغلب الوقت.",
+  "vo": "الطفل جان عصبي وقوي... ويتعلم السيف لحاله، يضرب الشجر بعصا خشب من الصبح لليل.",
   "img": "A young boy alone practicing with a wooden sword under a big tree in a mountain village, determined face.",
   "part": 2,
   "prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon sandals, clean vector cel shading. All people in the image are drawn as these cartoon characters. Miyamoto Musashi: messy black hair tied loosely, rough stubble, plain dark grey kimono and hakama, two katana swords at his waist. A young boy alone practicing with a wooden sword under a big tree in a mountain village, determined face. Historically accurate early 17th century Edo-period Japan. Cinematic lighting. Wide shot, 16:9, no readable text, no logos."
  },
  {
-  "vo": "وبعمر ثلطعش سنة... سوّى أول مبارزة بحياته.",
+  "vo": "وبعمر ثلطعش سنة بس... سوّى أول مبارزة حقيقية بحياته.",
   "img": "A 13-year-old boy holding a wooden stick facing a tall adult samurai in a village square, villagers watching.",
   "part": 2,
   "prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon sandals, clean vector cel shading. All people in the image are drawn as these cartoon characters. Miyamoto Musashi: messy black hair tied loosely, rough stubble, plain dark grey kimono and hakama, two katana swords at his waist. A 13-year-old boy holding a wooden stick facing a tall adult samurai in a village square, villagers watching. Historically accurate early 17th century Edo-period Japan. Cinematic lighting. Wide shot, 16:9, no readable text, no logos."
  },
  {
-  "vo": "خصمه جان ساموراي محترف اسمه أريما كيهي... والكل گال الطفل راح يموت.",
+  "vo": "خصمه ساموراي محترف اسمه أريما كيهي، علّق ورقة يتحدى بيها أي واحد... والطفل كتب اسمه عليها!",
   "img": "A proud adult samurai laughing and pointing at a boy with a wooden stick, village crowd worried.",
   "part": 3,
   "prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon sandals, clean vector cel shading. All people in the image are drawn as these cartoon characters. Miyamoto Musashi: messy black hair tied loosely, rough stubble, plain dark grey kimono and hakama, two katana swords at his waist. A proud adult samurai laughing and pointing at a boy with a wooden stick, village crowd worried. Historically accurate early 17th century Edo-period Japan. Cinematic lighting. Wide shot, 16:9, no readable text, no logos."
  },
  {
-  "vo": "بس موساشي رماه على الگاع... وغلبه بعصا خشب!",
+  "vo": "والكل گال الطفل راح يموت... بس موساشي رماه على الگاع، وغلبه بعصا خشب!",
   "img": "A boy knocking down an adult samurai with a wooden stick, dust flying, crowd shocked.",
   "part": 3,
   "prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon sandals, clean vector cel shading. All people in the image are drawn as these cartoon characters. Miyamoto Musashi: messy black hair tied loosely, rough stubble, plain dark grey kimono and hakama, two katana swords at his waist. A boy knocking down an adult samurai with a wooden stick, dust flying, crowd shocked. Historically accurate early 17th century Edo-period Japan. Cinematic lighting. Wide shot, 16:9, no readable text, no logos.",
@@ -69,13 +69,13 @@
   "prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon sandals, clean vector cel shading. All people in the image are drawn as these cartoon characters. Miyamoto Musashi: messy black hair tied loosely, rough stubble, plain dark grey kimono and hakama, two katana swords at his waist. Teenage Musashi standing on a hill at sunset looking over the land, wooden sword on his shoulder. Historically accurate early 17th century Edo-period Japan. Cinematic lighting. Wide shot, 16:9, no readable text, no logos."
  },
  {
-  "vo": "وطلع يمشي بالبلاد... بلا بيت، بلا سيد، بلا فلوس.",
+  "vo": "وطلع يمشي بالبلاد... بلا بيت، بلا سيد، بلا فلوس. ويتحدى أي سياف قوي يسمع بيه.",
   "img": "Musashi walking alone along a misty mountain road in Japan, straw hat, two swords, autumn leaves.",
   "part": 3,
   "prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon sandals, clean vector cel shading. All people in the image are drawn as these cartoon characters. Miyamoto Musashi: messy black hair tied loosely, rough stubble, plain dark grey kimono and hakama, two katana swords at his waist. Musashi walking alone along a misty mountain road in Japan, straw hat, two swords, autumn leaves. Historically accurate early 17th century Edo-period Japan. Cinematic lighting. Wide shot, 16:9, no readable text, no logos."
  },
  {
-  "vo": "بسنة ألف وستمية... دخل بأكبر معركة بتاريخ اليابان: سيكيغاهارا.",
+  "vo": "بسنة ألف وستمية... دخل بأكبر معركة بتاريخ اليابان: سيكيغاهارا. أكثر من مية وستين ألف جندي.",
   "img": "A huge samurai battle at Sekigahara with thousands of soldiers, banners, fog and arrows.",
   "part": 4,
   "prompt": "A huge samurai battle at Sekigahara with thousands of soldiers, banners, fog and arrows. Cinematic, photorealistic, historically accurate, 16:9, no readable text, no logos, no people.",
@@ -84,87 +84,87 @@
   "sfx": "boom"
  },
  {
-  "vo": "جماعته خسروا... بس هو نجا، وهرب بين الجثث.",
+  "vo": "جماعته خسروا... بس هو نجا، وهرب بين الضباب والجثث.",
   "img": "Musashi escaping through a foggy battlefield after defeat, broken banners and fallen spears around him.",
   "part": 4,
   "prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon sandals, clean vector cel shading. All people in the image are drawn as these cartoon characters. Miyamoto Musashi: messy black hair tied loosely, rough stubble, plain dark grey kimono and hakama, two katana swords at his waist. Musashi escaping through a foggy battlefield after defeat, broken banners and fallen spears around him. Historically accurate early 17th century Edo-period Japan. Cinematic lighting. Wide shot, 16:9, no readable text, no logos."
  },
  {
-  "vo": "وبعدها راح للعاصمة كيوتو... وتحدى أشهر مدرسة سيف بيها: عائلة يوشيوكا.",
+  "vo": "وبعدها راح لكيوتو... وتحدى أشهر مدرسة سيف بيها: عائلة يوشيوكا.",
   "img": "Musashi standing at the gate of a famous sword school in old Kyoto, students staring at him.",
   "part": 4,
   "prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon sandals, clean vector cel shading. All people in the image are drawn as these cartoon characters. Miyamoto Musashi: messy black hair tied loosely, rough stubble, plain dark grey kimono and hakama, two katana swords at his waist. Musashi standing at the gate of a famous sword school in old Kyoto, students staring at him. Historically accurate early 17th century Edo-period Japan. Cinematic lighting. Wide shot, 16:9, no readable text, no logos."
  },
  {
-  "vo": "غلب رئيس المدرسة... وبعدين غلب أخوه.",
+  "vo": "غلب رئيس المدرسة بضربة وحدة بسيف خشب... وبعدين غلب أخوه هم.",
   "img": "Musashi defeating a samurai master in a duel in a snowy field in Kyoto, wooden sword raised.",
   "part": 4,
   "prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon sandals, clean vector cel shading. All people in the image are drawn as these cartoon characters. Miyamoto Musashi: messy black hair tied loosely, rough stubble, plain dark grey kimono and hakama, two katana swords at his waist. Musashi defeating a samurai master in a duel in a snowy field in Kyoto, wooden sword raised. Historically accurate early 17th century Edo-period Japan. Cinematic lighting. Wide shot, 16:9, no readable text, no logos.",
   "sfx": "hit"
  },
  {
-  "vo": "العائلة عصبت... وجهزت كمين: عشرات الرجال بالسيوف والرماح والقوس.",
+  "vo": "العائلة حسّت بالإهانة... وجهزت كمين: عشرات الرجال بالسيوف والرماح والسهام، تحت شجرة صنوبر.",
   "img": "Dozens of samurai with swords, spears and bows hiding around a large pine tree at night, ambush.",
   "part": 5,
   "prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon sandals, clean vector cel shading. All people in the image are drawn as these cartoon characters. Miyamoto Musashi: messy black hair tied loosely, rough stubble, plain dark grey kimono and hakama, two katana swords at his waist. Dozens of samurai with swords, spears and bows hiding around a large pine tree at night, ambush. Historically accurate early 17th century Edo-period Japan. Cinematic lighting. Wide shot, 16:9, no readable text, no logos."
  },
  {
-  "vo": "وحطوا طفل صغير من العائلة گدامهم... كرمز إنهم القائد.",
+  "vo": "وحطوا طفل صغير من العائلة گدامهم... كرمز إنه هو القائد.",
   "img": "A young boy in fine clothes standing in front of armed samurai under a pine tree at dawn, serious.",
   "part": 5,
   "prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon sandals, clean vector cel shading. All people in the image are drawn as these cartoon characters. Miyamoto Musashi: messy black hair tied loosely, rough stubble, plain dark grey kimono and hakama, two katana swords at his waist. A young boy in fine clothes standing in front of armed samurai under a pine tree at dawn, serious. Historically accurate early 17th century Edo-period Japan. Cinematic lighting. Wide shot, 16:9, no readable text, no logos."
  },
  {
-  "vo": "موساشي وصل قبلهم، واختبأ... وهجم فجأة.",
+  "vo": "بس موساشي وصل قبلهم بساعات، واختبأ بالحشيش... وهجم فجأة.",
   "img": "Musashi hiding in tall grass at dawn watching the group of samurai under the pine tree.",
   "part": 5,
   "prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon sandals, clean vector cel shading. All people in the image are drawn as these cartoon characters. Miyamoto Musashi: messy black hair tied loosely, rough stubble, plain dark grey kimono and hakama, two katana swords at his waist. Musashi hiding in tall grass at dawn watching the group of samurai under the pine tree. Historically accurate early 17th century Edo-period Japan. Cinematic lighting. Wide shot, 16:9, no readable text, no logos."
  },
  {
-  "vo": "يگولون شق طريقه بينهم... وهرب حي. ومن هنا، الكل صار يخاف اسمه.",
+  "vo": "يگولون شق طريقه بينهم وهرب حي... ومن هنا، كل سيافين اليابان صاروا يخافون اسمه.",
   "img": "Musashi fighting through many samurai with two swords at dawn, dramatic motion, mist.",
   "part": 5,
   "prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon sandals, clean vector cel shading. All people in the image are drawn as these cartoon characters. Miyamoto Musashi: messy black hair tied loosely, rough stubble, plain dark grey kimono and hakama, two katana swords at his waist. Musashi fighting through many samurai with two swords at dawn, dramatic motion, mist. Historically accurate early 17th century Edo-period Japan. Cinematic lighting. Wide shot, 16:9, no readable text, no logos.",
   "sfx": "boom"
  },
  {
-  "vo": "وموساشي جان عنده أسلوب غريب: يقاتل بسيفين... واحد بكل إيد.",
+  "vo": "وموساشي جان عنده أسلوب غريب: يقاتل بسيفين... سيف طويل بإيد، وقصير بالإيد الثانية.",
   "img": "Musashi in a fighting stance holding a long katana in one hand and a short sword in the other, dojo background.",
   "part": 6,
   "prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon sandals, clean vector cel shading. All people in the image are drawn as these cartoon characters. Miyamoto Musashi: messy black hair tied loosely, rough stubble, plain dark grey kimono and hakama, two katana swords at his waist. Musashi in a fighting stance holding a long katana in one hand and a short sword in the other, dojo background. Historically accurate early 17th century Edo-period Japan. Cinematic lighting. Wide shot, 16:9, no readable text, no logos."
  },
  {
-  "vo": "ذاك الوقت، الساموراي يمسك السيف بالإيدين الثنتين... فهذا جان شي جديد.",
+  "vo": "ذاك الوقت، الساموراي يمسك السيف بالإيدين الثنتين... فهذا جان شي جديد ومخيف.",
   "img": "Two samurai comparing stances in a dojo, one with a two-handed grip, Musashi with two swords, students watching.",
   "part": 6,
   "prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon sandals, clean vector cel shading. All people in the image are drawn as these cartoon characters. Miyamoto Musashi: messy black hair tied loosely, rough stubble, plain dark grey kimono and hakama, two katana swords at his waist. Two samurai comparing stances in a dojo, one with a two-handed grip, Musashi with two swords, students watching. Historically accurate early 17th century Edo-period Japan. Cinematic lighting. Wide shot, 16:9, no readable text, no logos."
  },
  {
-  "vo": "وما جان يهتم بالشكل: ملابسه وسخة، وشعره منكوش، وما يحب يتحمم!",
+  "vo": "وما جان يهتم بالشكل: ملابسه وسخة، وشعره منكوش، ويگولون ما يحب يتحمم... حتى ما ينمسك بلا سيف!",
   "img": "Musashi with messy hair and dirty clothes sitting relaxed while elegant samurai look at him with disgust.",
   "part": 6,
   "prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon sandals, clean vector cel shading. All people in the image are drawn as these cartoon characters. Miyamoto Musashi: messy black hair tied loosely, rough stubble, plain dark grey kimono and hakama, two katana swords at his waist. Musashi with messy hair and dirty clothes sitting relaxed while elegant samurai look at him with disgust. Historically accurate early 17th century Edo-period Japan. Cinematic lighting. Wide shot, 16:9, no readable text, no logos."
  },
  {
-  "vo": "بس بالمبارزة... محد جان يگدر يلمسه.",
+  "vo": "بس بالمبارزة... محد جان يگدر يلمسه. يقرا خصمه قبل ما يتحرك.",
   "img": "Musashi calmly dodging a fast sword strike from a skilled opponent, dust in the air, dojo.",
   "part": 6,
   "prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon sandals, clean vector cel shading. All people in the image are drawn as these cartoon characters. Miyamoto Musashi: messy black hair tied loosely, rough stubble, plain dark grey kimono and hakama, two katana swords at his waist. Musashi calmly dodging a fast sword strike from a skilled opponent, dust in the air, dojo. Historically accurate early 17th century Edo-period Japan. Cinematic lighting. Wide shot, 16:9, no readable text, no logos."
  },
  {
-  "vo": "وبعدين... إجت أشهر مبارزة بتاريخ اليابان.",
+  "vo": "وبعدين... إجت أشهر مبارزة بتاريخ اليابان، اللي لهسه يسوولها أفلام.",
   "img": "A mysterious calm sea at dawn with a small island in the middle, mist.",
   "part": 7,
   "prompt": "A mysterious calm sea at dawn with a small island in the middle, mist. Cinematic, photorealistic, historically accurate, 16:9, no readable text, no logos, no people."
  },
  {
-  "vo": "خصمه: ساساكي كوجيرو... سياف وسيم، سيفه طويل لدرجة يسمّوه «عمود نشر الهدوم»!",
+  "vo": "خصمه: ساساكي كوجيرو... سياف وسيم ومشهور، وسيفه طويل لدرجة يسمّوه «عمود نشر الهدوم»!",
   "img": "Sasaki Kojiro posing proudly with his extremely long katana in a beautiful garden with cherry blossoms.",
   "part": 7,
   "prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon sandals, clean vector cel shading. All people in the image are drawn as these cartoon characters. Sasaki Kojiro: long black hair in a high ponytail, elegant bright red kimono, an extremely long katana on his back. Sasaki Kojiro posing proudly with his extremely long katana in a beautiful garden with cherry blossoms. Historically accurate early 17th century Edo-period Japan. Cinematic lighting. Wide shot, 16:9, no readable text, no logos."
  },
  {
-  "vo": "وكوجيرو جان عنده حركة مشهورة: «ضربة السنونو»... ضربة سريعة لدرجة تقص طير بالهوا.",
+  "vo": "وكوجيرو جان عنده حركة اسمها «ضربة السنونو»... سريعة لدرجة تقص طير بالهوا.",
   "img": "Sasaki Kojiro slicing his long sword through the air as swallows fly around him, motion blur.",
   "part": 7,
   "prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon sandals, clean vector cel shading. All people in the image are drawn as these cartoon characters. Sasaki Kojiro: long black hair in a high ponytail, elegant bright red kimono, an extremely long katana on his back. Sasaki Kojiro slicing his long sword through the air as swallows fly around him, motion blur. Historically accurate early 17th century Edo-period Japan. Cinematic lighting. Wide shot, 16:9, no readable text, no logos."
@@ -178,80 +178,80 @@
   "day": "١٦١٢م"
  },
  {
-  "vo": "وكوجيرو وصل بالوقت... بس موساشي ما إجه.",
+  "vo": "وكوجيرو وصل بالوقت، بأحسن ملابسه... بس موساشي ما إجه.",
   "img": "Sasaki Kojiro standing alone on the island beach, angry and tense, looking at the sea.",
   "part": 8,
   "prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon sandals, clean vector cel shading. All people in the image are drawn as these cartoon characters. Sasaki Kojiro: long black hair in a high ponytail, elegant bright red kimono, an extremely long katana on his back. Sasaki Kojiro standing alone on the island beach, angry and tense, looking at the sea. Historically accurate early 17th century Edo-period Japan. Cinematic lighting. Wide shot, 16:9, no readable text, no logos."
  },
  {
-  "vo": "ساعة... ساعتين... وكوجيرو يعصّب أكثر وأكثر.",
+  "vo": "ساعة... ساعتين... والشمس صعدت، وكوجيرو يعصّب أكثر وأكثر. وهذا اللي يريده موساشي.",
   "img": "Close view of Sasaki Kojiro clenching his teeth, gripping his long sword, sweat, sun rising higher.",
   "part": 8,
   "prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon sandals, clean vector cel shading. All people in the image are drawn as these cartoon characters. Sasaki Kojiro: long black hair in a high ponytail, elegant bright red kimono, an extremely long katana on his back. Close view of Sasaki Kojiro clenching his teeth, gripping his long sword, sweat, sun rising higher. Historically accurate early 17th century Edo-period Japan. Cinematic lighting. Wide shot, 16:9, no readable text, no logos."
  },
  {
-  "vo": "وموساشي بالقارب، ياخذ مجداف، ويقعد ينحته... لسيف خشب أطول من سيف كوجيرو.",
+  "vo": "لأن موساشي بالقارب، ياخذ مجداف، وينحته... لسيف خشب أطول من سيف كوجيرو.",
   "img": "Musashi sitting in a small boat carving a long oar into a wooden sword with a knife, boatman rowing.",
   "part": 8,
   "prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon sandals, clean vector cel shading. All people in the image are drawn as these cartoon characters. Miyamoto Musashi: messy black hair tied loosely, rough stubble, plain dark grey kimono and hakama, two katana swords at his waist. Musashi sitting in a small boat carving a long oar into a wooden sword with a knife, boatman rowing. Historically accurate early 17th century Edo-period Japan. Cinematic lighting. Wide shot, 16:9, no readable text, no logos."
  },
  {
-  "vo": "ولما وصل، كوجيرو سحب سيفه... ورمى الغمد بالماي.",
+  "vo": "ولما وصل، كوجيرو سحب سيفه الطويل... ورمى الغمد بالماي.",
   "img": "Sasaki Kojiro drawing his long sword and throwing the scabbard into the sea, Musashi stepping off a boat.",
   "part": 8,
   "prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon sandals, clean vector cel shading. All people in the image are drawn as these cartoon characters. Miyamoto Musashi: messy black hair tied loosely, rough stubble, plain dark grey kimono and hakama, two katana swords at his waist. Sasaki Kojiro: long black hair in a high ponytail, elegant bright red kimono, an extremely long katana on his back. Sasaki Kojiro drawing his long sword and throwing the scabbard into the sea, Musashi stepping off a boat. Historically accurate early 17th century Edo-period Japan. Cinematic lighting. Wide shot, 16:9, no readable text, no logos."
  },
  {
-  "vo": "وموساشي گلّه: «خسرت يا كوجيرو... لو جنت راح تفوز، ما جنت ترمي غمدك».",
+  "vo": "وموساشي ابتسم وگلّه: «خسرت يا كوجيرو... لو جنت راح تفوز، ما جنت ترمي غمدك».",
   "img": "Musashi smiling calmly on the beach pointing his wooden sword at a furious Kojiro.",
   "part": 9,
   "prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon sandals, clean vector cel shading. All people in the image are drawn as these cartoon characters. Miyamoto Musashi: messy black hair tied loosely, rough stubble, plain dark grey kimono and hakama, two katana swords at his waist. Sasaki Kojiro: long black hair in a high ponytail, elegant bright red kimono, an extremely long katana on his back. Musashi smiling calmly on the beach pointing his wooden sword at a furious Kojiro. Historically accurate early 17th century Edo-period Japan. Cinematic lighting. Wide shot, 16:9, no readable text, no logos."
  },
  {
-  "vo": "وهجموا... ضربة وحدة.",
+  "vo": "وهجموا... وصار كلشي بثانية. ضربة وحدة.",
   "img": "Musashi and Kojiro clashing on the beach in a single explosive strike, sand and water spraying, slow motion.",
   "part": 9,
   "prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon sandals, clean vector cel shading. All people in the image are drawn as these cartoon characters. Miyamoto Musashi: messy black hair tied loosely, rough stubble, plain dark grey kimono and hakama, two katana swords at his waist. Sasaki Kojiro: long black hair in a high ponytail, elegant bright red kimono, an extremely long katana on his back. Musashi and Kojiro clashing on the beach in a single explosive strike, sand and water spraying, slow motion. Historically accurate early 17th century Edo-period Japan. Cinematic lighting. Wide shot, 16:9, no readable text, no logos.",
   "sfx": "boom"
  },
  {
-  "vo": "وكوجيرو وگع على الرمل... وموساشي ركب القارب ورجع، بدون ولا كلمة.",
+  "vo": "وكوجيرو وگع على الرمل... وموساشي رجع للقارب، بدون ولا كلمة.",
   "img": "Kojiro lying defeated on the sand while Musashi walks back to the boat at sunrise, calm.",
   "part": 9,
   "prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon sandals, clean vector cel shading. All people in the image are drawn as these cartoon characters. Miyamoto Musashi: messy black hair tied loosely, rough stubble, plain dark grey kimono and hakama, two katana swords at his waist. Sasaki Kojiro: long black hair in a high ponytail, elegant bright red kimono, an extremely long katana on his back. Kojiro lying defeated on the sand while Musashi walks back to the boat at sunrise, calm. Historically accurate early 17th century Edo-period Japan. Cinematic lighting. Wide shot, 16:9, no readable text, no logos."
  },
  {
-  "vo": "وبعدها... موساشي بطّل المبارزات للموت.",
+  "vo": "وبعد هاي المبارزة، صار شي غريب... موساشي بطّل المبارزات للموت.",
   "img": "Musashi standing alone on a cliff looking at the sea, wooden sword lowered, thoughtful.",
   "part": 9,
   "prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon sandals, clean vector cel shading. All people in the image are drawn as these cartoon characters. Miyamoto Musashi: messy black hair tied loosely, rough stubble, plain dark grey kimono and hakama, two katana swords at his waist. Musashi standing alone on a cliff looking at the sea, wooden sword lowered, thoughtful. Historically accurate early 17th century Edo-period Japan. Cinematic lighting. Wide shot, 16:9, no readable text, no logos."
  },
  {
-  "vo": "وصار يدوّر على شي ثاني: طريق السيف... مو بس القتل.",
+  "vo": "وصار يدوّر على طريق السيف... يعني السيف مو بس قتل، السيف طريقة تفكير.",
   "img": "Older Musashi meditating under a waterfall in the mountains, calm.",
   "part": 10,
   "prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon sandals, clean vector cel shading. All people in the image are drawn as these cartoon characters. Miyamoto Musashi: messy black hair tied loosely, rough stubble, plain dark grey kimono and hakama, two katana swords at his waist. Older Musashi meditating under a waterfall in the mountains, calm. Historically accurate early 17th century Edo-period Japan. Cinematic lighting. Wide shot, 16:9, no readable text, no logos."
  },
  {
-  "vo": "وصار رسام، وخطاط، ونحات... ولوحاته موجودة بمتاحف اليابان لهسه.",
+  "vo": "وصار رسام، وخطاط، ونحات... ولوحاته لهسه بمتاحف اليابان.",
   "img": "Older Musashi painting a bird on a branch with ink brush on paper, calm studio.",
   "part": 10,
   "prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon sandals, clean vector cel shading. All people in the image are drawn as these cartoon characters. Miyamoto Musashi: messy black hair tied loosely, rough stubble, plain dark grey kimono and hakama, two katana swords at his waist. Older Musashi painting a bird on a branch with ink brush on paper, calm studio. Historically accurate early 17th century Edo-period Japan. Cinematic lighting. Wide shot, 16:9, no readable text, no logos."
  },
  {
-  "vo": "يگولون رسم طير الصرد على غصن... بنفس هدوء ضربة السيف.",
+  "vo": "وأشهرها طير الصرد على غصن يابس... يگولون رسمها بنفس هدوء ضربة السيف.",
   "img": "Close-up of a traditional Japanese ink painting of a shrike bird on a dry branch, brush beside it.",
   "part": 10,
   "prompt": "Close-up of a traditional Japanese ink painting of a shrike bird on a dry branch, brush beside it. Cinematic, photorealistic, historically accurate, 16:9, no readable text, no logos, no people."
  },
  {
-  "vo": "وعلّم تلاميذ... بس جان يگول: أهم شي إنك تفهم، مو تقلد.",
+  "vo": "وعلّم تلاميذ... وجان يگول: لا تقلدوني. افهم الطريقة، ولگى طريقك انت.",
   "img": "Older Musashi teaching young students in a dojo, pointing at their stance.",
   "part": 10,
   "prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon sandals, clean vector cel shading. All people in the image are drawn as these cartoon characters. Miyamoto Musashi: messy black hair tied loosely, rough stubble, plain dark grey kimono and hakama, two katana swords at his waist. Older Musashi teaching young students in a dojo, pointing at their stance. Historically accurate early 17th century Edo-period Japan. Cinematic lighting. Wide shot, 16:9, no readable text, no logos."
  },
  {
-  "vo": "وبآخر عمره، راح وعاش بكهف بالجبل... اسمه كهف ريغندو.",
+  "vo": "وبآخر عمره، راح وعاش لحاله بكهف بالجبل... اسمه كهف ريغندو.",
   "img": "A mountain cave with a small shrine inside, mist and trees around, lantern light.",
   "part": 11,
   "prompt": "A mountain cave with a small shrine inside, mist and trees around, lantern light. Cinematic, photorealistic, historically accurate, 16:9, no readable text, no logos, no people.",
@@ -259,13 +259,13 @@
   "day": "١٦٤٣م"
  },
  {
-  "vo": "وهناك كتب كتاب اسمه: كتاب الحلقات الخمس... الأرض، والماي، والنار، والريح، والفراغ.",
+  "vo": "وهناك كتب كتاب اسمه: كتاب الحلقات الخمس... الأرض، والماي، والنار، والريح، والفراغ. كل خبرته بكتاب صغير.",
   "img": "Old Musashi with grey hair writing with a brush on scrolls inside a cave by candlelight.",
   "part": 11,
   "prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon sandals, clean vector cel shading. All people in the image are drawn as these cartoon characters. Miyamoto Musashi: messy black hair tied loosely, rough stubble, plain dark grey kimono and hakama, two katana swords at his waist. Old Musashi with grey hair writing with a brush on scrolls inside a cave by candlelight. Historically accurate early 17th century Edo-period Japan. Cinematic lighting. Wide shot, 16:9, no readable text, no logos."
  },
  {
-  "vo": "وبعد أسابيع من إكماله... مات، بعمر حوالي ستين سنة.",
+  "vo": "وبعد أسابيع من إكماله... مات بهدوء بفراشه، بعمر حوالي ستين سنة.",
   "img": "An empty cave with a finished scroll, a brush and two swords placed neatly, candle burned out.",
   "part": 11,
   "prompt": "An empty cave with a finished scroll, a brush and two swords placed neatly, candle burned out. Cinematic, photorealistic, historically accurate, 16:9, no readable text, no logos, no people."
@@ -277,7 +277,7 @@
   "prompt": "An old scroll rolled out on a table with sunlight falling on it. Cinematic, photorealistic, historically accurate, 16:9, no readable text, no logos, no people."
  },
  {
-  "vo": "اليوم يقروه رجال أعمال، ورياضيين، ومدربين... بكل العالم.",
+  "vo": "اليوم يقروه رجال أعمال، ورياضيين، ومدربين... بكل العالم. لأن الفكرة نفسها: افهم خصمك، واختار الوقت الصح.",
   "img": "Modern business people and athletes reading the same small book in different places, office and gym.",
   "part": 12,
   "prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon shoes, clean vector cel shading. All people in the image are drawn as these cartoon characters. Modern business people and athletes reading the same small book in different places, office and gym. Modern day. Cinematic lighting. Wide shot, 16:9, no readable text, no logos."
@@ -289,13 +289,13 @@
   "prompt": "A 2D cartoon character composited into a photorealistic cinematic scene. Character style: perfectly round plain white head with no ears and no nose, thick clean black outline, simple black oval eyes with thick angled black eyebrows, small expressive mouth, thin black stick arms and stick legs, black mitten-like hands, detailed flat-shaded cartoon clothes and chunky cartoon shoes, clean vector cel shading. All people in the image are drawn as these cartoon characters. A modern bookstore shelf full of samurai manga and novels, readers browsing. Modern day. Cinematic lighting. Wide shot, 16:9, no readable text, no logos."
  },
  {
-  "vo": "ودرس موساشي بسيط: القوة مو بالسيف... بالعقل اللي يمسكه.",
+  "vo": "ودرس موساشي بسيط: القوة مو بالسيف... القوة بالعقل اللي يمسكه.",
   "img": "Silhouette of a samurai with two swords standing on a hill at sunset, wind in the grass.",
   "part": 12,
   "prompt": "Silhouette of a samurai with two swords standing on a hill at sunset, wind in the grass. Cinematic, photorealistic, historically accurate, 16:9, no readable text, no logos, no people."
  },
  {
-  "vo": "انت لو تختار سلاح واحد بحياتك: السيف لو القلم؟ اكتبها بالتعليقات.",
+  "vo": "وانت؟ لو تختار سلاح واحد بحياتك: السيف لو القلم؟ اكتبها بالتعليقات.",
   "img": "",
   "part": 12,
   "hud": "black",
