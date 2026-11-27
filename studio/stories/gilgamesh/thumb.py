@@ -14,7 +14,7 @@ for x in range(W):
 bg.paste(Image.new('RGB', (W, H), (0, 0, 0)), (0, 0), ov)
 d = ImageDraw.Draw(bg)
 text(d, (W - 40, 15), 'أقدم قصة', 140, (255, 255, 255), 12)
-text(d, (W - 40, 190), 'بالدنيا…', 150, (255, 214, 60), 12)
+text(d, (W - 40, 190), 'بالدنيا', 150, (255, 214, 60), 12)
 text(d, (W - 40, 365), 'من العراق!', 160, (255, 80, 60), 11)
 # small "قصة حقيقية" tag
 tag = 'قصة حقيقية'; f = font(46); bb = d.textbbox((0, 0), tag, font=f, direction='rtl', language='ar')
