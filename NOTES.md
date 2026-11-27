@@ -110,5 +110,5 @@
 ## تسليم لجلسة جديدة (22/11/2026)
 - جيسوب: خلص (videos/long/jessop.mp4 + 12 شورت)، مسوداته بالطابور (studio/stories/jessop/drafts.json). Figma الجديد: ملف PCT2vXT5xHQHTWtQvWRax9 (حساب rockabelleshop، session a4575d70-…).
 - Figma: الحساب القديم hmahde462 خلص رصيده لحد 1/12. المستخدم ربط حساب Figma جديد مدفوع → بالجلسة الجديدة اعمل create_new_file وكمل عليه.
-- vidIQ: الحساب الحالي 2955e90d… (مجاني، 3 رفعات/يوم). طابور النشر studio/state/publish_queue.json وتذكيره اليومي 12:07 بغداد (23–29/11) شغّال بالجلسة القديمة session_01QEbwXC1gCW2hrwMbMeGhu6 — لا تكرره.
+- vidIQ: الحساب الحالي 1e72ded1… (تغير 27/11) (مجاني، 3 رفعات/يوم). طابور النشر studio/state/publish_queue.json وتذكيره اليومي 12:07 بغداد (23–29/11) شغّال بالجلسة القديمة session_01QEbwXC1gCW2hrwMbMeGhu6 — لا تكرره.
 - مواعيد جيسوب: الطويل 11/12 20:00، الشورتات 12–17/12 (17:30 و21:30). الرفع يبدي من 30/11 بعد ما يخلص الطابور.
