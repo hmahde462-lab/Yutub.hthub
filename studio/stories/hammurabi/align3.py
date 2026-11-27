@@ -22,13 +22,15 @@ while t0 < dur:
                   "Reply with JSON only: an object mapping line number to start time; omit lines whose beginning is not in the clip.")
         body = {"contents":[{"parts":[{"inline_data":{"mime_type":"audio/mpeg","data":b}},{"text":prompt}]}],
                 "generationConfig":{"responseMimeType":"application/json"}}
-        for attempt in range(4):
+        r = None
+        for attempt in range(6):
             try:
                 req = urllib.request.Request(f"https://generativelanguage.googleapis.com/v1beta/models/{GM}:generateContent",
                     data=json.dumps(body).encode(), headers={"Content-Type":"application/json","x-goog-api-key":"dummy"})
                 r = json.load(urllib.request.urlopen(req, timeout=300)); break
             except Exception as e:
                 print('retry', t0, e); time.sleep(20)
+        if r is None: t0 += W; continue
         txt = r['candidates'][0]['content']['parts'][-1]['text']
         cache[key] = json.loads(re.search(r'\{.*\}', txt, re.S).group(0))
         json.dump(cache, open('a3.json','w'))
