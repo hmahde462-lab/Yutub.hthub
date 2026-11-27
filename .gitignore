@@ -11,3 +11,5 @@ studio/stories/*/sov/
 studio/stories/*/*.mp4
 studio/stories/*/audio.wav
 studio/stories/*/thumb.jpg
+studio/stories/*/vo_p*
+studio/stories/*/s.wav
