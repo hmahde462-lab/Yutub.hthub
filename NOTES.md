@@ -130,3 +130,4 @@
 - بيت الحكمة الطويل جاهز: videos/long/hikma.mp4 (5:36) + 12 شورت videos/shorts/hikma-long/ + schedule.txt بـ studio/stories/hikma (الجمعة 1/1/2027).
 - حمورابي: 44 صورة من 48 نازلة؛ باقي 43، 44، 45، 46 (برومبتاتها بـ script.json). بعدها build.py (عنوان/شاشة سودة/section/OUT) + shorts + thumb + ضغط.
 - طول الفيديو الطويل المطلوب 6–7 دقايق (≈3300–3500 حرف سرد). موساشي انطوّل يدوياً بـ script.json (لا تعيد gen.py).
+- المحاذاة: gemini-3.6-flash يرجع 429؛ استخدم GM=gemini-3-flash-preview.
