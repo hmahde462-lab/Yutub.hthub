@@ -1,0 +1,4 @@
+0 https://www.figma.com/api/mcp/asset/2cb880b8-6794-4548-adbb-85a2428d7935.png
+1 https://www.figma.com/api/mcp/asset/32ce6546-ec86-447c-b111-3c264f860aeb.png
+2 https://www.figma.com/api/mcp/asset/cbc8d586-eb82-4c94-a53a-208a9c21a0de.png
+3 https://www.figma.com/api/mcp/asset/ccd6ff0c-9ddb-4e04-9001-0f25edbd310d.png
