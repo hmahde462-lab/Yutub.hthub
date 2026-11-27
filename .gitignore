@@ -1,3 +1,5 @@
 *.zip
 graphify-out/
 studio/state/manual_shorts/
+studio/stories/*/*.log
+studio/stories/*/vo.wav
