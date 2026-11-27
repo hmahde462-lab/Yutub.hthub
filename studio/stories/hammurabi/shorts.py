@@ -28,7 +28,7 @@ def stack(rows, sz, col, gap=6):
     out = Image.new('RGBA', (W, h), (0, 0, 0, 0)); y = 0
     for i in ims: out.alpha_composite(i, ((W - i.width)//2, y)); y += i.height + gap
     return out
-HEAD = 'الشارع اللي ما مات!'; SLUG = 'mutanabbi'; CLEAN = 'mutanabbi_clean.mp4'; OUTDIR = '../../../videos/shorts/' + SLUG
+HEAD = 'أول ملك كتب القانون!'; SLUG = 'hammurabi'; CLEAN = 'hammurabi_clean.mp4'; OUTDIR = '../../../videos/shorts/' + SLUG
 os.makedirs('sov', exist_ok=True); os.makedirs(OUTDIR, exist_ok=True)
 FG_Y, FG_H = 470, 810
 for p, (a, b) in enumerate(PARTS, 1):

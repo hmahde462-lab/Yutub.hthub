@@ -40,3 +40,7 @@
 40 https://www.figma.com/api/mcp/asset/360ef6af-e375-430b-b4ba-2d3316445ece.png
 41 https://www.figma.com/api/mcp/asset/93b57a7e-e130-47f1-a8b5-f6808d67547d.png
 42 https://www.figma.com/api/mcp/asset/1703ce4d-9a06-4eef-928e-190ed8ae3d4b.png
+43 https://www.figma.com/api/mcp/asset/60707120-526b-4d01-9f08-476a1b9af453.png
+44 https://www.figma.com/api/mcp/asset/922631fe-b4b5-48d4-8576-2bcb831a9caa.png
+45 https://www.figma.com/api/mcp/asset/e154d78d-796c-4ea0-8301-6493e8310695.png
+46 https://www.figma.com/api/mcp/asset/fe518bd3-9ab0-408d-a54c-e7836accb138.png

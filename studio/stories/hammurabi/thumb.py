@@ -5,7 +5,7 @@ F = 'NotoNaskhArabic-Bold.ttf'
 def font(sz): return ImageFont.truetype(F, sz, layout_engine=ImageFont.Layout.RAQM)
 def text(d, xy, t, sz, fill, stroke=10, anchor='ra'):
     d.text(xy, t, font=font(sz), fill=fill, stroke_width=stroke, stroke_fill=(0, 0, 0), direction='rtl', language='ar', anchor=anchor)
-bg = Image.open('img_jpg/30.jpg').convert('RGB').resize((W, H), Image.LANCZOS)
+bg = Image.open('img_jpg/14.jpg').convert('RGB').resize((W, H), Image.LANCZOS)
 bg = ImageEnhance.Contrast(ImageEnhance.Color(bg).enhance(1.25)).enhance(1.1)
 # dark gradient on the right for text
 ov = Image.new('L', (W, H), 0); g = ImageDraw.Draw(ov)
@@ -13,9 +13,9 @@ for x in range(W):
     g.line([(x, 0), (x, H)], fill=int(max(0, (x - 520) / (W - 520)) * 190))
 bg.paste(Image.new('RGB', (W, H), (0, 0, 0)), (0, 0), ov)
 d = ImageDraw.Draw(bg)
-text(d, (W - 40, 15), 'حرگوا الكتب', 140, (255, 255, 255), 12)
-text(d, (W - 40, 190), 'والشارع', 150, (255, 214, 60), 12)
-text(d, (W - 40, 365), 'ما مات!', 160, (255, 80, 60), 11)
+text(d, (W - 40, 15), 'قانون عمره', 140, (255, 255, 255), 12)
+text(d, (W - 40, 190), '٣٧٠٠ سنة', 150, (255, 214, 60), 12)
+text(d, (W - 40, 365), 'بعده حي!', 160, (255, 80, 60), 11)
 # small "قصة حقيقية" tag
 tag = 'قصة حقيقية'; f = font(46); bb = d.textbbox((0, 0), tag, font=f, direction='rtl', language='ar')
 tw, th = bb[2] - bb[0], bb[3] - bb[1]
