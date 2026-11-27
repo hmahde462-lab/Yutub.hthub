@@ -3,3 +3,11 @@ graphify-out/
 studio/state/manual_shorts/
 studio/stories/*/*.log
 studio/stories/*/vo.wav
+studio/stories/*/big/
+studio/stories/*/clips/
+studio/stories/*/clips_main/
+studio/stories/*/ov/
+studio/stories/*/sov/
+studio/stories/*/*.mp4
+studio/stories/*/audio.wav
+studio/stories/*/thumb.jpg
