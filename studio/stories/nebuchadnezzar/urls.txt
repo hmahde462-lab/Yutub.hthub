@@ -1,0 +1,8 @@
+0 https://www.figma.com/api/mcp/asset/616cf1ef-7fde-4241-a2eb-daccbb3e5131.png
+1 https://www.figma.com/api/mcp/asset/f4026cf1-95a2-43ab-b719-875d94a302c1.png
+3 https://www.figma.com/api/mcp/asset/9a6d4412-8c06-4d0e-9779-2fe5db44c96a.png
+4 https://www.figma.com/api/mcp/asset/d7d0903d-77cf-475c-a65a-ff88ff49dac9.png
+5 https://www.figma.com/api/mcp/asset/614f9429-eb05-43af-8eb1-9a9897ca9672.png
+6 https://www.figma.com/api/mcp/asset/8a0fe098-92f0-4b82-9594-939cc8b2b77b.png
+7 https://www.figma.com/api/mcp/asset/d1e4caa0-7f2e-4aa8-aca3-798aca8649e8.png
+8 https://www.figma.com/api/mcp/asset/d8512f12-ebd2-46de-a2c6-40044cb41461.png

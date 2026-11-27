@@ -2,7 +2,7 @@
 import base64, json, urllib.request, re, subprocess, os, time
 D = os.path.dirname(os.path.abspath(__file__)); os.chdir(D)
 SP = '/tmp/claude-0/-home-user-Yutub-hthub/b098f5c9-1e4c-5b52-821b-ca5d00028a8c/scratchpad'
-sc = json.load(open('script.json')); f = 'chunk0.mp3'; GM = os.environ.get('GM', 'gemini-3-flash-preview')
+sc = json.load(open('script.json')); f = 'chunk0.mp3'; GM = os.environ.get('GM', 'gemini-3.5-flash-lite')
 dur = float(subprocess.check_output(['ffprobe','-v','error','-show_entries','format=duration','-of','csv=p=0',f]))
 w = [len(re.sub(r'[\s.…،؟?!:]', '', x['vo'])) + 4 for x in sc]; tot = sum(w)
 est = [sum(w[:i]) / tot * dur for i in range(len(sc))]

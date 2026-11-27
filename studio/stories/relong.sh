@@ -2,12 +2,11 @@
 # usage: relong.sh slug crf  — regenerate TTS/alignment and rebuild long + shorts for a story whose script.json vo changed
 set -e
 d=$1; crf=${2:-26}; cd "$(dirname "$0")/$d"
-python3 ../../whiteboard-p3/tts.py Algieba vo.wav vo.txt > tts.log 2>&1
-ffmpeg -nostdin -v error -y -i vo.wav -b:a 192k chunk0.mp3
+if [ -z "$SKIPTTS" ]; then TTS_MODEL=${TTS_MODEL:-gemini-3.1-flash-tts-preview} ../ttsparts.sh; ffmpeg -nostdin -v error -y -i vo.wav -b:a 192k chunk0.mp3; fi
 dur=$(ffprobe -v error -show_entries format=duration -of csv=p=0 chunk0.mp3); echo "$d audio $dur"
 rm -f a3.json
 for k in $(seq 1 12); do
-  GM=gemini-3-flash-preview python3 align3.py > align.log 2>&1 || true
+  python3 align3.py > align.log 2>&1 || true
   ok=$(python3 -c "import json,math;c=json.load(open('a3.json'));print(int(len(c)>=math.ceil($dur/30)))" 2>/dev/null || echo 0)
   [ "$ok" = 1 ] && break; sleep 90
 done
