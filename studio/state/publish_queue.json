@@ -3,7 +3,7 @@
   "story": "spartans",
   "part": "long",
   "time": "2026-11-28 20:00",
-  "done": false,
+  "done": true,
   "title": "300 رجال ضد جيش ما ينعد! ⚔️ قصة معركة الإسبرطيين الحقيقية",
   "text": "ممر ضيق بين جبل وبحر… ثلاثمية جندي إسبرطي، وگدامهم أكبر جيش بالعالم.\nالقصة الحقيقية لمعركة ثيرموبيلي سنة 480 قبل الميلاد: الملك ليونيداس، والتدريب القاسي بإسبرطة، و«تعال وخذها»، و«نقاتل بالظل»، والخائن اللي دل الفرس على الطريق السري… وشلون خسارتهم غيرت التاريخ.\n\nانت لو جنت بمكانهم، تبقى ويا ليونيداس لو ترجع؟ اكتبها بالتعليقات 👇\n\n#الإسبرطيين #ليونيداس #تاريخ #قصص_حقيقية #300",
   "tags": [
@@ -18,13 +18,15 @@
   "publishAt": "2026-11-28T20:00:00+03:00",
   "video": "videos/long/spartans.mp4",
   "thumbnail": "videos/long/spartans-thumb.jpg",
-  "note": "long-only, user asked 27/11"
+  "note": "long-only, user asked 27/11",
+  "postId": "3576ba86-6f0b-486e-9337-35d252d70919",
+  "url": "https://www.youtube.com/watch?v=wTrjz-5J_2g"
  },
  {
   "story": "nebuchadnezzar",
   "part": "long",
   "time": "2026-11-30 20:00",
-  "done": false,
+  "done": true,
   "title": "عجيبة الدنيا اللي محد لگاها! 🌴 نبوخذ نصر والجنائن المعلقة",
   "text": "ملكة تشتاق لجبالها… وملك يبنيلها جبل من الحدائق بنص الصحرا.\nقصة نبوخذ نصر، أعظم ملوك بابل: بوابة عشتار، والزقورة اللي يمكن تكون أصل برج بابل، والطابوق اللي يحمل اسمه… ولغز الجنائن المعلقة: جانت ببابل؟ لو بنينوى بالموصل؟ لو مجرد أسطورة؟\n\nانت تعتقد الجنائن جانت ببابل لو نينوى؟ اكتبها بالتعليقات 👇\n\n#بابل #نبوخذ_نصر #الجنائن_المعلقة #العراق #قصص_حقيقية",
   "tags": [
@@ -39,7 +41,9 @@
   "publishAt": "2026-11-30T20:00:00+03:00",
   "video": "videos/long/nebuchadnezzar.mp4",
   "thumbnail": "videos/long/nebuchadnezzar-thumb.jpg",
-  "note": "long-only, user asked 27/11"
+  "note": "long-only, user asked 27/11",
+  "postId": "559f146a-6c85-447b-a597-7d8be7331619",
+  "url": null
  },
  {
   "story": "kahraba-ep2",
@@ -574,7 +578,7 @@
   "story": "jessop",
   "part": "6",
   "time": "2026-12-14 21:30",
-  "done": false,
+  "done": true,
   "title": "التايتانك ضربت جبل جليد 🧊 | الجزء 6",
   "text": "قصة حقيقية: فيوليت جيسوب نجت من 3 سفن غرقت 🚢\nالقصة الكاملة بالقناة 👆\n#قصص_حقيقية #التايتانك #shorts",
   "tags": [
@@ -586,7 +590,9 @@
   "categoryId": 27,
   "publishAt": "2026-12-14T21:30:00+03:00",
   "video": "videos/shorts/jessop/jessop-part6.mp4",
-  "note": "vidiq (moved from metricool, draft there)"
+  "note": "vidiq (moved from metricool, draft there)",
+  "postId": "7c9a4cbe-a0dc-4720-9dda-acd0d35e3e57",
+  "url": "https://www.youtube.com/watch?v=VkWoP0S-MdE"
  },
  {
   "story": "jessop",
