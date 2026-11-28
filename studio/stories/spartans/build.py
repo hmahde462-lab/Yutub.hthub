@@ -243,7 +243,7 @@ for i, x in enumerate(s):
 # black scene: everything silent except boom + narration
 st, d = times[-1]; amb[int(st * SR):] = 0
 # fades between scenes for ambience
-AMB_DB = float(os.environ.get('AMB_DB', '-27'))   # ambience level relative to the voice (dB)
+AMB_DB = float(os.environ.get('AMB_DB', '-32'))   # ambience level relative to the voice (dB)
 amb = lfilter([0.35], [1, -0.65], amb).astype(np.float32)          # soften hiss (gentle lowpass)
 def mavg(x, k):
     c = np.cumsum(np.concatenate([[0.0], x.astype(np.float64)])); y = (c[k:] - c[:-k]) / k
@@ -252,9 +252,22 @@ fade = mavg((np.abs(amb) > 0).astype(np.float32), int(0.4 * SR)); amb *= np.clip
 vr = np.sqrt(np.mean(voc[np.abs(voc) > 1e-4] ** 2)) if np.any(np.abs(voc) > 1e-4) else 0.1
 ar = np.sqrt(np.mean(amb[np.abs(amb) > 1e-6] ** 2)) if np.any(np.abs(amb) > 1e-6) else 1.0
 amb *= vr * 10 ** (AMB_DB / 20) / ar
+SFXDIR = os.path.join(D, '..', '..', 'sfx', os.path.basename(D)); sfxb = np.zeros(N, np.float32)
+if os.path.exists(os.path.join(SFXDIR, 'map.json')) and not os.environ.get('NOSFX'):
+    for k, lst in json.load(open(os.path.join(SFXDIR, 'map.json'))).items():
+        i = int(k)
+        if i >= len(times): continue
+        st, d = times[i]
+        for name, off, db in lst:
+            sig = load(os.path.join(SFXDIR, name + '.mp3'))
+            L = max(1, min(len(sig), int((d - off + 0.3) * SR))); sig = sig[:L].copy()
+            fi, fo = min(L // 3, int(0.25 * SR)), min(L // 2, int(0.8 * SR))
+            sig[:fi] *= np.linspace(0, 1, fi); sig[L - fo:] *= np.linspace(1, 0, fo)
+            r = np.sqrt(np.mean(sig[np.abs(sig) > 1e-4] ** 2)) if np.any(np.abs(sig) > 1e-4) else 1.0
+            put(sfxb, sig / r * vr * 10 ** (db / 20), st + off)
 env = mavg(np.abs(voc), int(0.25 * SR))
 duck = 1 - 0.55 * np.clip(env / (vr * 0.5), 0, 1)                  # dip ambience further while speaking
-mix = mix * 0.6 + voc + amb * duck
+mix = mix * 0.5 + voc + amb * duck + sfxb * (1 - 0.4 * np.clip(env / (vr * 0.5), 0, 1))
 mix = mix[:int(TOTAL * SR)]
 mix /= max(1e-6, np.abs(mix).max()) / 0.9
 with wave.open('audio.wav', 'wb') as w:

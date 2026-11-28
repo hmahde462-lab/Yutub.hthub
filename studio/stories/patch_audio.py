@@ -9,7 +9,7 @@ for fn in sys.argv[1:]:
                   "if not os.environ.get('AUDIO_ONLY'): subprocess.run(['ffmpeg', '-v', 'error', '-y', '-f', 'concat', '-safe', '0', '-i', 'clips/list.txt', '-c', 'copy', 'video_noaudio.mp4'], check=True)")
     p = re.sub(r"put\(mix, load\(f'lines/line\{i:02d\}\.wav'\) \* 1\.0, st \+ 0\.35\)", "put(voc, load(f'lines/line{i:02d}.wav') * 1.0, st + 0.35)", p)
     p = p.replace("mix = np.zeros(N, np.float32); amb = np.zeros(N, np.float32)", "mix = np.zeros(N, np.float32); amb = np.zeros(N, np.float32); voc = np.zeros(N, np.float32)")
-    new = '''AMB_DB = float(os.environ.get('AMB_DB', '-27'))   # ambience level relative to the voice (dB)
+    new = '''AMB_DB = float(os.environ.get('AMB_DB', '-32'))   # ambience level relative to the voice (dB)
 amb = lfilter([0.35], [1, -0.65], amb).astype(np.float32)          # soften hiss (gentle lowpass)
 def mavg(x, k):
     c = np.cumsum(np.concatenate([[0.0], x.astype(np.float64)])); y = (c[k:] - c[:-k]) / k
