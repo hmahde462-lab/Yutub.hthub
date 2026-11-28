@@ -14,3 +14,10 @@ studio/stories/*/thumb.jpg
 studio/stories/*/vo_p*
 studio/stories/*/s.wav
 studio/sfx/**/*.mp3
+studio/kahraba30/*/big/
+studio/kahraba30/*/clips/
+studio/kahraba30/*/clips_main/
+studio/kahraba30/*/ov/
+studio/kahraba30/*/sov/
+studio/kahraba30/*/audio.wav
+studio/kahraba30/*/*.mp4
