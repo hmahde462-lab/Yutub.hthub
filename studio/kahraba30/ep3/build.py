@@ -111,7 +111,7 @@ def bigimg(path):
     return out
 
 moves = ['in', 'out', 'panr', 'panl', 'in2', 'up']
-for i, x in enumerate(s):
+for i, x in enumerate([] if os.environ.get('AUDIO_ONLY') else s):
     st, d = times[i]; n = int(round(d * FPS)); out = f'clips/{i:02d}.mp4'
     pop = overlay(i, x)
     if os.path.exists(out) and not os.environ.get('FORCE'): continue
@@ -144,11 +144,11 @@ for i, x in enumerate(s):
 
 with open('clips/list.txt', 'w') as f:
     for i in range(len(s)): f.write(f"file '{i:02d}.mp4'\n")
-subprocess.run(['ffmpeg', '-v', 'error', '-y', '-f', 'concat', '-safe', '0', '-i', 'clips/list.txt', '-c', 'copy', 'video_noaudio.mp4'], check=True)
+if not os.environ.get('AUDIO_ONLY'): subprocess.run(['ffmpeg', '-v', 'error', '-y', '-f', 'concat', '-safe', '0', '-i', 'clips/list.txt', '-c', 'copy', 'video_noaudio.mp4'], check=True)
 
 # ---------- audio: narration + synthesized ambience/SFX (no music) ----------
 N = int(TOTAL * SR) + SR
-mix = np.zeros(N, np.float32); amb = np.zeros(N, np.float32)
+mix = np.zeros(N, np.float32); amb = np.zeros(N, np.float32); voc = np.zeros(N, np.float32)
 rng = np.random.default_rng(7)
 def load(fn):
     r = subprocess.run(['ffmpeg', '-v', 'error', '-i', fn, '-f', 'f32le', '-ac', '1', '-ar', str(SR), '-'], capture_output=True).stdout
@@ -238,15 +238,40 @@ for i, x in enumerate(s):
     if x.get('hud') == 'title': put(mix, boom(0.6), st + 0.05)
 # narration
 for i, x in enumerate(s):
-    st, d = times[i]; put(mix, load(f'lines/line{i:02d}.wav') * 1.0, st + 0.35)
+    st, d = times[i]; put(voc, load(f'lines/line{i:02d}.wav') * 1.0, st + 0.35)
 # black scene: everything silent except boom + narration
 st, d = times[-1]; amb[int(st * SR):] = 0
 # fades between scenes for ambience
-mix += amb
+from scipy.signal import lfilter
+AMB_DB = float(os.environ.get('AMB_DB', '-32'))   # ambience level relative to the voice (dB)
+amb = lfilter([0.35], [1, -0.65], amb).astype(np.float32)          # soften hiss (gentle lowpass)
+def mavg(x, k):
+    c = np.cumsum(np.concatenate([[0.0], x.astype(np.float64)])); y = (c[k:] - c[:-k]) / k
+    pad = len(x) - len(y); return np.concatenate([np.full(pad // 2, y[0]), y, np.full(pad - pad // 2, y[-1])]).astype(np.float32)
+fade = mavg((np.abs(amb) > 0).astype(np.float32), int(0.4 * SR)); amb *= np.clip(fade, 0, 1)
+vr = np.sqrt(np.mean(voc[np.abs(voc) > 1e-4] ** 2)) if np.any(np.abs(voc) > 1e-4) else 0.1
+ar = np.sqrt(np.mean(amb[np.abs(amb) > 1e-6] ** 2)) if np.any(np.abs(amb) > 1e-6) else 1.0
+amb *= vr * 10 ** (AMB_DB / 20) / ar
+SFXDIR = os.path.join(D, '..', '..', 'sfx', os.path.basename(D)); sfxb = np.zeros(N, np.float32)
+if os.path.exists(os.path.join(SFXDIR, 'map.json')) and not os.environ.get('NOSFX'):
+    for k, lst in json.load(open(os.path.join(SFXDIR, 'map.json'))).items():
+        i = int(k)
+        if i >= len(times): continue
+        st, d = times[i]
+        for name, off, db in lst:
+            sig = load(os.path.join(SFXDIR, name + '.mp3'))
+            L = max(1, min(len(sig), int((d - off + 0.3) * SR))); sig = sig[:L].copy()
+            fi, fo = min(L // 3, int(0.25 * SR)), min(L // 2, int(0.8 * SR))
+            sig[:fi] *= np.linspace(0, 1, fi); sig[L - fo:] *= np.linspace(1, 0, fo)
+            r = np.sqrt(np.mean(sig[np.abs(sig) > 1e-4] ** 2)) if np.any(np.abs(sig) > 1e-4) else 1.0
+            put(sfxb, sig / r * vr * 10 ** (db / 20), st + off)
+env = mavg(np.abs(voc), int(0.25 * SR))
+duck = 1 - 0.55 * np.clip(env / (vr * 0.5), 0, 1)                  # dip ambience further while speaking
+mix = mix * 0.5 + voc + amb * duck + sfxb * (1 - 0.4 * np.clip(env / (vr * 0.5), 0, 1))
 mix = mix[:int(TOTAL * SR)]
 mix /= max(1e-6, np.abs(mix).max()) / 0.9
 with wave.open('audio.wav', 'wb') as w:
     w.setnchannels(1); w.setsampwidth(2); w.setframerate(SR); w.writeframes((mix * 32767).astype(np.int16).tobytes())
-subprocess.run(['ffmpeg', '-v', 'error', '-y', '-i', 'video_noaudio.mp4', '-i', 'audio.wav', '-c:v', 'copy', '-af', 'loudnorm=I=-14:TP=-1.5:LRA=11', '-c:a', 'aac', '-b:a', '192k', '-ar', '48000', '-shortest', os.environ.get('OUT', 'kahraba30-ep3.mp4')], check=True)
+subprocess.run(['ffmpeg', '-v', 'error', '-y', '-i', os.environ.get('VIDEO_IN', 'video_noaudio.mp4'), '-i', 'audio.wav', '-map', '0:v', '-map', '1:a', '-c:v', 'copy', '-af', 'loudnorm=I=-14:TP=-1.5:LRA=11', '-c:a', 'aac', '-b:a', '192k', '-ar', '48000', '-shortest', os.environ.get('OUT', 'kahraba30-ep3.mp4')], check=True)
 json.dump([{'i': i, 'start': round(t0, 3), 'dur': round(dd, 3)} for i, (t0, dd) in enumerate(times)], open('timeline.json', 'w'))
 print('done', TOTAL)
