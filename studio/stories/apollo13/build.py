@@ -210,11 +210,7 @@ def hit(g=0.5):
     return (np.sin(2 * np.pi * np.cumsum(fr) / SR) * np.exp(-t * 4) * g).astype(np.float32)
 
 def section(i):
-    if i in (2, 3, 14, 15, 30, 33, 35, 47): return 'none'
-    if i in (1, 9, 12, 13, 20, 21, 32, 39, 43, 45, 46): return 'wind'
-    if i in (31,): return 'night_out'
-    if i in (4, 6, 24, 25, 26, 27): return 'street'
-    return 'murmur'
+    return 'none'  # real ambience comes from studio/sfx/<slug>/map.json
 for i, x in enumerate(s):
     st, d = times[i]; sec = section(i)
     if sec == 'night_out': put(amb, crickets(d) + wind(d, 0.03), st)
@@ -272,6 +268,6 @@ mix = mix[:int(TOTAL * SR)]
 mix /= max(1e-6, np.abs(mix).max()) / 0.9
 with wave.open('audio.wav', 'wb') as w:
     w.setnchannels(1); w.setsampwidth(2); w.setframerate(SR); w.writeframes((mix * 32767).astype(np.int16).tobytes())
-subprocess.run(['ffmpeg', '-v', 'error', '-y', '-i', os.environ.get('VIDEO_IN', 'video_noaudio.mp4'), '-i', 'audio.wav', '-map', '0:v', '-map', '1:a', '-c:v', 'copy', '-af', 'loudnorm=I=-14:TP=-1.5:LRA=11', '-c:a', 'aac', '-b:a', '192k', '-ar', '48000', '-shortest', os.environ.get('OUT', 'nebuchadnezzar.mp4')], check=True)
+subprocess.run(['ffmpeg', '-v', 'error', '-y', '-i', os.environ.get('VIDEO_IN', 'video_noaudio.mp4'), '-i', 'audio.wav', '-map', '0:v', '-map', '1:a', '-c:v', 'copy', '-af', 'loudnorm=I=-14:TP=-1.5:LRA=11', '-c:a', 'aac', '-b:a', '192k', '-ar', '48000', '-shortest', os.environ.get('OUT', os.path.basename(D) + '.mp4')], check=True)
 json.dump([{'i': i, 'start': round(t0, 3), 'dur': round(dd, 3)} for i, (t0, dd) in enumerate(times)], open('timeline.json', 'w'))
 print('done', TOTAL)
